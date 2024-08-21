@@ -36,6 +36,11 @@ After Cloudflare took appropriate action by putting up a warning informing users
 ### Update #2:
 [www.security-legder.live](http://www.security-legder.live) is offline. [https://boom1973.youcan.store](https://boom1973.youcan.store) remains online but with a warning from CloudFlare. [https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html) is still active.
 
+### Update #3:
+[https://boom1973.youcan.store](https://boom1973.youcan.store) The store has been suspended.
+[https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html) Has been taken down.
+This phishing site has effectively been halted.
+
 ### Lessons & Takeaways:
 - **Source Red Flags**: A text with an origin other than Ledger should have been an indicator that the information was untrustworthy.
 - **Domain Name Red Flags**: The domain name "security-legder.live" itself should have been a giveaway. The correct spelling is "Ledger," not "Legder," indicating a possible malicious site.
