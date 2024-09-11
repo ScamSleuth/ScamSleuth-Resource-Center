@@ -14,7 +14,7 @@ Victims receive a message advising to quickly pay a non-existing debt in order t
 ### Source Analysis:
 The message claims to be from a Dutch debt collection service and attempts to mimic the **Belastingdienst** (Dutch Tax Office). The sender advises the victim to pay their (non-existing) debt in order to prevent legal actions.
 
-**Phishing Tactics**:  
+**Scam Tactics**:  
 - **Mimicked Invoice**: The website displays a fake invoice, imitating the Dutch Tax Office, demanding immediate payment.  
 - **Chatbot**: Victims are instructed to provide personal details in the form of a chatbot, likely for data harvesting.  
 - **Fake iDeal Payment**: After entering their details, victims are provided an iDeal link:
@@ -26,7 +26,7 @@ The message claims to be from a Dutch debt collection service and attempts to mi
     The payment is labeled under the name **Klein**.
 ![bd-incasso.in](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/e812169e7d9cdcafcdf174a168f5ba3c0266e7b1/bd-incasso.in/bd-incasso.png)
 
-There is also a "Betaal nu" button that opens a link to the Bunq-bank and allows you to pay directly to G. Hoxha using account number NL39 BUNQ 2042 7049 03.
+There is also a "Betaal nu" button that opens a link (https://bunq.me/o/cfd54161-9497-470c-8ade-578df2b5ac4b/ideal) to the Bunq-bank and allows you to pay directly to G. Hoxha using account number NL39 BUNQ 2042 7049 03.
 
 ---
 
