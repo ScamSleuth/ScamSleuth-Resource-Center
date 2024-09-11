@@ -26,6 +26,8 @@ The message claims to be from a Dutch debt collection service and attempts to mi
     The payment is labeled under the name **Klein**.
 ![bd-incasso.in](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/e812169e7d9cdcafcdf174a168f5ba3c0266e7b1/bd-incasso.in/bd-incasso.png)
 
+There is also a "Betaal nu" button that opens a link to the Bunq-bank and allows you to pay directly to G. Hoxha using account number NL39 BUNQ 2042 7049 03.
+
 ---
 
 ### Actions Taken:
@@ -34,9 +36,10 @@ The message claims to be from a Dutch debt collection service and attempts to mi
    - **Cloudflare**: The website is protected by Cloudflare, making it harder to take attack and find it's hoster. Cloudflare has been notified about the scam.  
 
 2. **Third-Party Service Reports**:  
-   - **Tawk.to**: Reported to **Tawk.to**, the service responsible for the chatbot used to gather victim information.  
+   - **Tawk.to**: Reported to **Tawk.to**, the service responsible for the chatbot used to gather victim information. Tawk.to has been notified about the misuse of their services.  
    - **iDeal**: The payment provider iDeal has been notified about the fraudulent use of their platform, with the details of the specific transaction being shared.  
-   - **Belastingdienst**: The organisation the scammers are impersonating.
+   - **Belastingdienst**: The organisation the scammers are impersonating have been notified.
+   - **Bunq**: The payment provider you'll be t.ransfered to when you press the "Betaal nu"-button. The transaction has been reported as abuse.
 
 ---
 
