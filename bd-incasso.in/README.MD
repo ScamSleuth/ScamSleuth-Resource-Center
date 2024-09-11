@@ -17,7 +17,7 @@ The message claims to be from a Dutch debt collection service and attempts to mi
 **Scam Tactics**:  
 - **Mimicked Invoice**: The website displays a fake invoice, imitating the Dutch Tax Office, demanding immediate payment.  
 - **Chatbot**: Victims are instructed to provide personal details in the form of a chatbot, likely for data harvesting.  
-- **Fake iDeal Payment**: After entering their details, victims are provided an iDeal link:
+- **Fake iDeal Payment**: After entering their details in the chat, victims are provided an iDeal link:
 
     ```
     https://pay.ideal.nl/transactions/https%3A%2F%2Ftx.ideal.nl%2F2%2FAW5CCNYJGWAO3UVNGZMIOHAB6XE?sig=AGBDAEIIA26LPEODCRLWVJJNMYSI2EK43FPM5GNQEGDJG3YTGOIVXERKWVHCAEIIAYIH5ZK6RL7F5M37R6V3CKCHHSKDDRVGY2XGQ74WK77WBEIK465CQ
@@ -25,6 +25,7 @@ The message claims to be from a Dutch debt collection service and attempts to mi
 
     The payment is labeled under the name **Klein**.
 ![bd-incasso.in](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/e812169e7d9cdcafcdf174a168f5ba3c0266e7b1/bd-incasso.in/bd-incasso.png)
+
 
 There is also a "Betaal nu" button that opens a link (https://bunq.me/o/cfd54161-9497-470c-8ade-578df2b5ac4b/ideal) to the Bunq-bank and allows you to pay directly to Granit Hoxha using account number NL39 BUNQ 2042 7049 03.
 ![NL39BUNQ2042704903.png](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/72391b9fa7384d8776cb304fb4321e41a00a0dc1/bd-incasso.in/NL39BUNQ2042704903.png)
