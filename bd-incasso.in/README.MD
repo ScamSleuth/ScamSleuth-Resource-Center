@@ -27,7 +27,7 @@ The message claims to be from a Dutch debt collection service and attempts to mi
 ![bd-incasso.in](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/e812169e7d9cdcafcdf174a168f5ba3c0266e7b1/bd-incasso.in/bd-incasso.png)
 
 There is also a "Betaal nu" button that opens a link (https://bunq.me/o/cfd54161-9497-470c-8ade-578df2b5ac4b/ideal) to the Bunq-bank and allows you to pay directly to Granit Hoxha using account number NL39 BUNQ 2042 7049 03.
-
+![NL39BUNQ2042704903.png](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/72391b9fa7384d8776cb304fb4321e41a00a0dc1/bd-incasso.in/NL39BUNQ2042704903.png)
 
 ---
 
