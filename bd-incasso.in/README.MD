@@ -24,6 +24,7 @@ The message claims to be from a Dutch debt collection service and attempts to mi
     ```
 
     The payment is labeled under the name **Klein**.
+![bd-incasso.in](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/e812169e7d9cdcafcdf174a168f5ba3c0266e7b1/bd-incasso.in/bd-incasso.png)
 
 ---
 
