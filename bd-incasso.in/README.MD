@@ -1,8 +1,8 @@
 # Scam Report: bd-incasso.in  
-**Phishing Date**: September 11, 2024  
+**Scam Date**: September 11, 2024  
 
 **Scam Summary**:  
-Victims received an message advising to quickly pay a non-existing debt in order to prevent legal actions. The message reads:
+Victims receive a message advising to quickly pay a non-existing debt in order to prevent legal actions. The message reads:
 
 > "Uw openstaande schuld is nog niet voldaan. Gerechtsdeurwaarder legt op 12-09-2024 conservatoir beslag. Betaal nu via http://bd-incasso.in"
 
