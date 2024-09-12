@@ -47,6 +47,8 @@ There is also a "Betaal nu" button that opens a link (https://bunq.me/o/cfd54161
 
 ### Follow-Up:
 
+The website has been taken down, although I got an email from OpenSRS that I had to report it to Tuwcows.
+Of the payment-links the iDeal-link has stopped functioning; the Bunq-link is being worked on :-)
 
 ---
 
