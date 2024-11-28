@@ -24,8 +24,8 @@ Translation: "[MijnKVK] You have until December 1, 2024, to update your details.
 - **Countermeasures**: A script was employed to flood the Telegram group with random data, disrupting the attackers' operations.
 
 ### Follow up
-### Update #1: Following reports and the flood, the Telegram bot was blocked, hindering further data collection efforts by the attackers.
-### Update #2: Efforts are ongoing with NameSilo and CloudFlare to ensure the complete takedown of mijnkvk.digital and prevent similar future incidents.
+#### Update #1: Following reports and the flood, the Telegram bot was blocked, hindering further data collection efforts by the attackers.
+#### Update #2: Efforts are ongoing with NameSilo and CloudFlare to ensure the complete takedown of mijnkvk.digital and prevent similar future incidents.
 
 ### Lessons & Takeaways:
 - **Source Red Flags**: The message originated from a Dutch mobile number, claiming urgent updates from KVK should be scrutinized for authenticity. Official KVK communications do not request updates through unsolicited messages.
