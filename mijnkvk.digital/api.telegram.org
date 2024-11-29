@@ -1,0 +1,1728 @@
+The following is the output of: https://api.telegram.org/bot6375100748:AAF7Jq7te1P0o8pDWEKgwtX87eSKp8uj0J4/getUpdates
+
+{
+    "ok": true,
+    "result": [
+        {
+            "update_id": 494476716,
+            "message": {
+                "message_id": 1346,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732791818,
+                "new_chat_participant": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "new_chat_member": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "new_chat_members": [
+                    {
+                        "id": 7585647262,
+                        "is_bot": false,
+                        "first_name": "Brick",
+                        "last_name": "Sander",
+                        "username": "brickiii"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476717,
+            "message": {
+                "message_id": 1348,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732792375,
+                "text": "@Keesjuh  meld waar je bent en wat voicemail is gegaan",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 8,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476718,
+            "message": {
+                "message_id": 1349,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732792907,
+                "text": "@brickiii",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 9,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476719,
+            "message": {
+                "message_id": 1350,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732792913,
+                "text": "Dit word nog niet gebeld vandaag goha"
+            }
+        },
+        {
+            "update_id": 494476720,
+            "message": {
+                "message_id": 1351,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732792923,
+                "text": "Ik wacht tot voor het eten tot alle finos binnen zijn goha"
+            }
+        },
+        {
+            "update_id": 494476721,
+            "message": {
+                "message_id": 1352,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732792933,
+                "text": "Ik meld als ik begin met ONZE FINOS HERENNNN"
+            }
+        },
+        {
+            "update_id": 494476722,
+            "message": {
+                "message_id": 1353,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793096,
+                "photo": [
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFSWdIUwijsuwF0KEsSqr9w2ncilBJAALMzjEbsNtAUtvfMY2Nft0QAQADAgADcwADNgQ",
+                        "file_unique_id": "AQADzM4xG7DbQFJ4",
+                        "file_size": 1238,
+                        "width": 51,
+                        "height": 90
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFSWdIUwijsuwF0KEsSqr9w2ncilBJAALMzjEbsNtAUtvfMY2Nft0QAQADAgADbQADNgQ",
+                        "file_unique_id": "AQADzM4xG7DbQFJy",
+                        "file_size": 14642,
+                        "width": 180,
+                        "height": 320
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFSWdIUwijsuwF0KEsSqr9w2ncilBJAALMzjEbsNtAUtvfMY2Nft0QAQADAgADeAADNgQ",
+                        "file_unique_id": "AQADzM4xG7DbQFJ9",
+                        "file_size": 64172,
+                        "width": 450,
+                        "height": 800
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFSWdIUwijsuwF0KEsSqr9w2ncilBJAALMzjEbsNtAUtvfMY2Nft0QAQADAgADeQADNgQ",
+                        "file_unique_id": "AQADzM4xG7DbQFJ-",
+                        "file_size": 121652,
+                        "width": 720,
+                        "height": 1280
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476723,
+            "message": {
+                "message_id": 1354,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793115,
+                "text": "Ik ga vandaag bullys werkgeven man"
+            }
+        },
+        {
+            "update_id": 494476724,
+            "message": {
+                "message_id": 1355,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793120,
+                "text": "Wollah"
+            }
+        },
+        {
+            "update_id": 494476725,
+            "message": {
+                "message_id": 1356,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793142,
+                "text": "@brickiii stuur me Adje van buikje ik laat vandaag lucht gaan",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 9,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476726,
+            "message": {
+                "message_id": 1357,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793143,
+                "text": "Wollah"
+            }
+        },
+        {
+            "update_id": 494476727,
+            "message": {
+                "message_id": 1358,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793235,
+                "text": "Hahaha weloe weet wel Almelo gwn man als die niet in moro is nu"
+            }
+        },
+        {
+            "update_id": 494476728,
+            "message": {
+                "message_id": 1359,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793249,
+                "text": "Pffffff"
+            }
+        },
+        {
+            "update_id": 494476729,
+            "message": {
+                "message_id": 1360,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793250,
+                "text": "Ben heet"
+            }
+        },
+        {
+            "update_id": 494476730,
+            "message": {
+                "message_id": 1361,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793254,
+                "text": "Ga boos doen wollah"
+            }
+        },
+        {
+            "update_id": 494476731,
+            "message": {
+                "message_id": 1362,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793255,
+                "text": "ahhaha"
+            }
+        },
+        {
+            "update_id": 494476732,
+            "message": {
+                "message_id": 1363,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793257,
+                "text": "focus eh niffo"
+            }
+        },
+        {
+            "update_id": 494476733,
+            "message": {
+                "message_id": 1364,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793262,
+                "text": "eerst diene"
+            }
+        },
+        {
+            "update_id": 494476734,
+            "message": {
+                "message_id": 1365,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793267,
+                "text": "later pakken we die plofkip"
+            }
+        },
+        {
+            "update_id": 494476735,
+            "message": {
+                "message_id": 1366,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793269,
+                "text": "maak je niet druk"
+            }
+        },
+        {
+            "update_id": 494476736,
+            "message": {
+                "message_id": 1367,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793277,
+                "text": "@ChopLit",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 8,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476737,
+            "message": {
+                "message_id": 1368,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793284,
+                "text": "😂😂😂"
+            }
+        },
+        {
+            "update_id": 494476738,
+            "message": {
+                "message_id": 1369,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793284,
+                "text": "😂😂😂"
+            }
+        },
+        {
+            "update_id": 494476739,
+            "message": {
+                "message_id": 1370,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793284,
+                "text": "😂😂😂"
+            }
+        },
+        {
+            "update_id": 494476740,
+            "message": {
+                "message_id": 1371,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793441,
+                "text": "@ChopLit @brickiii",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 8,
+                        "type": "mention"
+                    },
+                    {
+                        "offset": 9,
+                        "length": 9,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476741,
+            "message": {
+                "message_id": 1372,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793458,
+                "photo": [
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFXGdIVHKYNNVjFcFo_vtPDKf58znwAALTzjEbsNtAUhHo5n7piI6tAQADAgADcwADNgQ",
+                        "file_unique_id": "AQAD084xG7DbQFJ4",
+                        "file_size": 1190,
+                        "width": 51,
+                        "height": 90
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFXGdIVHKYNNVjFcFo_vtPDKf58znwAALTzjEbsNtAUhHo5n7piI6tAQADAgADbQADNgQ",
+                        "file_unique_id": "AQAD084xG7DbQFJy",
+                        "file_size": 13496,
+                        "width": 180,
+                        "height": 320
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFXGdIVHKYNNVjFcFo_vtPDKf58znwAALTzjEbsNtAUhHo5n7piI6tAQADAgADeAADNgQ",
+                        "file_unique_id": "AQAD084xG7DbQFJ9",
+                        "file_size": 55216,
+                        "width": 450,
+                        "height": 800
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFXGdIVHKYNNVjFcFo_vtPDKf58znwAALTzjEbsNtAUhHo5n7piI6tAQADAgADeQADNgQ",
+                        "file_unique_id": "AQAD084xG7DbQFJ-",
+                        "file_size": 104678,
+                        "width": 720,
+                        "height": 1280
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476742,
+            "message": {
+                "message_id": 1373,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793459,
+                "text": "faa"
+            }
+        },
+        {
+            "update_id": 494476743,
+            "message": {
+                "message_id": 1374,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793459,
+                "text": "faa"
+            }
+        },
+        {
+            "update_id": 494476744,
+            "message": {
+                "message_id": 1375,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793462,
+                "text": "Wat moet ik doen"
+            }
+        },
+        {
+            "update_id": 494476745,
+            "message": {
+                "message_id": 1376,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793465,
+                "text": "Zeg t maar"
+            }
+        },
+        {
+            "update_id": 494476746,
+            "message": {
+                "message_id": 1377,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793475,
+                "text": "Wats ap lim"
+            }
+        },
+        {
+            "update_id": 494476747,
+            "message": {
+                "message_id": 1378,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793475,
+                "text": "@brickiii",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 9,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476748,
+            "message": {
+                "message_id": 1379,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793482,
+                "text": "En hogen na 1 tel"
+            }
+        },
+        {
+            "update_id": 494476749,
+            "message": {
+                "message_id": 1380,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793484,
+                "text": "Rek"
+            }
+        },
+        {
+            "update_id": 494476750,
+            "message": {
+                "message_id": 1381,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793485,
+                "photo": [
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFZWdIVI0LwO_Eu8Niw01JB-Up0c0NAALUzjEbsNtAUuz-Q08e9VnKAQADAgADcwADNgQ",
+                        "file_unique_id": "AQAD1M4xG7DbQFJ4",
+                        "file_size": 991,
+                        "width": 51,
+                        "height": 90
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFZWdIVI0LwO_Eu8Niw01JB-Up0c0NAALUzjEbsNtAUuz-Q08e9VnKAQADAgADbQADNgQ",
+                        "file_unique_id": "AQAD1M4xG7DbQFJy",
+                        "file_size": 12067,
+                        "width": 180,
+                        "height": 320
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFZWdIVI0LwO_Eu8Niw01JB-Up0c0NAALUzjEbsNtAUuz-Q08e9VnKAQADAgADeAADNgQ",
+                        "file_unique_id": "AQAD1M4xG7DbQFJ9",
+                        "file_size": 55718,
+                        "width": 450,
+                        "height": 800
+                    },
+                    {
+                        "file_id": "AgACAgQAAxkBAAIFZWdIVI0LwO_Eu8Niw01JB-Up0c0NAALUzjEbsNtAUuz-Q08e9VnKAQADAgADeQADNgQ",
+                        "file_unique_id": "AQAD1M4xG7DbQFJ-",
+                        "file_size": 114603,
+                        "width": 720,
+                        "height": 1280
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476751,
+            "message": {
+                "message_id": 1382,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793494,
+                "text": "hij heb"
+            }
+        },
+        {
+            "update_id": 494476752,
+            "message": {
+                "message_id": 1383,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793495,
+                "text": "cctje"
+            }
+        },
+        {
+            "update_id": 494476753,
+            "message": {
+                "message_id": 1384,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793497,
+                "text": "@brickiii",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 9,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476754,
+            "message": {
+                "message_id": 1385,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793512,
+                "text": "Kom snapchat"
+            }
+        },
+        {
+            "update_id": 494476755,
+            "message": {
+                "message_id": 1386,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793514,
+                "text": "Beste kkkkk"
+            }
+        },
+        {
+            "update_id": 494476756,
+            "message": {
+                "message_id": 1387,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793515,
+                "text": "Th"
+            }
+        },
+        {
+            "update_id": 494476757,
+            "message": {
+                "message_id": 1388,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793516,
+                "text": "jaa"
+            }
+        },
+        {
+            "update_id": 494476758,
+            "message": {
+                "message_id": 1389,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793592,
+                "text": "Haal alle berichten weg @ChopLit",
+                "entities": [
+                    {
+                        "offset": 24,
+                        "length": 8,
+                        "type": "mention"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476759,
+            "message": {
+                "message_id": 1390,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793595,
+                "text": "Alleen finos hier"
+            }
+        },
+        {
+            "update_id": 494476760,
+            "message": {
+                "message_id": 1391,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732793600,
+                "text": "Geen getyp geen text niks"
+            }
+        },
+        {
+            "update_id": 494476761,
+            "message": {
+                "message_id": 1396,
+                "from": {
+                    "id": 7645330330,
+                    "is_bot": false,
+                    "first_name": "Keesjuh",
+                    "last_name": "Jager",
+                    "username": "Keesjuh"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732794617,
+                "text": "5-6 uur begin ik aan deze foins"
+            }
+        },
+        {
+            "update_id": 494476762,
+            "message": {
+                "message_id": 1397,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732794847,
+                "text": "saf"
+            }
+        },
+        {
+            "update_id": 494476763,
+            "message": {
+                "message_id": 1420,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827838,
+                "text": "Kanker honden"
+            }
+        },
+        {
+            "update_id": 494476764,
+            "message": {
+                "message_id": 1421,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827840,
+                "text": "Wats dit la"
+            }
+        },
+        {
+            "update_id": 494476765,
+            "message": {
+                "message_id": 1423,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827842,
+                "text": "heb captcha aangezet"
+            }
+        },
+        {
+            "update_id": 494476766,
+            "message": {
+                "message_id": 1424,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827846,
+                "text": "zodat niet meer gebeurt"
+            }
+        },
+        {
+            "update_id": 494476767,
+            "message": {
+                "message_id": 1427,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827854,
+                "text": "Oké"
+            }
+        },
+        {
+            "update_id": 494476768,
+            "message": {
+                "message_id": 1442,
+                "from": {
+                    "id": 5259799699,
+                    "is_bot": false,
+                    "first_name": "J",
+                    "username": "kortevnzuid"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827927,
+                "text": "Geen 1 iban klopt haha"
+            }
+        },
+        {
+            "update_id": 494476769,
+            "message": {
+                "message_id": 1444,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827932,
+                "text": "ja"
+            }
+        },
+        {
+            "update_id": 494476770,
+            "message": {
+                "message_id": 1446,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827937,
+                "text": "ja"
+            }
+        },
+        {
+            "update_id": 494476771,
+            "message": {
+                "message_id": 1449,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827944,
+                "text": "dit komt soor kvk zelf"
+            }
+        },
+        {
+            "update_id": 494476772,
+            "message": {
+                "message_id": 1450,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827947,
+                "text": "hun spammen"
+            }
+        },
+        {
+            "update_id": 494476773,
+            "message": {
+                "message_id": 1451,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827948,
+                "text": "onzd site"
+            }
+        },
+        {
+            "update_id": 494476774,
+            "message": {
+                "message_id": 1453,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827950,
+                "text": "aminakodum"
+            }
+        },
+        {
+            "update_id": 494476775,
+            "message": {
+                "message_id": 1456,
+                "from": {
+                    "id": 7585647262,
+                    "is_bot": false,
+                    "first_name": "Brick",
+                    "last_name": "Sander",
+                    "username": "brickiii"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827960,
+                "text": "Hoe dan"
+            }
+        },
+        {
+            "update_id": 494476776,
+            "message": {
+                "message_id": 1458,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827966,
+                "text": "is makkelijk"
+            }
+        },
+        {
+            "update_id": 494476777,
+            "my_chat_member": {
+                "chat": {
+                    "id": 1316132318,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "type": "private"
+                },
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "date": 1732827978,
+                "old_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "member"
+                },
+                "new_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "kicked",
+                    "until_date": 0
+                }
+            }
+        },
+        {
+            "update_id": 494476778,
+            "my_chat_member": {
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "date": 1732827987,
+                "old_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "member"
+                },
+                "new_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "left"
+                }
+            }
+        },
+        {
+            "update_id": 494476779,
+            "message": {
+                "message_id": 1463,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732827986,
+                "left_chat_participant": {
+                    "id": 6375100748,
+                    "is_bot": true,
+                    "first_name": "televb",
+                    "username": "televb_bot"
+                },
+                "left_chat_member": {
+                    "id": 6375100748,
+                    "is_bot": true,
+                    "first_name": "televb",
+                    "username": "televb_bot"
+                }
+            }
+        },
+        {
+            "update_id": 494476780,
+            "my_chat_member": {
+                "chat": {
+                    "id": 1316132318,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "type": "private"
+                },
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "date": 1732829300,
+                "old_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "kicked",
+                    "until_date": 0
+                },
+                "new_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "member"
+                }
+            }
+        },
+        {
+            "update_id": 494476781,
+            "message": {
+                "message_id": 1464,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": 1316132318,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "type": "private"
+                },
+                "date": 1732829301,
+                "text": "/start",
+                "entities": [
+                    {
+                        "offset": 0,
+                        "length": 6,
+                        "type": "bot_command"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476782,
+            "my_chat_member": {
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "date": 1732829311,
+                "old_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "left"
+                },
+                "new_chat_member": {
+                    "user": {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    },
+                    "status": "member"
+                }
+            }
+        },
+        {
+            "update_id": 494476783,
+            "message": {
+                "message_id": 1465,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "nl"
+                },
+                "chat": {
+                    "id": -4676497752,
+                    "title": "🪵logs",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732829311,
+                "new_chat_participant": {
+                    "id": 6375100748,
+                    "is_bot": true,
+                    "first_name": "televb",
+                    "username": "televb_bot"
+                },
+                "new_chat_member": {
+                    "id": 6375100748,
+                    "is_bot": true,
+                    "first_name": "televb",
+                    "username": "televb_bot"
+                },
+                "new_chat_members": [
+                    {
+                        "id": 6375100748,
+                        "is_bot": true,
+                        "first_name": "televb",
+                        "username": "televb_bot"
+                    }
+                ]
+            }
+        },
+        {
+            "update_id": 494476784,
+            "message": {
+                "message_id": 1467,
+                "from": {
+                    "id": 1316132318,
+                    "is_bot": false,
+                    "first_name": "ChopLit",
+                    "username": "ChopLit",
+                    "language_code": "en"
+                },
+                "chat": {
+                    "id": -4559780315,
+                    "title": "logs isa B",
+                    "type": "group",
+                    "all_members_are_administrators": true
+                },
+                "date": 1732846082,
+                "text": "ik haal isa uitlucht"
+            }
+        }
+    ]
+}
