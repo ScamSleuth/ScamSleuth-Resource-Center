@@ -34,6 +34,12 @@ Following reports and the flood, the Telegram bot was blocked, hindering further
 #### Update #2: 
 Efforts are ongoing with NameSilo and CloudFlare to ensure the complete takedown of mijnkvk.digital and prevent similar future incidents.
 
+### Update #3:
+After recieving error-messages from Telegram stating that the bot was suspended, it was able to recieve data again on:
+```
+$bottoken = "6375100748:AAF7Jq7te1P0o8pDWEKgwtX87eSKp8uj0J4";
+$chatid = "-4676497752";
+```
 
 ### Lessons & Takeaways:
 ---
