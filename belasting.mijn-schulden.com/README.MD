@@ -20,6 +20,10 @@ The message claims to be from a Dutch debt collection service and attempts to mi
 - **Fake iDeal Payment**: After entering their details in the chat, victims are provided an iDeal link:
 
 ### Actions Taken:
+1. **Nicenic.net** has been informed and the Dutch Tax Office (Belastingdienst) has been notified through valse-email@belastingdienst.nl,
+2. **Google Safe Search** has been informed of this fraudulent website,
+3. **Cloudflare** has been informed of this fraudulent website,
+4. **Tidio.net** has been informed of the use of their services on their website.
 
 ### Follow-Up:
 
