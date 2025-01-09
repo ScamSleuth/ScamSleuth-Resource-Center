@@ -14,6 +14,8 @@ Victims receive a message advising to quickly pay a non-existing debt in order t
 ### Source Analysis:
 The message claims to be from a Dutch debt collection service and attempts to mimic the **Belastingdienst** (Dutch Tax Office). The sender advises the victim to pay their (non-existing) debt in order to prevent legal actions. When the intended victim goes to https://belasting.mijn-schulden.com they are shown a fake invoice and are given the option to pay when they open the chat. In the victim needs to enter the name of their bank and their telephonenumber. In the chat the victim is being presented an iDEAL-payment link to pay their non-existend debt.
 
+![Alt text](Website/Chat.png?raw=true "Chat")
+
 **Scam Tactics**:  
 - **Mimicked Invoice**: The website displays a fake invoice, imitating the Dutch Tax Office, demanding immediate payment.  
 - **Chatbot**: Victims are instructed to provide personal details in the form of a chatbot, likely for data harvesting. 
