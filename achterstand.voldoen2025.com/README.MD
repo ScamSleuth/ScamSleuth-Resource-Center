@@ -33,7 +33,7 @@ The message claims to be from a Dutch debt collection service and attempts to mi
 ### Lessons & Takeaways:
 
 1. **Source Red Flags**: Any unsolicited messages threatening immediate legal action or financial penalties should be treated with extreme caution.
-2. **Domain Name Red Flags**: The domain **mijn-schulden.com** is suspicious. Official Dutch services would rather use **.nl** domain extensions, not **.com**.
+2. **Domain Name Red Flags**: The domain **voldoen2025.com** is suspicious. Official Dutch services would rather use **.nl** domain extensions, not **.com**.
 3. **Immediate Threats**: Scammers often use fear tactics (e.g., seizure of assets) to manipulate victims into immediate action without verifying the legitimacy of the claim.
 4. **Verify Payment Links**: Always check the origin of payment links, especially if directed to iDeal or other payment gateways via suspicious means.
 5. **Stay Informed**: Regularly check with official agencies (like the Dutch Tax Office) regarding any real outstanding debts. Scams often use urgency to force victims into compliance.
