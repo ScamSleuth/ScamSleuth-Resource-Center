@@ -54,3 +54,12 @@ Victims recieve a text-message informing them the some strange behaviour has bee
 ---
 
 This scam is a **clear phishing attempt targeting Ledger users**. Be cautious and inform others to prevent more victims.  
+
+## Reporting & Actions Taken  
+- The phone number **+31 85 888 3869** was checked via [FreeCarrierLookup.com](https://freecarrierlookup.com).  
+- The carrier was identified as **Voxbone SA**, which is now **Bandwidth.com**.  
+- A fraud report has been submitted to **Bandwidth.com** to flag and disable the number.  
+- Additional reports have been or should be filed with:  
+  - [Ledger Support](https://support.ledger.com) to inform them of the scam.  
+  - [Fraud Helpdesk Netherlands](https://www.fraudehelpdesk.nl/) for Dutch victims.  
+  - [Europol Cybercrime Reporting](https://www.europol.europa.eu/report-a-crime) for international reporting.  
