@@ -38,13 +38,10 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
 
 - **Domain & Hosting Reports:**  
   - Reported the domain to the registrar (Ultahost, Inc.) using the WHOIS data.  
-  - Notified CLOUDFLARENET regarding the suspicious activity.
+  - Notified Cloudflare regarding the suspicious activity.
 
 - **Security Platform Notifications:**  
-  - Shared the SSL and DNS details with online security platforms to flag the domain.
-
-- **Community Outreach:**  
-  - Provided the full technical report to cybersecurity professionals to aid in further investigations.
+  - Shared domainname with online security platforms to flag the domain.
 
 ---
 
@@ -57,7 +54,7 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
   Despite mimicking the LEDGER brand, the domain’s recent creation and lack of proper email authentication (no SPF/DMARC) raise significant concerns.
 
 - **Technical Indicators:**  
-  The absence of redirects, combined with the use of CloudFlare for hosting and the short domain age, are common traits of phishing sites.
+  The use of CloudFlare for hosting and the short domain age, are common traits of phishing sites.
 
 - **Reporting is Crucial:**  
   It is important to report such phishing attempts to registrars, hosting providers, and security platforms to protect other potential victims.
@@ -70,9 +67,5 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
   Always verify any requests by contacting the official service provider directly. Avoid clicking on suspicious links from unsolicited messages.
 
 - **Spread Awareness:**  
-  Sharing detailed reports like this helps the community quickly recognize and respond to similar scams.
-
----
-
-*This report was generated on 2025-02-24 19:32:02 UTC using our ScamTrail script. For further details or updates, please refer to ongoing investigations and notifications made to the relevant authorities.*
+  Sharing reports like this helps the community quickly recognize and respond to similar scams.
 
