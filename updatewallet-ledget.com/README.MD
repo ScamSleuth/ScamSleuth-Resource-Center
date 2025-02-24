@@ -5,7 +5,7 @@
 
 ## Scam Summary
 
-Victims received two unsolicited text messages urging them to validate their wallet immediately. The messages claim:
+Victims received unsolicited text messages urging them to validate their wallet immediately. The messages claim:
 
 - **Message 1:**  
   "[LEDGER] To protect your funds, please validate your wallet now: updatewallet-ledger.com. Failure to do so may result in restrictions."  
