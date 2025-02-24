@@ -26,7 +26,7 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
 ![updatewallet-ledger.com_index.jpeg](./updatewallet-ledger.com_index.jpeg)
   The next phase is to gather the recovery phraze of the victim's LEDGER wallet:
 ![updatewallet-ledger.com_recovery.jpeg](./updatewallet-ledger.com_recovery.jpeg)
-  A loading spinner is displayed during the data transfer, providing feedback to the user while the data is being sent. The data is being sent to a Telegram group, via the [secureScript.js](./secureScript.js)
+  A loading spinner is displayed during the data transfer, providing feedback to the user while the data is being sent. The data is being sent to a Telegram group, via the [secureScript.js](./secureScript.js) and sendToTelegram.php
 
 
 - **Domain Analysis:**  
