@@ -23,7 +23,7 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
   The scammers use urgent language to pressure victims into clicking the provided URL, exploiting the trust associated with the LEDGER brand while bypassing proper verification.
 
   The victim is guided towards updatewallet-ledger.com and selects the type of wallet the use.
-![updatewallet-ledger.com_index.jpeg](./updatewallet-ledget.com/updatewallet-ledger.com_index.jpeg)
+![updatewallet-ledger.com_index.jpeg](./updatewallet-ledger.com_index.jpeg)
   The next phase is to gather the recovery phraze of the victim's LEDGER wallet:
 ![updatewallet-ledger.com_recovery.jpeg](./updatewallet-ledger.com_recovery.jpeg)
   A loading spinner is displayed during the data transfer, providing feedback to the user while the data is being sent. The data is being sent to a Telegram group, via the [secureScript.js](./secureScript.js)
