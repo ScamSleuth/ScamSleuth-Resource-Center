@@ -1,4 +1,4 @@
-# Scam Report: Ledger  
+# Scam Report: Ledger Device Connected to Different IP Address
 **Scam Date**: February 2025
 
 **Scam Summary**:  
