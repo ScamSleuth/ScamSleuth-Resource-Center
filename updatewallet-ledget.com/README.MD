@@ -22,6 +22,13 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
 - **Phishing Tactics:**  
   The scammers use urgent language to pressure victims into clicking the provided URL, exploiting the trust associated with the LEDGER brand while bypassing proper verification.
 
+  The victim is guided towards updatewallet-ledger.com and selects the type of wallet the use.
+![](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/470787cd05123195376afea18fbb8df1b68d139b/updatewallet-ledget.com/updatewallet-ledger.com_index.jpeg|width=50)
+  The next phase is to gather the recovery phraze of the victim's LEDGER wallet:
+![](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/470787cd05123195376afea18fbb8df1b68d139b/updatewallet-ledget.com/updatewallet-ledger.com_recovery.jpeg|width=50)
+  A loading spinner is displayed during the data transfer, providing feedback to the user while the data is being sent. The data is being sent to a Telegram group, via the [https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/470787cd05123195376afea18fbb8df1b68d139b/updatewallet-ledget.com/secureScript.js](secureScript.je)
+
+
 - **Domain Analysis:**  
   A ScamTrail report was generated for [https://updatewallet-ledger.com](https://updatewallet-ledger.com) with the following findings:
   - **Final Destination:** https://updatewallet-ledger.com (no redirects)
