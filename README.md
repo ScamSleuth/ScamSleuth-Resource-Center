@@ -60,6 +60,8 @@ Several tools can assist in investigating, reporting, and preventing online scam
   Report phishing sites to Google Safe Browsing to contribute to the global effort against malicious sites.
   - [CloudFlare report abuse](https://www.cloudflare.com/trust-hub/reporting-abuse/)  
   Report abusive sites to CloudFlare, this effort is the most effective way to take down a CloudFlare protected website.
+  - [Microsoft Defender Samrtscreen](https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site)
+  A service that helps protect users from phishing and malware. You can report unsafe websites to Microsoft, which will evaluate and, if necessary, block access to the site on their platform.
 
 - **Carrier lookup**:  
   - [Free Carrier Lookup](https://freecarrierlookup.com/)  
