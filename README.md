@@ -58,10 +58,13 @@ Several tools can assist in investigating, reporting, and preventing online scam
 - **Phishing Site Reporting**:  
   - [Google Safe Browsing](https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en)  
   Report phishing sites to Google Safe Browsing to contribute to the global effort against malicious sites.
+  - [CloudFlare report abuse](https://www.cloudflare.com/trust-hub/reporting-abuse/)  
+  Report abusive sites to CloudFlare, this effort is the most effective way to take down a CloudFlare protected website.
 
-- **Phishing Site Reporting**:  
+- **Carrier lookup**:  
   - [Free Carrier Lookup](https://freecarrierlookup.com/)  
-  Lookup the carriers of a telephonenumber.
+  This tool allows you to identify the carrier associated with a phone number. If a scam involves contacting or texting a phone number, you can use this service to find out which telecom carrier is hosting the number. Once you identify the carrier, you can report the fraudulent activity to them, which may help block or take action against the scammer's communications.
+
 
 
 Stay vigilant and informed online!
