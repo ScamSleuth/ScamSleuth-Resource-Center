@@ -59,4 +59,9 @@ Several tools can assist in investigating, reporting, and preventing online scam
   - [Google Safe Browsing](https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en)  
   Report phishing sites to Google Safe Browsing to contribute to the global effort against malicious sites.
 
+- **Phishing Site Reporting**:  
+  - [Free Carrier Lookup](https://freecarrierlookup.com/)  
+  Lookup the carriers of a telephonenumber.
+
+
 Stay vigilant and informed online!
