@@ -68,6 +68,13 @@ Both messages mimic official LEDGER alerts, creating a sense of urgency designed
 
 ---
 
+## Follow-Up
+
+- **Non compliant registrar and Cloudflare:**
+  This domain has been reported multiple times without any (immediate) action taken by the registrar or Cloudflare.
+
+
+---
 ## Further Action
 
 - **User Vigilance:**  
