@@ -28,7 +28,7 @@ Victims receive text messages claiming to be from Amsterdam Police regarding a "
 ## Automated Phone Message
 When calling the number, the following automated message plays in Dutch:
 
-> "Welkom bij het Amsterdamse fraudepreventieteam van de Amsterdamse politie. Heeft u een bericht van ons ontvangen met het verzoek om ons te bellen? Druk van op 1. Wilt u een fraude melden druk dan op 2. Wilt u een teamlid spreken druk op 3."
+> "Welkom bij het Amsterdamse fraudepreventieteam van de Amsterdamse politie. Heeft u een bericht van ons ontvangen met het verzoek om ons te bellen? Druk dan op 1. Wilt u een fraude melden druk dan op 2. Wilt u een teamlid spreken druk op 3."
 
 **Translation**:
 > "Welcome to the Amsterdam fraud prevention team of the Amsterdam police. Have you received a message from us requesting you to call? Press 1. If you want to report fraud, press 2. If you want to speak to a team member, press 3."
