@@ -1,6 +1,8 @@
 # Amsterdam Police Impersonation Scam
 **Scam Type**: Smishing (SMS Phishing)
+
 **Date Detected**: March, 2025
+
 **Status**: Active
 
 ## Scam Summary
