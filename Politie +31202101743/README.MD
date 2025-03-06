@@ -46,11 +46,12 @@ When calling the number, the following automated message plays in Dutch:
 ## Key Indicators & Prevention
 1. **Red Flag**: Unexpected SMS about vague "incidents" requiring immediate callback  
    **Prevention**: Verify with official police channels through their published numbers
-2. **Red Flag**: Request to mention specific reference codes (F15)  
+2. **Red Flag**: The mention of the "Fraud prevention team of the Amsterdam police" sounds a bit off, because it would probably the "Fraud team" that would contact somebody to inform them they where victim of a fraud of suspect of fraud. A quick Google search showed most cases with a Fraud Prevention Team where cases of fraud.
+3. **Red Flag**: Request to mention specific reference codes (F15)  
    **Prevention**: Government agencies typically use official letterhead or formal communications for serious matters
-3. **Red Flag**: Automated phone system options designed to seem legitimate  
+4. **Red Flag**: Automated phone system options designed to seem legitimate  
    **Prevention**: Always call official police numbers found on government websites
-4. **Red Flag**: Use of fear and urgency to prompt immediate action  
+5. **Red Flag**: Use of fear and urgency to prompt immediate action  
    **Prevention**: Take time to verify the authenticity of any unexpected communication
 
 ---
