@@ -38,7 +38,8 @@ When calling the number, the following automated message plays in Dutch:
 2. **Documentation**: Recorded the automated message for evidence
 
 ## Status Updates
-- **Update [March 6, 2025]**: Identified carrier as Rinkel B.V., preparing to report
+- **Update [March 6, 2025]**: Identified carrier as Rinkel B.V., reported the fraud
+- **Update [March 6, 2025]**: Reported the impersonation to the Dutch authorities
 
 ## Key Indicators & Prevention
 1. **Red Flag**: Unexpected SMS about vague "incidents" requiring immediate callback  
