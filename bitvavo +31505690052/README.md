@@ -16,6 +16,8 @@ Victims receive text messages claiming to be from Bitvavo (a cryptocurrency exch
 **Translation**:
 > "You have successfully logged in from Antwerp at 16:09 on Wednesday, March 5. If this was NOT you, call us immediately at 0505690052 REF YD938A28"
 
+**Note**: The PBX system automatically discards anonymous calls, suggesting sophisticated call screening measures.
+
 ## Technical Details
 - **Phone Number**: 0505690052
 - **Carrier**: MaxiTEL Telecom BV
