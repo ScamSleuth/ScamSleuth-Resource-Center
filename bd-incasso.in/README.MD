@@ -1,5 +1,10 @@
 # Scam Report: bd-incasso.in  
+
 **Scam Date**: September 11, 2024  
+
+**Status**: Resolved
+
+---
 
 **Scam Summary**:  
 Victims receive a message advising to quickly pay a non-existing debt in order to prevent legal actions. The message reads:
