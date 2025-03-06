@@ -39,7 +39,8 @@ When calling the number, the following automated message plays in Dutch:
 **Note**: The PBX system automatically discards anonymous calls, suggesting sophisticated call screening measures.
 
 ## Mitigation Steps
-1. **MaxiTEL Telecom BV**: Report to carrier for fraudulent activities
+1. **MaxiTEL Telecom BV**: Reported to carrier for fraudulent activities
+2. **Inform Bitvavo**: Informed Bitvavo of this scam
 
 
 ## Status Updates
