@@ -1,5 +1,6 @@
 # Scam Report: Ledger Alert from Stockholm  
 **Scam Date**: February 2025
+**Status**: Resolved
 
 **Scam Summary**:  
 Victims receive an SMS claiming that their Ledger account was accessed from Stockholm, Sweden at 20:37 on 20-02-2025. The message reads:
