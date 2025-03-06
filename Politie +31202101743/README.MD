@@ -5,6 +5,8 @@
 
 **Status**: Active
 
+---
+
 ## Scam Summary
 Victims receive text messages claiming to be from Amsterdam Police regarding a "recent incident," urging them to call a specific phone number. The scammers have set up an automated phone system impersonating the "Amsterdam Fraud Prevention Team."
 
