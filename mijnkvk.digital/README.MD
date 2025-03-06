@@ -1,5 +1,10 @@
 # mijnkvk.digital
-# Phishing - November 2024
+
+** Phishing - November 2024
+
+**Status**: Resolved
+
+---
 
 ## Scam Summary:
 Victims received text messages from a Dutch mobile number (probably spoofed) impersonating the Dutch Chamber of Commerce (KVK) with the following message:
