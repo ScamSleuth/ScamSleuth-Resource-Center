@@ -1,5 +1,10 @@
 # belasting.mijn-schulden.com
-**Scam Date**: January, 2025  
+
+**Scam Date**: January, 2025 
+
+**Status**: Resolved
+
+---
 
 **Scam Summary**:  
 Victims receive a message advising to quickly pay a non-existing debt in order to prevent legal actions. The message reads:
