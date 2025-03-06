@@ -1,5 +1,8 @@
 # updatewallet-ledger.com Scam Report  
+
 **Phishing – February 2025**
+
+**Status**: Resolved
 
 ---
 
