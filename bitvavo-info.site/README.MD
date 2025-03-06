@@ -1,6 +1,10 @@
 # Bitvavo-info.site 
 ## Phishing - August 2024
 
+**Status**: Resolved
+
+---
+
 ### Scam Summary:
 Victims received alarming text messages claiming: 
 
