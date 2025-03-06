@@ -1,6 +1,10 @@
 # Scam Report: Ledger Device Connected to Different IP Address
+
 **Scam Date**: February 2025
+
 **Status**: Resolved
+
+---
 
 **Scam Summary**:  
 Victims recieve a text-message informing them the some strange behaviour has been seen with their Ledger account.
