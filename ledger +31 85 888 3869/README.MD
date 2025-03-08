@@ -1,72 +1,101 @@
 # Scam Report: Ledger Device Connected to Different IP Address
 
-**Scam Date**: February 2025
-
-**Status**: Resolved
+**Scam Date**: February 2025  
+**Status**: Resolved  
 
 ---
 
-**Scam Summary**:  
-Victims recieve a text-message informing them the some strange behaviour has been seen with their Ledger account.
+## Scam Summary  
+Victims receive a text message claiming that their Ledger device has been connected from an unusual IP address. The message urges them to call a phone number for verification, which leads to a fraudulent call center impersonating Ledger support.
 
 > "Er is zojuist een apparaat gekoppeld vanuit een ander IP adres als gebruikelijk. Heeft u zelf niks gedaan bel ons dan op +31 85 888 3869"
 
-**Translation**:  
+**Translation:**  
 > "A device has just been connected from a different IP address as usual. If you have not done anything yourself, call us on +31 85 888 3869"
 
 ---
+
 ## Source Analysis  
-- The message **impersonates Ledger**, a well-known hardware wallet provider.  
-- **Ledger does not send SMS alerts** for unauthorized access.  
-- The phone number (+31 85 888 3869) is a **VoIP number**, commonly used by scammers to operate anonymously.  
-- When calling the number, victims are directed through a **menu system** that mimics legitimate support.  
-- Eventually, a **scammer posing as Ledger support** answers, aiming to deceive the caller.  
+- **Impersonated Entity**: Ledger (hardware wallet provider)  
+- **Scammer's Contact Method**: SMS message  
+- **Website/Phone Number Used**: +31 85 888 3869 (VoIP number)  
+- **Hosting Provider/Registrar**: The phone number is registered with **Voxbone SA** (now Bandwidth.com)  
 
 ---
 
 ## Scam Tactics  
 
-### 1. Urgency & Fear  
-- The message instills panic by suggesting unauthorized access.  
-- Victims feel compelled to act immediately, **bypassing rational thinking**.  
+### 1. Impersonation & Fear Tactics  
+- The scam message falsely claims an unauthorized login to cause panic.  
+- Victims are urged to act immediately without verifying the legitimacy.  
 
-### 2. Fake Customer Support  
-- The provided phone number leads to **a VoIP-based scam call center**.  
-- Callers navigate a **fake menu** that makes the scam seem legitimate.  
-- A scammer posing as a Ledger representative eventually picks up.  
+### 2. Fraudulent Support Call  
+- The provided number leads to a **fake Ledger customer support system**.  
+- Callers are guided through a **convincing automated menu** to appear legitimate.  
+- A scammer posing as Ledger support eventually picks up the call.  
 
 ### 3. Social Engineering  
-- The scammer **pretends to verify identity** while fishing for sensitive details.  
+- The scammer **pretends to verify identity** while extracting sensitive details.  
 - They may ask for:  
-  - Ledger **Recovery Phrase** (which should never be shared).  
+  - **Ledger 24-word Recovery Phrase** (which should never be shared).  
   - **Ledger Live login credentials**.  
-  - **Remote access** to the victim's device.  
+  - **Remote access** to the victim’s computer or device.  
 
 ### 4. Account Takeover & Theft  
-- If the victim provides the **24-word recovery phrase**, the scammer can **immediately steal all crypto assets**.  
-- If login details are shared, they may attempt to **reset account credentials**.  
-- If remote access is granted, the scammer can **extract stored passwords and private keys**.  
+- If the victim provides their **24-word recovery phrase**, scammers can **immediately transfer all crypto assets**.  
+- If login details are shared, scammers can attempt to **reset the victim’s account credentials**.  
+- If remote access is granted, they can **extract passwords, seed phrases, and private keys**.  
 
 ---
 
-## How to Stay Safe  
-- **Never share your 24-word Ledger recovery phrase**—Ledger will never ask for it.  
-- **Do not call unknown phone numbers** claiming to be customer support.  
-- **Verify directly via Ledger's official website**: [https://www.ledger.com](https://www.ledger.com).  
-- **If you've already interacted with the scam, immediately move your assets to a new secure wallet**.  
-- **Report the scam number** to your local cybercrime authority.  
+## Actions Taken  
+
+### 1. Phone Number Reports  
+- The scam phone number **+31 85 888 3869** was checked via [FreeCarrierLookup.com](https://freecarrierlookup.com).  
+- Identified as a **VoIP number** from **Voxbone SA / Bandwidth.com**.  
+- A fraud report has been submitted to **Bandwidth.com** to disable the number.  
+
+### 2. Third-Party Reports  
+- Informed **[Ledger Support](https://support.ledger.com)** about the phishing attempt.  
+- Reported to **[Fraud Helpdesk Netherlands](https://www.fraudehelpdesk.nl/)** for awareness.  
+- Submitted case details to **[Europol Cybercrime Reporting](https://www.europol.europa.eu/report-a-crime)** for tracking.  
 
 ---
 
-This scam is a **clear phishing attempt targeting Ledger users**. Be cautious and inform others to prevent more victims.  
+## Follow-Up & Status Updates  
+- **February 2025**: Scam number flagged for abuse by telecom provider.  
+- **March 2025**: Number no longer active. Scam impact reduced.  
 
 ---
 
-## Reporting & Actions Taken  
-- The phone number **+31 85 888 3869** was checked via [FreeCarrierLookup.com](https://freecarrierlookup.com).  
-- The carrier was identified as **Voxbone SA**, which is now **Bandwidth.com**.  
-- A fraud report has been submitted to **Bandwidth.com** to flag and disable the number.  
-- Additional reports have been or should be filed with:  
-  - [Ledger Support](https://support.ledger.com) to inform them of the scam.  
-  - [Fraud Helpdesk Netherlands](https://www.fraudehelpdesk.nl/) for Dutch victims.  
-  - [Europol Cybercrime Reporting](https://www.europol.europa.eu/report-a-crime) for international reporting.  
+## Lessons & Takeaways  
+
+### 1. Red Flags & Prevention  
+- **Ledger does NOT send SMS alerts about unauthorized logins**. Always verify directly via [Ledger’s official website](https://www.ledger.com).  
+- **Phone numbers in scam messages are often VoIP-based** → Easily shut down but frequently changed.  
+- **Never share your Ledger 24-word recovery phrase** → It grants full access to your crypto assets.  
+
+### 2. How to Stay Safe  
+- **Do NOT trust unsolicited security alerts** via SMS or email.  
+- **Verify all customer service contacts via official sources**.  
+- **If you interacted with the scam, move assets to a new secure wallet ASAP**.  
+
+### 3. Ongoing Scam Awareness  
+For further insights on scam tactics and prevention:  
+- [**Social Media Scams**](../General/SocialMediaScam.md)  
+- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
+- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
+
+---
+
+## Get Involved  
+If you've encountered similar scams, report them to the appropriate authorities.  
+For a full list of fraud reporting platforms, visit:  
+
+🔹 [**How to Report Scams**](../General/GetInvolved.md)  
+
+By reporting scams, you help authorities track down criminals, prevent more victims, and contribute to shutting down fraudulent networks.
+
+---
+
+**Stay alert. Stay informed. Stay safe.**
