@@ -1,4 +1,4 @@
-# Amsterdam Police Impersonation Scam  
+# Scam Report: Amsterdam Police Impersonation Scam  
 
 **Scam Date**: March, 2025  
 **Status**: Resolved  
