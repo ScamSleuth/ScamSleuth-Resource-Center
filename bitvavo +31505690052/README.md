@@ -53,11 +53,6 @@ The PBX system automatically rejects anonymous calls, suggesting that the scamme
 
 ---
 
-## Follow-Up & Status Updates  
-- **[March 6, 2025]**: Identified carrier as MaxiTEL Telecom BV  
-
----
-
 ## Lessons & Takeaways  
 
 ### 1. Red Flags & Prevention  
