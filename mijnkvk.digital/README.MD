@@ -91,6 +91,14 @@ $bottoken = "6375100748:AAF7Jq7te1P0o8pDWEKgwtX87eSKp8uj0J4"; $chatid = "-467649
 
 ---
 
+## 3. Ongoing Scam Awareness  
+For further insights on how scams operate, check out:  
+- [**Social Media Scams**](../General/SocialMediaScam.md)  
+- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
+- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
+
+---
+
 ## Get Involved  
 If you’ve encountered similar scams, report them to the appropriate authorities.  
 
