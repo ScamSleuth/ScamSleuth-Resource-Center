@@ -40,10 +40,10 @@ The scammers impersonated **LEDGER** by sending fake security alerts, using urge
 
 ### 2. Fraudulent Website & Data Collection  
 Clicking the link led users to a **fake LEDGER website** where they were prompted to **select their wallet type**:  
-![updatewallet-ledger.com_index.jpeg](./updatewallet-ledger.com_index.jpeg)  
+![updatewallet-ledger.com_index.jpeg](updatewallet-ledger.com_index.jpeg)  
 
 Next, they were asked to **enter their recovery phrase**, which would grant scammers full access to their funds:  
-![updatewallet-ledger.com_recovery.jpeg](./updatewallet-ledger.com_recovery.jpeg)  
+![updatewallet-ledger.com_recovery.jpeg](updatewallet-ledger.com_recovery.jpeg)  
 
 ### 3. Fake Processing Animation  
 To appear legitimate, a **loading spinner** was displayed while sending the stolen recovery phrase to a Telegram group using the [secureScript.js](./secureScript.js) and `sendToTelegram.php`.  
