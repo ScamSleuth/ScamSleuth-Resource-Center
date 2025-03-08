@@ -1,56 +1,109 @@
-# Security-legder.live
+# Scam Report: Security-legder.live
 
-**Phishing** - August 2024
-
-**Status**: Resolved
+**Scam Date**: August 2024  
+**Status**: Resolved  
 
 ---
 
-## Scam Summary:
-Victims received alarming text messages claiming:
+## Scam Summary  
+Victims received alarming text messages claiming security issues with Ledger Live, urging them to take immediate action by clicking a fraudulent link. The scammers used phishing tactics to steal users' 12 or 24-word seed phrases under the pretense of "Import & Download Your Wallet App."
 
-**"[LEDGER] Beveiligingsproblemen ontdekt in Ledger Live. Voer snel een controle uit om te zien of uw apparaat risico loopt: [www.security-legder.live](http://www.security-legder.live)"**
+---
 
-Translation: "[LEDGER] Security issues detected in Ledger Live. Quickly perform a check to see if your device is at risk: [www.security-legder.live](http://www.security-legder.live)."
+## Scam Message (Example from Victim)  
+**"[LEDGER] Beveiligingsproblemen ontdekt in Ledger Live. Voer snel een controle uit om te zien of uw apparaat risico loopt: [www.security-legder.live](http://www.security-legder.live)"**  
 
-- **Source Analysis**: The origin of this text message is from CLICKSMS. The name might be spoofed or could be either a South African Text service (clicksms.co.za) or the "shady" service clicksms.net. The last one is a rabbit hole in itself that we're not going to delve into.
+**Translation:**  
+"[LEDGER] Security issues detected in Ledger Live. Quickly perform a check to see if your device is at risk: [www.security-legder.live](http://www.security-legder.live)."
 
-### What Happened:
-- **Phishing Tactics**: Clicking the link [www.security-legder.live](http://www.security-legder.live) on a mobile device redirects users to [https://boom1973.youcan.store](https://boom1973.youcan.store), which then redirects to [https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html). The fraudulent website prompts users to enter their 12 or 24-word seed phrase to "Import & Download Your Wallet App." The entered data is stored on the server as a JSON file before redirecting users to [https://www.ledger.com](https://www.ledger.com). The website has been [downloaded and stored](security-legder.live/rocketpool-rpl-shares-net-17598549.codeanyapp.com.zip) for future reference. The website is being flagged as malicious by most desktop browsers; however, mobile browsers may not have any issue accessing the site(s).
+---
 
-### Actions Taken:
-- **Domain and Hosting Reports**:
-  - **codeanyapp.com**:
-    - Registered by DomainsByProxy.com (GoDaddy). Reported to [GoDaddy](https://supportcenter.godaddy.com/abusereport).
-    - IP Address: 198.199.109.95, hosted by DigitalOcean LLC. Reported to [DigitalOcean LLC](https://www.digitalocean.com/company/contact/abuse).
-  - **youcan.store**:
-    - Registered by Namecheap. Reported to [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9196/5/how-and-where-can-i-file-abuse-complaints/)
-    - Hosting is behind CloudFlare. Reported to [CloudFlare](https://www.cloudflare.com/trust-hub/reporting-abuse/).
-    - The Nameservers it uses are at Amazon. Reported to [Amazon](https://aws.amazon.com/forms/report-abuse).
-  - **security-legder.live**:
-    - Registered by Namecheap. Reported to [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9196/5/how-and-where-can-i-file-abuse-complaints/).
-  - **ledger.com**:
-    - [Ledger.com](https://www.ledger.com/phishing-campaigns-status#help-us) has been informed.
-  - **Google Safebrowsing**:
-    - [Google Safebrowsing](https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en) has been informed.
+## Source Analysis  
+- **Impersonated Entity**: Ledger (cryptocurrency hardware wallet company)  
+- **Scammer's Contact Method**: SMS  
+- **Website Used**: [www.security-legder.live](http://www.security-legder.live)  
+- **Hosting Provider/Registrar**:  
+  - **security-legder.live** → Registered by Namecheap  
+  - **youcan.store** → Registered by Namecheap, behind Cloudflare  
+  - **codeanyapp.com** → Hosted by DigitalOcean, registered via GoDaddy  
 
-### Follow up 
-### Update #1:
-After Cloudflare took appropriate action by putting up a warning informing users that they were being redirected to a phishing site, the scammers removed https://boom1973.youcan.store from their redirects. Victims that visit [http://www.security-legder.live](http://www.security-legder.live) are now forwarded directly to [https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html). Unlike GoDaddy, Namecheap, and DigitalOcean LLC (who allow people to be victimized) the scammers swiftly acted within a day to continue their scam operation.
+---
 
-### Update #2:
-[www.security-legder.live](http://www.security-legder.live) is offline. [https://boom1973.youcan.store](https://boom1973.youcan.store) remains online but with a warning from CloudFlare. [https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html) is still active.
+## Scam Tactics  
 
-### Update #3:
-[https://boom1973.youcan.store](https://boom1973.youcan.store) The store has been suspended.
-[https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html) Has been taken down.
-This phishing site has effectively been halted.
+### 1. Impersonation & Fear Tactics  
+Scammers pretended to be Ledger, a trusted cryptocurrency security company, to induce fear and urgency in victims. The message implied immediate action was required to prevent security risks.
 
-### Lessons & Takeaways:
-- **Source Red Flags**: A text with an origin other than Ledger should have been an indicator that the information was untrustworthy.
-- **Domain Name Red Flags**: The domain name "security-legder.live" itself should have been a giveaway. The correct spelling is "Ledger," not "Legder," indicating a possible malicious site.
-- **Redirects and URL Analysis**: The multiple redirects and the final endpoint https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html should have signaled that this is not a legitimate Ledger site.
-- **Stay Alert**: Be cautious of unsolicited messages, especially those urging immediate action or containing suspicious links.
-- **Verify URLs**: Always check the legitimacy of URLs before entering sensitive information, particularly when receiving unexpected security alerts.
-- **Be Aware of Redirects**: Scammers may use multiple redirects to obscure the final destination and increase the likelihood of capturing your credentials.
-- **Report Scams**: If you encounter phishing attempts, report them to the domain registrars and hosting providers. Trace IP addresses to identify and address hosting sources for a thorough takedown process.
+### 2. Fraudulent Website or Payment Link  
+Clicking on [www.security-legder.live](http://www.security-legder.live) redirected users through multiple fraudulent websites before reaching a phishing page:  
+- **[https://boom1973.youcan.store](https://boom1973.youcan.store)**
+- **[https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html)**  
+
+The final site prompted users to enter their **12 or 24-word seed phrase**, which was then stored on a scammer-controlled server before redirecting victims to Ledger's real website.  
+
+### 3. Fake Customer Support or Chatbot  
+No chatbot or customer support was used. The scam relied entirely on automated SMS phishing (smishing).
+
+---
+
+## Actions Taken  
+
+### 1. Domain & Hosting Reports  
+- **[security-legder.live](http://www.security-legder.live)** → Reported to [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9196/5/how-and-where-can-i-file-abuse-complaints/)  
+- **[youcan.store](https://boom1973.youcan.store)** → Reported to [Cloudflare](https://www.cloudflare.com/trust-hub/reporting-abuse/) and [Amazon (Nameservers)](https://aws.amazon.com/forms/report-abuse)  
+- **[codeanyapp.com](https://rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html)** → Reported to [GoDaddy](https://supportcenter.godaddy.com/abusereport) and [DigitalOcean](https://www.digitalocean.com/company/contact/abuse)  
+- **Ledger.com** → Alerted through their phishing report page: [Ledger Phishing Campaigns Status](https://www.ledger.com/phishing-campaigns-status#help-us)  
+- **Google Safe Browsing** → Reported via [Google Safe Browsing](https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en)  
+
+---
+
+## Follow-Up & Status Updates  
+- **Update #1**:  
+  - Cloudflare put up a warning on **boom1973.youcan.store**, forcing scammers to remove it from their redirect chain.  
+  - Visitors to **security-legder.live** were now sent **directly** to the final phishing site.  
+
+- **Update #2**:  
+  - **security-legder.live** went offline.  
+  - **boom1973.youcan.store** remained online but displayed a Cloudflare warning.  
+  - **rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html** was still active.  
+
+- **Update #3**:  
+  - **boom1973.youcan.store** was suspended.  
+  - **rocketpool-rpl-shares-net-17598549.codeanyapp.com/atest/LG/connect.html** was taken down.  
+  - The phishing operation was effectively halted.  
+
+---
+
+## Lessons & Takeaways  
+
+### 1. Red Flags & Prevention  
+- **Unexpected security warnings via SMS** → Always verify through official sources.  
+- **Misspelled domain names** → "Legder" instead of "Ledger" was a clear indicator of fraud.  
+- **Multiple redirects** → Scammers use layered redirects to avoid immediate detection.  
+
+### 2. How to Stay Safe  
+- Never enter sensitive information on sites linked from unexpected messages.  
+- Use **official support channels** to verify any security alerts.  
+- Regularly **monitor and report** phishing scams to help protect the community.  
+
+---
+
+## Ongoing Scam Awareness  
+For further insights on how scams operate, check out:  
+- [**Social Media Scams**](../General/SocialMediaScam.md)  
+- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
+- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
+
+---
+
+## Get Involved  
+If you've encountered similar scams, report them to the appropriate authorities.  
+For a full list of fraud reporting platforms, visit:  
+
+🔹 [**How to Report Scams**](../General/GetInvolved.md)  
+
+By reporting scams, you help authorities track down criminals, prevent further victims, and contribute to shutting down fraudulent networks.  
+
+---
+
+**Stay alert. Stay informed. Stay safe.**
