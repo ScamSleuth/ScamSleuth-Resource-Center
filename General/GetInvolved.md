@@ -24,8 +24,7 @@ Scammers often use legitimate banking systems to commit fraud. These institution
 
 🔹 [**iDEAL Fraud Reporting**](https://www.ideal.nl/contact/) – If a scam involves an iDEAL payment request.  
 🔹 [**PayPal Fraud Reporting**](https://www.paypal.com/us/security/reporting-issues) – Report unauthorized transactions or scam sellers.  
-🔹 [**Bunq Fraud & Security**](https://www.bunq.com/help) – Report fraudulent transactions to Bunq.  
-🔹 [**Revolut Fraud Prevention**](https://www.revolut.com/help) – For scam-related Revolut transactions.  
+🔹 [**Bunq Fraud & Security**](https://www.bunq.com/help/report/fraud) – Report fraudulent transactions to Bunq.  
 🔹 [**Mastercard Fraud Detection**](https://www.mastercard.us/en-us/personal/get-support/fraud-and-security.html) – Report fraudulent Mastercard transactions.  
 🔹 [**Visa Fraud Prevention**](https://usa.visa.com/support/consumer/security.html) – Report unauthorized Visa transactions.  
 
