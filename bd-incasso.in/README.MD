@@ -103,7 +103,7 @@ For further insights on how scams operate, check out:
 If you've encountered similar scams, report them to the appropriate authorities.  
 For a full list of fraud reporting platforms, visit:  
 
-🔹 [**How to Report Scams**](../General/GetInvolved.md)  
+- [**How to Report Scams**](../General/GetInvolved.md)  
 
 By reporting scams, you help authorities track down criminals, prevent further victims, and contribute to shutting down fraudulent networks.  
 
