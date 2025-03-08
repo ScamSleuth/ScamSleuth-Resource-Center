@@ -66,7 +66,7 @@ Victims received text messages from a Dutch mobile number (likely spoofed) imper
 ## Follow-Up & Status Updates  
 
 ### Update #1:  
-After reports and flooding efforts, the Telegram bot was initially blocked, hindering data collection.  
+After reports and [flooding](./floodscript/flood.php) efforts, the Telegram bot was initially blocked, hindering data collection.  
 
 ### Update #2:  
 Ongoing discussions with NameSilo and CloudFlare to ensure the **complete takedown** of mijnkvk.digital.  
