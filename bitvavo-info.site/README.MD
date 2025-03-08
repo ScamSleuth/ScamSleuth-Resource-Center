@@ -6,14 +6,7 @@
 ---
 
 ## Scam Summary  
-Victims received alarming text messages claiming:  
-
-> "Het 2FA-telefoonnummer is aangepast. Dit nummer is niet langer in gebruik voor beveiligde toegang. Weet u hier niets van? Annuleer via https://bitvavo-info.site".  
-
-**Translation:**  
-> "Your 2FA phone number has been changed. This number is no longer in use for secure access. If you're unaware of this change, cancel via https://bitvavo-info.site."
-
-This phishing scam used **number spoofing** to make it appear as though the message originated from **Bitvavo**, a cryptocurrency platform, increasing its credibility.
+Scammers impersonated **Bitvavo**, a cryptocurrency platform, and sent fraudulent SMS messages claiming that the victim’s **2FA phone number** had been changed. The message urged recipients to visit a phishing site to "cancel" the change, leading them to a fraudulent login page designed to steal their credentials.  
 
 ---
 
@@ -40,7 +33,7 @@ This phishing scam used **number spoofing** to make it appear as though the mess
 ## Scam Tactics  
 
 ### 1. Impersonation & Fear Tactics  
-The scammers impersonated Bitvavo, a trusted financial platform, and used urgency by falsely claiming that the victim’s **2FA security** was compromised.  
+The scammers impersonated Bitvavo and created urgency by falsely claiming that the victim’s **2FA security** had been compromised.  
 
 ### 2. Fraudulent Website or Payment Link  
 Victims who clicked the phishing link were redirected to **bitvavosecurise.com**, a fraudulent website designed to steal Bitvavo login credentials.  
