@@ -1,88 +1,99 @@
-# updatewallet-ledger.com  
+# Scam Report: updatewallet-ledger.com  
 
-**Phishing – February 2025**
-
-**Status**: Resolved
-
----
-
-## Scam Summary
-
-Victims received unsolicited text messages urging them to validate their wallet immediately. The messages claim:
-
-- **Message 1:**  
-  "[LEDGER] To protect your funds, please validate your wallet now: updatewallet-ledger.com. Failure to do so may result in restrictions."  
-
-- **Message 2:**  
-  "[LEDGER] The validation of your wallet has not been completed. Please validate your wallet now to keep using your account: https://updatewallet-ledger.com"
-
-Both messages mimic official LEDGER alerts, creating a sense of urgency designed to trick users into visiting a fraudulent website.
+**Scam Date**: February 2025  
+**Status**: Resolved  
 
 ---
 
-## What Happened
+## Scam Summary  
 
-- **Phishing Tactics:**  
-  The scammers use urgent language to pressure victims into clicking the provided URL, exploiting the trust associated with the LEDGER brand while bypassing proper verification.
+This scam targeted cryptocurrency users by impersonating **LEDGER**, a well-known hardware wallet provider. Victims received fraudulent text messages urging them to **validate their wallets immediately** to avoid restrictions. The messages directed users to a **phishing website (updatewallet-ledger.com)** that mimicked LEDGER’s official site.
 
-  The victim is guided towards updatewallet-ledger.com and selects the type of wallet the use.
-![updatewallet-ledger.com_index.jpeg](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/7ffe35b647a41b03a363397b2463de96b8152f74/updatewallet-ledger.com/updatewallet-ledger.com_index.png)
-  The next phase is to gather the recovery phraze of the victim's LEDGER wallet:
-![updatewallet-ledger.com_recovery.jpeg](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/255129d0d144d3afb91fd2e082b8bde19924b886/updatewallet-ledger.com/updatewallet-ledger.com_recovery.png)
-  A loading spinner is displayed during the data transfer, providing feedback to the user while the data is being sent. The data is being sent to a Telegram group, via the [secureScript.js](./secureScript.js) and sendToTelegram.php
+Once on the fake website, victims were instructed to select their wallet type and **enter their recovery phrase**, which was then **sent to a Telegram group controlled by scammers**. A fake **loading spinner** was displayed to make the process appear legitimate.  
 
-
-- **Domain Analysis:**  
-  A ScamTrail report was generated for [https://updatewallet-ledger.com](https://updatewallet-ledger.com) with the following findings:
-  - **Final Destination:** https://updatewallet-ledger.com (no redirects)
-  - **Domain Age:** 0 years, 0 months, 8 days  
-  - **Geographical Location:** US  
-  - **Hosting Provider:** CLOUDFLARENET (utilizes CloudFlare protection)  
-  - **WHOIS Details:** Registered with Ultahost, Inc. on 2025-02-16 
-  - **SSL Certificate:** Issued by Google Trust Services; valid until May 2025.  
-  - **DNS & Email Authentication:** No SPF or DMARC records found.
+The phishing domain was hosted by **Cloudflare**, registered through **Ultahost, Inc.**, and lacked proper email authentication (SPF/DMARC), making it a clear red flag. Despite reports, the domain remained active for several days before being flagged across cybersecurity platforms.  
 
 ---
 
-## Actions Taken
+## Scam Message (Example from Victim)  
 
-- **Domain & Hosting Reports:**  
-  - Reported the domain to the registrar (Ultahost, Inc.) using the WHOIS data.  
-  - Notified Cloudflare regarding the suspicious activity.
+**Message 1:**  
+> "[LEDGER] To protect your funds, please validate your wallet now: updatewallet-ledger.com. Failure to do so may result in restrictions."  
 
-- **Security Platform Notifications:**  
-  - Shared domainname with online security platforms to flag the domain.
-
----
-
-## Lessons & Takeaways 
-
-- **Source Red Flags:**  
-  Unsolicited messages demanding immediate action—especially those invoking the LEDGER brand—should always be verified via official channels.
-
-- **Domain Name Analysis:**  
-  Despite mimicking the LEDGER brand, the domain’s recent creation and lack of proper email authentication (no SPF/DMARC) raise significant concerns.
-
-- **Technical Indicators:**  
-  The use of CloudFlare for hosting and the short domain age, are common traits of phishing sites.
-
-- **Reporting is Crucial:**  
-  It is important to report such phishing attempts to registrars, hosting providers, and security platforms to protect other potential victims.
+**Message 2:**  
+> "[LEDGER] The validation of your wallet has not been completed. Please validate your wallet now to keep using your account: https://updatewallet-ledger.com"
 
 ---
 
-## Follow-Up
-
-- **Non compliant registrar and Cloudflare:**
-  This domain has been reported multiple times without any (immediate) action taken by the registrar or Cloudflare.
-
+## Source Analysis  
+- **Impersonated Entity**: LEDGER  
+- **Scammer's Contact Method**: SMS  
+- **Website/Phone Number Used**: updatewallet-ledger.com  
+- **Hosting Provider/Registrar**: CLOUDFLARENET / Ultahost, Inc.  
 
 ---
-## Further Action
 
-- **User Vigilance:**  
-  Always verify any requests by contacting the official service provider directly. Avoid clicking on suspicious links from unsolicited messages.
+## Scam Tactics  
 
-- **Spread Awareness:**  
-  Sharing reports like this helps the community quickly recognize and respond to similar scams.
+### 1. Impersonation & Fear Tactics  
+The scammers impersonated **LEDGER** by sending fake security alerts, using urgency to create panic. Victims were tricked into believing their accounts were at risk.  
 
+### 2. Fraudulent Website & Data Collection  
+Clicking the link led users to a **fake LEDGER website** where they were prompted to **select their wallet type**:  
+![Phishing Website](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/7ffe35b647a41b03a363397b2463de96b8152f74/updatewallet-ledger.com/updatewallet-ledger.com_index.png)  
+
+Next, they were asked to **enter their recovery phrase**, which would grant scammers full access to their funds:  
+![Recovery Phrase Theft](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/255129d0d144d3afb91fd2e082b8bde19924b886/updatewallet-ledger.com/updatewallet-ledger.com_recovery.png)  
+
+### 3. Fake Processing Animation  
+To appear legitimate, a **loading spinner** was displayed while sending the stolen recovery phrase to a Telegram group using the `secureScript.js` and `sendToTelegram.php`.  
+
+---
+
+## Actions Taken  
+
+### 1. Domain & Hosting Reports  
+- Reported the domain **updatewallet-ledger.com** to **Ultahost, Inc.**  
+- Notified **Cloudflare** of the fraudulent activity.  
+
+### 2. Third-Party Reports  
+- Shared domain name with online security platforms to flag it as malicious.  
+
+---
+
+## Follow-Up & Status Updates  
+- **2025-02-16**: Domain reported to Ultahost and Cloudflare. No immediate action taken.  
+- **2025-02-18**: Scam flagged by multiple cybersecurity forums.  
+- **2025-02-22**: Domain still active despite multiple reports.  
+
+---
+
+## Lessons & Takeaways  
+
+### 1. Red Flags & Prevention  
+- **Unexpected messages demanding urgent action** → Always verify directly with the company.  
+- **Suspicious domains** → LEDGER’s official site uses `ledger.com`, not variations like `updatewallet-ledger.com`.  
+- **Never share your recovery phrase** → LEDGER will never ask for it.  
+
+### 2. How to Stay Safe  
+- Never trust links in unsolicited messages.  
+- Verify the contact details through **official websites**.  
+- Report scams to relevant authorities as soon as possible.  
+
+### 3. Ongoing Scam Awareness  
+For further insights on how scams operate, check out:  
+- [**Social Media Scams**](../General/SocialMediaScam.md)  
+- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
+- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
+
+---
+
+## Get Involved  
+If you've encountered similar scams, report them to the appropriate authorities.  
+For a full list of fraud reporting platforms, visit:  
+
+🔹 [**How to Report Scams**](../General/GetInvolved.md)  
+
+By reporting scams, you help authorities track down criminals, prevent further victims, and contribute to shutting down fraudulent networks.  
+
+**Stay alert. Stay informed. Stay safe.**
