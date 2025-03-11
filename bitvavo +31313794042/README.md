@@ -1,7 +1,7 @@
 # Scam Report: Bitvavo Unauthorized Login Alert Scam
 
 **Scam Date**: March, 2025  
-**Status**: Active  
+**Status**: Resolved  
 
 ---
 
