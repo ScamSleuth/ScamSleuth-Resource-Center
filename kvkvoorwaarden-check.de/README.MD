@@ -100,6 +100,7 @@ This technique effectively poisons the scammers' data collection and introduces 
 * **April 12, 2025**: Initial scam detection and analysis
 * **April 12, 2025**: Deployed countermeasure script to flood scammer's Telegram channel with fake data
 * **April 13, 2025**: After around 2000 fake entries the bot has been kicked from the group, this could just be temporarily.
+* **April 13, 2025**: Reported the scam at [Meld Misdaad Anoniem.nl](https://meldmisdaadanoniem.nl)
 * **Current Status**: Active scam; although the site isn't sending data to the Telegram group, the site is still active and the bot can be redeployed or a new one can be generated.
 
 ## Lessons & Takeaways
