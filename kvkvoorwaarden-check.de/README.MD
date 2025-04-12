@@ -60,7 +60,7 @@ This scam operation impersonates the Dutch Chamber of Commerce (Kamer van Koopha
    * The script appears to capture the victim's IP address and includes it in the data sent to Telegram, making it even more dangerous for identity theft purposes
 
 5. **Connection to Previous KVK Scams**
-   This scam shows strong resemblance to a previously documented scam at ["mijnkvk.digital"](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/mijnkvk.digital).
+   * This scam shows strong resemblance to a previously documented scam at ["mijnkvk.digital"](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/mijnkvk.digital).
 
 ## Countermeasures
 To disrupt the scammers' operation, a Python script has been developed to flood their Telegram channel with fake but realistic-looking Dutch personal data. This approach has several advantages:
