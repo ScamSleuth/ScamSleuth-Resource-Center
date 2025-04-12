@@ -90,7 +90,6 @@ This technique effectively poisons the scammers' data collection and introduces 
 2. **Third-Party Reports**
    * Inform the legitimate KVK (kvk.nl) about the impersonation
    * Report to Dutch cybercrime authorities (Fraudehelpdesk.nl)
-   * Report to the National Cyber Security Center (NCSC)
 
 3. **Telegram Bot Reporting**
    * Report the Telegram bot (token: 7093117111:AAEbFu4cFcrrEeFjhdjuy-pl5h0LgKokG4g) for abuse
