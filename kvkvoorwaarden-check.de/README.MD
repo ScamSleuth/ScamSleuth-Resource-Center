@@ -1,5 +1,6 @@
 # Scam Report: kvkvoorwaarden-check.de
-**Scam Date**: April, 2025 **Status**: ACTIVE
+**Scam Date**: April, 2025 
+**Status**: ACTIVE
 
 ## Scam Summary
 This scam operation impersonates the Dutch Chamber of Commerce (Kamer van Koophandel or KVK) to trick business owners into visiting a fraudulent website. Scammers use SMS messages claiming recipients must update their business information by a specific deadline, likely to harvest sensitive business or personal data.
