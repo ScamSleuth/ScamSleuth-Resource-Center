@@ -2,6 +2,30 @@
 
 This document contains the results of commands used to investigate and disrupt scammer operations on Telegram. The information is presented as a series of API commands and their corresponding responses to show the investigation process.
 
+## Analysis of Scammer Profile Disclaimer
+
+The scammer account used a common disclaimer text in their profile bio (dated September 27, 2022) that attempts to avoid legal responsibility:
+
+![Telegram disclaimer screenshot](bio.jpg)
+
+### Key Elements in the Disclaimer:
+
+1. **Denial of Association**: "I do not have any involvement with any group/post or with the people in it, I do not know how I am here, I do not support any actions by the members of any group/post."
+
+2. **Claims of Innocent Purpose**: "I am here for only entertainment and educational purposes and i don't support any illegal activities."
+
+3. **Attempted Legal Protection**: References to legal statutes (UCC 1-308-1 1 308-103) and the Rome Statute that have no actual application in this context.
+
+4. **False Privacy Claims**: "TELEGRAM DOES NOT HAVE MY PERMISSION TO SHARE PHOTOS OR MESSAGES."
+
+### Analysis:
+
+This type of disclaimer is commonly used by individuals engaged in questionable or illegal activities in an attempt to shield themselves from legal consequences. However, such disclaimers have no legal validity when the account is actively participating in or facilitating illegal activities.
+
+The reference to specific legal codes is a common tactic to appear legally sophisticated, but the cited codes are either irrelevant or misapplied. The UCC (Uniform Commercial Code) references and Rome Statute mention are legal gibberish in this context, typical of sovereign citizen-style attempts to avoid legal responsibility.
+
+The profile had 162,999 views at the time of the screenshot, indicating potentially significant reach for whatever activities they were engaged in.
+
 ## Initial Reconnaissance
 
 ### Command
