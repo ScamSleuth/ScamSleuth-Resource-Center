@@ -1,5 +1,6 @@
 # Scam Report: kvkvoorwaarden-check.de
-**Scam Date**: April, 2025 
+**Scam Date**: April, 2025
+
 **Status**: ACTIVE
 
 ## Scam Summary
