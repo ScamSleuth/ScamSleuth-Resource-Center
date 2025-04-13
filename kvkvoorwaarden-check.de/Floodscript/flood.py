@@ -12,7 +12,8 @@ fake = Faker('nl_NL')
 # Telegram bot tokens
 bot_tokens = [
     "7093117111:AAEbFu4cFcrrEeFjhdjuy-pl5h0LgKokG4g",
-    "7540549509:AAF2sa9oNEH57k4y_D5TxkXyJT_g6XVLnK8"
+    "7540549509:AAF2sa9oNEH57k4y_D5TxkXyJT_g6XVLnK8",
+    "7995773919:AAFab9J6ejAPE8f8kxH7tM4_GteRnphiQ-Q"
 ]
 current_token_index = 1  # Start with the second token as it's the one currently uncommented
 chatid = "-1002643349602"
