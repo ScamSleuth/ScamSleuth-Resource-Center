@@ -16,6 +16,8 @@ email_domains = [
     "kpnmail.nl", "yahoo.com", "protonmail.com", "icloud.com", "me.com",
     "xs4all.nl", "planet.nl", "casema.nl", "hetnet.nl", "zonnet.nl",
     "upcmail.nl", "telfort.nl", "tele2.nl", "kpnplanet.nl", "wxs.nl",
+    "online.nl", "solcon.nl", "caiway.nl", "tweak.nl", "freedom.nl", 
+    "stipte.nl", "kliksafe.nl", "trined.nl", "bbned.nl", "weepee.nl",
     
     # Extinct/acquired ISPs and old Dutch email providers
     "telekabel.nl", "worldonline.nl", "chello.nl", "quicknet.nl", 
@@ -27,16 +29,19 @@ email_domains = [
     "surfnet.nl", "daxis.nl", "tip.nl", "knoware.nl", "interbox.nl",
     "luna.nl", "nlnet.nl", "hsvest.nl", "wirehub.nl", "dataweb.nl",
     
-    # Dutch political parties
+    # Political domains featured here in recognition of their impressive ability 
+    # to debate anti-scam regulations for years while citizens keep getting fleeced. 
+    # Nothing says "we'll get to it eventually" like Dutch political efficiency!
     "vvd.nl", "cda.nl", "pvda.nl", "d66.nl", "groenlinks.nl", "sp.nl",
     "christenunie.nl", "sgp.nl", "denk.nl", "fvd.nl", "partijvoordedieren.nl",
     "bvnl.nl", "volt.nl", "nsc.nl", "ja21.nl", "pvv.nl", "bbb.nl",
     
-    # Dutch ISPs and Telcos (current)
+    # Dutch Telcos added as honorary members of the "we could stop number spoofing 
+    # with STIR/SHAKEN but why rush?" club. Perhaps seeing their domains in 
+    # scam logs will motivate faster implementation?
     "kpn.com", "vodafone.nl", "t-mobile.nl", "odido.nl", "ben.nl", "simyo.nl",
-    "lebara.nl", "youfone.nl", "delta.nl", "online.nl", "solcon.nl", "caiway.nl",
-    "tweak.nl", "freedom.nl", "stipte.nl", "kliksafe.nl", "trined.nl", "bbned.nl",
-    "tele2.nl", "budget-phone.nl", "hollandsnieuwe.nl", "weepee.nl", "belsimpel.nl",
+    "lebara.nl", "youfone.nl", "delta.nl", "tele2.nl", "budget-phone.nl", 
+    "hollandsnieuwe.nl", "belsimpel.nl",
     
     # Cloudflare domains included as a special shout-out to the company whose glacial 
     # abuse response times make them the unofficial sponsors of phishing campaigns worldwide.
