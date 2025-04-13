@@ -15,7 +15,7 @@ This scam operation impersonates the Dutch Chamber of Commerce (Kamer van Koopha
 ## Source Analysis
 * **Impersonated Entity**: Kamer van Koophandel (Dutch Chamber of Commerce)
 * **Scammer's Contact Method**: SMS
-* **Website Used**: https://kvkvoorwaarden-check.de
+* **Website Used**: https://kvkvoorwaarden-check.de (archived under: ./Website)
 * **Hosting Provider/Registrar**: CLOUDFLARENET-EU
 
 ## Scam Tactics
