@@ -307,6 +307,8 @@ def display_submission(person_data, success=True):
     print(f"  {Colors.BOLD}IBAN:{Colors.ENDC} {Colors.YELLOW}{person_data['iban']}{Colors.ENDC}")
     
     print()
+    
+    # We don't log the submitted data to the log file
 
 def send_message_to_telegram(message, person_data):
     """
@@ -331,6 +333,7 @@ def send_message_to_telegram(message, person_data):
         # Check for 403 error or other status codes
         if response.status_code == 403:
             print(f" {Colors.RED}ERROR 403{Colors.ENDC}")
+            logging.warning(f"Received 403 error with token {current_token[:8]}... Switching tokens")
             record_error("403_forbidden")
             
             # Switch to the other token
@@ -350,6 +353,7 @@ def send_message_to_telegram(message, person_data):
                 return True
             else:
                 print(f" {Colors.RED}ERROR {new_response.status_code}{Colors.ENDC}")
+                logging.warning(f"Second attempt failed with status code {new_response.status_code}")
                 record_error(f"second_attempt_{new_response.status_code}")
                 display_submission(person_data, success=False)
                 return False
@@ -362,12 +366,14 @@ def send_message_to_telegram(message, person_data):
                 return True
             else:
                 print(f" {Colors.RED}ERROR {response.status_code}{Colors.ENDC}")
+                logging.warning(f"First attempt failed with status code {response.status_code}")
                 record_error(f"first_attempt_{response.status_code}")
                 display_submission(person_data, success=False)
                 return False
             
     except Exception as e:
         print(f" {Colors.RED}EXCEPTION: {str(e)[:50]}{Colors.ENDC}")
+        logging.error(f"Exception while sending message: {e}")
         record_error(f"exception_{str(e)[:30]}")
         display_submission(person_data, success=False)
         return False
@@ -379,9 +385,9 @@ def setup_logging():
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
     
-    # Create a log file with timestamp in the filename
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    log_file = os.path.join(log_dir, f"anti_scam_bot_{timestamp}.log")
+    # Create a daily log file (one per day)
+    today = datetime.now().strftime("%Y%m%d")
+    log_file = os.path.join(log_dir, f"anti_scam_bot_{today}.log")
     
     # Configure logging - only for errors and critical issues
     logging.basicConfig(
@@ -393,6 +399,7 @@ def setup_logging():
         ]
     )
     
+    print(f"{Colors.CYAN}Log file: {log_file}{Colors.ENDC}")
     return log_file
 
 def main():
@@ -401,6 +408,9 @@ def main():
     print(f"{Colors.BOLD}Using chat ID:{Colors.ENDC} {chatid}")
     print(f"{Colors.BOLD}Message frequency:{Colors.ENDC} {MIN_WAIT_TIME}-{MAX_WAIT_TIME} seconds")
     print(f"{Colors.BOLD}Available tokens:{Colors.ENDC} {len(bot_tokens)}")
+    
+    today = datetime.now().strftime("%Y-%m-%d")
+    print(f"{Colors.BOLD}Date:{Colors.ENDC} {today}")
     print()
     
     # Load stats data at startup
