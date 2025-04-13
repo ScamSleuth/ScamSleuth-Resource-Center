@@ -8,7 +8,7 @@ fake = Faker('nl_NL')
 
 # Telegram bot details - same as the website
 # bottoken = "7093117111:AAEbFu4cFcrrEeFjhdjuy-pl5h0LgKokG4g"
-# bottoken = "7540549509:AAF2sa9oNEH57k4y_D5TxkXyJT_g6XVLnK8"
+bottoken = "7540549509:AAF2sa9oNEH57k4y_D5TxkXyJT_g6XVLnK8"
 chatid = "-1002643349602"
 
 def main():
