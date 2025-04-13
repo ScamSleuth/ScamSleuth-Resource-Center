@@ -16,7 +16,7 @@ Scamming is a trillion-dollar industry with organized networks operating across 
 - Scammers create fake invoices or pretend to be **bank representatives**.
 - Victims are tricked into **making payments or sharing OTP codes**.
 
-📌 **Example**: Scammers used **Bunq** accounts to process fraudulent payments, as Bunq lacks 24/7 fraud monitoring.
+📌 **Example**: Scammers used **Bunq** accounts to process fraudulent payments, as Bunq has a different opinion on how to protect the public.
 
 ### 3. **Cryptocurrency & Investment Fraud**
 - Fake investment platforms lure victims with **high returns and celebrity endorsements**.
