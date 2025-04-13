@@ -53,8 +53,10 @@ def main():
         # Output the response for debugging purposes
         print(f"Response: {response.text}")
         
-        # Wait for a few seconds before generating the next entry
-        time.sleep(5)
+        # Generate a random wait time between 5 and 90 seconds
+        wait_time = random.randint(5, 90)
+        print(f"Waiting {wait_time} seconds before sending next message...")
+        time.sleep(wait_time)
 
 if __name__ == "__main__":
     main()
