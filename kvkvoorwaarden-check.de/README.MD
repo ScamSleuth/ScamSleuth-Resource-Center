@@ -108,6 +108,7 @@ This technique effectively poisons the scammers' data collection and introduces 
 * **April 13, 2025**: Deployed countermeasure script again
 * **April 13, 2025**: Reported the site to the [Bundeskriminalamt](https://www.bka.de/EN/Service/Contact/contact_node.html)
 * **April 13, 2025**: Reported the site to [Microsoft's MSRC](https://msrc.microsoft.com/report/)
+* **April 13, 2025**: After around 2100 fake entries the bot has been kicked from the group, this could just be temporarily
 * **Current Status**: Active scam
 
 ## Lessons & Takeaways
