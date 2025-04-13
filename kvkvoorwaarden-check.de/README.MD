@@ -111,6 +111,7 @@ This technique effectively poisons the scammers' data collection and introduces 
 * **April 13, 2025**: After around 2100 fake entries the bot has been kicked from the group, this could just be temporarily
 * **April 13, 2025**: The bottoken on the website was reverted back to: 7093117111:AAEbFu4cFcrrEeFjhdjuy-pl5h0LgKokG4g
 * **April 13, 2025**: Changed the flood script to address both bots
+* **April 13, 2025**: The bottokken has changed from 7093117111:AAEbFu4cFcrrEeFjhdjuy-pl5h0LgKokG4g to 7995773919:AAFab9J6ejAPE8f8kxH7tM4_GteRnphiQ-Q
 * **Current Status**: Active scam
 
 ## Lessons & Takeaways
