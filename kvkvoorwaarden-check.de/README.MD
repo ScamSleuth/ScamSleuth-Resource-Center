@@ -107,6 +107,7 @@ This technique effectively poisons the scammers' data collection and introduces 
 * **April 13, 2025**: The bottokken has changed from 7093117111:AAEbFu4cFcrrEeFjhdjuy-pl5h0LgKokG4g to 7540549509:AAF2sa9oNEH57k4y_D5TxkXyJT_g6XVLnK8
 * **April 13, 2025**: Deployed countermeasure script again
 * **April 13, 2025**: Reported the site to the [Bundeskriminalamt](https://www.bka.de/EN/Service/Contact/contact_node.html)
+* **April 13, 2025**: Reported the site to [Microsoft's MSRC](https://msrc.microsoft.com/report/)
 * **Current Status**: Active scam
 
 ## Lessons & Takeaways
