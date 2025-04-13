@@ -3,8 +3,25 @@ import requests
 import random
 import logging
 import os
+import json
+import colorama
 from datetime import datetime
 from faker import Faker
+
+# Initialize colorama for colored terminal output
+colorama.init()
+
+# Terminal colors
+class Colors:
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    CYAN = '\033[96m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
 
 # Create a Faker instance with Dutch locale
 fake = Faker('nl_NL')
@@ -16,11 +33,14 @@ bot_tokens = [
     "7995773919:AAFab9J6ejAPE8f8kxH7tM4_GteRnphiQ-Q"
 ]
 current_token_index = 1  # Start with the second token as it's the one currently uncommented
-chatid = "-1002643349602"
+chatid = "-1002643349602"  # Fixed the stray 'd' character
 
 # Message frequency configuration (in seconds)
 MIN_WAIT_TIME = 1  # Minimum wait time between messages
 MAX_WAIT_TIME = 10  # Maximum wait time between messages
+
+# Stats file configuration
+STATS_FILE = "stats.json"  # File to store submission statistics
 
 # Email domains list
 email_domains = [
@@ -123,13 +143,179 @@ def generate_dutch_ip():
     
     return f"{octet1}.{octet2}.{octet3}.{octet4}"
 
-def send_message_to_telegram(message):
+def load_stats():
+    """Load stats data from file or create new if doesn't exist"""
+    if os.path.exists(STATS_FILE):
+        try:
+            with open(STATS_FILE, 'r') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError) as e:
+            logging.error(f"Error loading stats file: {e}")
+            # Return default stats if file is corrupted
+            return create_default_stats()
+    else:
+        # Return default stats if file doesn't exist
+        return create_default_stats()
+
+def create_default_stats():
+    """Create a default stats object with all required fields"""
+    return {
+        "total_submissions": 0,
+        "tokens": {},
+        "start_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "last_submission_time": None,
+        "sessions": {
+            "count": 0,
+            "current_session_start": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "current_session_submissions": 0
+        },
+        "errors": {
+            "total": 0,
+            "by_type": {}
+        },
+        "performance": {
+            "fastest_submission": None,
+            "slowest_submission": None,
+            "average_submission_time": 0
+        }
+    }
+
+def update_stats(token, submission_time=None):
+    """Update the stats with a successful submission"""
+    try:
+        # Calculate submission time if not provided
+        if submission_time is None:
+            submission_time = time.time() - update_stats.last_attempt_time if hasattr(update_stats, 'last_attempt_time') else 0
+        
+        # Store current time for next calculation
+        update_stats.last_attempt_time = time.time()
+        
+        # Load current stats data
+        stats_data = load_stats()
+        
+        # Increment total count
+        stats_data["total_submissions"] += 1
+        
+        # Update session information
+        stats_data["sessions"]["current_session_submissions"] += 1
+        
+        # Initialize token stats if this is a new token
+        token_key = token[:8]  # Use first 8 chars of token as key for privacy
+        if token_key not in stats_data["tokens"]:
+            stats_data["tokens"][token_key] = {
+                "submissions": 0,
+                "first_used": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                "last_used": None,
+                "errors": 0
+            }
+            
+        # Increment token-specific counter
+        stats_data["tokens"][token_key]["submissions"] += 1
+        stats_data["tokens"][token_key]["last_used"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # Update timestamps
+        stats_data["last_submission_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # Update performance metrics if we have a valid submission time
+        if submission_time > 0:
+            # Calculate average (handle first submission case)
+            current_avg = stats_data["performance"]["average_submission_time"]
+            current_total = stats_data["total_submissions"]
+            
+            if current_avg == 0:
+                stats_data["performance"]["average_submission_time"] = submission_time
+            else:
+                # Calculate new average excluding the current submission
+                existing_sum = current_avg * (current_total - 1)
+                # Add current submission and calculate new average
+                stats_data["performance"]["average_submission_time"] = (existing_sum + submission_time) / current_total
+            
+            # Update fastest/slowest submission times
+            if stats_data["performance"]["fastest_submission"] is None or submission_time < stats_data["performance"]["fastest_submission"]:
+                stats_data["performance"]["fastest_submission"] = submission_time
+                
+            if stats_data["performance"]["slowest_submission"] is None or submission_time > stats_data["performance"]["slowest_submission"]:
+                stats_data["performance"]["slowest_submission"] = submission_time
+        
+        # Write updated stats back to file
+        with open(STATS_FILE, 'w') as f:
+            json.dump(stats_data, f, indent=2)
+            
+    except Exception as e:
+        logging.error(f"Error updating stats: {e}")
+
+def record_error(error_type):
+    """Record an error in the stats file"""
+    try:
+        # Load current stats
+        stats_data = load_stats()
+        
+        # Increment total errors
+        stats_data["errors"]["total"] += 1
+        
+        # Initialize error type counter if new
+        if error_type not in stats_data["errors"]["by_type"]:
+            stats_data["errors"]["by_type"][error_type] = 0
+            
+        # Increment error type counter
+        stats_data["errors"]["by_type"][error_type] += 1
+        
+        # Write updated stats back to file
+        with open(STATS_FILE, 'w') as f:
+            json.dump(stats_data, f, indent=2)
+            
+    except Exception as e:
+        logging.error(f"Error recording error stat: {e}")
+
+def clear_screen():
+    """Clear the terminal screen"""
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def print_header(stats_data):
+    """Print dashboard header with key statistics"""
+    total = stats_data.get("total_submissions", 0)
+    session_submissions = stats_data.get("sessions", {}).get("current_session_submissions", 0)
+    
+    print(f"{Colors.BOLD}{Colors.HEADER}{'=' * 60}{Colors.ENDC}")
+    print(f"{Colors.BOLD}{Colors.HEADER}               ANTI-SCAM BOT LIVE DASHBOARD{Colors.ENDC}")
+    print(f"{Colors.BOLD}{Colors.HEADER}{'=' * 60}{Colors.ENDC}")
+    print(f"{Colors.BOLD}Total submissions:{Colors.ENDC} {Colors.GREEN}{total}{Colors.ENDC}")
+    print(f"{Colors.BOLD}Current session:{Colors.ENDC} {Colors.GREEN}{session_submissions}{Colors.ENDC}")
+    print(f"{Colors.BOLD}Current time:{Colors.ENDC} {Colors.YELLOW}{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}{Colors.ENDC}")
+    print(f"{Colors.BOLD}Current token:{Colors.ENDC} {Colors.CYAN}{bot_tokens[current_token_index][:8]}...{Colors.ENDC}")
+    print(f"{Colors.BOLD}{Colors.HEADER}{'=' * 60}{Colors.ENDC}")
+    print()
+
+def display_submission(person_data, success=True):
+    """Display the submitted fake person data with color formatting"""
+    # Display basic info
+    print(f"{Colors.BOLD}{Colors.BLUE}➤ Submitted data{Colors.ENDC} ({Colors.GREEN}success{Colors.ENDC if success else Colors.RED + 'failed' + Colors.ENDC}):")
+    
+    # Name and Identity
+    print(f"  {Colors.BOLD}Name:{Colors.ENDC} {Colors.CYAN}{person_data['first_name']} {person_data['last_name']}{Colors.ENDC}")
+    print(f"  {Colors.BOLD}DoB:{Colors.ENDC} {person_data['dob']}")
+    
+    # Contact info
+    print(f"  {Colors.BOLD}Email:{Colors.ENDC} {Colors.YELLOW}{person_data['email']}{Colors.ENDC}")
+    print(f"  {Colors.BOLD}Phone:{Colors.ENDC} {person_data['gsm_number']}")
+    
+    # Location
+    print(f"  {Colors.BOLD}Address:{Colors.ENDC} {person_data['address']}")
+    print(f"  {Colors.BOLD}IP:{Colors.ENDC} {Colors.GREEN}{person_data['ip_address']}{Colors.ENDC}")
+    
+    # Financial
+    print(f"  {Colors.BOLD}IBAN:{Colors.ENDC} {Colors.YELLOW}{person_data['iban']}{Colors.ENDC}")
+    
+    print()
+
+def send_message_to_telegram(message, person_data):
     """
     Send a message to Telegram and handle potential errors.
     Returns True if message was sent successfully, False otherwise.
     """
     global current_token_index
     
+    start_time = time.time()
     current_token = bot_tokens[current_token_index]
     url = f"https://api.telegram.org/bot{current_token}/sendMessage"
     
@@ -139,39 +325,51 @@ def send_message_to_telegram(message):
             'text': message
         }
         
-        logging.info(f"Sending message using token index {current_token_index}")
+        print(f"{Colors.BOLD}Sending with token {current_token[:8]}...{Colors.ENDC}", end="", flush=True)
         response = requests.post(url, data=payload)
         
         # Check for 403 error or other status codes
         if response.status_code == 403:
-            logging.warning(f"Received 403 error with token {current_token[:8]}... Switching tokens...")
+            print(f" {Colors.RED}ERROR 403{Colors.ENDC}")
+            record_error("403_forbidden")
+            
             # Switch to the other token
             current_token_index = (current_token_index + 1) % len(bot_tokens)
-            logging.info(f"Switched to token index: {current_token_index} (token starts with {bot_tokens[current_token_index][:8]}...)")
+            print(f"{Colors.YELLOW}Switching to token {bot_tokens[current_token_index][:8]}...{Colors.ENDC}", end="", flush=True)
             
             # Try again with the new token
             new_token = bot_tokens[current_token_index]
             new_url = f"https://api.telegram.org/bot{new_token}/sendMessage"
             new_response = requests.post(new_url, data=payload)
             
-            logging.info(f"New response status: {new_response.status_code}")
-            
-            # Log a truncated version of the response for security
-            response_preview = new_response.text[:100] + "..." if len(new_response.text) > 100 else new_response.text
-            logging.info(f"New response preview: {response_preview}")
-            
-            return new_response.status_code == 200
+            if new_response.status_code == 200:
+                print(f" {Colors.GREEN}SUCCESS{Colors.ENDC}")
+                submission_time = time.time() - start_time
+                update_stats(new_token, submission_time)
+                display_submission(person_data, success=True)
+                return True
+            else:
+                print(f" {Colors.RED}ERROR {new_response.status_code}{Colors.ENDC}")
+                record_error(f"second_attempt_{new_response.status_code}")
+                display_submission(person_data, success=False)
+                return False
         else:
-            logging.info(f"Response status: {response.status_code}")
-            
-            # Log a truncated version of the response for security
-            response_preview = response.text[:100] + "..." if len(response.text) > 100 else response.text
-            logging.info(f"Response preview: {response_preview}")
-            
-            return response.status_code == 200
+            if response.status_code == 200:
+                print(f" {Colors.GREEN}SUCCESS{Colors.ENDC}")
+                submission_time = time.time() - start_time
+                update_stats(current_token, submission_time)
+                display_submission(person_data, success=True)
+                return True
+            else:
+                print(f" {Colors.RED}ERROR {response.status_code}{Colors.ENDC}")
+                record_error(f"first_attempt_{response.status_code}")
+                display_submission(person_data, success=False)
+                return False
             
     except Exception as e:
-        logging.error(f"Error sending message: {e}")
+        print(f" {Colors.RED}EXCEPTION: {str(e)[:50]}{Colors.ENDC}")
+        record_error(f"exception_{str(e)[:30]}")
+        display_submission(person_data, success=False)
         return False
 
 # Set up logging
@@ -185,30 +383,51 @@ def setup_logging():
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     log_file = os.path.join(log_dir, f"anti_scam_bot_{timestamp}.log")
     
-    # Configure logging
+    # Configure logging - only for errors and critical issues
     logging.basicConfig(
-        level=logging.INFO,
+        level=logging.WARNING,  # Only log warnings and above to file
         format='%(asctime)s - %(levelname)s - %(message)s',
         handlers=[
-            logging.FileHandler(log_file),
-            logging.StreamHandler()  # Also output to console
+            logging.FileHandler(log_file)
+            # No StreamHandler to avoid duplicating on console
         ]
     )
     
-    logging.info("Anti-scam bot started")
-    logging.info(f"Log file created at: {log_file}")
     return log_file
 
 def main():
     log_file = setup_logging()
-    logging.info(f"Using chat ID: {chatid}")
-    logging.info(f"Initial bot token index: {current_token_index}")
-    logging.info(f"Message frequency configured between {MIN_WAIT_TIME}-{MAX_WAIT_TIME} seconds")
+    print(f"{Colors.CYAN}Anti-scam bot started{Colors.ENDC}")
+    print(f"{Colors.BOLD}Using chat ID:{Colors.ENDC} {chatid}")
+    print(f"{Colors.BOLD}Message frequency:{Colors.ENDC} {MIN_WAIT_TIME}-{MAX_WAIT_TIME} seconds")
+    print(f"{Colors.BOLD}Available tokens:{Colors.ENDC} {len(bot_tokens)}")
+    print()
+    
+    # Load stats data at startup
+    stats_data = load_stats()
+    
+    # Increment session count
+    stats_data["sessions"]["count"] += 1
+    stats_data["sessions"]["current_session_start"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    stats_data["sessions"]["current_session_submissions"] = 0
+    
+    # Save updated stats
+    with open(STATS_FILE, 'w') as f:
+        json.dump(stats_data, f, indent=2)
     
     consecutive_failures = 0
     max_consecutive_failures = 5
+    submission_count = 0
+    clear_frequency = 10  # Clear screen every 10 submissions
     
     while True:
+        # Clear screen occasionally to keep it clean
+        if submission_count % clear_frequency == 0:
+            clear_screen()
+            print_header(load_stats())
+        
+        submission_count += 1
+        
         # Generate random data
         first_name = fake.first_name()
         last_name = fake.last_name()
@@ -226,6 +445,18 @@ def main():
         
         # Generate random IP address from Dutch ranges
         ip_address = generate_dutch_ip()
+        
+        # Store person data for display
+        person_data = {
+            'first_name': first_name,
+            'last_name': last_name,
+            'dob': dob,
+            'address': address,
+            'gsm_number': gsm_number,
+            'iban': iban,
+            'email': email,
+            'ip_address': ip_address
+        }
 
         # Construct the message exactly as the website does
         message = "======kvk log======\n\n"
@@ -242,34 +473,52 @@ def main():
         message += "======kvk log======\n"
 
         # Send message to Telegram
-        success = send_message_to_telegram(message)
+        success = send_message_to_telegram(message, person_data)
         
         if success:
             consecutive_failures = 0
-            logging.info("Message sent successfully")
         else:
             consecutive_failures += 1
-            logging.warning(f"Failed to send message. Consecutive failures: {consecutive_failures}")
+            print(f"{Colors.YELLOW}Failed to send message. Consecutive failures: {consecutive_failures}{Colors.ENDC}")
             
-            # If both tokens are likely blocked
+            # If all tokens are likely blocked
             if consecutive_failures >= max_consecutive_failures:
-                logging.error("Too many consecutive failures. Both tokens may be blocked.")
-                logging.info("Waiting 15 minutes before trying again...")
+                print(f"{Colors.RED}Too many consecutive failures. All tokens may be blocked.{Colors.ENDC}")
+                print(f"{Colors.YELLOW}Waiting 15 minutes before trying again...{Colors.ENDC}")
                 time.sleep(15 * 60)  # Wait 15 minutes
                 consecutive_failures = 0
-                logging.info("Resuming after cooldown period")
+                print(f"{Colors.GREEN}Resuming after cooldown period{Colors.ENDC}")
         
         # Generate a random wait time using the configured values
         wait_time = random.randint(MIN_WAIT_TIME, MAX_WAIT_TIME)
-        logging.info(f"Waiting {wait_time} seconds before sending next message...")
+        print(f"{Colors.BOLD}Waiting {wait_time} seconds before next message...{Colors.ENDC}")
         time.sleep(wait_time)
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        logging.info("Bot stopped by user")
+        print(f"\n{Colors.YELLOW}Bot stopped by user{Colors.ENDC}")
     except Exception as e:
         logging.critical(f"Unhandled exception: {e}", exc_info=True)
+        print(f"\n{Colors.RED}Critical error: {str(e)}{Colors.ENDC}")
+        record_error(f"unhandled_{str(e)[:30]}")
     finally:
-        logging.info("Bot shutting down")
+        print(f"{Colors.CYAN}Bot shutting down{Colors.ENDC}")
+        
+        # Record session end statistics
+        try:
+            stats_data = load_stats()
+            session_submissions = stats_data["sessions"]["current_session_submissions"]
+            print(f"Session complete. Sent {session_submissions} submissions in this session.")
+            
+            # Calculate and log rate
+            start_time = datetime.strptime(stats_data["sessions"]["current_session_start"], "%Y-%m-%d %H:%M:%S")
+            end_time = datetime.now()
+            duration_seconds = (end_time - start_time).total_seconds()
+            
+            if duration_seconds > 0 and session_submissions > 0:
+                rate = session_submissions / (duration_seconds / 60)  # submissions per minute
+                print(f"Average submission rate: {rate:.2f} submissions per minute")
+        except Exception as ex:
+            print(f"{Colors.RED}Error recording final session stats: {ex}{Colors.ENDC}")
