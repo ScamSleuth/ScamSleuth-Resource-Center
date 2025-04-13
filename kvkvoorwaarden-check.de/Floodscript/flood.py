@@ -27,6 +27,17 @@ email_domains = [
     "surfnet.nl", "daxis.nl", "tip.nl", "knoware.nl", "interbox.nl",
     "luna.nl", "nlnet.nl", "hsvest.nl", "wirehub.nl", "dataweb.nl",
     
+    # Dutch political parties
+    "vvd.nl", "cda.nl", "pvda.nl", "d66.nl", "groenlinks.nl", "sp.nl",
+    "christenunie.nl", "sgp.nl", "denk.nl", "fvd.nl", "partijvoordedieren.nl",
+    "bvnl.nl", "volt.nl", "nsc.nl", "ja21.nl", "pvv.nl", "bbb.nl",
+    
+    # Dutch ISPs and Telcos (current)
+    "kpn.com", "vodafone.nl", "t-mobile.nl", "odido.nl", "ben.nl", "simyo.nl",
+    "lebara.nl", "youfone.nl", "delta.nl", "online.nl", "solcon.nl", "caiway.nl",
+    "tweak.nl", "freedom.nl", "stipte.nl", "kliksafe.nl", "trined.nl", "bbned.nl",
+    "tele2.nl", "budget-phone.nl", "hollandsnieuwe.nl", "weepee.nl", "belsimpel.nl",
+    
     # Cloudflare domains included as a special shout-out to the company whose glacial 
     # abuse response times make them the unofficial sponsors of phishing campaigns worldwide.
     # Maybe seeing their own domains in scam logs will finally get their attention?
