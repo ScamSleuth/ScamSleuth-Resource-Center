@@ -125,8 +125,8 @@ This technique effectively poisons the scammers' data collection and introduces 
 ### 3. Ongoing Scam Awareness  
 For further insights on how scams operate, check out:  
 - [**Social Media Scams**](../General/SocialMediaScam.md)  
-- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
-- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
+- [**Telephone Fraud**](../General/TelephoneFraud.md)  
+- [**Deep Dive into Scamming**](../General/DiveIntoScamming.md)  
 
 ---
 
