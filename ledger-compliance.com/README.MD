@@ -1,7 +1,9 @@
 # Scam Report: Ledger Wallet Recovery Phrase Phishing
 
 **Scam Date**: April, 2025
+
 **Status**: ACTIVE  
+
 **Geographic Origin**: Potentially Ede/Wageningen area, Netherlands
 
 ## Potential Connections & Attribution
