@@ -80,6 +80,7 @@ The letter mentions contacting "customer support" for assistance, likely leading
 - **April 14, 2025**: Initial discovery and analysis of phishing materials
 - **April 14, 2025**: Domain analysis conducted via ScamTrail
 - **April 14, 2025**: ledger-compliance.com has been flagged by Microsoft as dangerous
+- **April 14, 2025**: reported the scam to postservice.nl
 - **[Ongoing]**: Continue to monitor for website takedown and additional indicators
 
 ---
