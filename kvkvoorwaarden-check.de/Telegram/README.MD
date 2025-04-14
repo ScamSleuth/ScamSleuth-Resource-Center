@@ -51,18 +51,6 @@ The investigation employed the following techniques:
 3. Timeline reconstruction of phishing operation setup
 4. Profile analysis of the primary operator
 
-## Recommendations
-
-Based on this investigation, the following actions are recommended:
-1. Report the identified bots to Telegram's abuse team
-2. Submit evidence to Dutch authorities (CERT, Police)
-3. Block the identified phishing domains
-4. Monitor for similar patterns using the same operational structure
-
-## Legal Considerations
-
-This investigation was conducted using publicly accessible API endpoints with credentials exposed by the perpetrators themselves. No unauthorized access was performed. Information is being shared for security research and law enforcement purposes.
-
 ---
 
 *This investigation documentation was created to assist in combating online fraud targeting Dutch citizens and organizations.*
