@@ -87,6 +87,7 @@ The letter mentions contacting "customer support" for assistance, likely leading
 - **April 15, 2025**: reported the sites ltd-update.com, ledger-compliance.com to Cloudflare
 - **April 15, 2025**: reported qrco.de/LedgerCompliance to qr-code-generator.com as fraudulent
 - **April 15, 2025**: reported the domains to Ultahost.com
+- **April 15, 2025**: the service used to host the domains is Routerhosting, US (Cloudzy.com) and it has been informed about the scam
 - **[Ongoing]**: Continue to monitor for website takedown and additional indicators
 
 ---
