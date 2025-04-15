@@ -81,6 +81,10 @@ The letter mentions contacting "customer support" for assistance, likely leading
 - **April 14, 2025**: Domain analysis conducted via ScamTrail
 - **April 14, 2025**: ledger-compliance.com has been flagged by Microsoft as dangerous
 - **April 14, 2025**: reported the scam to postservice.nl
+- **April 15, 2025**: reported the sites qrco.de/LedgerCompliance, ltd-update.com, ledger-compliance.com to Google.
+- **April 15, 2025**: reported the sites ltd-update.com, ledger-compliance.com to Cloudflare
+- **April 15, 2025**: reported qrco.de/LedgerCompliance to qr-code-generator.com as fraudulent
+- **April 15, 2025**: reported the domains to Ultahost.com
 - **[Ongoing]**: Continue to monitor for website takedown and additional indicators
 
 ---
