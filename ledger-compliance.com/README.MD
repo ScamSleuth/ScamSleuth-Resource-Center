@@ -53,10 +53,12 @@ The QR code in the letter directs victims through a redirect chain to a phishing
 - Initial scan leads to qrco.de/LedgerCompliance
 - This redirects to ltd-update.com
 - All domains in the chain were created very recently (within the last 15 days)
+- The site uses Cloudflare's IP access rules, targetting the Dutch audience
+- The site uses Wordpress
 
 The fraudulent websites appear professionally designed to mimic Ledger's branding and security messaging. The sites ask users to "validate" their wallet by entering their recovery phrase, which would give the scammers complete access to all cryptocurrency stored in the wallet. Technical analysis reveals that entered data is transmitted in real-time to the attackers via Telegram using custom scripts on the server.
 
-### 3. Fake Customer Support or Chatbot
+### 3. Fake Customer Support
 The letter mentions contacting "customer support" for assistance, likely leading to additional social engineering or further attempts to extract sensitive information from users who might be hesitant.
 
 ---
