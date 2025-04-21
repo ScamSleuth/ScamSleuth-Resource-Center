@@ -29,6 +29,10 @@ This scam follows a pattern identical to previously documenten cryptocurrency ex
 
 ### 2. Notifications to Affected Parties  
 - Informed **Coinbase** about the impersonation scam targeting their users.
+
+### 3. National Fraud Reporting
+- Informed **Fraudehelpdesk.nl** about the impersonation scam targeting Coinbase users.
+
 ---
 ## Lessons & Takeaways  
 ### 1. Red Flags & Prevention  
