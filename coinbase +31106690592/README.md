@@ -19,8 +19,9 @@ The scam mimics Coinbase's legitimate verification code messages to create conce
 ### 2. Fraudulent Phone System  
 When victims call the number, they likely encounter a system impersonating Coinbase's customer service, designed to extract sensitive information such as account credentials or cryptocurrency wallet details.
 
-### 3. Pattern Recognition  
-This scam follows a pattern identical to previously documented cryptocurrency exchange scams, such as the Bitvavo scam, simply changing the impersonated platform while maintaining the same tactical approach.
+### 3. Pattern Recognition
+This scam follows a pattern identical to previously documenten cryptocurrency exchange scams, such as the Bitvavo scam, simply changing the impersonated platform while maintaining the same tactical approach.
+
 ---
 ## Actions Taken  
 ### 1. Carrier & Provider Reports  
