@@ -1,8 +1,8 @@
 # Scam Report: Coinbase Verification Code Impersonation Scam
 
 **Scam Date**: April, 2025  
+**Status**: Resolved
 
-**Status**: Resolved  
 ---
 ## Scam Summary  
 Victims receive text messages claiming to be from Coinbase containing a verification code, suggesting suspicious account activity. The message urges recipients to call a Dutch phone number if they did not request the code, creating a sense of urgency about potential account compromise.
