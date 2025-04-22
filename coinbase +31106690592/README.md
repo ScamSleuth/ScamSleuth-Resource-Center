@@ -1,5 +1,7 @@
 # Scam Report: Coinbase Verification Code Impersonation Scam
+
 **Scam Date**: April, 2025  
+
 **Status**: Resolved  
 ---
 ## Scam Summary  
