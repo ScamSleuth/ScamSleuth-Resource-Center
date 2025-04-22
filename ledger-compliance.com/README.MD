@@ -2,7 +2,7 @@
 
 **Scam Date**: April, 2025
 
-**Status**: ACTIVE  
+**Status**: Resolved
 
 **Geographic Origin**: Potentially Ede/Wageningen area, Netherlands
 
@@ -88,6 +88,7 @@ The letter mentions contacting "customer support" for assistance, likely leading
 - **April 15, 2025**: reported qrco.de/LedgerCompliance to qr-code-generator.com as fraudulent
 - **April 15, 2025**: reported the domains to Ultahost.com
 - **April 15, 2025**: the service used to host the domains is Routerhosting, US (Cloudzy.com) and it has been informed about the scam
+- **April 20, 2025**: the issue has been reported to bit.ly (owner of Qrco.de) and they have marked the link as fraudulent.
 - **[Ongoing]**: Continue to monitor for website takedown and additional indicators
 
 ---
