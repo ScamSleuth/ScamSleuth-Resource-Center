@@ -1,6 +1,6 @@
 # Scam Report: Coinbase Verification Code Impersonation Scam
 **Scam Date**: April, 2025  
-**Status**: Active  
+**Status**: Resolved  
 ---
 ## Scam Summary  
 Victims receive text messages claiming to be from Coinbase containing a verification code, suggesting suspicious account activity. The message urges recipients to call a Dutch phone number if they did not request the code, creating a sense of urgency about potential account compromise.
@@ -25,7 +25,7 @@ This scam follows a pattern identical to previously documenten cryptocurrency ex
 ---
 ## Actions Taken  
 ### 1. Carrier & Provider Reports  
-- Reported phone number **+31106690592** to **MaxiTEL Telecom B.V.** for fraudulent activity.  
+- **April 21, 2025**: Reported phone number **+31106690592** to **MaxiTEL Telecom B.V.** for fraudulent activity and it was taken down the next day.
 
 ### 2. Notifications to Affected Parties  
 - Informed **Coinbase** about the impersonation scam targeting their users.
