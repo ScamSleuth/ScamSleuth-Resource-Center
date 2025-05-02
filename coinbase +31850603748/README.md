@@ -1,6 +1,7 @@
 # Scam Report: Coinbase Support Scam
 
 **Scam Date**: May, 2025
+
 **Status**: Ongoing Investigation
 
 ---
