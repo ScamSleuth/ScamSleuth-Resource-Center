@@ -50,6 +50,8 @@ Victims who call the number are greeted by an automated message recorded by a fe
 
 Anonymous calls are discarded, and conference calls are not answered, likely to evade detection.
 
+[Audio Recording](./0850603748.mp3)
+
 ### 3. Data Collection & Potential Financial Fraud
 
 Victims are likely funneled into interactions where they are asked for sensitive account details under the guise of "account recovery" or "fraud prevention."
