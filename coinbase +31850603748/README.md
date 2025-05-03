@@ -74,6 +74,7 @@ Similarities include:
 ### 1. Carrier Notification
 
 * Reported phone number **0850603748** to **Rinkel B.V.** for investigation and potential deactivation.
+* Reported phone number **0623063434** to **KPN B.V.** for investigation and potential deactivation.
 
 ### 2. Evidence Collection
 
@@ -90,6 +91,7 @@ Similarities include:
 
 * **May 2, 2025**: Scam identified and linked to previous cases involving Rinkel B.V.
 * **May 2, 2025**: Phone number reported and documentation prepared.
+* **May 3, 2025**: The number went to voicemail, reported that number to KPN and the authorities
 
 ---
 
