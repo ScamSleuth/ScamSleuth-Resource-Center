@@ -94,6 +94,7 @@ Similarities include:
 * **May 2, 2025**: Scam identified and linked to previous cases involving Rinkel B.V.
 * **May 2, 2025**: Phone number reported and documentation prepared.
 * **May 3, 2025**: The number went to voicemail, reported that number to KPN and the authorities
+* **May 6, 2025**: None of the providers have responded, Rinkel B.V. has taken action.
 
 ---
 
