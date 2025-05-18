@@ -1,7 +1,6 @@
 # Scam Report: Google Account Access Phishing via updatenu.com
 
 **Scam Date**: May, 2025
-
 **Status**: Ongoing
 
 ---
@@ -11,10 +10,12 @@
 This scam impersonates Google to steal login credentials and two-factor authentication (2FA) codes. Victims receive a **fraudulent SMS**, claiming that their email access will be blocked unless they take immediate action. The message **uses SMS sender spoofing** to appear as though it's from "Google", which often places it in the same message thread as legitimate Google notifications on mobile devices.
 
 **Scam Message (Example from Victim)**:
-> Actie vereist: zonder update kunt u binnenkort geen e-mails meer verzenden of ontvangen : https://google.updatenu.com
+
+> Actie vereist: zonder update kunt u binnenkort geen e-mails meer verzenden of ontvangen : [https://google.updatenu.com](https://google.updatenu.com)
 
 **Translation**:
-> Action required: without an update, you will soon no longer be able to send or receive emails: https://google.updatenu.com
+
+> Action required: without an update, you will soon no longer be able to send or receive emails: [https://google.updatenu.com](https://google.updatenu.com)
 
 When the victim clicks the link (`https://google.updatenu.com`), they are redirected to a fake login page hosted on a rotating phishing domain. These fake pages closely mimic Google's login flow and are designed to capture:
 
@@ -37,7 +38,6 @@ If the site detects a **mobile device**, it serves the fake Google login page. I
   * `updatenu.com`: Tucows Domains Inc.
   * `fotocvix.com`: InterNetX GmbH
   * `csisaszomac.com`: Hostinger Operations, UAB
-
 * **Website/Phone Number Used**:
 
   * Redirector Domain: `https://google.updatenu.com`
@@ -45,7 +45,6 @@ If the site detects a **mobile device**, it serves the fake Google login page. I
 
     * `https://gmail.fotocvix.com/gmail/.af13c05edc892de289d6ba4364104c46/login/?bd8ce11c5ab4bc903950d77c17587f5f`
     * `https://gmail.csisaszomac.com/gmail/.83dfd223b6c92ae41a6ce92222db9c48/login/?201b6405ce0c272d5bddab2f44772003`
-
 * **Carrier / Hosting Provider**:
 
   * `updatenu.com`: Registered with **Tucows**, proxied via **Cloudflare**
@@ -86,16 +85,11 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 
 ### 1. Carrier / Hosting Provider Reports
 
-* **May 18, 2025**: Reported `fotocvix.com` to mCloud doo (hosting provider) — [support@mcloud.rs](mailto:support@mcloud.rs) 
-
-* **May 18, 2025**: Reported `csisaszomac.com` hosting to Akamai via their abuse form — [https://www.akamai.com/legal/compliance/report-abuse](https://www.akamai.com/legal/compliance/report-abuse)
-
+* **May 18, 2025**: Reported `fotocvix.com` to mCloud doo — [support@mcloud.rs](mailto:support@mcloud.rs)
+* **May 18, 2025**: Reported `csisaszomac.com` to Akamai — [https://www.akamai.com/legal/compliance/report-abuse](https://www.akamai.com/legal/compliance/report-abuse)
 * **May 18, 2025**: Reported `updatenu.com` to Tucows Domains — [domainabuse@tucows.com](mailto:domainabuse@tucows.com)
-
 * **May 18, 2025**: Reported `fotocvix.com` to InterNetX GmbH — [domain-abuse@internetx.com](mailto:domain-abuse@internetx.com)
- 
 * **May 18, 2025**: Reported `csisaszomac.com` to Hostinger — [abuse-tracker@hostinger.com](mailto:abuse-tracker@hostinger.com)
-
 * **May 18, 2025**: Reported proxy abuse of `google.updatenu.com` to Cloudflare — [https://abuse.cloudflare.com/](https://abuse.cloudflare.com/)
 
 ### 2. Notifications to Affected Parties
@@ -105,7 +99,7 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 
 ### 3. National Fraud Reporting
 
-* Submitted to [Fraudehelpdesk.nl](https://www.fraudehelpdesk.nl/) — national Dutch anti-fraud agency
+* Submitted to [https://www.fraudehelpdesk.nl/](https://www.fraudehelpdesk.nl/) — national Dutch anti-fraud agency
 
 ---
 
@@ -140,3 +134,20 @@ If you've seen similar scams, please report them to the proper authorities.
 See: [**How to Report Scams**](../General/GetInvolved.md)
 
 **Stay alert. Stay informed. Stay safe.**
+
+---
+
+## website/ Folder README (for GitHub)
+
+```markdown
+# Website - Phishing Kit Sample (For Research Purposes Only)
+
+This folder contains a captured copy of a credential phishing kit impersonating Google (collected in May 2025).
+
+⚠️ **This code is malicious and is published solely for transparency, education, and law enforcement use. Do NOT deploy or reuse.**
+
+- `index.html`: Fake Google login UI served to victims
+- `core_form.js`, `core_token.js`, `form.js`, `ng.js`, `token.js`: JavaScript components used to control user interaction and exfiltrate data
+
+For full analysis, see: https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/google.updatenu.com
+```
