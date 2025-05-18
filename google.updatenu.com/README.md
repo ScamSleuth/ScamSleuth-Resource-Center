@@ -1,6 +1,7 @@
 # Scam Report: Google Account Access Phishing via updatenu.com
 
 **Scam Date**: May, 2025
+
 **Status**: Ongoing
 
 ---
@@ -14,6 +15,7 @@ This scam impersonates Google to steal login credentials and two-factor authenti
 
 **Translation**:
 > Action required: without an update, you will soon no longer be able to send or receive emails: https://google.updatenu.com
+
 When the victim clicks the link (`https://google.updatenu.com`), they are redirected to a fake login page hosted on a rotating phishing domain. These fake pages closely mimic Google's login flow and are designed to capture:
 
 * Email and password
@@ -30,6 +32,12 @@ If the site detects a **mobile device**, it serves the fake Google login page. I
 
 * **Impersonated Entity**: Google
 * **Scammer's Contact Method**: SMS (with sender spoofing)
+* **Registrar**:
+
+  * `updatenu.com`: Tucows Domains Inc.
+  * `fotocvix.com`: InterNetX GmbH
+  * `csisaszomac.com`: Hostinger Operations, UAB
+
 * **Website/Phone Number Used**:
 
   * Redirector Domain: `https://google.updatenu.com`
@@ -37,6 +45,7 @@ If the site detects a **mobile device**, it serves the fake Google login page. I
 
     * `https://gmail.fotocvix.com/gmail/.af13c05edc892de289d6ba4364104c46/login/?bd8ce11c5ab4bc903950d77c17587f5f`
     * `https://gmail.csisaszomac.com/gmail/.83dfd223b6c92ae41a6ce92222db9c48/login/?201b6405ce0c272d5bddab2f44772003`
+
 * **Carrier / Hosting Provider**:
 
   * `updatenu.com`: Registered with **Tucows**, proxied via **Cloudflare**
@@ -77,16 +86,22 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 
 ### 1. Carrier / Hosting Provider Reports
 
-* **May 18, 2025**: Reported `updatenu.com` to Tucows Domains — [domainabuse@tucows.com](mailto:domainabuse@tucows.com) — pending
-* **May 18, 2025**: Reported `fotocvix.com` to InterNetX GmbH — [domain-abuse@internetx.com](mailto:domain-abuse@internetx.com) — pending
-* **May 18, 2025**: Reported `csisaszomac.com` to Hostinger — [abuse@hostinger.com](mailto:abuse@hostinger.com) — pending
+* **May 18, 2025**: Reported `fotocvix.com` to mCloud doo (hosting provider) — [support@mcloud.rs](mailto:support@mcloud.rs) 
+
+* **May 18, 2025**: Reported `csisaszomac.com` hosting to Akamai via their abuse form — [https://www.akamai.com/legal/compliance/report-abuse](https://www.akamai.com/legal/compliance/report-abuse)
+
+* **May 18, 2025**: Reported `updatenu.com` to Tucows Domains — [domainabuse@tucows.com](mailto:domainabuse@tucows.com)
+
+* **May 18, 2025**: Reported `fotocvix.com` to InterNetX GmbH — [domain-abuse@internetx.com](mailto:domain-abuse@internetx.com)
+ 
+* **May 18, 2025**: Reported `csisaszomac.com` to Hostinger — [abuse-tracker@hostinger.com](mailto:abuse-tracker@hostinger.com)
+
 * **May 18, 2025**: Reported proxy abuse of `google.updatenu.com` to Cloudflare — [https://abuse.cloudflare.com/](https://abuse.cloudflare.com/)
 
 ### 2. Notifications to Affected Parties
 
-* Reported the phishing site to Google via: https://safebrowsing.google.com/safebrowsing/report_phish/
-
-* Reported the phishing site to Microsoft, the redirected domains where already flagged as dangerous in Microsoft Edge.
+* Reported the phishing site to Google via: [https://safebrowsing.google.com/safebrowsing/report\_phish/](https://safebrowsing.google.com/safebrowsing/report_phish/)
+* Reported the phishing site to Microsoft — domains are now flagged as dangerous in **Microsoft Edge**.
 
 ### 3. National Fraud Reporting
 
