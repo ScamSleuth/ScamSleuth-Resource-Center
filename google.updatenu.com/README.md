@@ -84,7 +84,9 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 
 ### 2. Notifications to Affected Parties
 
-* Reported the phishing site to Google via: [https://safebrowsing.google.com/safebrowsing/report\_phish/](https://safebrowsing.google.com/safebrowsing/report_phish/)
+* Reported the phishing site to Google via: https://safebrowsing.google.com/safebrowsing/report_phish/
+
+* Reported the phishing site to Microsoft, the redirected domains where already flagged as dangerous in Microsoft Edge.
 
 ### 3. National Fraud Reporting
 
