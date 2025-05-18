@@ -27,6 +27,7 @@ When the victim clicks the link (`https://google.updatenu.com`), they are redire
 **Mobile-targeting behavior**:
 If the site detects a **mobile device**, it serves the fake Google login page. If the site is opened on a **desktop**, it redirects to Google's legitimate login page — a technique used to evade detection by researchers and automated scanners.
 
+![Website Example]([https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/255129d0d144d3afb91fd2e082b8bde19924b886/updatewallet-ledger.com/updatewallet-ledger.com_recovery.png](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/google.updatenu.com/website/iPhone_website.png))
 ---
 
 ## Source Analysis
