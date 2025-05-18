@@ -134,20 +134,3 @@ If you've seen similar scams, please report them to the proper authorities.
 See: [**How to Report Scams**](../General/GetInvolved.md)
 
 **Stay alert. Stay informed. Stay safe.**
-
----
-
-## website/ Folder README (for GitHub)
-
-```markdown
-# Website - Phishing Kit Sample (For Research Purposes Only)
-
-This folder contains a captured copy of a credential phishing kit impersonating Google (collected in May 2025).
-
-⚠️ **This code is malicious and is published solely for transparency, education, and law enforcement use. Do NOT deploy or reuse.**
-
-- `index.html`: Fake Google login UI served to victims
-- `core_form.js`, `core_token.js`, `form.js`, `ng.js`, `token.js`: JavaScript components used to control user interaction and exfiltrate data
-
-For full analysis, see: https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/google.updatenu.com
-```
