@@ -8,7 +8,7 @@
 
 ## Scam Summary
 
-This scam impersonates Google to steal login credentials and two-factor authentication (2FA) codes. Victims receive a **fraudulent SMS**, claiming that their email access will be blocked unless they take immediate action. The message **uses SMS sender spoofing** to appear as though it's from "Google", which often places it in the same message thread as legitimate Google notifications on mobile devices.
+This scam impersonates Google to steal login credentials and two-factor authentication (2FA) codes. Dutch victims receive a **fraudulent SMS**, claiming that their email access will be blocked unless they take immediate action. The message **uses SMS sender spoofing** to appear as though it's from "Google", which often places it in the same message thread as legitimate Google notifications on mobile devices.
 
 **Scam Message (Example from Victim)**:
 
