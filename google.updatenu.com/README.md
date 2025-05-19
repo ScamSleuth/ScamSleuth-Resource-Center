@@ -1,6 +1,7 @@
 # Scam Report: Google Account Access Phishing via updatenu.com
 
 **Scam Date**: May, 2025
+
 **Status**: Ongoing
 
 ---
