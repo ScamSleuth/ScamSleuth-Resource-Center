@@ -10,17 +10,21 @@
 
 This scam involves a fraudulent website impersonating a legitimate delivery service (TNT/FedEx) to deceive visitors. Victims receive a text message claiming that their package could not be delivered and are instructed to visit a fake website to re-enter delivery information. The domain mimics legitimate delivery brands and is designed to harvest sensitive data.
 
-> **Scam SMS Message**:
+> **Orignial Scam SMS Message**:
 > "Logistieke update: uw artikel is afgeleverd in ons magazijn. Na verzending heeft het bedrijfspersoneel u laten weten dat het door u opgegeven adres geen woonadres is. We wachten momenteel op uw feedback en updates:
-https://tnt-home-FedEx.top/nl
+> https://tnt-home-FedEx.top/nl
+>
+> Zodra wij de juiste informatie hebben ontvangen, bezorgen wij de goederen binnen 2 uur bij u thuis. Als u de gevraagde informatie niet bijwerkt, proberen we het na 21 mei opnieuw en brengen we extra verzendkosten in rekening. Deze bedragen 1,3 keer de totaalprijs als logistieke beheerskosten.
+>
+> Antwoord met Y, sluit het sms-bericht en open het opnieuw om de link te activeren, of kopieer en plak de link in Safari."
 
-Zodra wij de juiste informatie hebben ontvangen, bezorgen wij de goederen binnen 2 uur bij u thuis. Als u de gevraagde informatie niet bijwerkt, proberen we het na 21 mei opnieuw en brengen we extra verzendkosten in rekening. Deze bedragen 1,3 keer de totaalprijs als logistieke beheerskosten.
-
-Antwoord met Y, sluit het sms-bericht en open het opnieuw om de link te activeren, of kopieer en plak de link in Safari."
-
-> "Logistics update: your item has been delivered to our warehouse. After shipping, the company staff informed you that the address you provided is not a residential address. We are currently waiting for your feedback and updates: https://tnt-home-FedEx.top/nl
-Once we receive the correct information, we will deliver the goods to your home within 2 hours. If you do not update the requested information, we will try again after May 21 and charge additional shipping costs. These will be 1.3 times the total price as a logistics management fee.
-Reply with Y, close the SMS message, and reopen it to activate the link, or copy and paste the link into Safari."
+> **Translated Scam SMS Message**:
+> "Logistics update: your item has been delivered to our warehouse. After shipping, the company staff informed you that the address you provided is not a residential address. We are currently waiting for your feedback and updates:
+> https://tnt-home-FedEx.top/nl
+>
+> Once we receive the correct information, we will deliver the goods to your home within 2 hours. If you do not update the requested information, we will try again after May 21 and charge additional shipping costs. These will be 1.3 times the total price as a logistics management fee.
+>
+> Reply with Y, close the SMS message, and reopen it to activate the link, or copy and paste the link into Safari."
 
 ---
 
