@@ -10,7 +10,7 @@
 
 This scam involves a fraudulent website impersonating a legitimate delivery service (TNT/FedEx) to deceive visitors. Victims receive a text message claiming that their package could not be delivered and are instructed to visit a fake website to re-enter delivery information. The domain mimics legitimate delivery brands and is designed to harvest sensitive data.
 
-> **Orignial Scam SMS Message**:
+**Orignial Scam SMS Message**:
 > "Logistieke update: uw artikel is afgeleverd in ons magazijn. Na verzending heeft het bedrijfspersoneel u laten weten dat het door u opgegeven adres geen woonadres is. We wachten momenteel op uw feedback en updates:
 > https://tnt-home-FedEx.top/nl
 >
@@ -18,7 +18,8 @@ This scam involves a fraudulent website impersonating a legitimate delivery serv
 >
 > Antwoord met Y, sluit het sms-bericht en open het opnieuw om de link te activeren, of kopieer en plak de link in Safari."
 
-> **Translated Scam SMS Message**:
+
+**Translated Scam SMS Message**:
 > "Logistics update: your item has been delivered to our warehouse. After shipping, the company staff informed you that the address you provided is not a residential address. We are currently waiting for your feedback and updates:
 > https://tnt-home-FedEx.top/nl
 >
