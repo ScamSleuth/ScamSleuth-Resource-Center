@@ -48,6 +48,7 @@ If the site detects a **mobile device**, it serves the fake Google login page. I
     * `https://gmail.fotocvix.com/gmail/.af13c05edc892de289d6ba4364104c46/login/?bd8ce11c5ab4bc903950d77c17587f5f`
     * `https://gmail.csisaszomac.com/gmail/.83dfd223b6c92ae41a6ce92222db9c48/login/?201b6405ce0c272d5bddab2f44772003`
     * `https://gmail.pyshippingllcsa.com/gmail/.a7d5c2d2def98d48b47617ab1346e4cd/login/?1178012a2fc2960d649a083dc3af1ded`
+    * `https://nifty.mahirahtravels.com`
 
 * **Carrier / Hosting Provider**:
 
@@ -97,6 +98,7 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 * **May 18, 2025**: Reported proxy abuse of `google.updatenu.com` to Cloudflare — [https://abuse.cloudflare.com/](https://abuse.cloudflare.com/)
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Arsys Internet S.L — [abuse@nicline.com](mailto:abuse@nicline.com)
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Maxdominios — [Maxdominios](https://www.maxdominios.com/contactenos)
+* **May 22, 2025**: Phishing changed to Nifty (Japanese ISP), not reported
 
 ### 2. Notifications to Affected Parties
 
