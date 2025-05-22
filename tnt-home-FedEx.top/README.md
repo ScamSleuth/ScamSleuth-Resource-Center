@@ -63,17 +63,14 @@ The domain was registered the same day the message was received (2025-05-22), a 
 
 ## Actions Taken
 
-### 1. Carrier / Hosting Provider Reports
 
-* **May 22, 2025**: Identified IP `43.135.159.118` and abuse contact (`qcloud_net_duty@tencent.com`). Abuse report status unknown.
+### 1. Registrar and Host Abuse Reports
+* May 22, 2025: Reported the domain tnt-home-fedex.top to Registrar: domainabuse@service.aliyun.com (Dominet/Alibaba Cloud)
+* May 22, 2025: Reported the domain tnt-home-fedex.top to Hosting provider: qcloud_net_duty@tencent.com (ACEVILLE PTE. LTD. / Tencent Cloud)
 
 ### 2. Notifications to Affected Parties
 
-* FedEx and TNT have not yet been confirmed to have been notified.
-
-### 3. National Fraud Reporting
-
-* Recommended to report this scam to **Fraudehelpdesk.nl** (Netherlands).
+* May 22, 2025: Reported the scam to FedEx and TNT via their respective contact channels to alert them of brand impersonation and enable takedown efforts.
 
 ---
 
