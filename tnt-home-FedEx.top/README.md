@@ -26,6 +26,8 @@ This scam involves a fraudulent website impersonating a legitimate delivery serv
 >
 > Reply with Y, close the SMS message, and reopen it to activate the link, or copy and paste the link into Safari."
 
+[Website capture](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/tnt-home-FedEx.top/website/Capture.jpeg)
+
 ---
 
 ## Source Analysis
