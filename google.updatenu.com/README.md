@@ -91,6 +91,7 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 
 ### 1. Carrier / Hosting Provider Reports
 
+* **May 18, 2025**: Reported updatenu.com to Tucows.com [https://tucowsdomains.com/abuse-form/phishing/](https://tucowsdomains.com/abuse-form/phishing/)
 * **May 18, 2025**: Reported `fotocvix.com` to mCloud doo — [support@mcloud.rs](mailto:support@mcloud.rs)
 * **May 18, 2025**: Reported `csisaszomac.com` to Akamai — [https://www.akamai.com/legal/compliance/report-abuse](https://www.akamai.com/legal/compliance/report-abuse)
 * **May 18, 2025**: Reported `updatenu.com` to Tucows Domains — [domainabuse@tucows.com](mailto:domainabuse@tucows.com)
@@ -100,7 +101,7 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Arsys Internet S.L — [abuse@nicline.com](mailto:abuse@nicline.com)
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Maxdominios — [Maxdominios](https://www.maxdominios.com/contactenos)
 * **May 22, 2025**: Phishing changed to Nifty (Japanese ISP), not reported
-* **May 25, 2025**: Tucows has done absolutely NOTHING in this case, they aren't worthy of their slogan "Tucows | Making the Internet Better Since 1993"
+* **May 25, 2025**: Tucows has done absolutely NOTHING in this case, they aren't worthy of their slogan "Tucows | Making the Internet Better Since 1993". The site has been reported again explaining their new scam
 
 ### 2. Notifications to Affected Parties
 
