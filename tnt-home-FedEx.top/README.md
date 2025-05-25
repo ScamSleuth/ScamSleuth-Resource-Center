@@ -68,6 +68,7 @@ The domain was registered the same day the message was received (2025-05-22), a 
 ### 1. Registrar and Host Abuse Reports
 * May 22, 2025: Reported the domain tnt-home-fedex.top to Registrar: domainabuse@service.aliyun.com (Dominet/Alibaba Cloud)
 * May 22, 2025: Reported the domain tnt-home-fedex.top to Hosting provider: qcloud_net_duty@tencent.com (ACEVILLE PTE. LTD. / Tencent Cloud)
+* May 25, 2025: Domain/Website is still active
 
 ### 2. Notifications to Affected Parties
 
