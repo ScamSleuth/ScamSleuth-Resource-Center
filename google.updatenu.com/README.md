@@ -2,7 +2,7 @@
 
 **Scam Date**: May, 2025
 
-**Status**: Ongoing
+**Status**: Evolved (Dutch Google phishing → Japanese Nifty phishing)
 
 ---
 
@@ -40,6 +40,7 @@ If the site detects a **mobile device**, it serves the fake Google login page. I
   * `updatenu.com`: Tucows Domains Inc.
   * `fotocvix.com`: InterNetX GmbH
   * `csisaszomac.com`: Hostinger Operations, UAB
+
 * **Website/Phone Number Used**:
 
   * Redirector Domain: `https://google.updatenu.com`
@@ -99,6 +100,7 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Arsys Internet S.L — [abuse@nicline.com](mailto:abuse@nicline.com)
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Maxdominios — [Maxdominios](https://www.maxdominios.com/contactenos)
 * **May 22, 2025**: Phishing changed to Nifty (Japanese ISP), not reported
+* **May 25, 2025**: Tucows has done absolutely NOTHING in this case.
 
 ### 2. Notifications to Affected Parties
 
