@@ -100,7 +100,7 @@ Captured data is exfiltrated via AJAX and JSONP requests to attacker-controlled 
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Arsys Internet S.L — [abuse@nicline.com](mailto:abuse@nicline.com)
 * **May 19, 2025**: Reported `pyshippingllcsa.com` to Maxdominios — [Maxdominios](https://www.maxdominios.com/contactenos)
 * **May 22, 2025**: Phishing changed to Nifty (Japanese ISP), not reported
-* **May 25, 2025**: Tucows has done absolutely NOTHING in this case.
+* **May 25, 2025**: Tucows has done absolutely NOTHING in this case, they aren't worthy of their slogan "Tucows | Making the Internet Better Since 1993"
 
 ### 2. Notifications to Affected Parties
 
