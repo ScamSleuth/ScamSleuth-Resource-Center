@@ -70,6 +70,9 @@ The domain was registered the same day the message was received (2025-05-22), a 
 * May 22, 2025: Reported the domain tnt-home-fedex.top to Hosting provider: qcloud_net_duty@tencent.com (ACEVILLE PTE. LTD. / Tencent Cloud)
 * May 25, 2025: Domain/Website is still active
 * May 25, 2025: tnt-home-fedex.top reported to Alibabacloud.com
+* May 29, 2025: Domain/Website is still active
+* May 29, 2025: Reported the domain to Tencent at: https://www.tencentcloud.com/report-platform/illegalcontentcomplaint
+* May 29, 2025: Alibabacloud is giving me the runaround, the complaint form on the website requires me to create an account. It's absurd that I have to become a "customer" just to file a complaint.
 
 ### 2. Notifications to Affected Parties
 
