@@ -2,7 +2,7 @@
 
 **Scam Date**: May, 2025
 
-**Status**: Evolved (Dutch Google phishing → Japanese Nifty phishing)
+**Status**: Resolved
 
 ---
 
