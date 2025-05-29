@@ -19,6 +19,35 @@ Each entry in this repository follows a structured approach to present informati
 4. **Follow-Up**: Updates on the status of reported scams, responses received, and any changes or actions taken since the initial report.
 5. **Lessons Learned**: Practical advice on how to recognize similar scams in the future and the importance of vigilance.
 
+## Documented Scam Cases
+Below is a list of known scams currently documented in this repository. Each folder contains evidence and notes regarding the scam's nature, reporting efforts, and current status.
+
+**Case Identifier	Status**
+
+| Case | Status |
+|------|--------|
+| [achterstand.voldoen2025.com](./achterstand.voldoen2025.com/)	| Resolved |
+| [bd-incasso.in](./bd-incasso.in/)	| Resolved |
+| [belasting.mijn-schulden.com](./belasting.mijn-schulden.com/)	| Resolved |
+| [bitvavo +31313794042](./bitvavo%20%2B31313794042/) | Resolved |
+| [bitvavo +31505690052](./bitvavo%20%2B31505690052/) | Resolved |
+| [bitvavo-info.site](./bitvavo-info.site/)	| Resolved |
+| [coinbase +31106690592](./coinbase%20%2B31106690592/)	| Resolved |
+| [coinbase +31850603748](./coinbase%20%2B31850603748/)	| Resolved|
+| [google.updatenu.com](./google.updatenu.com/)	| Evolved |
+| [kvkvoorwaarden-check.de](./kvkvoorwaarden-check.de/)	| Resolved |
+| [ledger +31 85 888 3869](./ledger%20%2B31%2085%20888%203869/) | Resolved |
+| [ledger +31 85 888 5074](./ledger%20%2B31%2085%20888%205074/) | Resolved |
+| [ledger-compliance.com](./ledger-compliance.com/) | Resolved |
+| [mijnkvk.digital](./mijnkvk.digital/) | Resolved |
+| [politie +31202101743](./politie%20%2B31202101743/) | Resolved |
+| [security-ledger.live](./security-ledger.live/) | Resolved |
+| [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Active |
+| [updatewallet-ledger.com](./updatewallet-ledger.com/) | Resolved |
+
+Note: Statuses are updated based on follow-ups and verifications. “Resolved” means the scam has been taken down or neutralized; “Active” means it is still live or under observation.
+
+
 ## Contribution
 If you have encountered a scam and would like to contribute, please add a new entry following the structure outlined above. Ensure any personal information is anonymized before sharing.
 
