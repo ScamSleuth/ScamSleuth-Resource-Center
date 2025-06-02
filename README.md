@@ -42,7 +42,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [mijnkvk.digital](./mijnkvk.digital/) | Resolved |
 | [politie +31202101743](./politie%20%2B31202101743/) | Resolved |
 | [security-ledger.live](./security-ledger.live/) | Resolved |
-| [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Active |
+| [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Resolved |
 | [updatewallet-ledger.com](./updatewallet-ledger.com/) | Resolved |
 
 Note: Statuses are updated based on follow-ups and verifications. “Resolved” means the scam has been taken down or neutralized, “Active” means it is still live or under observation and "Evolved" means the scam has changed and evolved into another scam.
