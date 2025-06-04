@@ -102,9 +102,47 @@ There is a **consistent pattern** of using Dutch fixed VoIP numbers via **A1 Int
 * [Politie – Meld Fraude](https://www.politie.nl/themas/fraude.html)
 
 ---
+## Lessons & Takeaways
 
-## Contribution Acknowledgment
+### 1. Red Flags & Prevention
 
-Thanks to ongoing community efforts and researchers like you, public awareness and reporting are improving. The similarity to past incidents suggests a **shared infrastructure** or **organized scam network** behind these campaigns.
+- **Unsolicited SMS about password resets with a phone number**  
+  Always verify directly via the official Bitvavo or Ledger website — *never* through links or numbers provided in a message.
+
+- **Urgency to call a landline to “stop unauthorized access”**  
+  Scammers create pressure to trigger impulsive actions. Always take a moment to verify the claim.
+
+- **Reference codes like `BITXXXX` that appear official**  
+  These are fake but designed to look trustworthy. Real platforms use secure in-app messaging, not generic SMS codes.
+
+- **Follow-up calls from “Ledger Support”**  
+  Ledger explicitly states it will **never** contact users by phone. Any such call is a scam.
+
+- **Mentions of suspicious logins from abroad (e.g., Germany)**  
+  This scare tactic is used to extract sensitive information like wallet recovery phrases. Never share your seed phrase under any circumstance.
+
+---
+
+### 2. How to Stay Safe  
+- Never trust links or phone numbers in unsolicited messages.  
+- Report scams to relevant authorities as soon as possible.  
+
+---
+
+## Ongoing Scam Awareness  
+For further insights on how scams operate, check out:  
+- [**Social Media Scams**](../General/SocialMediaScam.md)  
+- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
+- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
+
+---
+
+## Get Involved  
+If you've encountered similar scams, report them to the appropriate authorities.  
+For a full list of fraud reporting platforms, visit:  
+
+🔹 [**How to Report Scams**](../General/GetInvolved.md)  
+
+By reporting scams, you help authorities track down criminals, prevent further victims, and contribute to shutting down fraudulent networks.  
 
 **Stay alert. Stay informed. Stay safe.**
