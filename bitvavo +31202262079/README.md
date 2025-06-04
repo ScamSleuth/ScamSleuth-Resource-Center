@@ -75,7 +75,7 @@ There is a **consistent pattern** of using Dutch fixed VoIP numbers via provider
 
 * **Reported** phone number **+31 20 226 2079** to **A1 Internet B.V.** for abuse.
 * **Reported** number **+31 20 722 3816** to **X2Com B.V.**
-* **Meld Misdaad Anoniem** the scam has been reported to Meld Misdaad Anoniem due to it's persistence and scale
+* **Meld Misdaad Anoniem** the scam has been reported to Meld Misdaad Anoniem due to it's persistence and scale.
 
 ---
 
