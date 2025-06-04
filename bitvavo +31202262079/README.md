@@ -66,6 +66,7 @@ This scam shows strong similarities with previously documented phishing operatio
 
 * [Ledger +31 85 888 3869](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/ledger%20%2B31%2085%20888%203869)
 * [Ledger +31 85 888 5074](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/ledger%20%2B31%2085%20888%205074)
+* [politie +31202101743](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/politie%20%2B31202101743)
 
 There is a **consistent pattern** of using Dutch fixed VoIP numbers via providers like **A1 Internet**, **X2Com**, and other providers, often rotating across scams impersonating high-value crypto platforms.
 
