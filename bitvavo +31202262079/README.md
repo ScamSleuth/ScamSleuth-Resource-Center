@@ -44,7 +44,7 @@ Creates urgency and fear of account compromise. A reference code (e.g., **BITXXX
 
 ### 3. Follow-Up Voice Call (Ledger Impersonation)
 
-Victims are contacted by scammers using number **020-7223816**, claiming to be **Ledger support**. The narrative shifts to a **Ledger Nano S login in Germany**, likely an attempt to phish for wallet passphrases or recovery seeds.
+Just after calling +31 20 226 2079, without answer the victims are contacted by scammers using number **020-7223816**, claiming to be **Ledger support**. The narrative shifts to a **Ledger Nano S login in Germany**, likely an attempt to phish for wallet passphrases or recovery seeds. Both numbers are numbers belonging to the scammers and aren't spoofed.
 
 ---
 
@@ -67,7 +67,7 @@ This scam shows strong similarities with previously documented phishing operatio
 * [Ledger +31 85 888 3869](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/ledger%20%2B31%2085%20888%203869)
 * [Ledger +31 85 888 5074](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/tree/main/ledger%20%2B31%2085%20888%205074)
 
-There is a **consistent pattern** of using Dutch fixed VoIP numbers via **A1 Internet**, **X2Com**, and other smaller providers, often rotating across scams impersonating high-value crypto platforms.
+There is a **consistent pattern** of using Dutch fixed VoIP numbers via providers like **A1 Internet**, **X2Com**, and other providers, often rotating across scams impersonating high-value crypto platforms.
 
 ---
 
@@ -75,7 +75,7 @@ There is a **consistent pattern** of using Dutch fixed VoIP numbers via **A1 Int
 
 * **Reported** phone number **+31 20 226 2079** to **A1 Internet B.V.** for abuse.
 * **Reported** number **+31 20 722 3816** to **X2Com B.V.**
-* Shared scam pattern and audio behavior with ScamSleuth repository.
+* **Meld Misdaad Anoniem** the scam has been reported to Meld Misdaad Anoniem due to it's persistence and scale
 
 ---
 
@@ -99,7 +99,7 @@ There is a **consistent pattern** of using Dutch fixed VoIP numbers via **A1 Int
 
 * [ACM Nummerzoeker](https://www.acm.nl/nl/telefoonnummers-zoeken)
 * [Fraudehelpdesk](https://www.fraudehelpdesk.nl)
-* [Politie – Meld Fraude](https://www.politie.nl/themas/fraude.html)
+* 
 
 ---
 ## Lessons & Takeaways
