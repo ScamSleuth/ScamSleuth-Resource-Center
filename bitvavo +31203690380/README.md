@@ -40,10 +40,9 @@ Unlike typical scams that offer options, this message uses **"Bel direct"** (Cal
 
 Research confirms **multiple scammers** operate from the same number, suggesting a coordinated call center operation rather than individual fraud attempts.
 
-https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-001.mp3
-https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-002.mp3
-https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-003.mp3
-
+[Scammer #1](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-001.mp3)
+[Scammer #2](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-002.mp3)
+[Scammer #3](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-003.mp3)
 
 ---
 
