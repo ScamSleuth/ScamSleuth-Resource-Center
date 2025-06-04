@@ -99,7 +99,6 @@ There is a **consistent pattern** of using Dutch fixed VoIP numbers via provider
 
 * [ACM Nummerzoeker](https://www.acm.nl/nl/telefoonnummers-zoeken)
 * [Fraudehelpdesk](https://www.fraudehelpdesk.nl)
-* 
 
 ---
 ## Lessons & Takeaways
