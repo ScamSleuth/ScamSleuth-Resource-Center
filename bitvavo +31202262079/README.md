@@ -11,7 +11,7 @@
 Victims receive a fraudulent SMS claiming to be from **Bitvavo**, stating a password reset has been requested. If unrecognized, the message urges the user to call a Dutch landline. Upon calling, victims are later contacted by scammers claiming to be from **Ledger**, warning about suspicious activity in **Germany** on the user's Ledger Nano S.
 
 **Fraudulent SMS Example:**
-`Bitvavo: We hebben een melding ontvangen dat u uw wachtwoord wilt resetten. Herkent u dit niet? Bel ons dan zo snel mogelijk via +31202262079. Ref: BITXXXX`
+"Bitvavo: We hebben een melding ontvangen dat u uw wachtwoord wilt resetten. Herkent u dit niet? Bel ons dan zo snel mogelijk via +31202262079. Ref: BITXXXX"
 
 **Translation:**
 "Bitvavo: We received a request to reset your password. If you do not recognize this, call us as soon as possible via +31202262079. Ref: BITXXXX"
