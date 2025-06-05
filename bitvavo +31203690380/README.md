@@ -57,7 +57,7 @@ Research confirms **multiple scammers** operate from the same number, suggesting
 ## Actions Taken
 
 * **June 4th, 2025** Reported phone number **+31 20 369 0380** to **MaxiTEL Telecom B.V.** for abuse
-* **June 5th, 2025** **MaxiTEL Telecom B.V.** has the intention to shut down this number (but hasn't)
+* **June 5th, 2025** **MaxiTEL Telecom B.V.** has the intention to shut down this number (but hasn't done so yet)
 
 ---
 
