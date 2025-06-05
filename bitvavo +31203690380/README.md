@@ -36,11 +36,13 @@ Creates immediate concern by claiming unauthorized access from a foreign locatio
 
 Unlike typical scams that offer options, this message uses **"Bel direct"** (Call immediately), creating pressure for instant response without time to verify the claim.
 
-### 3. Multi-Person Operation
+### 3. BitVavo impersonation
+
+Their support center is quick to respond, even before the intro has ended they'll pickup the phone. The introduction is as follows: [Introduction (June 5th, 2025)](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-intro.mp3)
+
+### 4. Multi-Person Operation
 
 Research confirms **multiple scammers** operate from the same number, suggesting a coordinated call center operation rather than individual fraud attempts.
-
-[Introduction (June 5th, 2025)](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-intro.mp3)
 
 [Scammer #1 (June 4th, 2025)](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-001.mp3)
 
