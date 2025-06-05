@@ -46,6 +46,10 @@ Research confirms **multiple scammers** operate from the same number, suggesting
 
 [Scammer #3](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-003.mp3)
 
+[Scammer #3](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-004.mp3)
+
+[Scammer #3](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-005.mp3)
+
 ---
 
 ## Actions Taken
