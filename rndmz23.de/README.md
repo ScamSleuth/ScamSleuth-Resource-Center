@@ -27,10 +27,7 @@ This scam involves a fraudulent website impersonating the Dutch postal service, 
 > **BELANGRIJK:** Bij het uitblijven van betaling binnen 24 uur, blijft uw pakket geblokkeerd en wordt het door de douane teruggestuurd naar de leverancier.  
 >  
 > PostNL Klantenservice  
->  
-> Download de My PostNL app en volg je pakkies waar je ook bent.
 
----
 
 **English Translation:**
 > Problem with the delivery of your package  
@@ -49,8 +46,7 @@ This scam involves a fraudulent website impersonating the Dutch postal service, 
 > **IMPORTANT:** If payment is not made within 24 hours, your package will remain blocked and will be returned to the supplier by customs.  
 >  
 > PostNL Customer Service  
->  
-> Download the My PostNL app and track your packages wherever you are.
+
 
 [The e-mail recieved](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/email.png)
 [The landingpage of the site](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/1-landingpage.jpeg)
