@@ -56,6 +56,8 @@ Research confirms **multiple scammers** operate from the same number, suggesting
 
 [Scammer #6 (June 5th, 2025)](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-006.mp3)
 
+[Scammer #7 (June 5th, 2025)](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/bitvavo%20%2B31203690380/0203690380-007.mp3)
+
 ---
 
 ## Actions Taken
