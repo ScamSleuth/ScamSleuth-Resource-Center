@@ -48,7 +48,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Resolved |
 | [updatewallet-ledger.com](./updatewallet-ledger.com/) | Resolved |
 
-Note: Statuses are updated based on follow-ups and verifications. “Resolved” means the scam has been taken down or neutralized, “Active” means it is still live or under observation and "Evolved" means the scam has changed and evolved into another scam.
+Note: Statuses are updated based on follow-ups and verifications. “Resolved” means the scam has been taken down or neutralized, “Ongoing” means it is still live or under observation and "Evolved" means the scam has changed and evolved into another scam.
 
 ## Contribution
 If you have encountered a scam and would like to contribute, please add a new entry following the structure outlined above. Ensure any personal information is anonymized before sharing.
