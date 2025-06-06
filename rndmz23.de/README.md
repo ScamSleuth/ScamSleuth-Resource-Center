@@ -52,6 +52,11 @@ This scam involves a fraudulent website impersonating the Dutch postal service, 
 >  
 > Download the My PostNL app and track your packages wherever you are.
 
+[The e-mail recieved](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/email.png)
+[The landingpage of the site](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/1-landingpage.jpeg)
+[The personal entry form](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/2-personaldata_entry_form.jpeg)
+[The creditcard entry form](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/3-creditcard_entry_form.jpeg)
+[The submission page](https://github.com/ScamSleuth/ScamSleuth-Resource-Center/blob/main/rndmz23.de/4-submission_page.jpeg)
 
 ---
 
