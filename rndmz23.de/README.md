@@ -1,6 +1,7 @@
 # Scam Report: **rndmz23.de - Fake PostNL Customs Fee Phishing**
 
 **Scam Date**: June, 2025
+
 **Status**: Ongoing
 
 ---
