@@ -58,7 +58,7 @@ This scam involves a fraudulent website impersonating the Dutch postal service, 
 * **Carrier / Hosting Provider**:
 
   * **Protected by**: Cloudflare (true host obscured)
-  * **Registrar**: .de domain, registrant details hidden by DENIC
+  * **Registrar**: .de domain, registrant [details](https://www.denic.de/webwhois-web20/?lang=en&query=rndmz23.de)
   * **Domain Last Changed**: 2025-06-02
 
 ---
@@ -97,6 +97,7 @@ A small fee (€1.99) is requested, making the scam less suspicious and more lik
 * **June 6th, 2025**: Notified gmx.de of the scam and urged them to take appropriate action.
 * **June 6th, 2025**: Cloudflare notified that it couldn't find any violations
 * **June 7th, 2025**: Ask Cloudflare to review the outcome of the complaint
+* **June 26th, 2025**: Notified gmx.de of the scam and urged them to take appropriate action.
 
 ### 2. Notifications to Affected Parties
 
