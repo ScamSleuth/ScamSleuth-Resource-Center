@@ -49,6 +49,7 @@ This follows established cryptocurrency phishing patterns documented in recent h
 ## Actions Taken  
 ### 1. Carrier / Hosting Provider Reports  
 - **June 26, 2025**: Identified number range as assigned to Tismi B.V. via ACM.nl database. Number range 0970-10200000 to 0970-10299999 designated for Machine-2-machine use, assigned February 15, 2022.
+- **June 26, 2025**: The scammers have changed the introduction from Google to Bitvavo.
 
 ### 2. Evidence Collection  
 - **June 26, 2025**: Audio recording obtained of fake Google customer service system
