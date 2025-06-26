@@ -17,7 +17,7 @@ This is a sophisticated social engineering scam targeting cryptocurrency users t
 **Phone System Audio (when calling +31 97010 259551):**
 > "Welkom bij Google. Bedankt voor het contact opnemen met ons. Alle medewerkers zijn op dit moment in gesprek. U wordt zo spoedig mogelijk doorverbonden met een medewerker. Maak een keuze uit de volgende opties. Druk op 1 voor account en beveiligingsvragen. Druk op 2 om een medewerker te spreken. Druk op 0 om deze opties te herhalen. Alle medewerkers zijn op dit moment in gesprek. Google verwerkt uw verzoek en u wordt zo goed als mogelijk doorverbonden met een collega. Bedankt voor uw geduld."
 
-Translation: "Welcome to Google. Thank you for contacting us. All employees are currently in conversation. You will be connected to an employee as soon as possible. Choose from the following options. Press 1 for account and security questions. Press 2 to speak to an employee. Press 0 to repeat these options. All employees are currently in conversation. Google is processing your request and you will be connected to a colleague as best as possible. Thank you for your patience."
+*Translation: "Welcome to Google. Thank you for contacting us. All employees are currently in conversation. You will be connected to an employee as soon as possible. Choose from the following options. Press 1 for account and security questions. Press 2 to speak to an employee. Press 0 to repeat these options. All employees are currently in conversation. Google is processing your request and you will be connected to a colleague as best as possible. Thank you for your patience."*
 ---
 ## Source Analysis  
 - **Impersonated Entity**: Google (fake customer service) / Generic hardware wallet providers  
