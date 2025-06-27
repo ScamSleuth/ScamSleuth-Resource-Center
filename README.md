@@ -35,7 +35,8 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [bitvavo +31505690052](./bitvavo%20%2B31505690052/) | Resolved |
 | [bitvavo-info.site](./bitvavo-info.site/)	| Resolved |
 | [coinbase +31106690592](./coinbase%20%2B31106690592/)	| Resolved |
-| [coinbase +31850603748](./coinbase%20%2B31850603748/)	| Resolved|
+| [coinbase +31850603748](./coinbase%20%2B31850603748/)	| Resolved |
+| [google +3197010259551](./google%20%2B3197010259551/) | Resolved |
 | [google.updatenu.com](./google.updatenu.com/)	| Resolved |
 | [kvkvoorwaarden-check.de](./kvkvoorwaarden-check.de/)	| Resolved |
 | [ledger +31 85 888 3869](./ledger%20%2B31%2085%20888%203869/) | Resolved |
