@@ -94,10 +94,12 @@ A small fee (€1.99) is requested, making the scam less suspicious and more lik
 
 * **June 6th, 2025**: Reported the domain `rndmz23.de` to Cloudflare abuse.
 * **June 6th, 2025**: Reported the domain via DENIC's web-based WHOIS for further investigation.
-* **June 6th, 2025**: Notified gmx.de of the scam and urged them to take appropriate action.
+* **June 6th, 2025**: Notified gmx.de and inwx.de of the scam and urged them to take appropriate action.
 * **June 6th, 2025**: Cloudflare notified that it couldn't find any violations
 * **June 7th, 2025**: Ask Cloudflare to review the outcome of the complaint
-* **June 26th, 2025**: Notified gmx.de of the scam and urged them to take appropriate action.
+* **June 26th, 2025**: Notified the registrar of the scam and urged them to take appropriate action.
+* **June 27th, 2025**: Again notified the registrar of the phishing-site.
+* **June 27th, 2025**: The site has been flagged on multiple platforms: Microsoft Defender Smartscreen, Google Safe Browsing, etc.
 
 ### 2. Notifications to Affected Parties
 
