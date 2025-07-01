@@ -73,17 +73,9 @@ The page requests a small payment of **EUR 1,29** — an amount low enough to lo
 
 ### 1. Carrier / Hosting Provider Reports
 
-* **Pending**: Abuse report to registrar (Registrar.eu / Openprovider)
-* **Pending**: Abuse report to hosting provider (493 Networking)
-* **Pending**: DNS service (Cloudflare)
-
-### 2. Notifications to Affected Parties
-
-* **Pending**: Notification to DHL (abuse/security team)
-
-### 3. National Fraud Reporting
-
-* **Pending**: Submission to [Fraudehelpdesk.nl](https://www.fraudehelpdesk.nl/)
+* **July 1st, 2025**: Abuse report to registrar (Registrar.eu / Openprovider)
+* **July 1st, 2025**: Abuse report to hosting provider (493 Networking)
+* **July 1st, 2025**: Sites reported to Google Safesearch
 
 ---
 
