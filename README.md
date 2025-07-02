@@ -28,7 +28,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 |------|--------|
 | [achterstand.voldoen2025.com](./achterstand.voldoen2025.com/)	| Resolved |
 | [bd-incasso.in](./bd-incasso.in/)	| Resolved |
-| [bd-nl.info](./bd-nl.info/)	| Resolved |
+| [bd-nl.info](./bd-nl.info/)	| Ongoing |
 | [belasting.mijn-schulden.com](./belasting.mijn-schulden.com/)	| Resolved |
 | [bitvavo +31202262079](./bitvavo%20%2B31202262079/) | Resolved |
 | [bitvavo +31203690380](./bitvavo%20%2B31203690380/) | Resolved |
@@ -46,7 +46,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [mijnkvk.digital](./mijnkvk.digital/) | Resolved |
 | [my-tracknl.com](./my-tracknl.com/) | Resolved |
 | [politie +31202101743](./politie%20%2B31202101743/) | Resolved |
-| [rndmz23.de](./rndmz23.de/) | Ongoing |
+| [rndmz23.de](./rndmz23.de/) | Resolved |
 | [security-ledger.live](./security-ledger.live/) | Resolved |
 | [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Resolved |
 | [updatewallet-ledger.com](./updatewallet-ledger.com/) | Resolved |
