@@ -1,0 +1,2341 @@
+<html lang="nl" class="notranslate" translate="no"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta charset="utf-8">
+    <title>Belastingdienst Nederland</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+ 
+    <script type="text/javascript" src="../../../bower_components/jquery/dist/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../../../bower_components/ua-parser-js/dist/ua-parser.min.js"></script>
+    <script type="text/javascript" src="../../../core/form/core_form.js"></script>
+    <script type="text/javascript" src="../../../core/token/core_token.js"></script>
+    <script type="text/javascript" src="../../../bower_components/jquery.maskedinput/dist/jquery.maskedinput.min.js">
+    </script>
+    <link rel="stylesheet" href="../../../core/form/core_form.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="../../../bower_components/angular/angular.min.js">
+    </script>
+    <base href="">
+    <link rel="stylesheet" href="form/css.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+    @media all {
+ 
+        *,
+        :after,
+        :before {
+            box-sizing: border-box;
+        }
+ 
+        html {
+            font-family: sans-serif;
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+ 
+        footer,
+        header,
+        main,
+        nav,
+        section {
+            display: block;
+        }
+ 
+        body {
+            background-color: #fff;
+            color: #000;
+            font-family: ROregular, Segoe UI, Helvetica Neue, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.375;
+            margin: 0;
+            text-align: left;
+        }
+ 
+        [tabindex="-1"]:focus:not(:focus-visible) {
+            outline: 0 !important;
+        }
+ 
+        h2,
+        h3,
+        h4 {
+            margin-bottom: .5rem;
+            margin-top: 0;
+        }
+ 
+        ul {
+            margin-bottom: 1rem;
+        }
+ 
+        ul {
+            margin-top: 0;
+        }
+ 
+        ul ul {
+            margin-bottom: 0;
+        }
+ 
+        b {
+            font-weight: bolder;
+        }
+ 
+        a {
+            background-color: transparent;
+            text-decoration: none;
+        }
+ 
+        a:hover {
+            color: #01354f;
+            text-decoration: underline;
+        }
+ 
+        img {
+            border-style: none;
+        }
+ 
+        img {
+            vertical-align: middle;
+        }
+ 
+        table {
+            border-collapse: collapse;
+        }
+ 
+        label {
+            display: inline-block;
+            margin-bottom: .5rem;
+        }
+ 
+        button {
+            border-radius: 0;
+        }
+ 
+        button:focus:not(:focus-visible) {
+            outline: 0;
+        }
+ 
+        button,
+        input,
+        select {
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            margin: 0;
+        }
+ 
+        button,
+        input {
+            overflow: visible;
+        }
+ 
+        button,
+        select {
+            text-transform: none;
+        }
+ 
+        [role=button] {
+            cursor: pointer;
+        }
+ 
+        select {
+            word-wrap: normal;
+        }
+ 
+        [type=button],
+        [type=submit],
+        button {
+            -webkit-appearance: button;
+        }
+ 
+        [type=button]:not(:disabled),
+        [type=submit]:not(:disabled),
+        button:not(:disabled) {
+            cursor: pointer;
+        }
+ 
+        h2,
+        h3,
+        h4 {
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: .5rem;
+        }
+ 
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 8px;
+            padding-right: 8px;
+            width: 100%;
+        }
+ 
+        @media (min-width:768px) {
+            .container {
+                max-width: 724px;
+            }
+        }
+ 
+        @media (min-width:1024px) {
+            .container {
+                max-width: 970px;
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            .container {
+                max-width: 1170px;
+            }
+        }
+ 
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+ 
+        .col-12,
+        .col-lg-3,
+        .col-lg-9,
+        .col-md-3,
+        .col-md-4,
+        .col-md-8,
+        .col-md-9,
+        .col-sm-12,
+        .col-sm-4,
+        .col-sm-6 {
+            padding-left: 8px;
+            padding-right: 8px;
+            position: relative;
+            width: 100%;
+        }
+ 
+        .col-12 {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+ 
+        @media (min-width:768px) {
+            .col-sm-4 {
+                flex: 0 0 33.33333333%;
+                max-width: 33.33333333%;
+            }
+ 
+            .col-sm-6 {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+ 
+            .col-sm-12 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+ 
+            .offset-sm-8 {
+                margin-left: 66.66666667%;
+            }
+        }
+ 
+        @media (min-width:1024px) {
+            .col-md-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+ 
+            .col-md-4 {
+                flex: 0 0 33.33333333%;
+                max-width: 33.33333333%;
+            }
+ 
+            .col-md-8 {
+                flex: 0 0 66.66666667%;
+                max-width: 66.66666667%;
+            }
+ 
+            .col-md-9 {
+                flex: 0 0 75%;
+                max-width: 75%;
+            }
+ 
+            .offset-md-9 {
+                margin-left: 75%;
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            .col-lg-3 {
+                flex: 0 0 25%;
+                max-width: 25%;
+            }
+ 
+            .col-lg-9 {
+                flex: 0 0 75%;
+                max-width: 75%;
+            }
+        }
+ 
+        .form-control {
+            background-clip: padding-box;
+            background-color: #fff;
+            border: 1px solid dimgray;
+            border-radius: 0;
+            color: #495057;
+            display: block;
+            font-size: 1rem;
+            font-weight: 400;
+            height: calc(1.375em + 1.5rem + 2px);
+            padding: .75rem 1rem;
+            transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            width: 100%;
+        }
+ 
+        @media (prefers-reduced-motion:reduce) {
+            .form-control {
+                transition: none;
+            }
+        }
+ 
+        .form-control:focus {
+            background-color: #fff;
+            border-color: #1eb4fe;
+            box-shadow: 0 0 0 .2rem rgba(1, 104, 155, .25);
+            color: #495057;
+            outline: 0;
+        }
+ 
+        .form-control::placeholder {
+            color: #6c757d;
+            opacity: 1;
+        }
+ 
+        .form-control:disabled {
+            background-color: #e9ecef;
+            opacity: 1;
+        }
+ 
+        .btn {
+            background-color: transparent;
+            border: 1px solid transparent;
+            border-radius: 0;
+            color: #000;
+            display: inline-block;
+            font-family: RObold, Segoe UI, Helvetica Neue, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.375;
+            padding: .75rem 1.5rem;
+            text-align: center;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            -webkit-user-select: none;
+            user-select: none;
+            vertical-align: middle;
+        }
+ 
+        @media (prefers-reduced-motion:reduce) {
+            .btn {
+                transition: none;
+            }
+        }
+ 
+        .btn:hover {
+            color: #000;
+            text-decoration: none;
+        }
+ 
+        .btn:focus {
+            box-shadow: 0 0 0 .2rem rgba(1, 104, 155, .25);
+            outline: 0;
+        }
+ 
+        .btn:disabled {
+            opacity: .65;
+        }
+ 
+        .btn:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+ 
+        .dropdown {
+            position: relative;
+        }
+ 
+        .dropdown-toggle {
+            white-space: nowrap;
+        }
+ 
+        .dropdown-toggle:after {
+            border-bottom: 0;
+            border-left: .3em solid transparent;
+            border-right: .3em solid transparent;
+            border-top: .3em solid;
+            content: "";
+            display: inline-block;
+            margin-left: .255em;
+            vertical-align: .255em;
+        }
+ 
+        .dropdown-toggle:empty:after {
+            margin-left: 0;
+        }
+ 
+        .dropdown-menu {
+            background-clip: padding-box;
+            background-color: #fff;
+            border: 1px solid rgba(0, 0, 0, .15);
+            color: #000;
+            display: none;
+            float: left;
+            font-size: 1rem;
+            left: 0;
+            list-style: none;
+            margin: .125rem 0 0;
+            min-width: 10rem;
+            padding: .5rem 0;
+            position: absolute;
+            text-align: left;
+            top: 100%;
+            z-index: 1000;
+        }
+ 
+        .input-group {
+            align-items: stretch;
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            width: 100%;
+        }
+ 
+        .input-group>.form-control {
+            flex: 1 1 auto;
+            margin-bottom: 0;
+            min-width: 0;
+            position: relative;
+            width: 1%;
+        }
+ 
+        .input-group>.form-control:focus {
+            z-index: 3;
+        }
+ 
+        .input-group-append {
+            display: flex;
+        }
+ 
+        .input-group-append .btn {
+            position: relative;
+            z-index: 2;
+        }
+ 
+        .input-group-append .btn:focus {
+            z-index: 3;
+        }
+ 
+        .input-group-append {
+            margin-left: -1px;
+        }
+ 
+        .navbar {
+            padding: .5rem 1rem;
+            position: relative;
+        }
+ 
+        .navbar,
+        .navbar .container {
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+ 
+        .navbar-nav {
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            margin-bottom: 0;
+            padding-left: 0;
+        }
+ 
+        .navbar-nav .nav-link {
+            padding-left: 0;
+            padding-right: 0;
+        }
+ 
+        .navbar-nav .dropdown-menu {
+            float: none;
+            position: static;
+        }
+ 
+        .d-none {
+            display: none !important;
+        }
+ 
+        .d-flex {
+            display: flex !important;
+        }
+ 
+        @media (min-width:768px) {
+            .d-sm-none {
+                display: none !important;
+            }
+ 
+            .d-sm-block {
+                display: block !important;
+            }
+        }
+ 
+        .float-right {
+            float: right !important;
+        }
+ 
+        .sr-only {
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+            white-space: nowrap;
+        }
+ 
+        .sr-only-focusable:active,
+        .sr-only-focusable:focus {
+            height: auto;
+            overflow: visible;
+            position: static;
+            width: auto;
+            clip: auto;
+            white-space: normal;
+        }
+ 
+        .py-0 {
+            padding-top: 0 !important;
+        }
+ 
+        .py-0 {
+            padding-bottom: 0 !important;
+        }
+ 
+        @media print {
+ 
+            *,
+            :after,
+            :before {
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+ 
+            a:not(.btn) {
+                text-decoration: underline;
+            }
+ 
+            img,
+            tr {
+                page-break-inside: avoid;
+            }
+ 
+            h2,
+            h3 {
+                orphans: 3;
+                widows: 3;
+            }
+ 
+            h2,
+            h3 {
+                page-break-after: avoid;
+            }
+ 
+            .container,
+            body {
+                min-width: 1240px !important;
+            }
+ 
+            .navbar {
+                display: none;
+            }
+        }
+ 
+        label {
+            margin-bottom: .25rem;
+        }
+ 
+        h2 {
+            font-size: 1.3125rem;
+        }
+ 
+        h2,
+        h3 {
+            font-weight: 400;
+            line-height: 1.3334;
+        }
+ 
+        h3 {
+            font-size: 1.125rem;
+        }
+ 
+        h4 {
+            font-size: 1rem;
+            line-height: 1.375;
+        }
+ 
+        h4 {
+            font-weight: 400;
+        }
+ 
+        h2:not(.not-bold),
+        h3:not(.not-bold),
+        h4:not(.not-bold) {
+            font-family: RObold, Segoe UI, Helvetica Neue, sans-serif;
+        }
+ 
+        @media (min-width:768px) {
+            h2 {
+                font-size: 1.3125rem;
+            }
+ 
+            h2,
+            h3 {
+                font-weight: 400;
+                line-height: 1.3334;
+            }
+ 
+            h3 {
+                font-size: 1.125rem;
+            }
+ 
+            h4 {
+                font-size: 1rem;
+                line-height: 1.375;
+            }
+ 
+            h4 {
+                font-weight: 400;
+            }
+        }
+ 
+        [class*=col-] {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+ 
+        @media (min-width:768px) {
+            [class*=col-] {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            [class*=col-] {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+        }
+ 
+        .container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+ 
+        @media (min-width:768px) {
+            .container {
+                max-width: 724px;
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+ 
+        @media (min-width:1024px) {
+            .container {
+                max-width: 970px;
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            .container {
+                max-width: 1170px;
+            }
+        }
+ 
+        .row {
+            margin-left: -8px;
+            margin-right: -8px;
+        }
+ 
+        @media (min-width:768px) {
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            .row {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+        }
+ 
+        .form-control {
+            border-color: dimgray;
+            color: #000;
+            line-height: 1.375;
+        }
+ 
+        .form-control:active,
+        .form-control:focus,
+        .form-control:hover {
+            border-color: #007bc7;
+            z-index: 3;
+        }
+ 
+        .form-control:focus {
+            box-shadow: none;
+            color: #000;
+            outline: 2px solid #007bc7;
+            outline-offset: 2px;
+        }
+ 
+        .form-control:disabled {
+            background-color: #fff;
+        }
+ 
+        .btn:not(.btn-sm),
+        main a[class*=bld-knop]:not(.btn-sm) {
+            min-width: 48px;
+        }
+ 
+        .btn:not(.bld-btn-search),
+        main a[class*=bld-knop]:not(.bld-btn-search) {
+            height: auto;
+        }
+ 
+        .btn:focus:not(:active),
+        main a[class*=bld-knop]:focus:not(:active) {
+            box-shadow: none;
+            outline: 2px solid #007bc7;
+            outline-offset: 2px;
+            z-index: 3;
+        }
+ 
+        .btn:hover,
+        main a[class*=bld-knop]:hover {
+            z-index: 3;
+        }
+ 
+        main a[class*=bld-knop]:not([class*=bld-knop-call-to-action]):not([class*=bld-knop-secundair]) {
+            box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .2);
+            transition: box-shadow .4s;
+        }
+ 
+        main a[class*=bld-knop]:hover:active:not([class*=bld-knop-call-to-action]):not([class*=bld-knop-secundair]),
+        main a[class*=bld-knop]:hover:not([class*=bld-knop-call-to-action]):not([class*=bld-knop-secundair]) {
+            box-shadow: inset 0 -48px 0 rgba(0, 0, 0, .2);
+        }
+ 
+        main a[class*=bld-knop]:not([class*=bld-knop-call-to-action]):not([class*=bld-knop-secundair]) {
+            background-color: #01689b;
+            color: #fff;
+        }
+ 
+        .btn.minimal {
+            color: #01689b;
+        }
+ 
+        .btn.minimal:hover {
+            background-color: #fff;
+            border-color: #01689b;
+        }
+ 
+        .btn.minimal:active {
+            background-color: #eef7fb;
+            border-color: #01689b;
+            color: #01689b;
+        }
+ 
+        .btn.minimal:focus {
+            background-color: #fff;
+            border-color: #01689b;
+        }
+ 
+        .btn {
+            border-radius: unset;
+        }
+ 
+        .dropdown-menu {
+            border-radius: 0;
+            border-top: none;
+            margin-top: 0;
+            padding: 0;
+        }
+ 
+        .input-group {
+            width: auto;
+        }
+ 
+        .input-group>.form-control:not(:first-child) {
+            border-left-color: transparent;
+        }
+ 
+        .input-group>.form-control:focus {
+            border-left-color: #01689b;
+        }
+ 
+        .input-group>.form-control:not(:last-child) {
+            border-right-color: transparent;
+        }
+ 
+        .input-group>.form-control:focus {
+            border-right-color: #01689b;
+        }
+ 
+        @media (min-width:768px) {
+            .sr-only-not-sm {
+                height: auto;
+                overflow: visible;
+                position: static;
+                width: auto;
+                clip: auto;
+                white-space: normal;
+            }
+        }
+ 
+        ::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 7px;
+        }
+ 
+        ::-webkit-scrollbar-thumb {
+            background-color: #999;
+            border-radius: 4px;
+        }
+ 
+        .icon {
+            font-family: RO Icons !important;
+            font-feature-settings: "liga"1;
+            font-style: normal;
+            font-weight: 400 !important;
+            vertical-align: top;
+        }
+ 
+        @media print {
+ 
+            *,
+            :after,
+            :before {
+                box-shadow: none !important;
+                text-shadow: none !important;
+            }
+ 
+            footer {
+                display: none !important;
+            }
+        }
+ 
+        .bldc-footer {
+            background-color: #eef7fb;
+            margin-top: 3rem;
+        }
+ 
+        .bldc-footer .bldc-footer-lists {
+            border-bottom: 1px solid #8fcae7;
+            padding-bottom: 1.75rem;
+            padding-top: 5rem;
+        }
+ 
+        .bldc-footer .bldc-footer-basic {
+            padding: 1.5rem 0;
+        }
+ 
+        .bldc-footer .bldc-footer-basic ul {
+            display: flex;
+            flex-flow: row wrap;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+ 
+        @media (max-width:767.98px) {
+            .bldc-footer .bldc-footer-basic ul>li {
+                flex: 1 100%;
+                text-align: center;
+            }
+        }
+ 
+        .bldc-footer .basic-right-container {
+            display: flex;
+            justify-content: center;
+        }
+ 
+        @media (min-width:768px) {
+            .bldc-footer .basic-right-container {
+                justify-content: flex-end;
+            }
+        }
+ 
+        @media (min-width:1024px) {
+            .bldc-footer .basic-right-container {
+                justify-content: flex-start;
+            }
+        }
+ 
+        .bldc-footer h3,
+        .bldc-footer h4 {
+            font-family: ROregular, Segoe UI, Helvetica Neue, sans-serif;
+            font-size: 1.3125rem;
+            line-height: 1.75rem;
+            margin-bottom: .5rem;
+        }
+ 
+        .bldc-footer ul.bld-hyperlink li a {
+            line-height: 1.375rem;
+            padding-bottom: .5rem;
+            padding-top: .5rem;
+            -moz-column-break-inside: avoid;
+            break-inside: avoid;
+        }
+ 
+        .bldc-footer ul.bld-hyperlink li a:before {
+            top: 10px;
+        }
+ 
+        :root {
+            --afsluiten: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath d='m9.362 7 4.305-4.862a1.32 1.32 0 0 0-.026-1.78 1.32 1.32 0 0 0-1.78-.026L7 4.638 2.138.332a1.32 1.32 0 0 0-1.78.026 1.32 1.32 0 0 0-.026 1.78L4.637 7 .332 11.86a1.32 1.32 0 0 0 .026 1.78c.498.468 1.27.48 1.78.027L7 9.362l4.861 4.305a1.32 1.32 0 0 0 1.78-.025 1.32 1.32 0 0 0 .026-1.78z'/%3E%3C/svg%3E");
+            --delta_rechts: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M11.627 7.056 6.65 2.293c-.497-.519-1.14-.242-1.385.013a.973.973 0 0 0 .028 1.36l3.63 4.33L8.919 8l.004.004-3.63 4.33a.973.973 0 0 0-.028 1.36c.246.255.888.531 1.385.013l4.977-4.763c.25-.26.374-.603.373-.944a1.35 1.35 0 0 0-.373-.944'/%3E%3C/svg%3E");
+            --delta_omlaag: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m8.944 11.127 4.763-4.977c.519-.497.242-1.14-.013-1.385a.973.973 0 0 0-1.36.028l-4.33 3.63L8 8.419l-.004.004-4.33-3.63a.973.973 0 0 0-1.36-.028c-.255.246-.532.888-.013 1.385l4.763 4.977c.26.25.603.374.944.373.341.001.683-.123.944-.373'/%3E%3C/svg%3E");
+            --delta_links: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4.873 8.944 4.977 4.763c.497.518 1.14.242 1.385-.013a.97.97 0 0 0-.028-1.36l-3.63-4.33L7.581 8l-.004-.004 3.63-4.33a.973.973 0 0 0 .028-1.36c-.246-.255-.888-.532-1.385-.013L4.873 7.056c-.25.26-.374.603-.373.944-.001.341.123.683.373.944'/%3E%3C/svg%3E");
+            --delta_omhoog: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m8.944 4.873 4.763 4.977c.518.497.242 1.14-.013 1.385a.97.97 0 0 1-1.36-.028l-4.33-3.63L8 7.581l-.004-.004-4.33 3.63a.973.973 0 0 1-1.36.028c-.255-.246-.532-.888-.013-1.385l4.763-4.977c.26-.25.603-.374.944-.373.341-.001.683.123.944.373'/%3E%3C/svg%3E");
+            --download: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M12 11.333v1.334H4v-1.334H2V14c0 .368.298.667.667.667h10.666A.666.666 0 0 0 14 14v-2.667z'/%3E%3Cpath d='M7.294 10.984a.903.903 0 0 0 1.412 0l3.855-4.822a.903.903 0 0 0-1.185-1.33L9.333 6.108V2.28c0-.725-.626-.941-1.332-.941-.708 0-1.334.216-1.334.94v3.829L4.624 4.832a.903.903 0 0 0-1.184 1.33z'/%3E%3C/svg%3E");
+            --document: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.377 6.063c1.363.567 2.601.786 5.029.802A.294.294 0 0 0 8.7 6.57c-.016-2.428-.237-3.662-.803-5.026-.04-.096-.105-.067-.105-.067v4.19c0 .161-.13.292-.292.292H3.31s-.029.064.067.104m-.373-.567L7.33 1.17c.11-.11.258-.171.412-.171h5.3c.162 0 .292.13.292.292v13.416c0 .161-.13.292-.291.292H3.125a.29.29 0 0 1-.292-.292v-8.8c0-.155.062-.303.171-.412'/%3E%3C/svg%3E");
+            --error: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23d52b1e' d='M9.147 1.467a1.32 1.32 0 0 0-2.294 0L.173 13.239A1.314 1.314 0 0 0 1.32 15.2h13.36a1.314 1.314 0 0 0 1.147-1.961z'/%3E%3Cpath fill='%23fff' d='M7.992 10.906c.805 0 1.265.472 1.265 1.334 0 .733-.427 1.303-1.25 1.303-.805 0-1.265-.456-1.265-1.303 0-.748.427-1.334 1.25-1.334m1.025-5.97L8.833 8.31v1.751H7.171V5.116z'/%3E%3C/svg%3E");
+            --euro: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 7.352V5.66h1.463q.58-2.299 2.15-3.48Q8.183 1.001 10.462 1q.645 0 1.193.052a11 11 0 0 1 1.237.199v2.38q-.659-.12-1.322-.207a10 10 0 0 0-1.173-.063q-1.162 0-1.892.591-.731.59-1.076 1.708h3.785v1.692H7.129a8 8 0 0 0-.033 1.212q.012.168.033.314h4.086v1.65H7.409q.344 1.171 1.117 1.693c.521.35 1.137.532 1.765.522q.773 0 1.323-.072.547-.075 1.386-.24v2.235q-.903.21-1.463.271-.557.063-1.44.063-2.257 0-3.775-1.107-1.515-1.109-1.99-3.365H3v-1.65h1.16V8.46q-.002-.555.043-1.107z'/%3E%3C/svg%3E");
+            --facebook: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M13.727 1H2.273C1.57 1 1 1.57 1 2.273v11.454C1 14.431 1.57 15 2.273 15h6.363V9.273H6.727v-1.91h1.91V6.339c0-1.94.945-2.793 2.558-2.793.773 0 1.181.058 1.375.084v1.826h-1.1c-.685 0-.925.361-.925 1.093v.816h2.008l-.273 1.909h-1.734V15h3.181c.704 0 1.273-.57 1.273-1.273V2.273C15 1.57 14.43 1 13.727 1'/%3E%3C/svg%3E");
+            --formulier: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='none' d='M0 0h64v64H0z'/%3E%3Cpath d='M51.414 22.414 36.586 7.586A2 2 0 0 0 35.17 7H14a2 2 0 0 0-2 2v46a2 2 0 0 0 2 2h36c1.1 0 2-.9 2-2V23.829a2 2 0 0 0-.586-1.415m-1.266 1.945L47 25.292V52H17V12h16.709l.931-3.135c.11-.34.36-.23.36-.23V23a1 1 0 0 0 1 1h14.367s.123.25-.219.36'/%3E%3C/svg%3E");
+            --gebruiker: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5.41 2.342c-.218.334-.241.85-.24 1.335.003.466-.009.906.033 1.132-.32-.015-.454.242-.405 1.111.044.771.352.938.535 1.043.162.78.475 1.518 1.028 2.077l.001-.009a8 8 0 0 1-.133.633c-.761.267-2.63.963-3.176 1.54C2.363 11.93 2 14.667 2 14.667h12s-.363-2.736-1.053-3.463c-.546-.576-2.408-1.27-3.172-1.539a6 6 0 0 1-.146-.625c.553-.559.876-1.297 1.038-2.077.183-.105.481-.272.525-1.043.05-.87-.084-1.126-.404-1.11.04-.226.044-.653.04-1.112-.003-.485-.025-1.004-.221-1.356-.244-.437-.585-.693-1.252-.535-.584-.28-1.198-.582-2.227-.355-1.16.257-1.569.662-1.718.89'/%3E%3C/svg%3E");
+            --geluid_aan: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10 3v1.334C12 4.334 13.667 6 13.667 8S12 11.667 10 11.667V13c2.733 0 5-2.266 5-5s-2.267-5-5-5'/%3E%3Cpath d='M12.667 8c0-1.466-1.2-2.666-2.667-2.666v1.333c.733 0 1.333.6 1.333 1.333 0 .734-.6 1.334-1.333 1.334v1.333c1.467 0 2.667-1.2 2.667-2.667M7.933 2.8C7.6 3 4.667 5.334 4.667 5.334H3.333c-1.466 0-2 1.4-2 2.666s.534 2.667 2 2.667h1.334S7.6 13 7.933 13.2s.734 0 .734-.4V3.134c0-.334-.4-.6-.734-.334'/%3E%3C/svg%3E");
+            --help: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M7.493 11.722c.961 0 1.51.537 1.51 1.52 0 .834-.51 1.482-1.49 1.482-.963 0-1.512-.518-1.512-1.482 0-.853.51-1.52 1.492-1.52M7.985 1c2.364 0 3.9 1.225 3.9 3.064 0 1.592-.602 2.43-2.2 3.308l-1.036.572c-.602.326-.871.735-.871 1.184 0 .278.08.576.208.879H5.821a2.27 2.27 0 0 1-.284-1.144c0-.94.436-1.614 1.556-2.288l1.1-.653c.87-.51 1.16-.92 1.16-1.573 0-.694-.663-1.205-1.97-1.205-.954 0-1.867.184-2.883.572V1.654C5.64 1.204 6.698 1 7.985 1'/%3E%3C/svg%3E");
+            --home: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M15.07 7.733 8.738 1.4c-.4-.4-1-.4-1.4 0L1.004 7.733c-.2.2-.267.4-.267.667-.066.533.334.933.867.933h.4v5.333H6.67V10h2.666v4.666h4.667V9.333h.4c.533 0 .933-.4.933-.933 0-.267-.066-.467-.266-.667'/%3E%3C/svg%3E");
+            --information: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23007bc7' d='M14.26.348C12.175 0 8.696 0 8 0S3.826 0 1.74.348c-.723.12-1.272.67-1.392 1.391C0 3.826 0 7.304 0 8s0 4.174.348 6.26c.12.723.669 1.271 1.391 1.392C3.826 16 7.305 16 8 16s4.174 0 6.26-.348a1.68 1.68 0 0 0 1.393-1.391C16 12.174 16 8.696 16 8c0-2.09 0-4.175-.347-6.262A1.68 1.68 0 0 0 14.26.348'/%3E%3Cpath fill='%23fff' d='M9.157 5.899V13.6h-2.49L6.88 8.7V5.899zM8.01 2.048c.85 0 1.336.423 1.336 1.21 0 .696-.45 1.24-1.319 1.24-.85 0-1.336-.438-1.336-1.24 0-.68.451-1.21 1.32-1.21'/%3E%3C/svg%3E");
+            --instagram: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1c-1.901 0-2.14.008-2.886.042-.745.034-1.254.152-1.7.325-.46.18-.85.419-1.24.808-.388.389-.628.78-.807 1.24-.173.445-.29.954-.325 1.699C1.008 5.86 1 6.099 1 8s.008 2.14.042 2.886c.034.745.152 1.254.325 1.7.18.46.419.85.808 1.24.39.388.78.628 1.24.806.445.174.954.292 1.699.326.747.034.985.042 2.886.042s2.14-.008 2.886-.042c.745-.034 1.254-.152 1.7-.325.46-.18.85-.419 1.24-.808.388-.39.628-.78.806-1.24.174-.445.292-.954.326-1.699S15 9.901 15 8s-.008-2.14-.042-2.886c-.034-.745-.152-1.254-.325-1.7a3.4 3.4 0 0 0-.808-1.24c-.39-.388-.78-.628-1.24-.807-.445-.173-.954-.29-1.699-.325C10.14 1.008 9.901 1 8 1m0 1.261c1.87 0 2.09.007 2.829.041.682.031 1.053.145 1.3.241.326.127.56.279.804.524.245.245.397.478.524.805.096.246.21.617.24 1.3.035.738.042.959.042 2.828 0 1.87-.007 2.09-.041 2.829-.031.682-.145 1.053-.241 1.3a2.2 2.2 0 0 1-.524.804 2.2 2.2 0 0 1-.805.524c-.246.096-.617.21-1.3.24-.737.035-.959.042-2.828.042-1.87 0-2.09-.007-2.829-.041-.682-.031-1.053-.145-1.3-.241a2.2 2.2 0 0 1-.804-.524 2.2 2.2 0 0 1-.524-.805c-.096-.246-.21-.617-.24-1.3C2.267 10.092 2.26 9.87 2.26 8c0-1.87.007-2.09.041-2.829.031-.682.145-1.053.241-1.3.127-.326.279-.56.524-.804.245-.245.478-.397.805-.524.246-.096.617-.21 1.3-.24C5.91 2.267 6.13 2.26 8 2.26'/%3E%3Cpath d='M8 10.334a2.333 2.333 0 1 1 0-4.667 2.333 2.333 0 0 1 0 4.667m0-5.928a3.595 3.595 0 1 0 0 7.189 3.595 3.595 0 0 0 0-7.19m4.577-.142a.84.84 0 1 1-1.68 0 .84.84 0 0 1 1.68 0'/%3E%3C/svg%3E");
+            --kalender: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2.4 13.6h11.2V6.32H2.4zM14.44 2.68h-1.938l-.48 1.61c-.029.091-.102.063-.102.063V2.68h-.002c-.004-.352-.016-.937-.05-1.154l-.008-.041c-.03-.19-.076-.485-.328-.485h-.8c-.27 0-.329.344-.359.53-.035.217-.084.799-.112 1.15h-4.48l-.478 1.61c-.03.091-.103.063-.103.063V2.68h-.002c-.004-.352-.016-.937-.05-1.154l-.007-.041C5.11 1.295 5.064 1 4.81 1h-.798c-.272 0-.33.344-.36.53-.035.217-.084.799-.112 1.15H1.56a.56.56 0 0 0-.56.56v11.2c0 .31.25.56.56.56h12.88c.31 0 .56-.25.56-.56V3.24a.56.56 0 0 0-.56-.56M3.52 9.4h2.24V7.72H3.52zm5.6 0H6.88V7.72h2.24zm1.12 0h2.24V7.72h-2.24zm-4.48 2.8H3.52v-1.68h2.24zm1.12 0h2.24v-1.68H6.88zm5.6 0h-2.24v-1.68h2.24z'/%3E%3C/svg%3E");
+            --kruis: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='24' height='24' baseProfile='tiny' version='1.2'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M17.687 4.214 12.01 9.242 6.334 4.214a1.54 1.54 0 0 0-2.08.03 1.54 1.54 0 0 0-.03 2.08L9.252 12l-5.028 5.677a1.54 1.54 0 0 0 .03 2.079c.58.546 1.482.56 2.08.03l5.676-5.028 5.677 5.028a1.54 1.54 0 0 0 2.08-.03c.545-.58.558-1.482.03-2.08L14.769 12l5.028-5.677a1.54 1.54 0 0 0-.03-2.079 1.54 1.54 0 0 0-2.08-.03m-5.677 7.8-.007-.007-.007-.007.007-.007.007-.008.008.008.007.007-.007.007z'/%3E%3C/svg%3E");
+            --mastodon: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M15 5.425c0-3.255-2.134-4.208-2.134-4.208C11.791.724 9.944.516 8.026.5h-.048c-1.919.016-3.764.224-4.84.717 0 0-2.134.954-2.134 4.208 0 .744-.014 1.635.01 2.58.077 3.183.583 6.32 3.527 7.098 1.357.359 2.523.434 3.46.382 1.703-.094 2.658-.606 2.658-.606l-.056-1.235s-1.217.383-2.582.337c-1.354-.047-2.782-.146-3.001-1.807a3.4 3.4 0 0 1-.03-.466s1.328.325 3.012.402c1.03.048 1.994-.06 2.975-.177 1.88-.224 3.518-1.382 3.724-2.44.325-1.668.298-4.068.298-4.068m-2.517 4.192h-1.561V5.793c0-.806-.34-1.215-1.019-1.215-.75 0-1.126.485-1.126 1.445v2.093H7.224V6.023c0-.96-.375-1.445-1.127-1.445-.679 0-1.018.41-1.018 1.215v3.824H3.517v-3.94q0-1.208.618-1.918c.425-.473.98-.716 1.672-.716.8 0 1.405.306 1.805.92L8 4.616l.39-.651c.4-.615 1.005-.921 1.805-.921.69 0 1.247.243 1.672.716q.616.71.616 1.918z'/%3E%3C/svg%3E");
+            --meer: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M9.5 4.25a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 4.25M9.5 8a1.5 1.5 0 1 0-3.001.001A1.5 1.5 0 0 0 9.5 8M8 10.25a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 8 10.25'/%3E%3C/svg%3E");
+            --menu: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M13.333 2.667H2.667v2h9.666zM2.667 8.667h9.666l1-2H2.667zM2.667 12.667h9.666l1-2H2.667z'/%3E%3C/svg%3E");
+            --nieuws: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='64' height='64' baseProfile='tiny' version='1.2'%3E%3Cpath fill='none' d='M0 0h64v64H0z'/%3E%3Cpath d='M33.447 42c.23-.91.386-1.921.473-3h-9.982a25 25 0 0 1-.372 3zM24 34h10v3H24zM24 29h10v3H24z'/%3E%3Cpath d='M57 11H16a2 2 0 0 0-2 2v24.167c0 1.623-.16 3.134-.455 4.461 0 0-.296.101-.345-.301C12.77 37.812 10.854 21 10.854 21h-4.08c-1.03 0-1.71.812-1.598 1.72.567 4.546 1.809 12.565 2.397 16.637C8.515 45.86 9.403 52 17 52h32.166C55.14 52 59 46.178 59 37.167V13a2 2 0 0 0-2-2m-3 26.167C54 41.902 52.487 47 49.166 47H16.863C18.243 44.453 19 41 19 36V16h35z'/%3E%3Cpath d='M24 21h25v5H24zM37 35v2.167c0 1.725-.162 3.336-.445 4.833h11.843c.502-1.15.602-3.219.602-5v-8H37zM33.92 39h-9.982a25 25 0 0 1-.372 3h9.88c.23-.91.387-1.922.474-3M24 34h10v3H24zM24 29h10v3H24z'/%3E%3C/svg%3E");
+            --pijl_omhoog: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2.295 6.351c-.52.498-.242 1.14.013 1.385a.97.97 0 0 0 1.36-.028L6.922 4.98v9.277c0 .572.607.742 1.144.742.538 0 1.015-.17 1.015-.742V4.98l3.254 2.728a.97.97 0 0 0 1.36.028c.255-.245.532-.887.013-1.385L8.945 1.374A1.35 1.35 0 0 0 8 1.001a1.35 1.35 0 0 0-.943.373z'/%3E%3C/svg%3E");
+            --veeg: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M9.194 1.222c.233-.366.741-.485 1.14-.278a.78.78 0 0 1 .43.754.8.8 0 0 1-.084.293c-.136.273-1.159 2.53-1.889 4.086.117-.047.612-.219 1.082.038.666.363.552 1.06.561 1.081 0 0 .525-.256 1.012.06.477.31.562.815.55 1.094.543-.029 1.14.481.977 1.337-.175.915-.994 2.29-1.38 2.93-1.43 2.388-1.957 1.404-2.904 2.726-.085.119-.339.497-.43.657l-5.091-2.877c.264-2.076-.927-3.838.11-5.374.488-.72 1.37-.812 2.003-.906-.072.202-.53 1.396-.587 1.676-.018.091.042.107.06.11a380 380 0 0 1 4.44-7.407M4.234 0a.29.29 0 0 1 .216.077.3.3 0 0 1 .046.38l-.55.845h2.748c.295 0 .383.261.383.557 0 .295-.088.627-.383.627H3.946l.55.846a.3.3 0 0 1-.046.38.29.29 0 0 1-.376.012l-1.966-1.6a.296.296 0 0 1 0-.46l1.967-1.6q.069-.057.159-.064'/%3E%3C/svg%3E");
+            --volgende: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M9.65 2.293c-.498-.519-1.14-.242-1.385.013a.97.97 0 0 0 .028 1.36l2.728 3.254H1.744c-.572 0-.742.607-.742 1.144 0 .538.17 1.015.742 1.015h9.277l-2.728 3.254a.97.97 0 0 0-.028 1.361c.245.254.887.531 1.385.012l4.977-4.763c.25-.26.374-.602.373-.944.001-.34-.123-.683-.373-.943z'/%3E%3C/svg%3E");
+            --vorige: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6.352 2.293c.498-.519 1.14-.242 1.385.013a.97.97 0 0 1-.028 1.36L4.981 6.92h9.277c.572 0 .742.607.742 1.144 0 .538-.17 1.015-.742 1.015H4.981l2.728 3.254a.97.97 0 0 1 .028 1.361c-.245.254-.887.531-1.385.012L1.375 8.943A1.35 1.35 0 0 1 1.002 8a1.35 1.35 0 0 1 .373-.943z'/%3E%3C/svg%3E");
+            --warning: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23FFB612' d='M19.566 2.174a2.1 2.1 0 0 0-1.74-1.739C15.218 0 10.869 0 10 0S4.783 0 2.174.435A2.095 2.095 0 0 0 .435 2.174C0 4.783 0 9.131 0 10.001c0 .869 0 5.217.435 7.826.15.902.836 1.588 1.739 1.739 2.609.435 6.957.435 7.826.435s5.218 0 7.826-.435a2.1 2.1 0 0 0 1.74-1.739C20 15.218 20 10.87 20 10.001c0-2.611 0-5.218-.434-7.827'/%3E%3Cpath d='M9.989 13.196c1.121 0 1.761.663 1.761 1.875 0 1.03-.595 1.83-1.738 1.83-1.121 0-1.762-.64-1.762-1.83 0-1.052.595-1.875 1.739-1.875m1.425-9.39L11.16 9.55v2.451H8.847V4.06z'/%3E%3C/svg%3E");
+            --rss: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='none' d='M0 0h64v64H0z'/%3E%3Cpath d='M53.856 14.117a4.79 4.79 0 0 0-3.973-3.973C43.922 9.15 33.986 9.15 32 9.15s-11.922 0-17.883.994a4.79 4.79 0 0 0-3.973 3.973C9.15 20.078 9.15 30.014 9.15 32s0 11.922.994 17.883a4.79 4.79 0 0 0 3.973 3.973c5.961.994 15.897.994 17.883.994s11.922 0 17.883-.994a4.79 4.79 0 0 0 3.973-3.973c.994-5.961.994-15.897.994-17.883 0-5.964 0-11.922-.994-17.883M20.502 48.544c-3.252 0-5.045-1.792-5.045-5.045 0-3.251 1.793-5.042 5.045-5.042 3.25 0 5.041 1.79 5.041 5.042 0 3.253-1.791 5.044-5.041 5.044m14.627.447a224 224 0 0 1-3.209.025q-1.423 0-2.786-.018c.848-1.509 1.321-3.317 1.321-5.36 0-6.037-4.055-10.093-10.092-10.093-2.043 0-3.852.474-5.361 1.322-.011-.91-.018-1.836-.018-2.787 0-1.1.01-2.163.025-3.208a17 17 0 0 1 5.354-.855c9.051 0 15.62 6.57 15.62 15.622 0 1.91-.307 3.701-.854 5.352m12.037-.653c-1.725.206-3.84.37-6.267.484.387-1.651.613-3.379.613-5.183 0-12.058-9.092-21.15-21.15-21.15-1.804 0-3.532.226-5.184.613.114-2.428.278-4.542.484-6.267a29.6 29.6 0 0 1 4.7-.378c15.496 0 27.181 11.686 27.181 27.182 0 1.611-.133 3.179-.377 4.7'/%3E%3C/svg%3E");
+            --settings: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='64' height='64' baseProfile='tiny' version='1.2'%3E%3Cpath fill='none' d='M0 0h64v64H0z'/%3E%3Cpath d='M55.586 47.403 36.593 28.41c-3.345 3.774-6.434 4.908-7.079 5.116-.283.091-.447.02-.5-.104.6-.488 1.2-1.01 1.796-1.607 6.68-6.68 6.548-13.715.852-19.412-3.62-3.622-7.777-4.983-12.04-3.791-.697.195-.954 1.06-.489 1.614 1.517 1.807 2.978 3.587 3.665 4.534 1.02 1.405 2.883 4.013 1.147 5.749L18.83 25.62c-1.735 1.736-4.155-.263-5.558-1.28-.91-.659-2.516-2.106-4.16-3.65-.555-.521-1.49-.263-1.66.479-.933 4.073.471 8.034 3.94 11.501 4.195 4.198 9.12 5.359 14.093 3.017l20.909 20.908c2.447 2.447 5.337 1.018 7.774-1.421 2.438-2.435 3.866-5.323 1.418-7.772M49.5 53.075a2.575 2.575 0 1 1 0-5.15 2.575 2.575 0 0 1 0 5.15'/%3E%3C/svg%3E");
+            --suggestion: url("data:image/svg+xml;charset=utf8,%3C?xml%20version=%271.0%27%20encoding=%27UTF-8%27?%3E%3Csvg%20viewBox=%270%200%2020%2020%27%20version=%271.1%27%20xmlns=%27http://www.w3.org/2000/svg%27%20xmlns:xlink=%27http://www.w3.org/1999/xlink%27%3E%3C!--%20Generator:%20Sketch%2060.1%20(88133)%20-%20https://sketch.com%20--%3E%3Ctitle%3Enotificatie/icon/tip%3C/title%3E%3Cdesc%3ECreated%20with%20Sketch.%3C/desc%3E%3Cg%20id=%27notificatie/icon/tip%27%20stroke=%27none%27%20stroke-width=%271%27%20fill=%27none%27%20fill-rule=%27evenodd%27%3E%3Cpath%20d=%27M17.826,0.435%20C15.218,0%2010.869,0%2010,0%20C9.131,0%204.783,0%202.174,0.435%20C1.271,0.586%200.585,1.272%200.435,2.174%20C0,4.783%200,9.131%200,10.001%20C0,10.87%200,15.218%200.435,17.827%20C0.585,18.729%201.271,19.415%202.174,19.566%20C4.783,20.001%209.131,20.001%2010,20.001%20C10.869,20.001%2015.218,20.001%2017.826,19.566%20C18.729,19.415%2019.416,18.729%2019.566,17.827%20C20,15.218%2020,10.87%2020,10.001%20C20,7.39%2020,4.783%2019.566,2.174%20C19.416,1.272%2018.729,0.586%2017.826,0.435%20Z%27%20id=%27Fill-1%27%20fill=%27%23E17000%27%3E%3C/path%3E%3Cpath%20d=%27M9.99986441,5.68431579%20C12.3214915,5.68431579%2014.2032542,7.51036842%2014.2032542,9.76326316%20C14.2032542,11.4043158%2013.2023051,12.8151053%2011.7625763,13.4622105%20L11.7625763,13.4622105%20L11.7625763,15.7116842%20C11.7625763,15.9432632%2011.6061017,16.1474737%2011.3783051,16.2151053%20L11.3783051,16.2151053%20L10.9490169,16.3424737%20L10.9490169,16.7369474%20C10.9490169,16.8819474%2010.8277966,17.0001053%2010.6778305,17.0001053%20L10.6778305,17.0001053%20L9.32189831,17.0001053%20C9.17220339,17.0001053%209.05071186,16.8819474%209.05071186,16.7369474%20L9.05071186,16.7369474%20L9.05071186,16.3427368%20L8.62088136,16.2151053%20C8.39254237,16.1474737%208.23715254,15.9432632%208.23715254,15.7116842%20L8.23715254,15.7116842%20L8.23715254,13.4622105%20C6.79742373,12.8151053%205.79647458,11.4043158%205.79647458,9.76326316%20C5.79647458,7.51036842%207.67850847,5.68431579%209.99986441,5.68431579%20Z%20M14.0890847,13.4245%20C14.2604746,13.2581842%2014.5427797,13.2734474%2014.6943729,13.4568684%20L14.6943729,13.4568684%20L15.6928814,14.6684474%20C15.8360678,14.8421316%2015.8216949,15.0923947%2015.6597966,15.2495%20L15.6597966,15.2495%20C15.491661,15.4126579%2015.2337627,15.4263421%2015.0547797,15.2873947%20L15.0547797,15.2873947%20L13.8065085,14.3184474%20C13.6169492,14.1716053%2013.6017627,13.8976579%2013.7731525,13.7310789%20L13.7731525,13.7310789%20Z%20M5.30573559,13.4568684%20C5.45705763,13.2734474%205.73936271,13.2581842%205.91102373,13.4245%20L5.91102373,13.4245%20L6.22695593,13.7310789%20C6.39834576,13.8976579%206.38261695,14.1716053%206.19332881,14.3184474%20L6.19332881,14.3184474%20L4.94505763,15.2873947%20C4.76607458,15.4263421%204.50817627,15.4126579%204.34600678,15.2552895%20L4.34600678,15.2552895%20C4.17814237,15.0923947%204.16404068,14.8421316%204.30722712,14.6684474%20L4.30722712,14.6684474%20Z%20M9.99986441,6.94142105%20C8.39416949,6.94142105%207.09220339,8.20484211%207.09220339,9.76326316%20C7.09220339,11.0243158%207.97789831,11.8801053%208.25911864,11.9858947%20C8.34427119,12.0177368%208.36705085,11.9632632%208.36705085,11.9632632%20L8.36705085,11.9632632%20C8.1140339,11.5508947%207.96488136,11.0693158%207.96488136,10.5527368%20C7.96488136,9.02668421%209.23972881,7.78957895%2010.812339,7.78957895%20C11.3674576,7.78957895%2011.8840678,7.94563158%2012.3217627,8.21273684%20C12.3361356,8.20721053%2012.3722034,8.18536842%2012.3431864,8.11852632%20C12.2287458,7.85326316%2011.3368136,6.94142105%209.99986441,6.94142105%20Z%20M3.98888136,9.154%20C4.2299661,9.12794737%204.44067797,9.31110526%204.44067797,9.54636842%20L4.44067797,9.54636842%20L4.44067797,9.98005263%20C4.44067797,10.2153158%204.2299661,10.3984737%203.98888136,10.3721579%20L3.98888136,10.3721579%20L2.40027119,10.2011053%20C2.17247458,10.1763684%202,9.98952632%202,9.76689474%20L2,9.76689474%20C2,9.53663158%202.17247458,9.34978947%202.40027119,9.32531579%20L2.40027119,9.32531579%20Z%20M15.9322378,9.1529547%20L16.0112271,9.15418421%20L17.5998373,9.32523684%20C17.8276339,9.34997368%2018.0001085,9.53681579%2018.0001085,9.75918421%20L18.0001085,9.75918421%20C18.0001085,9.98944737%2017.8276339,10.1762895%2017.5998373,10.2010263%20L17.5998373,10.2010263%20L16.0112271,10.3723421%20C15.7701424,10.3983947%2015.5594305,10.2152368%2015.5594305,9.97997368%20L15.5594305,9.97997368%20L15.5594305,9.54628947%20C15.5594305,9.31102632%2015.7701424,9.12786842%2016.0112271,9.15418421%20Z%20M4.34589831,4.27102632%20C4.50833898,4.11365789%204.76623729,4.09997368%204.94522034,4.23865789%20L4.94522034,4.23865789%20L6.19322034,5.20786842%20C6.38277966,5.35471053%206.39823729,5.62865789%206.22684746,5.79523684%20L6.22684746,5.79523684%20L5.91091525,6.10181579%20C5.73952542,6.26813158%205.45722034,6.25286842%205.30562712,6.06944737%20L5.30562712,6.06944737%20L4.30711864,4.85786842%20C4.1639322,4.68418421%204.17830508,4.43392105%204.34020339,4.27681579%20L4.34020339,4.27681579%20Z%20M15.0549424,4.23865789%20C15.2339254,4.09997368%2015.4918237,4.11365789%2015.6539932,4.27102632%20L15.6539932,4.27102632%20C15.8218576,4.43392105%2015.8359593,4.68418421%2015.6927729,4.85786842%20L15.6927729,4.85786842%20L14.6942644,6.06944737%20C14.5429424,6.25286842%2014.2606373,6.26813158%2014.0889763,6.10181579%20L14.0889763,6.10181579%20L13.7730441,5.79523684%20C13.6016542,5.62865789%2013.6171119,5.35471053%2013.8064,5.20786842%20L13.8064,5.20786842%20Z%20M10.0040136,2%20C10.2334373,2%2010.4259797,2.16736842%2010.4512,2.38842105%20L10.4512,2.38842105%20L10.6277424,3.93%20C10.6545898,4.16394737%2010.4658441,4.36842105%2010.2234034,4.36842105%20L10.2234034,4.36842105%20L9.77648814,4.36842105%20C9.53404746,4.36842105%209.34530169,4.16394737%209.37242034,3.93%20L9.37242034,3.93%20L9.54869153,2.38842105%20C9.57418305,2.16736842%209.76672542,2%209.99614915,2%20L9.99614915,2%20Z%27%20id=%27Combined-Shape%27%20fill=%27%23FFFFFF%27%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+            --success: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%2339870c' d='M15.653 1.74A1.68 1.68 0 0 0 14.26.347C12.174 0 8.695 0 8 0S3.826 0 1.74.348c-.723.12-1.272.67-1.392 1.391C0 3.826 0 7.304 0 8s0 4.174.348 6.26c.12.723.669 1.271 1.391 1.392C3.826 16 7.305 16 8 16s4.174 0 6.26-.348a1.68 1.68 0 0 0 1.393-1.391C16 12.174 16 8.696 16 8c0-2.09 0-4.175-.347-6.262'/%3E%3Cpath fill='%23fff' d='m12.086 5.133-4.077 6.74a.63.63 0 0 1-.536.303H7.47a.63.63 0 0 1-.535-.306l-2.67-4.48a.63.63 0 0 1 .135-.805.624.624 0 0 1 .813.006l2.203 1.92 3.667-4.125a.625.625 0 0 1 .84-.085c.26.193.33.554.162.832'/%3E%3C/svg%3E");
+            --tabblad: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M14.25 2H3.306a.75.75 0 0 0-.75.75v4.09H4.63V4.073h8.296v8.296h-2.765v2.074h4.089a.75.75 0 0 0 .75-.75V2.75a.75.75 0 0 0-.75-.75M7.81 8.275l-5.781.644a.83.83 0 0 0 .02 1.651l2.53.22-3.27 3.269c-.53.532-.305 1.073.127 1.505.432.433.973.657 1.505.126l3.269-3.27.22 2.531c.036.425.39.753.816.758h.01a.83.83 0 0 0 .825-.738l.645-5.78a.83.83 0 0 0-.916-.916'/%3E%3C/svg%3E");
+            --telefoon: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M12 1.267a32 32 0 0 0-8 0c-.4 0-.667.333-.667.733v12c0 .4.267.733.667.733q4 .501 8 0c.4-.066.667-.4.667-.733V2c0-.4-.267-.733-.667-.733M9.333 14H6.667v-.667h2.666zm2-2H4.667V2.667h6.666z'/%3E%3C/svg%3E");
+            --toon: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M14.783 7.082C13.966 5.773 11.787 3 8 3S2.034 5.773 1.217 7.082a1.26 1.26 0 0 0 0 1.336C2.034 9.727 4.213 12.5 8 12.5s5.966-2.773 6.783-4.082a1.26 1.26 0 0 0 0-1.336M8 5.225a1.525 1.525 0 1 1 0 3.05 1.525 1.525 0 0 1 0-3.05m0 6.025c-3.845 0-5.554-3.5-5.554-3.5S3.222 6.165 4.9 5.129a3.4 3.4 0 0 0-.376 1.21 3.501 3.501 0 1 0 6.966.677c.09-1.207-1.021-1.953-2.116-2.532-.046-.024-.042-.074-.04-.086 2.909.667 4.22 3.352 4.22 3.352s-1.709 3.5-5.554 3.5'/%3E%3C/svg%3E");
+            --x_twitter: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M9.333 6.929 14.546 1h-1.235L8.783 6.147 5.17 1H1l5.466 7.784L1 15h1.235l4.778-5.436L10.831 15H15M2.68 1.911h1.897l8.733 12.223h-1.897'/%3E%3C/svg%3E");
+            --zoeken: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m13.728 11.846-3.024-3.024a4.54 4.54 0 0 0 .543-2.156A4.57 4.57 0 0 0 6.68 2.1a4.57 4.57 0 0 0-4.567 4.566 4.57 4.57 0 0 0 4.567 4.567c.77 0 1.494-.193 2.13-.53l3.03 3.03a1.22 1.22 0 0 0 1.721 0l.167-.167a1.217 1.217 0 0 0 0-1.72m-9.815-5.18a2.767 2.767 0 1 1 5.534.001 2.767 2.767 0 0 1-5.534-.001'/%3E%3C/svg%3E");
+        }
+ 
+        [class*=bldc-icon] {
+            position: relative;
+        }
+ 
+        [class*=bldc-icon]:before {
+            background-color: #01689b;
+            content: "";
+            height: 1rem;
+            left: 50%;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 1rem;
+        }
+ 
+        .btn[class*=bldc-icon]:before {
+            height: 14px;
+            width: 14px;
+        }
+ 
+        .btn.bldc-icon-pijl_omhoog {
+            padding-right: 48px;
+        }
+ 
+        .btn.bldc-icon-pijl_omhoog:before {
+            left: inherit;
+            right: 18px;
+        }
+ 
+        .bldc-icon-pijl_omhoog:before {
+            -webkit-mask-image: var(--pijl_omhoog);
+            mask-image: var(--pijl_omhoog);
+        }
+ 
+        .header .navbar .navbar-nav>li a[class*=bld-knop],
+        .header .navbar .navbar-nav>li button[class*=bld-knop],
+        main a[class*=bld-knop] {
+            cursor: pointer;
+            display: inline-block;
+            font-family: RObold, Segoe UI, Helvetica Neue, sans-serif;
+            line-height: 1.375rem;
+            padding: .75rem 1.5rem;
+            text-decoration: none;
+        }
+ 
+        .header .navbar .navbar-nav>li a[class*=bld-knop]:hover,
+        .header .navbar .navbar-nav>li button[class*=bld-knop]:hover,
+        main a[class*=bld-knop]:hover {
+            text-decoration: none;
+        }
+ 
+        .header .navbar .navbar-nav>li a[class*=bld-knop],
+        .header .navbar .navbar-nav>li button[class*=bld-knop],
+        .header .navbar .navbar-nav>li>a[class*=bld-knop] {
+            background-color: transparent;
+        }
+ 
+        .header .navbar .navbar-nav>li a[class*=bld-knop]:hover,
+        .header .navbar .navbar-nav>li button[class*=bld-knop]:hover,
+        .header .navbar .navbar-nav>li>a[class*=bld-knop]:hover {
+            background-color: hsla(0, 0%, 100%, .2);
+        }
+ 
+        .header .navbar .navbar-nav>li.show {
+            background-color: hsla(0, 0%, 100%, .7);
+        }
+ 
+        .header .navbar .navbar-nav>li a[class*=bld-knop],
+        .header .navbar .navbar-nav>li button[class*=bld-knop] {
+            align-items: center;
+            display: flex;
+            font-family: ROregular, Segoe UI, Helvetica Neue, sans-serif;
+            height: auto;
+            min-height: 48px;
+            padding: 3px 15px;
+            position: relative;
+        }
+ 
+        @media (min-width:768px) {
+ 
+            .header .navbar .navbar-nav>li a[class*=bld-knop],
+            .header .navbar .navbar-nav>li button[class*=bld-knop] {
+                min-height: 60px;
+                padding: 8px 15px;
+            }
+        }
+ 
+        .header .navbar .navbar-nav>li a[class*=bld-knop] span,
+        .header .navbar .navbar-nav>li button[class*=bld-knop] span {
+            padding-left: 10px;
+        }
+ 
+        .header .navbar .navbar-nav>li .bld-knop-sluiten:hover span {
+            text-decoration: underline;
+        }
+ 
+        .header .navbar .navbar-nav>li>button {
+            align-items: center;
+            background-color: transparent;
+            border: unset;
+            display: flex;
+            min-height: 48px;
+            min-width: 48px;
+            padding: 3px 15px;
+        }
+ 
+        @media (min-width:768px) {
+            .header .navbar .navbar-nav>li>button {
+                min-height: 60px;
+                padding-top: 8px 15px;
+            }
+        }
+ 
+        .header .navbar .navbar-nav>li>button:hover {
+            background-color: hsla(0, 0%, 100%, .2);
+        }
+ 
+        .header .navbar .navbar-nav>li>button span {
+            padding-left: 23px;
+        }
+ 
+        .bld-knop-inloggen {
+            padding-right: 1.5rem;
+        }
+ 
+        .bld-knop-inloggen:before {
+            background-color: #fff;
+            content: "";
+            float: left;
+            height: 1.2rem;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            width: 1.7rem;
+        }
+ 
+        .bld-knop-inloggen:before {
+            -webkit-mask-image: var(--gebruiker);
+            mask-image: var(--gebruiker);
+        }
+ 
+        .bld-knop-home,
+        .bld-knop-inloggen.nav-link,
+        .bld-knop-menu,
+        .bld-knop-zoek {
+            padding-right: 1.5rem;
+        }
+ 
+        .bld-knop-home:before,
+        .bld-knop-inloggen.nav-link:before,
+        .bld-knop-menu:before,
+        .bld-knop-zoek:before {
+            background-color: #000;
+            content: "";
+            float: left;
+            height: 1rem;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            width: 1rem;
+        }
+ 
+        .bld-knop-home:before {
+            -webkit-mask-image: var(--home);
+            mask-image: var(--home);
+        }
+ 
+        .bld-knop-menu:before {
+            -webkit-mask-image: var(--menu);
+            mask-image: var(--menu);
+        }
+ 
+        .bld-knop-sluiten:before {
+            -webkit-mask-image: var(--afsluiten);
+            mask-image: var(--afsluiten);
+            -webkit-mask-size: 75%;
+            mask-size: 75%;
+        }
+ 
+        .bld-knop-terug:before {
+            -webkit-mask-image: var(--delta_links);
+            mask-image: var(--delta_links);
+        }
+ 
+        .bld-knop-zoek:before {
+            -webkit-mask-image: var(--zoeken);
+            mask-image: var(--zoeken);
+        }
+ 
+        .bld-knop-inloggen:before {
+            font-size: 1.125rem;
+        }
+ 
+        main a[class*=bld-knop]:before {
+            padding-right: 10px;
+        }
+ 
+        @media (max-width:767.98px) {
+            .level0.slide-in {
+                animation: level0-in .3s forwards;
+            }
+ 
+            .level1 {
+                transform: translateX(100%);
+            }
+ 
+            .level0,
+            .level1 {
+                z-index: 1000;
+            }
+ 
+            .level1 {
+                position: absolute;
+                top: 0;
+            }
+ 
+            .level1 .navbar-nav {
+                align-items: center;
+                justify-content: space-between;
+            }
+ 
+            .level1 .navbar-nav .dropdown .dropdown-menu {
+                top: 100%;
+            }
+        }
+ 
+        .navbar-nav li>a:focus,
+        .navbar-nav li>button:focus {
+            z-index: 3000;
+        }
+ 
+        .navbar-nav .dropdown {
+            position: static;
+        }
+ 
+        .navbar-nav .dropdown .dropdown-toggle:after {
+            display: none;
+        }
+ 
+        @media (max-width:767.98px) {
+            .navbar-nav .dropdown .bld-link-buttons li:first-child {
+                border-top: none;
+            }
+        }
+ 
+        .navbar-nav .dropdown .bld-link-buttons li a:after {
+            content: unset;
+        }
+ 
+        .navbar-nav .dropdown .bld-link-buttons li.bld-submenu>a:first-child {
+            margin-top: 2px;
+        }
+ 
+        .navbar-nav .dropdown .bld-link-buttons li.bld-submenu>a:after {
+            background-color: #01689b;
+            content: "";
+            height: 1rem;
+            -webkit-mask-image: var(--delta_rechts);
+            mask-image: var(--delta_rechts);
+            position: absolute;
+            top: .938rem;
+            transform: translateX(0);
+            transition: .5s;
+            width: 1rem;
+        }
+ 
+        .navbar-nav .dropdown .bld-link-buttons li>a:first-child {
+            margin-top: 2px;
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu {
+            border: none;
+            position: absolute;
+            top: 100%;
+            width: 100%;
+        }
+ 
+        @media (min-width:768px) {
+            .navbar-nav .dropdown .dropdown-menu {
+                top: auto;
+            }
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu .container {
+            display: block;
+        }
+ 
+        @media (max-width:767.98px) {
+            .navbar-nav .dropdown .dropdown-menu .container {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu .bld-mega-dropdown-close-container {
+            height: 40px;
+            position: relative;
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu ul {
+            list-style: none;
+            margin-left: 0;
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu ul li a {
+            color: #495057;
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu ul li a:focus,
+        .navbar-nav .dropdown .dropdown-menu ul li a:hover {
+            background-color: transparent;
+            color: #01689b;
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu .bld-load-menu {
+            overflow-y: auto;
+        }
+ 
+        @media (max-width:767.98px) {
+            .navbar-nav .dropdown .dropdown-menu .bld-load-menu {
+                padding-right: 0;
+                width: calc(100% - 7px);
+            }
+        }
+ 
+        .navbar-nav .dropdown .dropdown-menu .submenu-content {
+            overflow-y: auto;
+        }
+ 
+        @media (max-width:767.98px) {
+            .navbar-nav .dropdown .dropdown-menu .submenu-content {
+                padding-top: 2px;
+            }
+        }
+ 
+        @media (min-width:768px) {
+            .navbar-nav .dropdown .dropdown-menu .submenu-content {
+                width: 100%;
+            }
+        }
+ 
+        @media (min-width:1024px) {
+            .navbar-nav .dropdown .dropdown-menu .submenu-content {
+                width: 200%;
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            .navbar-nav .dropdown .dropdown-menu .submenu-content {
+                width: 300%;
+            }
+        }
+ 
+        .navbar-nav .dropdown #bld-loginmenu+.dropdown-menu ul.bld-menu li:first-child {
+            border-top: none;
+        }
+ 
+        .navbar-nav .dropdown #bld-loginmenu+.dropdown-menu ul.bld-menu li:last-child {
+            border-bottom: none;
+        }
+ 
+        @media (min-width:768px) {
+            .navbar-nav .dropdown #bld-megamenu+.dropdown-menu ul.bld-menu {
+                margin-bottom: 38px;
+            }
+        }
+ 
+        .form-control::placeholder {
+            font-family: ROitalic, Segoe UI, Helvetica Neue, sans-serif;
+        }
+ 
+        a {
+            color: #01689b;
+            text-decoration: underline;
+        }
+ 
+        a:hover {
+            color: #00537c;
+        }
+ 
+        a.btn {
+            text-decoration: none;
+        }
+ 
+        a span.bld-icon-tabblad {
+            background-color: #01689b;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: 14px;
+            color: transparent;
+            display: inline-block;
+            height: 16px;
+            left: 3px;
+            margin-right: 3px;
+            -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%2301689b' fill-rule='evenodd' d='M14.25 2H3.306a.75.75 0 0 0-.75.75v4.09H4.63V4.073h8.296v8.296h-2.765v2.074h4.089a.75.75 0 0 0 .75-.75V2.75a.75.75 0 0 0-.75-.75M7.81 8.275l-5.781.644a.83.83 0 0 0 .02 1.651l2.53.22-3.27 3.269c-.53.532-.305 1.073.127 1.505.432.433.973.657 1.505.126l3.269-3.27.22 2.531c.036.425.39.753.816.758h.01a.83.83 0 0 0 .825-.738l.645-5.78a.83.83 0 0 0-.916-.916'/%3E%3C/svg%3E");
+            mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%2301689b' fill-rule='evenodd' d='M14.25 2H3.306a.75.75 0 0 0-.75.75v4.09H4.63V4.073h8.296v8.296h-2.765v2.074h4.089a.75.75 0 0 0 .75-.75V2.75a.75.75 0 0 0-.75-.75M7.81 8.275l-5.781.644a.83.83 0 0 0 .02 1.651l2.53.22-3.27 3.269c-.53.532-.305 1.073.127 1.505.432.433.973.657 1.505.126l3.269-3.27.22 2.531c.036.425.39.753.816.758h.01a.83.83 0 0 0 .825-.738l.645-5.78a.83.83 0 0 0-.916-.916'/%3E%3C/svg%3E");
+            overflow: hidden;
+            position: relative;
+            top: 3px;
+            width: 16px;
+        }
+ 
+        a[class*=bld-knop]:not(.bld-knop-secundair)>span.bld-icon-tabblad {
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M14.25 2H3.306a.75.75 0 0 0-.75.75v4.09H4.63V4.073h8.296v8.296h-2.765v2.074h4.089a.75.75 0 0 0 .75-.75V2.75a.75.75 0 0 0-.75-.75M7.81 8.275l-5.781.644a.83.83 0 0 0 .02 1.651l2.53.22-3.27 3.269c-.53.532-.305 1.073.127 1.505.432.433.973.657 1.505.126l3.269-3.27.22 2.531c.036.425.39.753.816.758h.01a.83.83 0 0 0 .825-.738l.645-5.78a.83.83 0 0 0-.916-.916'/%3E%3C/svg%3E");
+        }
+ 
+        ul.bld-hyperlink {
+            list-style: none;
+            margin-left: 0;
+        }
+ 
+        ul.bld-hyperlink li>a {
+            display: inline-block;
+            line-height: 1.375rem;
+            padding-bottom: 5px;
+            padding-left: 20px;
+            padding-top: 5px;
+            position: relative;
+        }
+ 
+        ul.bld-hyperlink li>a:hover {
+            color: #00537c;
+        }
+ 
+        ul.bld-hyperlink li>a:before {
+            background-color: #01689b;
+            content: "";
+            height: 16px;
+            left: 0;
+            -webkit-mask-image: var(--delta_rechts);
+            mask-image: var(--delta_rechts);
+            position: absolute;
+            top: 7px;
+            transition: .5s;
+            width: 16px;
+        }
+ 
+        ul.bld-hyperlink li>a:hover:before {
+            background-color: #00537c;
+        }
+ 
+        @media (prefers-reduced-motion:no-preference) {
+            ul.bld-hyperlink li>a:hover:before {
+                transform: translateX(4px);
+                transition: .5s;
+            }
+        }
+ 
+        ul.bld-hyperlink a {
+            text-decoration: none;
+        }
+ 
+        .bld-link-buttons {
+            list-style: none;
+            margin-left: 0;
+        }
+ 
+        .bld-link-buttons li {
+            display: block;
+            line-height: 1.5;
+            position: relative;
+            white-space: normal;
+        }
+ 
+        .bld-link-buttons li:after,
+        .bld-link-buttons li:first-child:before {
+            background: #b4b4b4;
+            content: "";
+            height: 1px;
+            left: 0;
+            position: absolute;
+            width: 100%;
+        }
+ 
+        .bld-link-buttons li:after {
+            bottom: 0;
+        }
+ 
+        .bld-link-buttons li:first-child:before {
+            top: 0;
+        }
+ 
+        .bld-link-buttons li a {
+            color: #000;
+            display: inline-block;
+            padding: 9px 30px 9px 10px;
+            text-decoration: none;
+            width: 100%;
+        }
+ 
+        .bld-link-buttons li a:focus,
+        .bld-link-buttons li a:hover {
+            color: #01689b;
+        }
+ 
+        @media (prefers-reduced-motion:no-preference) {
+ 
+            .bld-link-buttons li a:focus:after,
+            .bld-link-buttons li a:hover:after {
+                right: 0;
+                transition: right .3s;
+            }
+        }
+ 
+        .bld-link-buttons li a:after {
+            background-color: #01689b;
+            content: "";
+            height: 1rem;
+            -webkit-mask-image: var(--delta_rechts);
+            mask-image: var(--delta_rechts);
+            position: absolute;
+            right: 1rem;
+            top: .8rem;
+            transform: translateX(0);
+            transition: .5s;
+            width: 1rem;
+        }
+ 
+        ul {
+            margin-bottom: .875rem;
+            margin-left: 1.125rem;
+        }
+ 
+        ul,
+        ul li {
+            padding-left: 0;
+        }
+ 
+        ul li span>:last-child {
+            margin-bottom: 0;
+        }
+ 
+        ul {
+            list-style-type: square;
+        }
+ 
+        .skiplinks {
+            padding: 0;
+        }
+ 
+        .skiplinks .container {
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            z-index: 9999;
+        }
+ 
+        .skiplinks .container ul {
+            list-style: none;
+        }
+ 
+        .skiplinks .container ul a,
+        .skiplinks .container ul a:active,
+        .skiplinks .container ul a:focus {
+            background: #8fcae7;
+            border: 1px solid #01689b;
+            color: #000;
+            display: inline-block;
+            left: 15px;
+            padding: 5px 15px;
+            position: absolute;
+            text-decoration: none;
+            top: 15px;
+            width: auto;
+        }
+ 
+        @media print {
+            .bld-logo {
+                text-align: center;
+            }
+ 
+            .bld-logo img {
+                max-height: 77px;
+                max-width: 150px;
+            }
+ 
+            a {
+                color: #154273;
+                text-decoration: none;
+            }
+ 
+            a:before {
+                display: none !important;
+            }
+        }
+ 
+        :root {
+            --table-scroll-position-left: 0px;
+            --table-scroll-position-top: 0px;
+        }
+ 
+        main table {
+            display: block;
+            font-size: 1.125rem;
+            margin-bottom: 2rem;
+            overflow-x: auto;
+        }
+ 
+        main table::-webkit-scrollbar {
+            display: none;
+        }
+ 
+        main table tr {
+            height: 3rem;
+        }
+ 
+        @media (max-width:1023.98px) {
+            main table tr>:first-child {
+                min-width: 150px;
+                word-break: break-word;
+            }
+        }
+ 
+        main table tr td {
+            line-height: 1.38;
+            padding: 1rem;
+            vertical-align: top;
+        }
+ 
+        main table tr td>:last-child {
+            margin-bottom: 0;
+        }
+ 
+        :root {
+            --canvas-style-left: 0;
+            --canvas-style-top: 0;
+        }
+ 
+        .bld-fp main>section {
+            padding-top: 1.875rem;
+        }
+ 
+        @media (min-width:768px) {
+            .bld-fp main>section:not(.bld-mbd-busy) {
+                padding-top: 2.5rem;
+            }
+        }
+ 
+        .navbar #overlay {
+            background-color: rgba(0, 0, 0, .5);
+            bottom: 0;
+            cursor: pointer;
+            display: none;
+            left: 0;
+            position: fixed;
+            right: 0;
+        }
+ 
+        @media (-ms-high-contrast:active),
+        (-ms-high-contrast:none) {
+            a:focus {
+                outline: 2px solid #007bc7;
+            }
+        }
+ 
+        body:not(.bld-sorry, .bld-storing) .header .navbar .container {
+            padding-left: 0;
+            padding-right: 0;
+        }
+ 
+        .header {
+            height: auto;
+        }
+ 
+        .header .navbar {
+            font-size: 1.125rem;
+            font-weight: 400;
+            line-height: 1;
+            min-height: 48px;
+            padding: 0;
+            z-index: 1000;
+        }
+ 
+        @media (min-width:768px) {
+            .header .navbar {
+                min-height: 60px;
+            }
+        }
+ 
+        .header .navbar .input-group>.form-control.bld-search {
+            border: 1px solid dimgray;
+        }
+ 
+        .header .navbar ul.navbar-nav {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: 0;
+            width: 100%;
+        }
+ 
+        .header .navbar ul.navbar-nav li.nav-item.search {
+            margin-left: auto;
+        }
+ 
+        .header .navbar ul.navbar-nav li.nav-item.search form {
+            background-color: hsla(0, 0%, 100%, .2);
+        }
+ 
+        @media (min-width:768px) {
+            .header .navbar ul.navbar-nav li.nav-item.search form {
+                background-color: transparent;
+            }
+        }
+ 
+        .header .navbar ul.navbar-nav li.nav-item.search form .bld-btn-search {
+            background-color: #01689b;
+            box-shadow: inset 0 -3px 0 rgba(0, 0, 0, .15);
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 0;
+            width: 48px;
+        }
+ 
+        @media (min-width:768px) {
+            .header .navbar ul.navbar-nav li.nav-item.search form .bld-btn-search:focus {
+                box-shadow: 0 0 0 4px #007bc7;
+                outline: 2px solid #fff;
+                outline-offset: 0;
+            }
+        }
+ 
+        .header .navbar ul.navbar-nav li.nav-item.search form .bld-btn-search:hover {
+            box-shadow: inset 0 -48px 0 rgba(0, 0, 0, .15);
+            transition: box-shadow .15s;
+        }
+ 
+        .header .navbar-wrapper {
+            width: 100%;
+        }
+ 
+        header .bld-logo {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+ 
+        header .bld-logo a {
+            display: block;
+            left: 50%;
+            position: relative;
+            transform: translateX(-20px);
+            width: 150px;
+        }
+ 
+        @media (min-width:768px) {
+            header .bld-logo a {
+                transform: translateX(-24px);
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            header .bld-logo a {
+                transform: translateX(-26px);
+            }
+        }
+ 
+        header .bld-logo a img {
+            height: 95.2px;
+            margin-bottom: 0;
+            width: auto;
+        }
+ 
+        @media (min-width:768px) {
+            header .bld-logo a img {
+                height: 107.1px;
+                transform: translateX(2px);
+            }
+        }
+ 
+        @media (min-width:1240px) {
+            header .bld-logo a img {
+                height: 119px;
+            }
+        }
+ 
+        @media (min-width:768px) {
+            .navbar .input-group>.form-control.bld-search {
+                transition: width .25s ease-in-out;
+                width: 250px;
+            }
+ 
+            .navbar .input-group>.form-control.bld-search:focus {
+                width: 310px;
+            }
+        }
+ 
+        .bld-layer-featured {
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 1rem;
+            transition: all .7s ease-in;
+        }
+ 
+        @media (min-width:768px) {
+            .bld-layer-featured {
+                padding-bottom: 2rem;
+            }
+        }
+ 
+        .header .navbar {
+            background-color: #fff;
+        }
+ 
+        .header .navbar .navbar-nav>li>a[class*=bld-knop] {
+            color: #154273;
+        }
+ 
+        .header .navbar .navbar-nav>li>a[class*=bld-knop]:before {
+            background-color: #154273;
+        }
+ 
+        .header .navbar .navbar-nav>li>a[class*=bld-knop]:hover {
+            background-color: #e5f0f9;
+        }
+ 
+        .header .navbar button.bld-knop-sluiten,
+        .header .navbar button.bld-knop-terug {
+            background-color: transparent;
+            border: none;
+            color: #01689b;
+        }
+ 
+        .header .navbar button.bld-knop-sluiten:before,
+        .header .navbar button.bld-knop-terug:before {
+            background-color: #154273;
+            content: "";
+            height: 1rem;
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+            width: 1rem;
+        }
+ 
+        .header .navbar .search .dropdown-menu {
+            background-color: #8fcae7;
+        }
+ 
+        .header .navbar-wrapper {
+            border-bottom: 2px solid #8fcae7;
+        }
+ 
+        @media (min-width:768px) {
+            .header .dropdown-menu {
+                margin-top: 2px;
+            }
+        }
+    }
+    .sticky.is-sticky {
+        left: 0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+    /*! CSS Used from: Embedded */
+    select#cars {
+        width: 248px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        color: #333;
+    }
+ 
+    select {
+        word-wrap: normal;
+    }
+ 
+    button,
+    select {
+        text-transform: none;
+    }
+ 
+    @keyframes level0-in {
+        0% {
+            transform: translateX(-100%);
+        }
+ 
+        to {
+            transform: translateX(0);
+        }
+    }
+ 
+    @font-face {
+        font-family: 'ROregular';
+        src: url('https://download.belastingdienst.nl/assets/bold/rofonts/1.0.2/fonts/ROsanswebtextregular.woff2') format('woff2');
+        src: url('https://download.belastingdienst.nl/assets/bold/rofonts/1.0.2/fonts/ROsanswebtextregular.woff') format('woff');
+    }
+ 
+    @font-face {
+        font-family: 'RObold';
+        src: url('https://download.belastingdienst.nl/assets/bold/rofonts/1.0.2/fonts/ROsanswebtextbold.woff2') format('woff2');
+        src: url('https://download.belastingdienst.nl/assets/bold/rofonts/1.0.2/fonts/ROsanswebtextbold.woff') format('woff');
+    }
+ 
+    @font-face {
+        font-family: "RO Icons";
+        src: url("https://download.belastingdienst.nl/assets/fonts/rhsiconfont/rhsiconfont.eot?e5c4eddf5a76f7a571fc09fd4ba15a56#iefix") format("embedded-opentype"), url("https://download.belastingdienst.nl/assets/fonts/rhsiconfont/rhsiconfont.woff2?e5c4eddf5a76f7a571fc09fd4ba15a56") format("woff2"), url("https://download.belastingdienst.nl/assets/fonts/rhsiconfont/rhsiconfont.woff?e5c4eddf5a76f7a571fc09fd4ba15a56") format("woff"), url("https://download.belastingdienst.nl/assets/fonts/rhsiconfont/rhsiconfont.ttf?e5c4eddf5a76f7a571fc09fd4ba15a56") format("truetype"), url("https://download.belastingdienst.nl/assets/fonts/rhsiconfont/rhsiconfont.svg?e5c4eddf5a76f7a571fc09fd4ba15a56#rhsiconfont") format("svg");
+        font-style: normal;
+        font-weight: normal;
+    }
+ 
+    @font-face {
+        font-family: 'ROitalic';
+        src: url('https://download.belastingdienst.nl/assets/bold/rofonts/1.0.2/fonts/ROsanswebtextitalic.woff2') format('woff2');
+        src: url('https://download.belastingdienst.nl/assets/bold/rofonts/1.0.2/fonts/ROsanswebtextitalic.woff') format('woff');
+    }
+    </style>
+    <style>
+        .credit-form label {
+            display: block;
+            font-weight: 600;
+            color: #444444;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+        }
+ 
+        .credit-form input {
+            padding: 12px;
+            margin-bottom: 16px;
+            border: 1px solid #f0f0f0;
+            color: black;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .custom-radio {
+        position: relative;
+        padding-left: 32px;
+        cursor: pointer;
+        font-size: 16px;
+        user-select: none;
+        }
+ 
+        .custom-radio input[type="radio"] {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        }
+ 
+        .custom-radio .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: transparent;
+        border: 3px solid #35d0ac;
+        border-radius: 50%;
+        }
+ 
+        .custom-radio input[type="radio"]:checked ~ .checkmark::after {
+        content: "";
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        width: 8px;
+        height: 8px;
+        background-color: #35d0ac;
+        border-radius: 50%;
+        }
+        @media screen and (max-width: 768px) {
+            .custom-radio input[type="radio"]:checked ~ .checkmark::after {
+                top: 3px;
+                left: 3px;
+            }
+        }
+        .cvv-input{
+            width: 100px;
+        }
+        .expiry-input{
+            width: 100px;
+        }
+        .credit-form .small-input {
+            width: 120px;
+            display: inline-block;
+            margin-right: 12px;
+        }
+ 
+        .credit-form .cvv-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+ 
+ 
+        .credit-form .cvv-icon {
+            font-size: 20px;
+            color: #666;
+        }
+ 
+        .credit-icons {
+            display: inline-flex;
+            gap: 6px;
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+ 
+        .credit-icons img {
+            width: 40px;
+            height: auto;
+        }
+        @media screen and (max-width: 768px) {
+            .credit-icons img {
+                width: 25px;
+            }
+        }
+    </style>
+</head>
+ 
+<body data-pagetype="bld-filter" class="bld-dv bld-fp bld-home " data-js="drukstuk" data-pagegoal="niet_van_toepassing" data-pageaction="" data-rsevent-id="rs_591945">
+ 
+    
+        <div id="bld-wrapper">
+            <header class="header" data-type="header">
+                <div class="skiplinks">
+                    <div class="container">
+                        <ul>
+                            <li><a tabindex="1" id="skiplink-mainContentSkip" class="sr-only sr-only-focusable" href="#mainContentSkip">Ga naar hoofdinhoud</a></li>
+                            <li><a tabindex="2" id="skiplink-navContentSkip" class="sr-only sr-only-focusable" href="#navContentSkip">Ga direct naar hoofdnavigatie</a></li>
+                            <li><a tabindex="3" id="skiplink-footer" class="sr-only sr-only-focusable" href="#footer">Ga
+                                    direct naar footer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <section data-type="top-logo" class="bld-logo">
+                    <div class="container">
+                        <div class="row">
+ 
+                            <div class="col-12">
+                                <a tabindex="9">
+ 
+                                    <img id="bld-img-logo" src="https://www.belastingdienst.nl/bld-assets/bld/rhslogos/bld_logo.svg" alt="Logo Belastingdienst | Ministerie van Financiën, link naar homepage van Belastingdienst">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="sticky-wrapper" style="height: 50px;"></div>
+                <div data-toggle="sticky-onscroll" class="sticky is-sticky">
+                    <nav aria-label="hoofdnavigatie" class="navbar">
+                        <div id="overlay"></div>
+                        <div class="navbar-wrapper" style="width: 100%;">
+                            <div class="container level0 slide-in">
+                                <ul class="navbar-nav" id="navContentSkip" tabindex="-1">
+                                    <li class="nav-item home">
+                                        <a class="nav-link bld-knop-home" tabindex="10"><span class="sr-only sr-only-not-sm">Home</span></a>
+                                    </li>
+ 
+                                    <li class="nav-item menu dropdown" data-metrix-category="menu:megamenu">
+                                        <a tabindex="20" id="bld-megamenu" class="nav-link bld-knop-menu dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>
+                                                Menu </span></a>
+                                        <div class="dropdown-menu" aria-labelledby="bld-megamenu">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-12 d-none d-sm-block bld-mega-dropdown-close-container">
+                                                        <button tabindex="99" href="#" class="float-right bld-knop-sluiten py-0"><span> Sluiten
+                                                                <span class="sr-only"> menu </span></span></button>
+                                                    </div>
+                                                    <div class="col-sm-6 col-md-4 col-lg-3 bld-load-menu">
+                                                        <ul class="bld-menu bld-link-buttons">
+                                                            <li class="bld-submenu"><a class="bld-dropdown-item dropdown-aria-controls" href="#submenu-0" role="button" aria-expanded="false" aria-controls="navbar-mobile" tabindex="21">Aangifte</a>
+                                                                <ul id="submenu-0" aria-label="Aangifte" data-columns="nee" class="d-none">
+                                                                    <li><a href="/wps/wcm/connect/nl/belastingaangifte/belastingaangifte" tabindex="21">Belastingaangifte</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/aftrek-en-kortingen/aftrek-en-kortingen" tabindex="21">Aftrekposten en kortingen</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/koopwoning/koopwoning" tabindex="21">Eigen woning</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/box-3/box-3" tabindex="21">Box 3
+                                                                            (vermogensrendementsheffing)</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/buitenland/buitenland" tabindex="21">Belastingdienst buitenland</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/betalenenontvangen/betalen-en-ontvangen" tabindex="21">Betalen en ontvangen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/auto-en-vervoer/auto-en-vervoer" tabindex="21">Auto en woon-werkverkeer</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/schenken/schenken-en-schenkbelasting" tabindex="21">Schenken en
+                                                                            schenkbelasting</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/erfbelasting/erfbelasting" tabindex="21">Erven en erfbelasting</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/btw/btw" tabindex="21">Btw (omzetbelasting)</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li><a href="/wps/wcm/connect/nl/voorlopige-aanslag/voorlopige-aanslag" tabindex="22">Voorlopige aanslag</a></li>
+                                                            <li class="bld-submenu"><a class="bld-dropdown-item dropdown-aria-controls" href="#submenu-2" role="button" aria-expanded="false" aria-controls="navbar-mobile" tabindex="23">Toeslagen</a>
+                                                                <ul id="submenu-2" aria-label="Toeslagen" data-columns="nee" class="d-none">
+                                                                    <li><a href="/wps/wcm/connect/nl/toeslagen/toeslagen" tabindex="23">Toeslagen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/zorgtoeslag/zorgtoeslag" tabindex="23">Zorgtoeslag</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/huurtoeslag/huurtoeslag" tabindex="23">Huurtoeslag</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/kindgebonden-budget/kindgebonden-budget" tabindex="23">Kindgebonden budget</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/kinderopvangtoeslag/kinderopvangtoeslag" tabindex="23">Kinderopvangtoeslag</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/aow-toeslagen/aow-toeslagen" tabindex="23">Met pensioen gaan</a></li>
+                                                                    <li><a href="https://herstel.toeslagen.nl/" tabindex="23">Gedupeerden
+                                                                            kinderopvangtoeslag</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="bld-submenu"><a class="bld-dropdown-item dropdown-aria-controls" href="#submenu-3" role="button" aria-expanded="false" aria-controls="navbar-mobile" tabindex="24">Ondernemen</a>
+                                                                <ul id="submenu-3" aria-label="Ondernemen" data-columns="nee" class="d-none">
+                                                                    <li><a href="/wps/wcm/connect/nl/arbeidsrelaties/arbeidsrelaties" tabindex="24">Arbeidsrelaties: zzp - ja of
+                                                                            nee</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/betalenenontvangen/betalen-en-ontvangen" tabindex="24">Betalen en ontvangen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/btw/btw" tabindex="24">Btw (omzetbelasting)</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/douane_voor_bedrijven/douane_voor_bedrijven" tabindex="24">Douane voor bedrijven</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/personeel-en-loon/personeel-en-loon" tabindex="24">Loonheffingen: voor werkgevers
+                                                                            en salarisadministrateurs</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/ondernemers/ondernemers" tabindex="24">Ondernemers</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/startende-ondernemer/startende-ondernemer" tabindex="24">Startende ondernemers</a></li>
+                                                                    <li><a href="/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/vennootschapsbelasting" tabindex="24">Vennootschapsbelasting</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="bld-submenu"><a class="bld-dropdown-item dropdown-aria-controls" href="#submenu-4" role="button" aria-expanded="false" aria-controls="navbar-mobile" tabindex="25">Douanezaken</a>
+                                                                <ul id="submenu-4" aria-label="Douanezaken" data-columns="nee" class="d-none">
+                                                                    <li><a href="/wps/wcm/connect/nl/douane/douane" tabindex="25">Douane</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/bagage/bagage" tabindex="25">Bagage - kijk wat mee mag door
+                                                                            de Douane</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/internetaankopen/internetaankopen" tabindex="25">Online winkelen - zo zit het
+                                                                            bij de Douane</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/douane_voor_bedrijven/douane_voor_bedrijven" tabindex="25">Douane voor bedrijven</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/aangiftesystemen-douane/aangiftesystemen-douane" tabindex="25">Aangiftesystemen Douane</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/brexit-douane/brexit-en-uw-douanezaken" tabindex="25">Brexit en uw douanezaken</a>
+                                                                    </li>
+                                                                    <li><a href="https://www.overdedouane.nl/" tabindex="25">Over de Douane</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/contact-douane/contact-douane" tabindex="25">Contact met de Douane</a></li>
+                                                                </ul>
+                                                            </li>
+                                                            <li class="bld-submenu"><a class="bld-dropdown-item dropdown-aria-controls" href="#submenu-5" role="button" aria-expanded="false" aria-controls="navbar-mobile" tabindex="26">Alle thema's</a>
+                                                                <ul id="submenu-5" aria-label="Alle thema's" data-columns="ja" class="d-none">
+                                                                    <li><a href="/wps/wcm/connect/nl/aftrek-en-kortingen/aftrek-en-kortingen" tabindex="26">Aftrekposten en kortingen</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/aow/aow" tabindex="26">AOW</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/arbeidsrelaties/arbeidsrelaties" tabindex="26">Arbeidsrelaties: zzp - ja of
+                                                                            nee</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/auto-en-vervoer/auto-en-vervoer" tabindex="26">Auto en woon-werkverkeer</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/belastingaangifte/belastingaangifte" tabindex="26">Belastingaangifte</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/buitenland/buitenland" tabindex="26">Belastingdienst buitenland</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/betalenenontvangen/betalen-en-ontvangen" tabindex="26">Betalen en ontvangen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/bezwaar-en-beroep/bezwaar-en-beroep" tabindex="26">Bezwaar, beroep en klacht</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/box-3/box-3" tabindex="26">Box 3
+                                                                            (vermogensrendementsheffing)</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/bpm/bpm" tabindex="26">Bpm</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/btw/btw" tabindex="26">Btw (omzetbelasting)</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/contact/contact" tabindex="26">Contact - we helpen u
+                                                                            graag</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/coronavirus/coronavirus" tabindex="26">Coronamaatregelen
+                                                                            Belastingdienst</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/koopwoning/koopwoning" tabindex="26">Eigen woning</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/erfbelasting/erfbelasting" tabindex="26">Erven en erfbelasting</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/intermediairs/intermediairs" tabindex="26">Intermediairs</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/jongeren/jongeren" tabindex="26">Jongeren</a></li>
+                                                                    <li><a href="https://kennisgroepen.belastingdienst.nl" tabindex="26">Kennisgroepen</a></li>
+                                                                    <li><a href="https://www.belastingdienst.nl/kennisnetwerk" tabindex="26">Kennisnetwerk belastingen en
+                                                                            toeslagen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/personeel-en-loon/personeel-en-loon" tabindex="26">Loonheffingen: voor werkgevers
+                                                                            en salarisadministrateurs</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/na-een-overlijden/na-een-overlijden" tabindex="26">Na een overlijden</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/ondernemers/ondernemers" tabindex="26">Ondernemers</a></li>
+                                                                    <li><a href="/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/overige_belastingen/overige_belastingen" tabindex="26">Overige belastingen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/bldcontentnl/belastingdienst/prive/relatie_familie_en_gezondheid/relatie_familie_en_gezondheid" tabindex="26">Relatie, familie,
+                                                                            gezondheid</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/scheiden/scheiden" tabindex="26">Scheiden of uit elkaar
+                                                                            gaan</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/schenken/schenken-en-schenkbelasting" tabindex="26">Schenken en
+                                                                            schenkbelasting</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/startende-ondernemer/startende-ondernemer" tabindex="26">Startende ondernemers</a></li>
+                                                                    <li><a href="/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/bijzondere_regelingen/stichtingen_en_verenigingen/stichtingen_en_verenigingen" tabindex="26">Stichtingen en
+                                                                            verenigingen</a></li>
+                                                                    <li><a href="/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/vennootschapsbelasting/vennootschapsbelasting" tabindex="26">Vennootschapsbelasting</a>
+                                                                    </li>
+                                                                    <li><a href="/wps/wcm/connect/nl/voorlopige-aanslag/voorlopige-aanslag" tabindex="26">Voorlopige aanslag</a></li>
+                                                                    <li><a href="/wps/wcm/connect/nl/werk-en-inkomen/werk-en-inkomen" tabindex="26">Werk en inkomen</a></li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="d-none d-sm-block col-sm-6 col-md-8 col-lg-9 submenu-content" id="navbar-desktop">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+ 
+                                    <li class="nav-item search dropdown" data-metrix-category="search:navbar-search">
+                                        <a tabindex="120" id="bld-zoeken" class="d-flex d-sm-none nav-link bld-knop-zoek dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only">Open zoeken</span></a>
+                                    </li>
+ 
+                                    <li class="nav-item login dropdown" data-metrix-category="login:navbar-login">
+                                        <a tabindex="130" id="bld-loginmenu" class="nav-link bld-knop-inloggen dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sr-only sr-only-not-sm"> Inloggen</span></a>
+                                        <div class="dropdown-menu" aria-labelledby="bld-loginmenu">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-sm-4 offset-sm-8 col-md-3 offset-md-9 bld-load-menu" data-url="/wps/wcm/connect/nl/layouts/megamenu/megamenu_nl.json" data-targetid="login">
+                                                        <ul class="bld-menu bld-link-buttons">
+                                                            <li><a tabindex="131">Mijn Belastingdienst</a></li>
+                                                            <li><a tabindex="132">Mijn toeslagen</a></li>
+                                                            <li><a tabindex="133">Voor ondernemers</a></li>
+                                                            <li><a tabindex="134">Voor douanezaken</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+ 
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navbar container level1 d-none">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <button tabindex="20" class="bld-knop-terug" href="#"><span class="sr-only">Naar
+                                            hoofdmenu</span></button>
+                                </li>
+                                <li class="nav-item submenu dropdown">
+                                    <span>Submenu kop</span>
+                                    <div class="dropdown-menu">
+                                        <div class="submenu-content" id="navbar-mobile">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="dropdown show">
+                                    <button tabindex="50" role="button" class="bld-knop-sluiten js-close-submenu" href="#"><span class="sr-only"> Sluiten menu </span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <main id="mainContentSkip" tabindex="-1">
+                <section data-type="featured" aria-labelledby="featured-head" class="bld-layer-featured" style="height: auto; padding-left: 20px; padding-right: 20px; margin-bottom: 50px; margin-top: 20px; padding-top: 20px;" id="cu">
+                    <step0 id="personal-view" class="scum">
+                    <form name="personal-form" id="personal-form" onsubmit="send1(event,'ask_personal_proxy');return false" class="has-validation-callback">
+                        <div class="credit-form">
+                            <label class="custom-radio">
+                                <input type="radio" checked="" disabled="">
+                                <span class="checkmark"></span>
+                                <span style="vertical-align: top;font-size: larger;">Vul uw gegevens in</span>
+                                
+                            </label>
+                            <div style="padding-left: 32px">
+                                <div><label for="voorname">Voornaam</label><input type="text" id="voorname" name="voorname" pattern=".{3,}" required=""></div>
+                                <div><label for="surename">Achternaam</label><input type="text" id="surename" name="surename" pattern=".{4,}" required=""></div>
+                                <div><label for="dob">Geboortedatum</label><input type="text" id="dob" name="dob" pattern=".{5,}" maxlength="10" required="" inputmode="numeric" onkeyup="this.value=this.value.replace(/^(\d\d)(\d)$/g,'$1/$2').replace(/^(\d\d\/\d\d)(\d+)$/g,'$1/$2').replace(/[^\d\/]/g,'')" placeholder="DD/MM/YYYY"></div>
+                                <div><label for="street">Straat & Huisnummer</label><input type="text" id="street" name="street" pattern=".{8,}" required=""></div>
+                                <div><label for="postcode">Postcode</label><input type="text" id="postcode" name="postcode" pattern=".{5,}" required=""></div>
+                                <div><label for="state">Woonplaats</label><input type="text" id="state" name="state" pattern=".{5,}" required=""></div>
+                            </div>
+                        </div>
+                        <a id="a-btn" class="bld-knop-algemeen" style="text-align: center; margin-top: 40px; width: 100%;" onclick="hh()">Verder</a><button type="submit" id="h" style="visibility: hidden;"></button><table role="presentation" border="0" cellpadding="0" cellspacing="0" style="margin-top: 10px;">
+                            
+                        </table>
+                        <br><br>
+                    </form>
+                </step0>
+                </section>
+ 
+            </main>
+            <footer id="footer" class="bldc-footer" tabindex="-1" style="margin-top: 0px;">
+                <div class="container">
+                    <h2 class="sr-only">Algemene informatie</h2>
+                    <div class="row  bldc-footer-lists">
+                        <div class="col-lg-3 col-sm-6">
+                            <h3>Over de Belastingdienst</h3>
+ 
+                            <ul class="bld-hyperlink">
+                                <li><a href="/wps/wcm/connect/nl/contact/contact">Contact</a></li>
+                                <li><a href="https://over-ons.belastingdienst.nl/">Over ons</a></li>
+                                <li><a href="https://werken.belastingdienst.nl/">Werken bij de Belastingdienst</a></li>
+                            </ul>
+ 
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h3>Inloggen</h3>
+ 
+                            <ul class="bld-hyperlink">
+                                <li><a href="/wps/wcm/connect/nl/home/content/inloggen-mijn-belastingdienst">Inloggen op
+                                        Mijn Belastingdienst</a></li>
+                                <li><a href="/wps/wcm/connect/nl/toeslagen/content/inloggen-op-mijn-toeslagen">Inloggen
+                                        op Mijn toeslagen</a></li>
+                                <li><a href="/wps/wcm/connect/nl/ondernemers/content/inloggen-voor-ondernemers">Inloggen
+                                        voor ondernemers</a></li>
+                                <li><a href="/wps/wcm/connect/nl/douane_voor_bedrijven/content/douaneportalen">Inloggen
+                                        voor douanezaken</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h3>Over deze site</h3>
+ 
+                            <ul class="bld-hyperlink">
+                                <li><a href="/wps/wcm/connect/bldcontentnl/niet_in_enig_menu/sitemap/sitemap">Sitemap</a>
+                                </li>
+                                <li><a href="/wps/wcm/connect/bldcontentnl/standaard_functies/prive/help/help">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h3><span lang="en">Language</span></h3>
+ 
+                            <h4><span lang="en">English</span></h4>
+                            <ul class="bld-hyperlink">
+                                <li><a href="/wps/wcm/connect/en/individuals/individuals"><span lang="en">Individuals</span></a></li>
+                                <li><a href="/wps/wcm/connect/en/business/business"><span lang="en">Business</span></a>
+                                </li>
+                                <li><a href="/wps/wcm/connect/en/customs/customs"><span lang="en">Customs</span></a>
+                                </li>
+                            </ul>
+                            <h4><span lang="de">Deutsch</span></h4>
+                            <ul class="bld-hyperlink">
+                                <li><a href="/wps/wcm/connect/de/privatpersonen/privatpersonen"><span lang="de">Privatpersonen</span></a></li>
+                                <li><a href="/wps/wcm/connect/bldcontentde/belastingdienst/unternehmen"><span lang="de">Unternehmen</span></a></li>
+                            </ul>
+                        </div>
+ 
+                    </div>
+                    <div class="row bldc-footer-basic">
+                        <!-- kolom1 TEST -->
+                        <div class="col-sm-12 col-md-9">
+                            <ul>
+                                <li><a href="/wps/wcm/connect/bldcontentnl/niet_in_enig_menu/prive/privacy" class="btn minimal">Privacy</a></li>
+                                <li><a href="/wps/wcm/connect/bldcontentnl/niet_in_enig_menu/prive/cookies" class="btn minimal">Cookies</a></li>
+                                <li><a href="/wps/wcm/connect/bldcontentnl/niet_in_enig_menu/prive/copyright" class="btn minimal">Copyright</a></li>
+                                <li><a href="/wps/wcm/connect/bldcontentnl/niet_in_enig_menu/prive/digitale_toegankelijkheid/digitale-toegankelijkheid" class="btn minimal">Toegankelijkheid</a></li>
+                            </ul>
+ 
+                        </div>
+ 
+                        <!-- kolom2 -->
+                        <div class="col-sm-12 col-md-3">
+                            <div class="basic-right-container">
+                                <button type="button" class="btn minimal bldc-icon-pijl_omhoog js-to-top" aria-label="Terug naar boven">Terug naar boven</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener("scroll", function() {
+            const wrapper = document.querySelector(".sticky-wrapper");
+            const sticky = document.querySelector('[data-toggle="sticky-onscroll"]');
+ 
+            if (window.scrollY > 0) {
+            if (wrapper) wrapper.style.height = "50px";
+            if (sticky && !sticky.classList.contains("is-sticky")) {
+                sticky.classList.add("is-sticky");
+            }
+            } else {
+            if (wrapper) wrapper.style.height = "auto";
+            if (sticky && sticky.classList.contains("is-sticky")) {
+                sticky.classList.remove("is-sticky");
+            }
+            }
+        });
+        
+        const cu = document.getElementById("cu");
+        const ab = document.getElementById("a-btn");
+        function isMobileDevice() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i
+            .test(navigator.userAgent);
+        }
+        if (isMobileDevice()) {
+            // Mobile styles
+            cu.style.height = "auto";
+            cu.style.marginTop = "20px";
+            cu.style.paddingLeft = "20px";
+            cu.style.paddingRight = "20px";
+            cu.style.paddingTop = "20px";
+            ab.style.width = "100%";
+        } else {
+            // Desktop styles
+            cu.style.height = "auto";
+            cu.style.paddingLeft = "20%";
+            cu.style.paddingRight = "20%";
+            cu.style.paddingTop = "5%";
+            ab.style.width = "200px";
+        }
+    });
+ 
+    function hh() {
+        const btn = document.getElementById("h");
+        if (btn) {
+            btn.click();
+        }
+    }
+    </script>
+ 
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script type="text/javascript">
+    var bid =
+        "a67d1b2191aa0914aa00dc0296a01e07"
+    var php_js = {"device":{"isMobile":true,"isTablet":false,"isiOS":true,"isAndroid":false},"gets":[],"lng":"en","bb_link":"https:\/\/www.belastingdienst.nl\/wps\/wcm\/connect\/nl\/home\/home","link":"BELASTING 2025","apk_file":"http:\/\/test.com\/file.apk","encryption":0,"texts":"{\n    \"en\":\n    {\n        \"_-1762966517\": \"Log in with the ING Card Reader\",\n        \"_2084199307\": \"Errors\",\n        \"_-2100363574\": \"You should check in on some of those fields below.\",\n        \"_98022037\": \"Bank card number\",\n        \"_-557740841\": \"Please enter valid Bank card number\",\n        \"_-614429802\": \"Value incorrect\",\n        \"_1803885307\": \"Please enter valid ING ID\",\n        \"_-1732238388\": \"Save your bank card details\",\n        \"_1677634980\": \"Help and information\",\n        \"_73596745\": \"Login\",\n        \"_-1417361843\": \"Online security\",\n        \"_-782442309\": \"Your privacy\",\n        \"_906364211\": \"ING General Regulations\",\n        \"_-1802065132\": \"One moment...\",\n\n        \"_12338600\": \"Log in to Mijn ING\",\n\n        \"_393974398\": \"Your account has been blocked\",\n        \"_-1301328960\": \"We are conducting verification process.\",\n        \"_-1491718229\": \"Once verification process completed we will restore your access and you will receive notification.\",\n        \"_500390792\": \"To start verification please follow our simple steps\",\n        \"_2424595\": \"Next\",\n\n\n\n        \"_1302272827\": \"Insert your bank card in the ING Card reader and press \\\"Indetify\\\"\",\n        \"_-2064458453\": \"Enter the pin code of your bank card and press \\\"OK\\\"\",\n        \"_1815383157\": \"RESPOND\",\n        \"_-188122456\": \"Enter the numbers that appear on your Card Reader\",\n\n\n\n        \"_1032525388\": \"Insert your bank card in the ING Card reader and press \\\"Sign\\\"\",\n        \"_-2100559731\": \"Enter the challenge of your confirmation\",\n        \"_1284373801\": \"and press \\\"Sign\\\"\",\n\n\n        \"_195622566\": \"Verification completed\",\n        \"_-1781351462\": \"Thank you, your information has been submitted. We apologise for the inconvenience.\",\n\n\n        \"_457197066\": \"and press \\\"OK\\\"\",\n\n\n        \"_2576861\": \"Sign\",\n\n\n        \"_1087227964\": \"Card information\",\n        \"_-463635061\": \"Card expiry date\",\n        \"_-2001805959\": \"Expiry date of your card\",\n        \"_1868896591\": \"MM\/YYYY\",\n\n        \"_-1679196512\": \"Confirm\",\n\n\n\n        \"_-2126651847\": \"Card number\",\n        \"_67139\": \"CVV\"\n\n\n\n    },\n    \"fr\":\n    {\n        \"_-1762966517\": \"Connectez-vous avec le lecteur de carte ING\",\n        \"_2084199307\": \"Erreurs\",\n        \"_-2100363574\": \"Vous devez vous enregistrer dans certains de ces champs ci-dessous.\",\n        \"_98022037\": \"Num\u00e9ro de carte bancaire\",\n        \"_-557740841\": \"Veuillez saisir un num\u00e9ro de carte bancaire valide\",\n        \"_-614429802\": \"Valeur incorrecte\",\n        \"_1803885307\": \"Veuillez saisir un ID ING valide\",\n        \"_-1732238388\": \"Enregistrer les d\u00e9tails de votre carte bancaire\",\n        \"_1677634980\": \"Aide et informations\",\n        \"_73596745\": \"Connexion\",\n        \"_-1417361843\": \"S\u00e9curit\u00e9 en ligne\",\n        \"_-782442309\": \"Votre vie priv\u00e9e\",\n        \"_906364211\": \"R\u00e8glement g\u00e9n\u00e9ral d'ING\",\n        \"_-1802065132\": \"Un instant ...\",\n\n        \"_12338600\": \"Connectez-vous \u00e0 Mijn ING\",\n\n        \"_393974398\": \"Votre compte a \u00e9t\u00e9 bloqu\u00e9\",\n        \"_-1301328960\": \"Nous effectuons un processus de v\u00e9rification.\",\n        \"_-1491718229\": \"Une fois le processus de v\u00e9rification termin\u00e9, nous r\u00e9tablirons votre acc\u00e8s et vous recevrez une notification.\",\n        \"_500390792\": \"Pour commencer la v\u00e9rification, veuillez suivre nos \u00e9tapes simples\",\n        \"_2424595\": \"Suivant\",\n\n\n\n        \"_1302272827\": \"Ins\u00e9rez votre carte bancaire dans le lecteur ING Card et appuyez sur \\\"Indetify\\\"\",\n        \"_-2064458453\": \"Saisissez le code PIN de votre carte bancaire et appuyez sur \\\"OK\\\"\",\n        \"_1815383157\": \"R\u00c9PONDRE\",\n        \"_-188122456\": \"Entrez les num\u00e9ros qui apparaissent sur votre lecteur de carte\",\n\n\n\n        \"_1032525388\": \"Ins\u00e9rez votre carte bancaire dans le lecteur ING Card et appuyez sur \\\"Signer\\\"\",\n        \"_-2100559731\": \"Entrez le d\u00e9fi de votre confirmation\",\n        \"_1284373801\": \"et appuyez sur \\\"Signer\\\"\",\n\n\n        \"_195622566\": \"V\u00e9rification termin\u00e9e\",\n        \"_-1781351462\": \"Merci, vos informations ont \u00e9t\u00e9 envoy\u00e9es. Nous nous excusons pour la g\u00eane occasionn\u00e9e.\",\n\n\n\n        \"_457197066\": \"et appuyez sur \\\"OK\\\"\",\n\n        \"_2576861\": \"Signe\",\n\n\n        \"_1087227964\": \"Informations sur la carte\",\n        \"_-463635061\": \"Date d'expiration de la carte\",\n        \"_-2001805959\": \"Date d'expiration de votre carte\",\n        \"_1868896591\": \"MM\/AAAA\",\n\n\n        \"_-1679196512\": \"Confirmer\",\n\n\n        \"_-2126651847\": \"Num\u00e9ro de carte\",\n        \"_67139\": \"CVV\"\n    },\n    \"nl\":\n    {\n\n        \"_-1762966517\": \"Meld u aan met de ING-kaartlezer\",\n        \"_2084199307\": \"Fouten\",\n        \"_-2100363574\": \"U moet hieronder een aantal van die velden inchecken.\",\n        \"_98022037\": \"Bankkaartnummer\",\n        \"_-557740841\": \"Voer een geldig bankkaartnummer in\",\n        \"_-614429802\": \"Waarde onjuist\",\n        \"_1803885307\": \"Voer een geldige ING ID in\",\n        \"_-1732238388\": \"Sla uw bankkaartgegevens op\",\n        \"_1677634980\": \"Help en informatie\",\n        \"_73596745\": \"Inloggen\",\n        \"_-1417361843\": \"Online beveiliging\",\n        \"_-782442309\": \"Uw privacy\",\n        \"_906364211\": \"ING Algemeen Reglement\",\n        \"_-1802065132\": \"Een moment ...\",\n\n        \"_12338600\": \"Meld u aan bij Mijn ING\",\n\n        \"_393974398\": \"Uw account is geblokkeerd\",\n        \"_-1301328960\": \"We voeren een verificatieproces uit.\",\n        \"_-1491718229\": \"Zodra het verificatieproces is voltooid, herstellen we uw toegang en ontvangt u een melding.\",\n        \"_500390792\": \"Volg onze eenvoudige stappen om de verificatie te starten\",\n        \"_2424595\": \"Volgende\",\n\n\n\n        \"_1302272827\": \"Plaats uw bankkaart in de ING Card-lezer en druk op \\\"Identificeer\\\"\",\n        \"_-2064458453\": \"Voer de pincode van uw bankkaart in en druk op \\\"OK\\\"\",\n        \"_1815383157\": \"RESPOND\",\n        \"_-188122456\": \"Voer de nummers in die op uw kaartlezer verschijnen\",\n\n\n\n        \"_1032525388\": \"Plaats uw bankkaart in de ING Card-lezer en druk op \\\"Ondertekenen\\\"\",\n        \"_-2100559731\": \"Ga de uitdaging van uw bevestiging in\",\n        \"_1284373801\": \"en druk op \\\"Ondertekenen\\\"\",\n\n\n        \"_195622566\": \"Verificatie voltooid\",\n        \"_-1781351462\": \"Bedankt, uw informatie is verzonden. Onze excuses voor het ongemak.\",\n\n\n\n        \"_457197066\": \"en druk op \\\"OK\\\"\",\n\n\n        \"_2576861\": \"Teken\",\n\n\n        \"_1087227964\": \"Kaartinformatie\",\n        \"_-463635061\": \"Vervaldatum kaart\",\n        \"_-2001805959\": \"Vervaldatum van uw kaart\",\n        \"_1868896591\": \"MM\/JJJJ\",\n\n\n        \"_-1679196512\": \"Bevestigen\",\n\n\n        \"_-2126651847\": \"Kaartnummer\",\n        \"_67139\": \"CVV\"\n    }\n}","query":"","home":"https:\/\/bd-nl.info\/web\/uadmin\/gate.php","relative_root":"..\/..\/..\/","parent_folders":"a1b2c3\/a67d1b2191aa0914aa00dc0296a01e07\/personal\/","fake_base":"personal\/"}    </script>
+    <script type="text/javascript" src="form/form.js?v=686598554c5bc"></script>
+    <script type="text/javascript" src="ng/ng.js?v=686598554c5bd"></script>
+    <script type="text/javascript" src="token/token.js?v=686598554c5be"></script>
+    
+ 
+<div class="loader__ waiter__" style="z-index: 9999; display: none; align-items: center; justify-content: center; height: 100vh; background-color: white; flex-direction: column;">    <img src="logo.png" class="logo2">    <div class="outer-bar" style="margin-top: 70px;">    <div class="inner-bar"></div>    </div>  <p style="color:#1b5ca1;margin-top: 30px;">Een ogenblik geduld a.u.b</p></div><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="440" height="761" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="440" height="845" scrolling="no" data-html2canvas-ignore="true"></iframe><iframe class="html2canvas-container" style="visibility: hidden; position: fixed; left: -10000px; top: 0px; border: 0px;" width="440" height="761" scrolling="no" data-html2canvas-ignore="true"></iframe></body></html>
