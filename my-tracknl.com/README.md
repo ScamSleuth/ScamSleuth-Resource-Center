@@ -2,7 +2,7 @@
 
 **Scam Date**: July 2025
 
-**Status**: Ongoing
+**Status**: Resolved
 
 ---
 
