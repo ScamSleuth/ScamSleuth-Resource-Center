@@ -61,7 +61,6 @@ This behavior highlights that the scam kit contains conditional logic, likely im
 - Submitted scam details to:
   - [FraudeHelpdesk.nl](https://www.fraudehelpdesk.nl/)
   - [Google Safe Browsing](https://safebrowsing.google.com/safebrowsing/report_phish/)
-  - [Netcraft Phishing Report](https://report.netcraft.com/)
 
 ---
 
