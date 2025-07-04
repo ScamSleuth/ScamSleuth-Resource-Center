@@ -52,16 +52,21 @@ On `paymen-pay.pro`, victims are instructed to input their full credit card deta
 
 ### 1. Carrier / Hosting Provider Reports
 
-* **2025-07-04**: Prepared abuse reports to Namecheap (for `promostore.website`) and Porkbun (for `paymen-pay.pro`).
-* Pending: Report to NIC.lv for suspected abuse of `cps.lv`.
+* **2025-07-04**: Reported promostore.website to Namecheap (abuse@namecheap.com) with link to full investigation.
+
+* **2025-07-04**: Reported paymen-pay.pro to Porkbun (abuse@porkbun.com).
+
+* **2025-07-04**: Reported cps.lv to NIC.lv and CERT.lv regarding suspicious activity.
 
 ### 2. Notifications to Affected Parties
 
-* Pack Hacker and Decathlon were informed of impersonation.
+* **2025-07-04**: Informed Pack Hacker regarding misuse of their branding and website content.
+
+* **2025-07-04**: Informed Decathlon of the impersonation and use of their brand in the social media campaign.
 
 ### 3. National Fraud Reporting
 
-* Scam submitted to [Fraudehelpdesk.nl](https://www.fraudehelpdesk.nl).
+* **2025-07-04**: Scam submitted to Fraudehelpdesk.nl.
 
 ---
 
