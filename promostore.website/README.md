@@ -30,6 +30,8 @@ This scam mimics a *Decathlon* giveaway and questionnaire and impersonates *Pack
   * `paymen-pay.pro`: Registered via Porkbun; hosted with Porkbun nameservers
   * `cps.lv`: Registered to Complete Payment Systems SIA in Latvia; also hosted behind Cloudflare — unusual for a payment processor or legitimate banking domain
 
+  * `promostore.website`'s DNS A-record shows 96.9.124.233, that IP-address belongs to [BL Networks](https://blnwx.com)
+  * 
 ---
 
 ## Scam Tactics
