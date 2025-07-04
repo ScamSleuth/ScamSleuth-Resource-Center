@@ -1,0 +1,51 @@
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+body {
+  background: #fff;
+}
+.btn {
+  background: #ffca0f;
+  transition: background 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background: #efc52f;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.5s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+input {
+  outline: none;
+}
+.input-error {
+  border: 2px solid red;
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message {
+  color: red;
+  font-size: 11px;
+  margin-top: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.card {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.77);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(
+    112.91deg,
+    #c7e1ff 3.51%,
+    #99d1f1 50.85%,
+    #ecf5ff 111.71%
+  );
+}
