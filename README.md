@@ -46,6 +46,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [mijnkvk.digital](./mijnkvk.digital/) | Resolved |
 | [my-tracknl.com](./my-tracknl.com/) | Resolved |
 | [politie +31202101743](./politie%20%2B31202101743/) | Resolved |
+| [promostore.website](./promostore.website/) | Ongoing |
 | [rndmz23.de](./rndmz23.de/) | Resolved |
 | [security-ledger.live](./security-ledger.live/) | Resolved |
 | [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Resolved |
