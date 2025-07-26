@@ -28,7 +28,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 |------|--------|
 | [achterstand.voldoen2025.com](./achterstand.voldoen2025.com/)	| Resolved |
 | [bd-incasso.in](./bd-incasso.in/)	| Resolved |
-| [bd-nl.info](./bd-nl.info/)	| Ongoing |
+| [bd-nl.info](./bd-nl.info/)	| Resloved |
 | [belasting.mijn-schulden.com](./belasting.mijn-schulden.com/)	| Resolved |
 | [bitvavo +31202262079](./bitvavo%20%2B31202262079/) | Resolved |
 | [bitvavo +31203690380](./bitvavo%20%2B31203690380/) | Resolved |
