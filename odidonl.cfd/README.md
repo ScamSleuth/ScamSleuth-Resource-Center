@@ -47,15 +47,15 @@ The presence of a redirect to a Swiss bank suggests the phishing kit was copied 
 ## Actions Taken  
 
 ### 1. Carrier / Hosting Provider Reports  
-- None submitted yet. Planning to report the domain and IP address to:  
-  - **Registrar**: support@webnic.cc  
+- Reported the domain and IP address to:  
+  - **Registrar**: webnic.cc  
   - **Hosting Provider**: abuse@transip.nl
 
 ### 2. Notifications to Affected Parties  
-- No notification to Odido yet. Considered as a next step.
+- Notified Odido
 
 ### 3. National Fraud Reporting  
-- Will be reported to **Fraudehelpdesk.nl**.
+- Reported to **Fraudehelpdesk.nl**.
 
 ---
 
