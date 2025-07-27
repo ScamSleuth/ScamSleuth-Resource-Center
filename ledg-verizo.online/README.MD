@@ -45,17 +45,8 @@ Victims are guided to a final screen asking them to input their 12/18/24-word re
 
 ### 1. Registrar & CDN Provider
 
-* Will report domain to Namecheap via **[abuse@namecheap.com](mailto:abuse@namecheap.com)**
-* Will report abuse to Cloudflare for hosting phishing infrastructure
-
-### 2. Notifications to Affected Parties
-
-* Ledger (impersonated brand)
-* Ledger users in relevant communities
-
-### 3. National Fraud Reporting
-
-* To be reported to Dutch **Fraudehelpdesk.nl**
+* Reported domain to Namecheap via **[abuse@namecheap.com](mailto:abuse@namecheap.com)**
+* Reported abuse to Cloudflare
 
 ---
 
