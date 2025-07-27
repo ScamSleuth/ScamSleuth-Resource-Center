@@ -40,6 +40,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [google +3197010259551](./google%20%2B3197010259551/) | Resolved |
 | [google.updatenu.com](./google.updatenu.com/)	| Resolved |
 | [kvkvoorwaarden-check.de](./kvkvoorwaarden-check.de/)	| Resolved |
+| [ledg-verizo.online](./ledg-verizo.online/)	| Ongoing |
 | [ledger +31 85 888 3869](./ledger%20%2B31%2085%20888%203869/) | Resolved |
 | [ledger +31 85 888 5074](./ledger%20%2B31%2085%20888%205074/) | Resolved |
 | [ledger-compliance.com](./ledger-compliance.com/) | Resolved |
