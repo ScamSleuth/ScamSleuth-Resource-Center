@@ -45,6 +45,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [ledger-compliance.com](./ledger-compliance.com/) | Resolved |
 | [mijnkvk.digital](./mijnkvk.digital/) | Resolved |
 | [my-tracknl.com](./my-tracknl.com/) | Resolved |
+| [odidonl.cfd](./odidonl.cfd/) | Ongoing |
 | [politie +31202101743](./politie%20%2B31202101743/) | Resolved |
 | [promostore.website](./promostore.website/) | Resolved |
 | [rndmz23.de](./rndmz23.de/) | Resolved |
