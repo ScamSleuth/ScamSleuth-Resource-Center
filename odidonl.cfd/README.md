@@ -1,7 +1,7 @@
 # Scam Report: Odido Phone Number Expiry Scam
 
 **Scam Date**: July, 2025  
-**Status**: Ongoing
+**Status**: Mitigated
 
 ---
 
@@ -56,6 +56,9 @@ The presence of a redirect to a Swiss bank suggests the phishing kit was copied 
 
 ### 3. National Fraud Reporting  
 - Reported to **Fraudehelpdesk.nl**.
+
+### 4. Update
+- URL is no longer active, it now leads to Google. The domain is still resolving to TransIP though, it's probably being controled by the scammers.
 
 ---
 
