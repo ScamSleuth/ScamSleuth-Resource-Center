@@ -46,7 +46,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [ledger-compliance.com](./ledger-compliance.com/) | Resolved |
 | [mijnkvk.digital](./mijnkvk.digital/) | Resolved |
 | [my-tracknl.com](./my-tracknl.com/) | Resolved |
-| [odidonl.cfd](./odidonl.cfd/) | Ongoing |
+| [odidonl.cfd](./odidonl.cfd/) | Mitigated |
 | [politie +31202101743](./politie%20%2B31202101743/) | Resolved |
 | [promostore.website](./promostore.website/) | Resolved |
 | [rndmz23.de](./rndmz23.de/) | Resolved |
@@ -54,7 +54,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [tnt-home-FedEx.top](./tnt-home-FedEx.top/) | Resolved |
 | [updatewallet-ledger.com](./updatewallet-ledger.com/) | Resolved |
 
-Note: Statuses are updated based on follow-ups and verifications. “Resolved” means the scam has been taken down or neutralized, “Ongoing” means it is still live or under observation and "Evolved" means the scam has changed and evolved into another scam.
+Note: Statuses are updated based on follow-ups and verifications. “Resolved” means the scam has been taken down or neutralized, “Ongoing” means it is still live or under observation, "Mitigated" means it isn't currently active and "Evolved" means the scam has changed and evolved into another scam.
 
 ## Contribution
 If you have encountered a scam and would like to contribute, please add a new entry following the structure outlined above. Ensure any personal information is anonymized before sharing.
