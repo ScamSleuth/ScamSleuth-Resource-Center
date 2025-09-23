@@ -32,6 +32,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [belasting.mijn-schulden.com](./belasting.mijn-schulden.com/)	| Resolved |
 | [bitvavo +31202262079](./bitvavo%20%2B31202262079/) | Resolved |
 | [bitvavo +31203690380](./bitvavo%20%2B31203690380/) | Resolved |
+| [bitvavo +31203690380](./bitvavo%20%2B31203691329/) | Ongoing |
 | [bitvavo +31313794042](./bitvavo%20%2B31313794042/) | Resolved |
 | [bitvavo +31505690052](./bitvavo%20%2B31505690052/) | Resolved |
 | [bitvavo-info.site](./bitvavo-info.site/)	| Resolved |
@@ -40,7 +41,7 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [google +3197010259551](./google%20%2B3197010259551/) | Resolved |
 | [google.updatenu.com](./google.updatenu.com/)	| Resolved |
 | [kvkvoorwaarden-check.de](./kvkvoorwaarden-check.de/)	| Resolved |
-| [ledg-verizo.online](./ledg-verizo.online/)	| Ongoing |
+| [ledg-verizo.online](./ledg-verizo.online/)	| Mitigated |
 | [ledger +31 85 888 3869](./ledger%20%2B31%2085%20888%203869/) | Resolved |
 | [ledger +31 85 888 5074](./ledger%20%2B31%2085%20888%205074/) | Resolved |
 | [ledger-compliance.com](./ledger-compliance.com/) | Resolved |
