@@ -15,8 +15,11 @@ Victims receive an SMS that appears to come from Bybit, claiming a new device ha
 
 ## Source Analysis
 **Impersonated Entities:** Bybit (crypto exchange), Ledger (hardware wallet)
+
 **Initial Scam Channel:** SMS (smishing), sender appears to be “Bybit”
+
 **Phone Number Used (SMS/Callback):** +31 591 794 013
+
 **Provider:** MaxiTEL (as reported)
 
 ## Scam Tactics
