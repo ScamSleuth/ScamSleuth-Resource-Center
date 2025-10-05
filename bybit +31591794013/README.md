@@ -2,7 +2,7 @@
 
 **Scam Date:** September 2025
 
-**Status:** Ongoing
+**Status:** Resolved
 
 ## Scam Summary
 Victims receive an SMS that appears to come from Bybit, claiming a new device has been linked to their portfolio and instructing them to call a Dutch number immediately. When called, an English-speaking agent probes for details about the victim’s crypto holdings. If the victim mentions using a Ledger hardware wallet, the call is conveniently “transferred” to a supposed Ledger agent who claims they can investigate the issue. This “Ledger” representative is part of the scam operation and attempts to gain access to accounts or wallet recovery phrases.
