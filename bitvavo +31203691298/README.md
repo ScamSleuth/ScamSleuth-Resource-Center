@@ -2,7 +2,7 @@
 
 **Scam Date**: September 2025
 
-**Status**: Ongoing
+**Status**: Resolved
 
 ---
 
@@ -23,7 +23,7 @@ BI-783"
 
 * **Impersonated Entities**: Bitvavo (crypto exchange)
 * **Initial Scam Channel**: SMS
-* **Phone Number Used (SMS)**: +31 20 369 13 29
+* **Phone Number Used (SMS)**: +31 20 369 12 98
 * **Provider**: MaxiTEL
 
 ---
