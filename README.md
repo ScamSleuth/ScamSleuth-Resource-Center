@@ -32,10 +32,12 @@ Below is a list of known scams currently documented in this repository. Each fol
 | [belasting.mijn-schulden.com](./belasting.mijn-schulden.com/)	| Resolved |
 | [bitvavo +31202262079](./bitvavo%20%2B31202262079/) | Resolved |
 | [bitvavo +31203690380](./bitvavo%20%2B31203690380/) | Resolved |
+| [bitvavo +31203690380](./bitvavo%20%2B31203691298/) | Resolved |
 | [bitvavo +31203690380](./bitvavo%20%2B31203691329/) | Resolved |
 | [bitvavo +31313794042](./bitvavo%20%2B31313794042/) | Resolved |
 | [bitvavo +31505690052](./bitvavo%20%2B31505690052/) | Resolved |
 | [bitvavo-info.site](./bitvavo-info.site/)	| Resolved |
+| [Bytbit +31591794013](./bybit%20%2B31591794013/)	| Resolved |
 | [coinbase +31106690592](./coinbase%20%2B31106690592/)	| Resolved |
 | [coinbase +31850603748](./coinbase%20%2B31850603748/)	| Resolved |
 | [google +3197010259551](./google%20%2B3197010259551/) | Resolved |
