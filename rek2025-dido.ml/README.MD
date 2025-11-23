@@ -29,6 +29,7 @@ The site uses a **fake chat function** that invites victims to request a “paym
 - **TLS Provider**: Let’s Encrypt  
 - **Chat Service**: Tidio (Project ID: fecnuhvn59dunyqhwn2lvcbo4tutmtmj)  
 - **Cloud Service Provider**: Not using Cloudflare
+- **Bank-details**: NL19INGB0007811670 (via Chat)
 
 ---
 
