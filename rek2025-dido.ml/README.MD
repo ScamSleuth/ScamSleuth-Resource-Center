@@ -1,7 +1,7 @@
 # Scam Report: Odido Smishing Scam – rek2025-dido.ml
 
 **Scam Date**: November 2025  
-**Status**: Ongoing  
+**Status**: Resolved 
 
 ---
 
@@ -54,7 +54,12 @@ Using a legitimate chat integration (Tidio), scammers issue fake “payment link
 - Odido’s fraud department will be notified.  
 - Reports prepared for Fraudehelpdesk.nl and Veilig Internetten.nl.
 
+- Tidio took immediate action after the scam was reported.
+- The hoster seems to have changed their contact information.
+- The website is down. 
+
 ---
+
 
 ## Lessons & Takeaways
 ### 1. Red Flags
