@@ -23,8 +23,8 @@ The landing page fraudulently displays logos of major news media outlets (CNN, W
 - **Media Brands Misused**: CNN, Wall Street Journal, BBC, the Guardian, Daily Telegraph and CBS
 - **Scammer's Contact Method**: Phone Call / Website
 - **Phone Numbers Used**: 
-  - +31 852 085 408 (listed on dashboard - not answering calls)
-  - +31 852 430 761 (listed on landing page)
+  - +31 852 085 408 (listed on landing page - not answering calls)
+  - +35 228 431 457 (listed on landing page - not answering calls)
 - **Email Addresses Used**:
   - support@mtgride.org
   - support@gride.org
@@ -190,8 +190,8 @@ For investigators and security professionals:
 - JavaScript Framework: Alpine.js 3.13.3
 
 **Contact Information (Scam):**
-- Phone: +31 852 085 408 (not answering calls)
-- Phone: +31 852 430 761 (not answering calls)
+- +31 852 085 408 (listed on landing page - not answering calls)
+- +35 228 431 457 (listed on landing page - not answering calls)
 - Email: support@mtgride.org
 - Email: support@gride.org
 
