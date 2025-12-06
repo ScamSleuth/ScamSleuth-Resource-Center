@@ -86,7 +86,7 @@ The scam website uses:
 - CSRF tokens and form validation to appear secure
 
 ### 9. Unresponsive Contact Numbers
-The phone numbers listed on the site (+31 852 085 408 and +31 852 430 761) do not answer calls, suggesting they are either:
+The phone numbers listed on the site (+31 852 085 408, +35 228 431 457 and +31 852 430 761) do not answer calls, suggesting they are either:
 - Not taking calls at the moment
 - Display-only numbers used for credibility
 - Numbers that only make outbound calls to victims
