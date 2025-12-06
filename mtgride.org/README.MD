@@ -5,7 +5,7 @@
 
 ---
 ## Scam Summary  
-This is a sophisticated cryptocurrency investment scam where fraudsters cold-call victims claiming to have detected suspicious transactions on their accounts. The scammers deliberately avoid naming which platform was supposedly compromised, then ask victims about cryptocurrency investments they may have made in the past. Victims are directed to a fake website (mtgride.org) where they are shown fabricated account balances to make them believe they have significant crypto holdings. The dashboard displays inflated balances (e.g., €32,845.00) with account status marked as "Inactive" and KYC status as "Pending" to create urgency and justify requests for verification fees or payments.
+This is a sophisticated cryptocurrency investment scam where fraudsters cold-call victims claiming to have detected suspicious transactions on their accounts. The scammers deliberately avoid naming which platform was supposedly compromised, then ask victims about cryptocurrency investments they may have made in the past. Victims are directed to a fake website (mtgride.org) where they are shown fabricated account balances to make them believe they have significant crypto holdings. The dashboard displays inflated balances with account status marked as "Inactive" and KYC status (Know Your Customer) as "Pending" to create urgency and justify requests for verification or payments.
 
 The landing page fraudulently displays logos of major news media outlets (CNN, Wall Street Journal, BBC, the Guardian, Daily Telegraph and CBS) to falsely suggest media coverage and legitimacy. The site positions itself as a "capital recovery" and "financial crimes investigation" service.
 
