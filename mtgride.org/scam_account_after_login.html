@@ -1,0 +1,1052 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MTGride.org</title>
+    <meta name="description" content="Global leader in investigation and asset recovery services.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010">
+    
+    <script type="text/javascript" nonce="bddf7401da8548e1b8dbfebc1af" src="//local.adguard.org?ts=1765040847810&amp;type=content-script&amp;dmn=account.mtgride.org&amp;url=https%3A%2F%2Faccount.mtgride.org%2Fclient%2Fdashboard&amp;app=msedge.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><script type="text/javascript" nonce="bddf7401da8548e1b8dbfebc1af" src="//local.adguard.org?ts=1765040847810&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap">
+    <link rel="icon" type="image/svg+xml" href="https://account.mtgride.org/storage/images/pages/fav.svg">
+
+       <!-- Alpine.js via CDN (if needed) -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js" defer></script>
+    
+ 
+    <link rel="preload" as="style" href="https://account.mtgride.org/build/assets/app-COB7tqRx.css" /><link rel="modulepreload" href="https://account.mtgride.org/build/assets/app-CAiCLEjY.js" /><link rel="stylesheet" href="https://account.mtgride.org/build/assets/app-COB7tqRx.css" data-navigate-track="reload" /><script type="module" src="https://account.mtgride.org/build/assets/app-CAiCLEjY.js" data-navigate-track="reload"></script>
+    </head>
+<body class="antialiased bg-body text-body font-body ">
+    <div class="">
+        
+<!--  -->
+
+<!--     <div class="fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+        <div class="bg-white p-6 rounded shadow-lg text-center max-w-md w-full">
+            <h2 class="text-xl font-bold text-red-600 mb-4">Account Not Activated</h2>
+            <p class="text-gray-700 mb-6">Your account is currently pending. Please wait for an administrator to activate your profile.</p>
+            <a href="https://account.mtgride.org/client-logout"
+               onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+               class="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+               Logout
+            </a>
+            <form id="logout-form" action="https://account.mtgride.org/client-logout" method="POST" class="hidden">
+                <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">            </form>
+        </div>
+    </div>
+ -->
+
+<!-- <section class="blur-xl"> -->
+
+<section
+  x-data="{
+    category: '',
+    setCategoryFromHash() {
+      let hash = window.location.hash.substring(1);
+      if (hash && this.$refs[hash]) {
+        this.category = this.$refs[hash].textContent;
+      } else {
+        this.category = this.$refs.dashboard.textContent;
+      }
+    }
+  }"
+  x-init="
+    setCategoryFromHash();
+    window.addEventListener('hashchange', () => setCategoryFromHash());
+  "
+>
+
+
+<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+  <div class="max-w-7xl mx-auto px-4 py-3">
+    <div class="flex justify-between w-full h-16 gap-1">
+      <!-- Left section: Logo and desktop links -->
+      <div class="flex w-full justify-between">
+        <!-- Logo -->
+        <div class="shrink-0 flex items-center">
+          <a class="flex items-center gap-2" href="/">
+            <img class="h-10 w-auto" src="https://account.mtgride.org/storage/images/pages/logo.svg" alt="about.site_name">
+            <span class="font-bold text-xl text-blue-700">MTGride</span>
+          </a>
+        </div>
+      </a>
+      <ul class="xl:flex lg:justify-end lg:items-center lg:space-x-6 ml-auto flex">
+        <div class="flex gap-4">
+        <li class="flex items-center">
+                      <div class="flex gap-5">
+                            <div class="relative">
+                <a href="https://account.mtgride.org/client/dashboard#notifications" class="text-gray-300 hover:text-red-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M5.15837 11.491C5.08489 12.887 5.16936 14.373 3.92213 15.3084C3.34164 15.7438 3 16.427 3 17.1527C3 18.1508 3.7818 19 4.8 19H19.2C20.2182 19 21 18.1508 21 17.1527C21 16.427 20.6584 15.7438 20.0779 15.3084C18.8306 14.373 18.9151 12.887 18.8416 11.491C18.6501 7.85223 15.6438 5 12 5C8.35617 5 5.34988 7.85222 5.15837 11.491Z" stroke="currentColor"></path><path d="M10.5 3.125C10.5 3.95343 11.1716 5 12 5C12.8284 5 13.5 3.95343 13.5 3.125C13.5 2.29657 12.8284 2 12 2C11.1716 2 10.5 2.29657 10.5 3.125Z" stroke="currentColor"></path><path d="M15 19C15 20.6569 13.6569 22 12 22C10.3431 22 9 20.6569 9 19" stroke="currentColor"></path></svg>                </a>
+                              </div>
+            </div>
+                  </li>
+    </div>
+
+      </ul>
+      <style>
+        [x-cloak] {
+          display: none !important;
+        }
+      </style>
+      <div class="hidden relative xl:flex max-w-max ml-4">
+                <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
+          <button class="flex bg-white items-center pr-1 pt-2 border border-gray-200 rounded-md pb-1 pl-3 hover:border-gray-300">
+            <div class="mr-3">
+              <div class="text-sm pb-1 text-gray-500 flex gap-1">
+                <div>John</div>
+                <div>Doe</div>
+                
+              </div>
+              <div class="flex">
+                <svg class="items-center mr-1 text-gray-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16 14C16 14.8284 16.6716 15.5 17.5 15.5C18.3284 15.5 19 14.8284 19 14C19 13.1716 18.3284 12.5 17.5 12.5C16.6716 12.5 16 13.1716 16 14Z" stroke="currentColor"></path><path d="M10 7H16C18.8284 7 20.2426 7 21.1213 7.87868C22 8.75736 22 10.1716 22 13V15C22 17.8284 22 19.2426 21.1213 20.1213C20.2426 21 18.8284 21 16 21H10C6.22876 21 4.34315 21 3.17157 19.8284C2 18.6569 2 16.7712 2 13V11C2 7.22876 2 5.34315 3.17157 4.17157C4.34315 3 6.22876 3 10 3H14C14.93 3 15.395 3 15.7765 3.10222C16.8117 3.37962 17.6204 4.18827 17.8978 5.22354C18 5.60504 18 6.07003 18 7" stroke="currentColor"></path></svg>                <p class="text-gray-500">32,845€</p>
+              </div>
+            </div>
+          </button>
+          <!-- Client menu -->
+          <div x-show="open" x-transition x-cloak class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 border border-gray-200">
+            <ul class="py-2 text-sm text-gray-700">
+                            <li><a href="https://account.mtgride.org/client/dashboard" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-500">Dashboard</a></li>
+              <li>
+                <form method="POST" action="https://account.mtgride.org/client-logout">
+                  <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">                  <button type="submit" class="w-full text-left px-4 py-2 hover:bg-blue-50 hover:text-blue-500">Logout</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+              </div>
+      </div>
+       <!-- Hamburger -->
+      <div class="-me-2 flex items-center xl:hidden ml-2">
+        <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100">
+          <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+            <path :class="{ 'hidden': open, 'inline-flex': ! open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            <path :class="{ 'hidden': ! open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  <!-- Responsive Navigation Menu -->
+  <div :class="{ 'block': open, 'hidden': ! open }" class="xl:hidden hidden">
+    <div class="pt-2 pb-3 space-y-1">
+      <a class="block w-full ps-3 pe-4 py-2 border-transparent text-start text-base font-medium text-gray-600 focus:outline-none transition duration-150 ease-in-out !pl-0 !py-1" href="https://account.mtgride.org">
+    Home
+</a>
+
+            <a class="block w-full ps-3 pe-4 py-2 text-start text-base font-medium text-indigo-700 focus:text-indigo-800 transition duration-150 ease-in-out border-gray-100 !pl-0 !py-1" href="https://account.mtgride.org/client/dashboard">
+    Dashboard
+</a>
+        <div class="border-t border-gray-100 mt-2 pt-2 space-y-1">
+          <div class="pb-1 text-md text-gray-500">
+            John<br>
+            <span class="flex items-center mt-1 text-gray-500 text-md">
+              <svg class="w-6 h-6 mr-1 text-gray-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16 14C16 14.8284 16.6716 15.5 17.5 15.5C18.3284 15.5 19 14.8284 19 14C19 13.1716 18.3284 12.5 17.5 12.5C16.6716 12.5 16 13.1716 16 14Z" stroke="currentColor"></path><path d="M10 7H16C18.8284 7 20.2426 7 21.1213 7.87868C22 8.75736 22 10.1716 22 13V15C22 17.8284 22 19.2426 21.1213 20.1213C20.2426 21 18.8284 21 16 21H10C6.22876 21 4.34315 21 3.17157 19.8284C2 18.6569 2 16.7712 2 13V11C2 7.22876 2 5.34315 3.17157 4.17157C4.34315 3 6.22876 3 10 3H14C14.93 3 15.395 3 15.7765 3.10222C16.8117 3.37962 17.6204 4.18827 17.8978 5.22354C18 5.60504 18 6.07003 18 7" stroke="currentColor"></path></svg> 
+              32,845€            </span>
+          </div>
+        
+          <form method="POST" action="https://account.mtgride.org/client-logout">
+            <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">            <button type="submit" class="block w-full text-md text-blue-500 hover:text-blue-500 hover:bg-blue-50">Logout</button>
+          </form>
+        </div>
+          </div>
+  </div>
+</nav>
+<div class="bg-blue-50 py-8 flex justify-center"
+     style="  background-image: 
+   linear-gradient(rgb(54 121 255 / 0%), rgb(0 74 255 / 42%)),
+    url('https://account.mtgride.org/storage/images/pages/profile-bg.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          ">
+
+    <!-- Your content here -->
+<div class="container px-4 max-w-7xl">
+    <div class="flex flex-wrap">
+      <div class="w-full lg:w-3/12 pr-0 lg:pr-4 mb-8 lg:mb-0 ">
+        <div class="bg-white rounded shadow-md rounded-lg">
+        <!-- Client Profile -->
+          <div class="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-t-lg p-8 text-white">
+          <!-- Profile Status -->
+                    <div class="flex mb-4 items-center rounded-md text-base w-fit text-sm">
+              <p class="uppercase px-2 py-1 rounded text-red-600 bg-white">
+                  <span class="font-bold">ACCOUNT STATUS:</span> Inactive
+              </p> 
+          </div>
+
+
+          
+          <div class="mb-4">
+            <div class="text-2xl font-bold">Hello,</div>
+            <div class="text-xl font-bold">John Doe</div>
+            <p class="text-blue-100 mb-4"></p>
+          </div>
+          <!-- KYC Status -->
+                    <div class="flex mb-4 items-center rounded-md text-base w-fit">
+              <p class="uppercase px-2 py-1 rounded text-yellow-600 bg-yellow-100">
+                  <span class="font-bold">KYC:</span> Pending
+              </p> 
+          </div>
+            <div class="flex flex-wrap gap-2">
+              <div class="flex px-4 items-center py-2 bg-white bg-white rounded-md text-xl">
+              <svg class="text-blue-600 w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16 14C16 14.8284 16.6716 15.5 17.5 15.5C18.3284 15.5 19 14.8284 19 14C19 13.1716 18.3284 12.5 17.5 12.5C16.6716 12.5 16 13.1716 16 14Z" stroke="currentColor"></path><path d="M10 7H16C18.8284 7 20.2426 7 21.1213 7.87868C22 8.75736 22 10.1716 22 13V15C22 17.8284 22 19.2426 21.1213 20.1213C20.2426 21 18.8284 21 16 21H10C6.22876 21 4.34315 21 3.17157 19.8284C2 18.6569 2 16.7712 2 13V11C2 7.22876 2 5.34315 3.17157 4.17157C4.34315 3 6.22876 3 10 3H14C14.93 3 15.395 3 15.7765 3.10222C16.8117 3.37962 17.6204 4.18827 17.8978 5.22354C18 5.60504 18 6.07003 18 7" stroke="currentColor"></path></svg>                <p class="text-blue-700">12,345.00 €</p>
+              </div>
+            </div>
+          </div>
+          <ul class="text-sm">
+            <li>
+                <a
+                  href="#dashboard"
+                  x-on:click.prevent="category = $refs.dashboard.textContent; window.location.hash = 'dashboard'"
+                  :class="{ 'text-blue-500 bg-blue-50': category == $refs.dashboard.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.dashboard.textContent }"
+                  class="group flex text-base font-normal p-3 items-center"
+                >
+                  <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16 5C16 4.06812 16 3.60218 16.1522 3.23463C16.3552 2.74458 16.7446 2.35523 17.2346 2.15224C17.6022 2 18.0681 2 19 2C19.9319 2 20.3978 2 20.7654 2.15224C21.2554 2.35523 21.6448 2.74458 21.8478 3.23463C22 3.60218 22 4.06812 22 5V9C22 9.93188 22 10.3978 21.8478 10.7654C21.6448 11.2554 21.2554 11.6448 20.7654 11.8478C20.3978 12 19.9319 12 19 12C18.0681 12 17.6022 12 17.2346 11.8478C16.7446 11.6448 16.3552 11.2554 16.1522 10.7654C16 10.3978 16 9.93188 16 9V5Z" stroke="currentColor"></path><path d="M16 19C16 18.0681 16 17.6022 16.1522 17.2346C16.3552 16.7446 16.7446 16.3552 17.2346 16.1522C17.6022 16 18.0681 16 19 16C19.9319 16 20.3978 16 20.7654 16.1522C21.2554 16.3552 21.6448 16.7446 21.8478 17.2346C22 17.6022 22 18.0681 22 19C22 19.9319 22 20.3978 21.8478 20.7654C21.6448 21.2554 21.2554 21.6448 20.7654 21.8478C20.3978 22 19.9319 22 19 22C18.0681 22 17.6022 22 17.2346 21.8478C16.7446 21.6448 16.3552 21.2554 16.1522 20.7654C16 20.3978 16 19.9319 16 19Z" stroke="currentColor"></path><path d="M2 16C2 14.1144 2 13.1716 2.58579 12.5858C3.17157 12 4.11438 12 6 12H8C9.88562 12 10.8284 12 11.4142 12.5858C12 13.1716 12 14.1144 12 16V18C12 19.8856 12 20.8284 11.4142 21.4142C10.8284 22 9.88562 22 8 22H6C4.11438 22 3.17157 22 2.58579 21.4142C2 20.8284 2 19.8856 2 18V16Z" stroke="currentColor"></path><path d="M2 5C2 4.06812 2 3.60218 2.15224 3.23463C2.35523 2.74458 2.74458 2.35523 3.23463 2.15224C3.60218 2 4.06812 2 5 2H9C9.93188 2 10.3978 2 10.7654 2.15224C11.2554 2.35523 11.6448 2.74458 11.8478 3.23463C12 3.60218 12 4.06812 12 5C12 5.93188 12 6.39782 11.8478 6.76537C11.6448 7.25542 11.2554 7.64477 10.7654 7.84776C10.3978 8 9.93188 8 9 8H5C4.06812 8 3.60218 8 3.23463 7.84776C2.74458 7.64477 2.35523 7.25542 2.15224 6.76537C2 6.39782 2 5.93188 2 5Z" stroke="currentColor"></path></svg>                  <span x-ref="dashboard">Dashboard</span>
+                </a>
+            </li>
+            <li>
+              <a x-on:click.prevent="category = $refs.profile.textContent; window.location.hash = 'profile'" class="group flex text-base font-normal p-3 items-center font-medium text-gray-500 hover:text-blue-500 hover:bg-blue-50" :class="{ 'text-blue-500 bg-blue-50': category == $refs.profile.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.profile.textContent }" href="#">
+                <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="currentColor"></path><path d="M14.75 9.5C14.75 11.0188 13.5188 12.25 12 12.25C10.4812 12.25 9.25 11.0188 9.25 9.5C9.25 7.98122 10.4812 6.75 12 6.75C13.5188 6.75 14.75 7.98122 14.75 9.5Z" stroke="currentColor"></path><path d="M5.5 19L6.0604 18.0193C6.95061 16.4614 8.60733 15.5 10.4016 15.5H13.5984C15.3927 15.5 17.0494 16.4614 17.9396 18.0193L18.5 19" stroke="currentColor"></path></svg>                <span x-ref="profile">Profile</span>
+              </a>
+            </li>
+            <li>
+              <a x-on:click.prevent="category = $refs.kyc.textContent; window.location.hash = 'kyc'" class="group flex text-base font-normal p-3 items-center font-medium hover:bg-blue-50" :class="{ 'text-blue-500 bg-blue-50': category == $refs.kyc.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.kyc.textContent }" href="#">
+                <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M9.13432 2.5C6.46805 2.56075 4.9107 2.81456 3.84664 3.87493C2.91537 4.80297 2.60406 6.10756 2.5 8.2M14.8657 2.5C17.532 2.56075 19.0893 2.81456 20.1534 3.87493C21.0846 4.80297 21.3959 6.10756 21.5 8.2M14.8657 21.5C17.532 21.4392 19.0893 21.1854 20.1534 20.1251C21.0846 19.197 21.3959 17.8924 21.5 15.8M9.13432 21.5C6.46805 21.4392 4.9107 21.1854 3.84664 20.1251C2.91537 19.197 2.60406 17.8924 2.5 15.8" stroke="currentColor"></path><path d="M7.5 17C9.8317 14.5578 14.1432 14.4428 16.5 17M14.4951 9.5C14.4951 10.8807 13.3742 12 11.9915 12C10.6089 12 9.48797 10.8807 9.48797 9.5C9.48797 8.11929 10.6089 7 11.9915 7C13.3742 7 14.4951 8.11929 14.4951 9.5Z" stroke="currentColor"></path></svg>                <span x-ref="kyc">KYC</span>
+              </a>
+            </li>
+            <li>
+              <a x-on:click.prevent="category = $refs.deposit.textContent; window.location.hash = 'deposit'" class="group flex text-base font-normal p-3 items-center font-medium hover:bg-blue-50" :class="{ 'text-blue-500 bg-blue-50': category == $refs.deposit.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.deposit.textContent }" href="#">
+                <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M19.7453 13C20.5362 11.8662 21 10.4872 21 9C21 5.13401 17.866 2 14 2C10.134 2 7 5.134 7 9C7 10.0736 7.24169 11.0907 7.67363 12" stroke="currentColor"></path><path d="M14 6C12.8954 6 12 6.67157 12 7.5C12 8.32843 12.8954 9 14 9C15.1046 9 16 9.67157 16 10.5C16 11.3284 15.1046 12 14 12M14 6C14.8708 6 15.6116 6.4174 15.8862 7M14 6V5M14 12C13.1292 12 12.3884 11.5826 12.1138 11M14 12V13" stroke="currentColor"></path><path d="M3 14H5.39482C5.68897 14 5.97908 14.0663 6.24217 14.1936L8.28415 15.1816C8.54724 15.3089 8.83735 15.3751 9.1315 15.3751H10.1741C11.1825 15.3751 12 16.1662 12 17.142C12 17.1814 11.973 17.2161 11.9338 17.2269L9.39287 17.9295C8.93707 18.0555 8.449 18.0116 8.025 17.8064L5.84211 16.7503M12 16.5L16.5928 15.0889C17.407 14.8352 18.2871 15.136 18.7971 15.8423C19.1659 16.3529 19.0157 17.0842 18.4785 17.3942L10.9629 21.7305C10.4849 22.0063 9.92094 22.0736 9.39516 21.9176L3 20.0199" stroke="currentColor"></path></svg>                <span x-ref="deposit">Deposit</span>
+              </a>
+            </li>
+            <li>
+              <a x-on:click.prevent="category = $refs.withdrawal.textContent; window.location.hash = 'withdrawal'" class="group flex text-base font-normal p-3 items-center font-medium text-gray-500 hover:text-blue-500 hover:bg-blue-50" :class="{ 'text-blue-500 bg-blue-50': category == $refs.withdrawal.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.withdrawal.textContent }" href="#">
+                <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16.002 13.5C16.002 14.3284 16.6735 15 17.502 15C18.3304 15 19.002 14.3284 19.002 13.5C19.002 12.6716 18.3304 12 17.502 12C16.6735 12 16.002 12.6716 16.002 13.5Z" stroke="currentColor"></path><path d="M2.00195 11C2.00195 7.22876 2.00195 5.34315 3.17353 4.17157C4.3451 3 6.23072 3 10.002 3H14.002C14.9319 3 15.3969 3 15.7784 3.10222C16.8137 3.37962 17.6223 4.18827 17.8997 5.22354C18.002 5.60504 18.002 6.07003 18.002 7M10.002 7H16.002C18.8304 7 20.2446 7 21.1233 7.87868C22.002 8.75736 22.002 10.1716 22.002 13V15C22.002 17.8284 22.002 19.2426 21.1233 20.1213C20.2446 21 18.8304 21 16.002 21H12.5005" stroke="currentColor"></path><path d="M10 17H6M6 17H2M6 17V21M6 17L6 13" stroke="currentColor"></path></svg>                <span x-ref="withdrawal">Withdrawal</span>
+              </a>
+            </li>
+            <li>
+              <a x-on:click.prevent="category = $refs.tansactions.textContent; window.location.hash = 'tansactions'" class="group flex text-base font-normal p-3 items-center font-medium text-gray-500 hover:text-blue-500 hover:bg-blue-50" :class="{ 'text-blue-500 bg-blue-50': category == $refs.tansactions.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.tansactions.textContent }" href="#">
+                <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16.9767 19.5C19.4017 17.8876 21 15.1305 21 12C21 7.02944 16.9706 3 12 3C11.3126 3 10.6432 3.07706 10 3.22302M16.9767 19.5V16M16.9767 19.5H20.5M7 4.51555C4.58803 6.13007 3 8.87958 3 12C3 16.9706 7.02944 21 12 21C12.6874 21 13.3568 20.9229 14 20.777M7 4.51555V8M7 4.51555H3.5" stroke="currentColor"></path><path d="M10.4375 14.6667L10.4375 9.33333M12 9.33333V8M12 16V14.6667M10.4375 12H13.5625M13.5625 12C14.0803 12 14.5 12.4477 14.5 13V13.6667C14.5 14.219 14.0803 14.6667 13.5625 14.6667H9.5M13.5625 12C14.0803 12 14.5 11.5523 14.5 11V10.3333C14.5 9.78105 14.0803 9.33333 13.5625 9.33333H9.5" stroke="currentColor"></path></svg>                <span x-ref="tansactions">Transactions</span>
+              </a>
+            </li>
+            <li>
+                                              <a x-on:click.prevent="category = $refs.notifications.textContent; window.location.hash = 'notifications'"
+                  class="group flex text-base font-normal p-3 items-center font-medium hover:text-blue-500 hover:bg-blue-50"
+                  :class="{ 'text-blue-500 bg-blue-50': category == $refs.notifications.textContent, 'text-gray-500 hover:text-blue-500 hover:bg-blue-50': category != $refs.notifications.textContent }"
+                  href="#">
+                  <div class="relative mr-3"
+                      :class="{ 'text-blue-500': category == $refs.notifications?.textContent, 'text-gray-500 group-hover:text-blue-500': category != $refs.notifications?.textContent }">
+                    <svg style="width: 20px; height: 20px;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M5.15837 11.491C5.08489 12.887 5.16936 14.373 3.92213 15.3084C3.34164 15.7438 3 16.427 3 17.1527C3 18.1508 3.7818 19 4.8 19H19.2C20.2182 19 21 18.1508 21 17.1527C21 16.427 20.6584 15.7438 20.0779 15.3084C18.8306 14.373 18.9151 12.887 18.8416 11.491C18.6501 7.85223 15.6438 5 12 5C8.35617 5 5.34988 7.85222 5.15837 11.491Z" stroke="currentColor"></path><path d="M10.5 3.125C10.5 3.95343 11.1716 5 12 5C12.8284 5 13.5 3.95343 13.5 3.125C13.5 2.29657 12.8284 2 12 2C11.1716 2 10.5 2.29657 10.5 3.125Z" stroke="currentColor"></path><path d="M15 19C15 20.6569 13.6569 22 12 22C10.3431 22 9 20.6569 9 19" stroke="currentColor"></path></svg>                                      </div>
+                  <span x-ref="notifications">Notifications</span>
+                </a>
+                          </li>
+            <li>
+              <form method="POST" action="https://account.mtgride.org/client-logout">
+                <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">                <button type="submit" class="group w-full flex font-normal text-base text-left p-3 items-center font-medium text-gray-500 hover:text-blue-500 hover:bg-blue-50">
+                  <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M2.5 12C2.5 7.52166 2.5 5.28248 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28248 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1087C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1087C2.5 18.7175 2.5 16.4783 2.5 12Z" stroke="currentColor"></path><path d="M7.03711 12.0277L14.0127 12.0277M14.0127 12.0277C14.0127 12.5982 11.8575 14.5151 11.8575 14.5151M14.0127 12.0277C14.0127 11.4424 11.8575 9.56334 11.8575 9.56334M17.0371 7.99536V15.9954" stroke="currentColor"></path></svg>                  <span>Logout</span>
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+        
+        
+        <!-- Support Box -->
+        <div class="relative bg-gradient-to-br from-blue-600 to-indigo-700 rounded-xl text-white shadow-md mt-4 overflow-hidden">
+        
+          <!-- Background image -->
+          <div class="absolute inset-0 bg-[url('https://account.mtgride.org/storage/images/pages/support.jpg')] bg-cover bg-center opacity-20"></div>
+        
+          <!-- Overlay for readability -->
+          <div class="absolute inset-0 bg-gradient-to-br from-blue-700/70 to-indigo-800/70"></div>
+        
+          <!-- Content -->
+          <div class="relative z-10 flex flex-col items-center text-center p-6">
+            <div class="w-16 h-16 rounded-full overflow-hidden mb-3 border-2 border-white/40 shadow-md">
+              <img src="https://account.mtgride.org/storage/images/pages/support.jpg" alt="Support" class="w-full h-full object-cover">
+            </div>
+        
+            <h3 class="text-lg font-semibold">Need Help?</h3>
+            <p class="text-sm text-blue-100 mb-4">Our support team is here for you 24/7.</p>
+        
+            <div class="space-y-2 text-sm text-blue-50 mb-4">
+                <div class="flex items-center justify-center gap-2">
+                    <a href="mailto:support@gride.org" class="hover:underline">
+                        support@gride.org
+                    </a>
+                </div>
+                <div class="flex items-center justify-center gap-2">
+                    <a href="tel:+31 852 085 408" class="hover:underline">
+                        +31 852 085 408
+                    </a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        <div id="dashboard" :class="{ 'hidden': category != $refs.dashboard.textContent }" class="w-full lg:w-9/12 bg-white rounded-lg shadow-md p-4 lg:p-8 h-max">
+        <div class="flex items-center">
+          <div class="bg-white w-full">
+            <h1 class="mb-4 text-2xl font-bold font-heading text-blue-700">Dashboard</h1>
+
+      <!-- Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-6">
+        <!-- Card -->
+        <div class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
+          <div class="p-4 bg-orange-50 flex rounded-xl gap-x-4 items-center">
+            <div class="grow w-full">
+              <div class="flex flex-wrap items-center justify-between">
+              <p class="text-sm uppercase text-gray-500 dark:text-neutral-500">
+               Balance
+              </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between">
+                <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">12,345.00 €</h3>
+              </div>
+            </div>
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-orange-300 rounded-lg dark:bg-neutral-800">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M19.7453 13C20.5362 11.8662 21 10.4872 21 9C21 5.13401 17.866 2 14 2C10.134 2 7 5.134 7 9C7 10.0736 7.24169 11.0907 7.67363 12" stroke="currentColor"></path><path d="M14 6C12.8954 6 12 6.67157 12 7.5C12 8.32843 12.8954 9 14 9C15.1046 9 16 9.67157 16 10.5C16 11.3284 15.1046 12 14 12M14 6C14.8708 6 15.6116 6.4174 15.8862 7M14 6V5M14 12C13.1292 12 12.3884 11.5826 12.1138 11M14 12V13" stroke="currentColor"></path><path d="M3 14H5.39482C5.68897 14 5.97908 14.0663 6.24217 14.1936L8.28415 15.1816C8.54724 15.3089 8.83735 15.3751 9.1315 15.3751H10.1741C11.1825 15.3751 12 16.1662 12 17.142C12 17.1814 11.973 17.2161 11.9338 17.2269L9.39287 17.9295C8.93707 18.0555 8.449 18.0116 8.025 17.8064L5.84211 16.7503M12 16.5L16.5928 15.0889C17.407 14.8352 18.2871 15.136 18.7971 15.8423C19.1659 16.3529 19.0157 17.0842 18.4785 17.3942L10.9629 21.7305C10.4849 22.0063 9.92094 22.0736 9.39516 21.9176L3 20.0199" stroke="currentColor"></path></svg>            </div>
+          </div>
+        </div>
+                <!-- Card -->
+        <div class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
+          <div class="p-4 bg-sky-50 flex rounded-xl gap-x-4 items-center">
+            <div class="grow w-full">
+              <div class="flex flex-wrap items-center justify-between">
+              <p class="text-sm uppercase text-gray-500 dark:text-neutral-500">
+                Profit
+              </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between">
+                <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">0.00 €</h3>
+              </div>
+            </div>
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-sky-300 rounded-lg dark:bg-neutral-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><ellipse cx="15.5" cy="11" rx="6.5" ry="2" stroke="currentColor"></ellipse><path d="M22 15.5C22 16.6046 19.0899 17.5 15.5 17.5C11.9101 17.5 9 16.6046 9 15.5" stroke="currentColor"></path><path d="M22 11V19.8C22 21.015 19.0899 22 15.5 22C11.9101 22 9 21.015 9 19.8V11" stroke="currentColor"></path><ellipse cx="8.5" cy="4" rx="6.5" ry="2" stroke="currentColor"></ellipse><path d="M6 11C4.10819 10.7698 2.36991 10.1745 2 9M6 16C4.10819 15.7698 2.36991 15.1745 2 14" stroke="currentColor"></path><path d="M6 21C4.10819 20.7698 2.36991 20.1745 2 19L2 4" stroke="currentColor"></path><path d="M15 6V4" stroke="currentColor"></path></svg>            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
+          <div class="p-4 bg-green-50 flex rounded-xl gap-x-4 items-center">
+            <div class="grow w-full">
+              <div class="flex flex-wrap items-center justify-between">
+              <p class="text-sm uppercase text-gray-500 dark:text-neutral-500">
+                Deposits
+              </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between">
+                <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">0.00 €</h3>
+              </div>
+            </div>
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-green-300 rounded-lg dark:bg-neutral-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M14 2.22179C13.3538 2.09076 12.6849 2.02197 12 2.02197C6.47715 2.02197 2 6.49421 2 12.011C2 17.5277 6.47715 22 12 22C17.5228 22 22 17.5277 22 12.011C22 11.3269 21.9311 10.6587 21.8 10.0132" stroke="currentColor"></path><path d="M12 9.01428C10.8954 9.01428 10 9.68512 10 10.5126C10 11.3401 10.8954 12.011 12 12.011C13.1046 12.011 14 12.6819 14 13.5093C14 14.3368 13.1046 15.0077 12 15.0077M12 9.01428C12.8708 9.01428 13.6116 9.43123 13.8862 10.0132M12 9.01428V8.01538M12 15.0077C11.1292 15.0077 10.3884 14.5908 10.1138 14.0088M12 15.0077V16.0066" stroke="currentColor"></path><path d="M21.9951 2L17.8193 6.17362M16.9951 2.52119L17.1133 5.60928C17.1133 6.33713 17.5484 6.79062 18.3409 6.84782L21.465 6.99451" stroke="currentColor"></path></svg>            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
+          <div class="p-4 bg-purple-50 flex rounded-xl gap-x-4 items-center">
+            <div class="grow w-full">
+              <div class="flex flex-wrap items-center justify-between">
+              <p class="text-sm uppercase text-gray-500 dark:text-neutral-500">
+               Withdrawals
+              </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between">
+                <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">0.00 €</h3>
+              </div>
+            </div>
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-purple-300 rounded-lg dark:bg-neutral-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M14 2.20004C13.3538 2.06886 12.6849 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 11.3151 21.9311 10.6462 21.8 10" stroke="currentColor"></path><path d="M12 9C10.8954 9 10 9.67157 10 10.5C10 11.3284 10.8954 12 12 12C13.1046 12 14 12.6716 14 13.5C14 14.3284 13.1046 15 12 15M12 9C12.8708 9 13.6116 9.4174 13.8862 10M12 9V8M12 15C11.1292 15 10.3884 14.5826 10.1138 14M12 15V16" stroke="currentColor"></path><path d="M16.998 7.00195L21.1739 2.82375M21.998 6.48019L21.8798 3.3887C21.8798 2.66006 21.4448 2.20607 20.6523 2.14881L17.5282 2.00195" stroke="currentColor"></path></svg>            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="flex flex-col bg-white border border-gray-200 shadow-2xs rounded-xl dark:bg-neutral-900 dark:border-neutral-800">
+          <div class="p-4 bg-red-50 flex rounded-xl gap-x-4 items-center">
+            <div class="grow w-full">
+              <div class="flex flex-wrap items-center justify-between">
+              <p class="text-sm uppercase text-gray-500 dark:text-neutral-500">
+               Bonus
+              </p>
+              </div>
+              <div class="flex flex-wrap items-center justify-between">
+                <h3 class="text-xl sm:text-2xl font-medium text-gray-800 dark:text-neutral-200">0.00 €</h3>
+              </div>
+            </div>
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-red-300 rounded-lg dark:bg-neutral-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M19.7453 13C20.5362 11.8662 21 10.4872 21 9C21 5.13401 17.866 2 14 2C10.134 2 7 5.134 7 9C7 10.0736 7.24169 11.0907 7.67363 12" stroke="currentColor"></path><path d="M14 6C12.8954 6 12 6.67157 12 7.5C12 8.32843 12.8954 9 14 9C15.1046 9 16 9.67157 16 10.5C16 11.3284 15.1046 12 14 12M14 6C14.8708 6 15.6116 6.4174 15.8862 7M14 6V5M14 12C13.1292 12 12.3884 11.5826 12.1138 11M14 12V13" stroke="currentColor"></path><path d="M3 14H5.39482C5.68897 14 5.97908 14.0663 6.24217 14.1936L8.28415 15.1816C8.54724 15.3089 8.83735 15.3751 9.1315 15.3751H10.1741C11.1825 15.3751 12 16.1662 12 17.142C12 17.1814 11.973 17.2161 11.9338 17.2269L9.39287 17.9295C8.93707 18.0555 8.449 18.0116 8.025 17.8064L5.84211 16.7503M12 16.5L16.5928 15.0889C17.407 14.8352 18.2871 15.136 18.7971 15.8423C19.1659 16.3529 19.0157 17.0842 18.4785 17.3942L10.9629 21.7305C10.4849 22.0063 9.92094 22.0736 9.39516 21.9176L3 20.0199" stroke="currentColor"></path></svg>            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Grid -->
+
+            <!-- TradingView Widget BEGIN -->
+             
+              <div class="tradingview-widget-container" style="height: 450px;">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+                {
+                "allow_symbol_change": true,
+                "calendar": false,
+                "details": false,
+                "hide_side_toolbar": true,
+                "hide_top_toolbar": false,
+                "hide_legend": false,
+                "hide_volume": false,
+                "hotlist": false,
+                "interval": "D",
+                "locale": "en",
+                "save_image": true,
+                "style": "1",
+                "symbol": "NASDAQ:AAPL",
+                "theme": "light",
+                "timezone": "Etc/UTC",
+                "backgroundColor": "#ffffff",
+                "gridColor": "rgba(46, 46, 46, 0.06)",
+                "watchlist": [],
+                "withdateranges": false,
+                "compareSymbols": [],
+                "studies": [],
+                "width": 100%,
+                "height": 500,
+              }
+                </script>
+              </div>
+            <!-- TradingView Widget END -->
+            <div class="bg-white rounded-lg shadow-sm border ">
+              <div class="px-6 py-4 border-b">
+                <h2 class="text-xl text-blue-700 font-bold font-heading">Your Assets</h2>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="w-full">
+                    <thead class="bg-gray-50">
+                      <tr>
+                        <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Balance</th>
+                        <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                                                                      <tr class="hover:bg-gray-50">
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center w-full">
+                              <img class="h-8 w-8 rounded-full mr-3" src="https://account.mtgride.org/storage/icons/UDRgyfpia4S5fBQ8lwhbkeZmH5g3eSokRxCF8hg2.jpg" alt="BTC">
+                              <div>
+                                <div class="text-sm font-medium text-gray-900">Bitcoin</div>
+                                <div class="text-sm text-gray-500">BTC</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            89,723.00
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            0.3661
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <a x-on:click.prevent="category = $refs.withdrawal.textContent" class="group flex text-base font-normal items-center font-medium text-gray-500 hover:text-blue-500" :class="{ 'text-blue-500 bg-blue-50': category == $refs.withdrawal.textContent, 'text-gray-500 hover:text-blue-500': category != $refs.withdrawal.textContent }" href="#">
+                              <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16.002 13.5C16.002 14.3284 16.6735 15 17.502 15C18.3304 15 19.002 14.3284 19.002 13.5C19.002 12.6716 18.3304 12 17.502 12C16.6735 12 16.002 12.6716 16.002 13.5Z" stroke="currentColor"></path><path d="M2.00195 11C2.00195 7.22876 2.00195 5.34315 3.17353 4.17157C4.3451 3 6.23072 3 10.002 3H14.002C14.9319 3 15.3969 3 15.7784 3.10222C16.8137 3.37962 17.6223 4.18827 17.8997 5.22354C18.002 5.60504 18.002 6.07003 18.002 7M10.002 7H16.002C18.8304 7 20.2446 7 21.1233 7.87868C22.002 8.75736 22.002 10.1716 22.002 13V15C22.002 17.8284 22.002 19.2426 21.1233 20.1213C20.2446 21 18.8304 21 16.002 21H12.5005" stroke="currentColor"></path><path d="M10 17H6M6 17H2M6 17V21M6 17L6 13" stroke="currentColor"></path></svg>                              <span x-ref="withdrawal">Deposite</span>
+                            </a>
+                          </td>
+                        </tr>
+                                                                      <tr class="hover:bg-gray-50">
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center w-full">
+                              <img class="h-8 w-8 rounded-full mr-3" src="https://account.mtgride.org/storage/icons/Tmr3l85Nzo4zsrMzgzmQNEDCnWwtm95nVygKBjI7.png" alt="ETH">
+                              <div>
+                                <div class="text-sm font-medium text-gray-900">Ethereum</div>
+                                <div class="text-sm text-gray-500">ETH</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            3,051.82
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            10.7624
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <a x-on:click.prevent="category = $refs.withdrawal.textContent" class="group flex text-base font-normal items-center font-medium text-gray-500 hover:text-blue-500" :class="{ 'text-blue-500 bg-blue-50': category == $refs.withdrawal.textContent, 'text-gray-500 hover:text-blue-500': category != $refs.withdrawal.textContent }" href="#">
+                              <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16.002 13.5C16.002 14.3284 16.6735 15 17.502 15C18.3304 15 19.002 14.3284 19.002 13.5C19.002 12.6716 18.3304 12 17.502 12C16.6735 12 16.002 12.6716 16.002 13.5Z" stroke="currentColor"></path><path d="M2.00195 11C2.00195 7.22876 2.00195 5.34315 3.17353 4.17157C4.3451 3 6.23072 3 10.002 3H14.002C14.9319 3 15.3969 3 15.7784 3.10222C16.8137 3.37962 17.6223 4.18827 17.8997 5.22354C18.002 5.60504 18.002 6.07003 18.002 7M10.002 7H16.002C18.8304 7 20.2446 7 21.1233 7.87868C22.002 8.75736 22.002 10.1716 22.002 13V15C22.002 17.8284 22.002 19.2426 21.1233 20.1213C20.2446 21 18.8304 21 16.002 21H12.5005" stroke="currentColor"></path><path d="M10 17H6M6 17H2M6 17V21M6 17L6 13" stroke="currentColor"></path></svg>                              <span x-ref="withdrawal">Deposite</span>
+                            </a>
+                          </td>
+                        </tr>
+                                                                      <tr class="hover:bg-gray-50">
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center w-full">
+                              <img class="h-8 w-8 rounded-full mr-3" src="https://account.mtgride.org/storage/icons/7ysOHS8x2Q9KqZXoZwaMYuQSKU583qh68OX3d7so.png" alt="USDT">
+                              <div>
+                                <div class="text-sm font-medium text-gray-900">USDT Theather</div>
+                                <div class="text-sm text-gray-500">USDT</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            1.00
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            12,345.0000
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <a x-on:click.prevent="category = $refs.withdrawal.textContent" class="group flex text-base font-normal items-center font-medium text-gray-500 hover:text-blue-500" :class="{ 'text-blue-500 bg-blue-50': category == $refs.withdrawal.textContent, 'text-gray-500 hover:text-blue-500': category != $refs.withdrawal.textContent }" href="#">
+                              <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16.002 13.5C16.002 14.3284 16.6735 15 17.502 15C18.3304 15 19.002 14.3284 19.002 13.5C19.002 12.6716 18.3304 12 17.502 12C16.6735 12 16.002 12.6716 16.002 13.5Z" stroke="currentColor"></path><path d="M2.00195 11C2.00195 7.22876 2.00195 5.34315 3.17353 4.17157C4.3451 3 6.23072 3 10.002 3H14.002C14.9319 3 15.3969 3 15.7784 3.10222C16.8137 3.37962 17.6223 4.18827 17.8997 5.22354C18.002 5.60504 18.002 6.07003 18.002 7M10.002 7H16.002C18.8304 7 20.2446 7 21.1233 7.87868C22.002 8.75736 22.002 10.1716 22.002 13V15C22.002 17.8284 22.002 19.2426 21.1233 20.1213C20.2446 21 18.8304 21 16.002 21H12.5005" stroke="currentColor"></path><path d="M10 17H6M6 17H2M6 17V21M6 17L6 13" stroke="currentColor"></path></svg>                              <span x-ref="withdrawal">Deposite</span>
+                            </a>
+                          </td>
+                        </tr>
+                                                                      <tr class="hover:bg-gray-50">
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <div class="flex items-center w-full">
+                              <img class="h-8 w-8 rounded-full mr-3" src="https://account.mtgride.org/storage/icons/gZvO5rQbYL1kruFlaw87oewauij5xssEB9WxFCgI.png" alt="TRX">
+                              <div>
+                                <div class="text-sm font-medium text-gray-900">TRON</div>
+                                <div class="text-sm text-gray-500">TRX</div>
+                              </div>
+                            </div>
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            0.29
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
+                            114,209.7119
+                          </td>
+                          <td class="px-6 py-4 whitespace-nowrap">
+                            <a x-on:click.prevent="category = $refs.withdrawal.textContent" class="group flex text-base font-normal items-center font-medium text-gray-500 hover:text-blue-500" :class="{ 'text-blue-500 bg-blue-50': category == $refs.withdrawal.textContent, 'text-gray-500 hover:text-blue-500': category != $refs.withdrawal.textContent }" href="#">
+                              <svg style="width: 20px; height: 20px;" class="mr-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M16.002 13.5C16.002 14.3284 16.6735 15 17.502 15C18.3304 15 19.002 14.3284 19.002 13.5C19.002 12.6716 18.3304 12 17.502 12C16.6735 12 16.002 12.6716 16.002 13.5Z" stroke="currentColor"></path><path d="M2.00195 11C2.00195 7.22876 2.00195 5.34315 3.17353 4.17157C4.3451 3 6.23072 3 10.002 3H14.002C14.9319 3 15.3969 3 15.7784 3.10222C16.8137 3.37962 17.6223 4.18827 17.8997 5.22354C18.002 5.60504 18.002 6.07003 18.002 7M10.002 7H16.002C18.8304 7 20.2446 7 21.1233 7.87868C22.002 8.75736 22.002 10.1716 22.002 13V15C22.002 17.8284 22.002 19.2426 21.1233 20.1213C20.2446 21 18.8304 21 16.002 21H12.5005" stroke="currentColor"></path><path d="M10 17H6M6 17H2M6 17V21M6 17L6 13" stroke="currentColor"></path></svg>                              <span x-ref="withdrawal">Deposite</span>
+                            </a>
+                          </td>
+                        </tr>
+                                          </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- profile -->
+      <div id="profile" :class="{ 'hidden': category != $refs.profile.textContent }" class="w-full lg:w-9/12 bg-white rounded-lg shadow-md p-8 h-max hidden">
+        <div class="flex items-center">
+          <div class="bg-white w-full">
+            <h1 class="text-2xl font-bold font-heading text-blue-700">Edit Client</h1>
+            <h2 class="mb-6 text-gray-500">Client Information</h2>
+            <form action="https://account.mtgride.org/client/profile/update" method="POST">
+                <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">                <input type="hidden" name="_method" value="PUT">              <div class="border-gray-200">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-3">
+                  <div>
+                    <label class="block b-3 text-gray-500">First Name</label>
+                    <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="first_name" value="John" placeholder="John" required>
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">Last Name</label>
+                    <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="last_name" value="Doe" placeholder="Smit" required>
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">Your E-mail</label>
+                    <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 cursor-not-allowed" type="email" name="email" value="john.doe@email.domain" placeholder="Enter your E-mail" readonly disabled>
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">Mobile phone</label>
+                    <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="phone" value="31612345678" placeholder="Enter your phone">
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">Old Password</label>
+                    <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="password" name="old_password" placeholder="Enter current password">
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">New Password</label>
+                    <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="password" name="password" placeholder="Enter New Password">
+                  </div>
+                </div>
+              </div>
+              <!-- Action Buttons -->
+              <div class="mt-3 flex flex-col sm:flex-row gap-3">
+                <button type="submit" class="inline-block w-full md:w-auto px-6 py-2 font-medium text-white bg-blue-500 hover:bg-blue-600 rounded transition duration-200">
+                  Update
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+            <!-- KYC -->
+            <div id="kyc" :class="{ 'hidden': category != $refs.kyc.textContent }" class="w-full lg:w-9/12 bg-white rounded-lg shadow-md p-8 h-max hidden">
+              <div class="flex items-center">
+                <div class="bg-white w-full">
+                  <h1 class="text-2xl font-bold font-heading text-blue-700">Edit Client KYC</h1>
+                  <h2 class="mb-6 text-gray-500">Client KYC Information</h2>
+                  <form action="https://account.mtgride.org/client/kyc/update" method="POST" enctype="multipart/form-data" class="space-y-3">
+                    <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div>
+                        <label class="block b-2 text-gray-500">First Name</label>
+                        <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 bg-gray-50 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" value="John" type="text" value="John" disabled placeholder="First name">
+                      </div>
+                      <div>
+                        <label class="block b-2 text-gray-500">Last Name</label>
+                        <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 bg-gray-50 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500" value="Doe" type="text" value="Smit" disabled placeholder="Last name">
+                      </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <!-- Date of Birth -->
+                      <div>
+                        <label class="block b-2 text-gray-500">Date of Birth <span class="text-red-500">*</span></label>
+                        <input required class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" value="" type="date" name="date_of_birth">
+                      </div>
+                      <!-- Gender -->
+                      <div>
+                        <label class="block b-2 text-gray-500">Gender <span class="text-red-500">*</span></label>
+                        <div required class="relative">
+                          <select class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" name="gender">
+                            <option value="">Select Gender</option>
+                            <option value="Male" selected>Male</option>
+                            <option value="Female" >Female</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  <div>
+                    <h1 class="text-xl font-bold font-heading text-blue-700">Address Information</h1>
+                    <h2 class="mb-6 text-gray-500">Your simple location information required for identification</h2>
+                  </div>
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <!-- Country -->
+                  <div>
+                    <label class="block b-2 text-gray-500">Country <span class="text-red-500">*</span></label>
+                    <div class="relative">
+                    <select required name="country" class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <option value="">Select Country</option>
+                                                    <option value="AT" >
+                                Austria
+                            </option>
+                                                    <option value="AU" >
+                                Australia
+                            </option>
+                                                    <option value="BE" >
+                                Belgium
+                            </option>
+                                                    <option value="BG" >
+                                Bulgaria
+                            </option>
+                                                    <option value="CA" >
+                                Canada
+                            </option>
+                                                    <option value="DE" >
+                                Germany
+                            </option>
+                                                    <option value="DK" >
+                                Denmark
+                            </option>
+                                                    <option value="ES" >
+                                Spain
+                            </option>
+                                                    <option value="FR" >
+                                France
+                            </option>
+                                                    <option value="IE" >
+                                Ireland
+                            </option>
+                                                    <option value="IT" >
+                                Italy
+                            </option>
+                                                    <option value="JP" >
+                                Japan
+                            </option>
+                                                    <option value="LU" >
+                                Luxembourg
+                            </option>
+                                                    <option value="NL" selected>
+                                Netherlands
+                            </option>
+                                                    <option value="Other" >
+                                Other
+                            </option>
+                                                    <option value="SE" >
+                                Sweden
+                            </option>
+                                                    <option value="SW" >
+                                Switzerland
+                            </option>
+                                                    <option value="UK" >
+                                United Kingdom
+                            </option>
+                                            </select>
+                    </div>
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">State <span class="text-red-500">*</span></label>
+                    <input required class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="state" value="" placeholder="" required>
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">City <span class="text-red-500">*</span></label>
+                    <input required class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="city" value="" placeholder="" required>
+                  </div>
+                  <div>
+                    <label class="block b-3 text-gray-500">Address <span class="text-red-500">*</span></label>
+                    <input required class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="address" value="" placeholder="" required>
+                  </div>
+                </div>
+                  <div>
+                    <h1 class="text-xl font-bold font-heading text-blue-700">Document Information</h1>
+                    <h2 class="mb-6 text-gray-500">Your simple document information required for identification</h2>
+                  </div> 
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- Document Type -->
+                    <div>
+                      <label class="block b-2 text-gray-500">Document Type <span class="text-red-500">*</span></label>
+                      <div required class="relative">
+                        <select 
+                          class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" 
+                          name="document_type">
+                            <option value="">Select Document Type</option>
+                                                                                    <option value="Passport" >
+                                Passport
+                            </option>
+                                                        <option value="Driver ID" >
+                                Driver ID
+                            </option>
+                                                        <option value="Government ID" >
+                                Government ID
+                            </option>
+                                                    </select>
+                      </div>
+                    </div>
+                    <div>
+                      <label class="block b-3 text-gray-500">Nationality</label>
+                      <input class="border-gray-300 block w-full py-3 px-2 mb-2 text-sm placeholder-gray-500 border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500" type="text" name="nationality" value="" placeholder="">
+                    </div>
+                  </div>
+               
+              <!-- Document Upload -->
+                <!-- Document Front Uploader -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pb-4">
+                  <div>
+                    <label class="block b-2 text-gray-500">Document Front</label>
+                    <input type="file" name="document_front" id="document_front" class="hidden" accept="image/*" onchange="previewImage(this, 'frontPreview')">
+                    <div onclick="document.getElementById('document_front').click()" class="cursor-pointer border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-gray-400 transition-colors">
+                    <!-- Image Preview -->
+                    <div id="frontPreview" class="mb-2"></div>
+                    <svg class="mx-auto h-8 w-8 text-gray-400" stroke="currentColor" fill="none" viewbox="0 0 48 48">
+                        <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>    
+                      <p class="mt-2 text-sm text-gray-500">Upload ID Front</p>
+                      <p class="text-xs text-gray-400">PNG, JPG, GIF up to 10MB</p>
+                    </div>
+                    
+                                      </div>
+                  <!-- Document Back Uploader -->
+                  <div>
+                    <label class="block b-2 text-gray-500">Document Back</label>
+                      <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-gray-400 transition-colors">
+                        <input type="file" name="document_back" id="document_back" class="document-back-upload hidden" accept="image/*" onchange="previewImage(this, 'backPreview')">
+                        <div onclick="document.getElementById('document_back').click()" class="document-back-upload-area cursor-pointer">
+                        <!-- Image Preview -->
+                        <div id="backPreview" class="mb-2"></div>
+                        <svg class="mx-auto h-8 w-8 text-gray-400" stroke="currentColor" fill="none" viewbox="0 0 48 48">
+                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>
+                          <p class="mt-2 text-sm text-gray-500">Upload ID Back</p>
+                          <p class="text-xs text-gray-400">PNG, JPG, GIF up to 10MB</p>
+                        </div>
+                      </div>
+                                      </div>
+                  <!-- ID with Selfie (Optional) -->
+                  <div>
+                    <label class="block b-2 text-gray-500">ID with Selfie (Optional)</label>
+                      <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-gray-400 transition-colors">
+                        <input type="file" name="selfie" id="selfie" class="selfie-upload hidden" accept="image/*" onchange="previewImage(this, 'selfiePreview')">
+                        <div onclick="document.getElementById('selfie').click()" class="selfie-upload-area cursor-pointer">
+                        <!-- Image Preview -->
+                        <div id="selfiePreview" class="mb-2"></div>
+                        <svg class="mx-auto h-8 w-8 text-gray-400" stroke="currentColor" fill="none" viewbox="0 0 48 48">
+                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                          </svg>    
+                          <p class="mt-2 text-sm text-gray-500">Upload ID with Selfie</p>
+                          <p class="text-xs text-gray-400">PNG, JPG, GIF up to 10MB</p>
+                        </div>
+                      </div>
+                                      </div>
+                </div>
+              <script>
+              function previewImage(input, previewId) {
+                  const file = input.files[0];
+                  if (!file || !previewId) return;
+
+                  const reader = new FileReader();
+                  reader.onload = function (e) {
+                      const img = document.createElement('img');
+                      img.src = e.target.result;
+                      img.className = 'h-42 object-contain rounded border mt-2';
+                      const previewContainer = document.getElementById(previewId);
+                      if (previewContainer) {
+                          previewContainer.innerHTML = '';
+                          previewContainer.appendChild(img);
+                      }
+                  };
+                  reader.readAsDataURL(file);
+              }
+              </script>
+                <!-- Action Buttons -->
+                <div class="pt-4 border-t border-gray-200 flex flex-col sm:flex-row gap-4 justify-between">
+                  <div class="form-check gap-2 flex items-center">
+                    <label for="defaultCheck1" class="inline-flex items-center space-x-2 cursor-pointer">
+                      <input 
+                        class="form-check-input w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500" 
+                        type="checkbox" 
+                        value="" 
+                        id="defaultCheck1" 
+                        required
+                      >
+                      <span>All The Information I Have Entered Is Correct.<span class="text-red-500">*</span></span>
+                    </label>
+                  </div>
+                  <div>
+                    <button type="submit" class=" pt-2 inline-block w-full sm:w-auto px-6 py-3 font-medium text-white bg-blue-500 hover:bg-blue-600 rounded transition duration-200">
+                        Submit KYC
+                    </button> 
+                   <div>           
+                </div>
+        </form>
+      </div>
+    </div>
+      </div>
+    </div>
+          </div>
+
+  <!-- Deposite -->
+    <div id="deposit" :class="{ 'hidden': category != $refs.deposit.textContent }" class="w-full lg:w-9/12 bg-white rounded-lg shadow-md p-4 lg:p-8 h-max">
+      
+      <h1 class="text-2xl font-bold text-blue-700">Make a Deposit</h1>
+      <p class="text-gray-500 mb-6">Make a deposit to your balance</p>
+
+    <div x-data="{ method: '' }" class="space-y-6">
+      <!-- Method Selection -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Deposit by Bank/Card -->
+        <div 
+          @click="method = 'bank'" 
+          :class="method === 'bank' ? 'ring-2 ring-blue-500' : 'hover:ring-1 hover:ring-gray-300'"
+          class="cursor-pointer bg-gray-50 border rounded-xl p-6 shadow-sm transition-all">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-blue-500 rounded-lg dark:bg-neutral-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><path d="M2 8.56907C2 7.37289 2.48238 6.63982 3.48063 6.08428L7.58987 3.79744C9.7431 2.59915 10.8197 2 12 2C13.1803 2 14.2569 2.59915 16.4101 3.79744L20.5194 6.08428C21.5176 6.63982 22 7.3729 22 8.56907C22 8.89343 22 9.05561 21.9646 9.18894C21.7785 9.88945 21.1437 10 20.5307 10H3.46928C2.85627 10 2.22152 9.88944 2.03542 9.18894C2 9.05561 2 8.89343 2 8.56907Z" stroke="currentColor"></path><path d="M11.9959 7H12.0049" stroke="currentColor"></path><path d="M4 10V18.5M8 10V18.5" stroke="currentColor"></path><path d="M16 10V18.5M20 10V18.5" stroke="currentColor"></path><path d="M19 18.5H5C3.34315 18.5 2 19.8431 2 21.5C2 21.7761 2.22386 22 2.5 22H21.5C21.7761 22 22 21.7761 22 21.5C22 19.8431 20.6569 18.5 19 18.5Z" stroke="currentColor"></path></svg>            </div>
+            <h2 class="text-lg font-semibold text-blue-800">Deposit by Card / Bank</h2>
+          </div>
+          <p class="text-gray-600 text-sm">
+            Make a secure deposit using your bank card or bank transfer.  
+            Click to continue securely via our verified billing partner.
+          </p>
+        </div>
+
+        <!-- Deposit by Crypto -->
+        <div 
+          @click="method = 'crypto'" 
+          :class="method === 'crypto' ? 'ring-2 ring-orange-500' : 'hover:ring-1 hover:ring-gray-300'"
+          class="cursor-pointer bg-gray-50 border rounded-xl p-6 shadow-sm transition-all">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="text-white shrink-0 flex justify-center items-center size-11 bg-orange-300 rounded-lg dark:bg-neutral-800">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><circle cx="12" cy="12" r="10" stroke="currentColor"></circle><path d="M9.5 16L9.5 8" stroke="currentColor"></path><path d="M11 8V6M13.5 8V6" stroke="currentColor"></path><path d="M11 18V16M13.5 18V16" stroke="currentColor"></path><path d="M9.5 12H14.5C15.3284 12 16 12.6716 16 13.5V14.5C16 15.3284 15.3284 16 14.5 16H8" stroke="currentColor"></path><path d="M8 8L14.5 8C15.3284 8 16 8.67157 16 9.5V10.5C16 11.3284 15.3284 12 14.5 12H9.5" stroke="currentColor"></path></svg>            </div>
+            <h2 class="text-lg font-semibold text-orange-800">Deposit by Crypto</h2>
+          </div>
+          <p class="text-gray-600 text-sm">
+            Send your deposit via cryptocurrency to your assigned wallet address.
+          </p>
+        </div>
+      </div>
+
+      <!-- Bank/Card Section -->
+      <div x-show="method === 'bank'" x-transition class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+        <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+          All payments for account activation are securely processed through our authorized international billing partner.  
+          Please note that MTPROVIDER utilizes an independent billing provider to manage and process transactions worldwide.  
+          This provider is not directly affiliated with MTPROVIDER and operates solely to ensure safe, encrypted, and fully compliant handling of your payment information.  
+          Charges may appear under the billing provider’s name on your financial statement.
+        </p>
+        <button 
+          onclick="window.open('', '_blank')" 
+          class="w-full md:w-auto bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-medium shadow-md transition">
+          Proceed to Secure Payment
+        </button>
+      </div>
+
+      <!-- Crypto Section -->
+      <div x-show="method === 'crypto'" x-transition class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+        <label class="block text-gray-700 font-medium mb-2">Your Crypto Deposit Address:</label>
+        <div class="relative">
+          <input 
+            type="text" 
+            readonly 
+            value="" 
+            id="cryptoLinkInput"
+            class="w-full pr-16 px-4 py-3 border rounded-md text-gray-700 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-green-400"
+          >
+          <button 
+            type="button"
+            onclick="navigator.clipboard.writeText(document.getElementById('cryptoLinkInput').value); this.innerText='Copied!'; setTimeout(()=>this.innerText='📋', 1500);"
+            class="absolute inset-y-0 right-0 flex items-center justify-center px-3 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-r-md text-sm font-medium transition"
+            title="Copy address"
+          >
+            📋
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Withdrawal -->
+<div id="withdrawal" :class="{ 'hidden': category != $refs.withdrawal.textContent }" class="w-full lg:w-9/12 bg-white rounded-lg shadow-md p-8 h-max">
+  <h1 class="text-2xl font-bold text-blue-700">Withdrawal</h1>
+  <p class="text-gray-500 mb-6">Make withdrawal from your balance</p>
+
+  <div x-data="{ method: 'withdrawal', selectedCoin: '', selectedWallet: '', amount: '' }" class="space-y-6">
+    <!-- Method Selection -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Withdrawal by Crypto -->
+      <div 
+        @click="method = 'crypto'" 
+        :class="method === 'crypto' ? 'ring-2 ring-blue-500' : 'hover:ring-1 hover:ring-gray-300'"
+        class="cursor-pointer bg-gray-50 border rounded-xl p-6 shadow-sm transition-all">
+        <div class="flex items-center gap-3 mb-3">
+          <div class="text-white shrink-0 flex justify-center items-center size-11 bg-orange-300 rounded-lg dark:bg-neutral-800">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" color="currentColor"><circle cx="12" cy="12" r="10" stroke="currentColor"></circle><path d="M9.5 16L9.5 8" stroke="currentColor"></path><path d="M11 8V6M13.5 8V6" stroke="currentColor"></path><path d="M11 18V16M13.5 18V16" stroke="currentColor"></path><path d="M9.5 12H14.5C15.3284 12 16 12.6716 16 13.5V14.5C16 15.3284 15.3284 16 14.5 16H8" stroke="currentColor"></path><path d="M8 8L14.5 8C15.3284 8 16 8.67157 16 9.5V10.5C16 11.3284 15.3284 12 14.5 12H9.5" stroke="currentColor"></path></svg>          </div>
+          <h2 class="text-lg font-semibold text-blue-800">Withdraw by Crypto</h2>
+        </div>
+        <p class="text-gray-600 text-sm">
+          Withdraw your funds via cryptocurrency. Select a coin and provide your withdrawal wallet address.
+        </p>
+      </div>
+    </div>
+
+    <!-- Crypto Withdrawal Section -->
+    <div x-show="method === 'crypto'" x-transition class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+      <label class="block text-gray-700 font-medium mb-2">Select Coin for Withdrawal:</label>
+      <div class="relative">
+        <select name="coin_id" x-model="selectedCoin" required class="appearance-none block w-full px-4 py-3 mb-4 text-sm bg-white border rounded focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          <option value="">Select Coin</option>
+          <option value="USDT">USDT (Tether)</option>
+          <option value="Bitcoin">BTC (Bitcoin)</option>
+        </select>
+      </div>
+
+      <!-- Wallet Address Section -->
+      <label class="block text-gray-700 font-medium mb-2">Withdrawal Wallet Address:</label>
+      <div class="relative">
+        <input 
+          type="text" 
+          name="wallet" 
+          x-model="selectedWallet"
+          placeholder="Enter your wallet address"
+          class="block w-full px-4 py-3 mb-2 text-sm bg-white border rounded-md pr-10 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+        >
+        <button 
+          type="button"
+          onclick="navigator.clipboard.writeText(selectedWallet); this.innerText='Copied!'; setTimeout(()=>this.innerText='📋', 1500);"
+          class="absolute inset-y-0 right-0 flex items-center justify-center px-3 bg-gray-200 hover:bg-gray-300 text-gray-700 rounded-r-md text-sm font-medium transition"
+          title="Copy address"
+        >
+          📋
+        </button>
+      </div>
+
+      <!-- Amount -->
+      <div>
+        <label class="block text-gray-500 mb-2">Amount to Withdraw:</label>
+        <input 
+          type="number" 
+          name="amount" 
+          step="0.01" 
+          required 
+          placeholder="Enter amount"
+          class="block w-full px-4 py-3 mb-4 text-sm bg-white border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          x-model="amount"
+        >
+      </div>
+
+      <!-- Submit -->
+      <div class="md:col-span-2">
+        <form method="POST" action="https://account.mtgride.org/client/deposit" class="space-y-2">
+          <input type="hidden" name="_token" value="dm3pZdOMC0TkgIj1zNzqBWIyeHqSBxpBV4gTS010" autocomplete="off">          <input type="hidden" name="type" value="withdrawal">
+          <input type="hidden" name="coin_id" :value="selectedCoin">
+          <input type="hidden" name="wallet" :value="selectedWallet">
+          <input type="hidden" name="amount" :value="amount">
+          <button type="submit" class="w-full px-6 py-2 font-medium text-white bg-blue-500 hover:bg-blue-600 rounded-md">
+            Submit Withdrawal
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="tansactions" :class="{ 'hidden': category != $refs.tansactions.textContent }" class="w-full lg:w-9/12 rounded-lg p-8 bg-white shadow-lg hidden">
+    <h1 class="mb-6 text-2xl font-bold font-heading text-blue-700">Transactions</h1>
+      <div class="bg-white rounded-lg shadow-sm border overflow-hidden">
+        <div class="overflow-x-auto">
+                    <table class="w-full">
+            <thead class="bg-gray-50 border-b">
+              <tr>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Full Name</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Type</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Amount</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Wallet Address</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                <th class="px-6 py-4 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-200">
+                              <tr>
+                  <td colspan="8" class="px-6 py-4 text-center text-gray-500">No transactions found.</td>
+                </tr>
+                          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  <!-- Notifications Table -->
+    <div id="notifications" :class="{ 'hidden': category != $refs.notifications.textContent }" class="w-full lg:w-9/12 bg-white rounded-lg shadow-md p-8 h-max hidden">
+      <div class="flex items-center">
+        <div class="bg-white w-full">
+          <h1 class="text-2xl font-bold font-heading text-blue-700">Transactions</h1>
+          <h2 class="mb-6 text-lg font-heading text-gray-500">Client Transactions Information</h2>
+                    <div class="bg-white rounded-lg shadow-sm border overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="w-full">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">ID</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Title</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Description</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Seen</th>
+                    <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                  </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                                      <tr>
+                      <td colspan="5" class="px-6 py-4 text-center text-gray-500">You have no notifications</td>
+                    </tr>
+                                  </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section><!-- Footer -->
+<section class="bg-white overflow-hidden text-gray-500 py-4">
+    <p class="text-center font-bold">
+      <span class="text-sm font-normal">Ⓒ Copyright. All rights reserved by</span>
+      <a class="text-blue-500 hover:text-blue-600" href="https://account.MTGride.org/">MTGride</a>
+    </p>
+</section>
+    </div>
+
+    <!-- ApexCharts via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    </body>
+</html>

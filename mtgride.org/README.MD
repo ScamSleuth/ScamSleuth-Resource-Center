@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Scam Report: MTGride Crypto Investment Scam
 
 **Scam Date**: November 2025  
@@ -43,7 +42,7 @@ The landing page fraudulently displays logos of major news media outlets (CNN, W
 The scammers initiate contact by phone, claiming to represent a financial institution that has detected suspicious activity. They deliberately remain vague about which platform is involved and lure the victim towards the website that's under their control.
 
 ### 2. False Media Credibility
-The landing page displays logos of major news organizations (CNN, Wall Street Journal, BBC, The New York Times, CNBC) to create a false impression of media coverage and legitimacy. This trademark misuse is designed to make victims believe the platform has been featured or endorsed by these trusted news sources.
+The landing page displays logos of major news organizations (CNN, Wall Street Journal, BBC, the Guardian, Daily Telegraph and CBS) to create a false impression of media coverage and legitimacy. This trademark misuse is designed to make victims believe the platform has been featured or endorsed by these trusted news sources.
 
 ### 3. Capital Recovery Deception
 The site positions itself as "THE LEADING EXPERT WORLDWIDE IN PRESERVING DATA, PROBING INTO FINANCIAL CRIMES, AND RECLAIMING CAPITAL" - falsely claiming to be a legitimate recovery service. This creates confusion and makes victims believe they are dealing with a professional organization that can help recover lost funds, when in reality it's the scam operation itself.
@@ -53,7 +52,7 @@ The landing page displays a world map showing office locations in Luxembourg, Lo
 
 ### 5. Fake Investment Dashboard  
 Victims are directed to account.mtgride.org, a fraudulent website built on WordPress that displays:
-- **Fabricated account balances** (example shown: a €12,345.00 balance)
+- **Fabricated account balances** (example shown: €12,345.00 balance)
 - **Fake cryptocurrency holdings**:
   - Bitcoin (BTC): 0.3661 BTC
   - Ethereum (ETH): 10.7624 ETH
@@ -65,7 +64,10 @@ Victims are directed to account.mtgride.org, a fraudulent website built on WordP
 - **Trading chart** showing stock data (Apple Inc) to appear sophisticated
 - **24/7 support claims** with contact information
 
-### 6. Psychological Manipulation Through Status Indicators
+### 6. TradingView Chart Misuse
+The dashboard incorporates trading charts that appear to use TradingView's charting technology or styling to display stock data (Apple Inc). This misuse of TradingView's brand and technology is designed to make the fake platform appear more sophisticated and legitimate.
+
+### 7. Psychological Manipulation Through Status Indicators
 The fake dashboard uses several psychological triggers:
 - **"ACCOUNT STATUS: Inactive"** - Creates urgency to "activate" the account
 - **"KYC: Pending"** - Justifies requests for identity documents and verification fees
@@ -74,7 +76,7 @@ The fake dashboard uses several psychological triggers:
 - **Deposit and Withdrawal sections** - Encourages victims to add more funds or attempt withdrawals (which will be blocked)
 - **Professional design elements** - Uses modern UI, charts, and statistics to appear legitimate
 
-### 7. Technical Deception  
+### 8. Technical Deception  
 The scam website uses:
 - WordPress 6.9 with Elementor theme (not typical for legitimate financial services)
 - Alpine.js for interactive elements
@@ -83,7 +85,7 @@ The scam website uses:
 - Professional-looking design with charts, statistics, and modern styling
 - CSRF tokens and form validation to appear secure
 
-### 8. Unresponsive Contact Numbers
+### 9. Unresponsive Contact Numbers
 The phone numbers listed on the site (+31 852 085 408 and +31 852 430 761) do not answer calls, suggesting they are either:
 - Not taking calls at the moment
 - Display-only numbers used for credibility
@@ -101,16 +103,22 @@ The phone numbers listed on the site (+31 852 085 408 and +31 852 430 761) do no
 - Analyzed website technology stack (WordPress-based with Alpine.js)
 - Captured dashboard interface showing fake balance displays and cryptocurrency holdings
 - Documented fraudulent use of news media logos
+- Documented misuse of TradingView charting technology/styling
 - Investigated phone numbers (not answering calls)
 
-### 3. Brand Notification (Pending)
-The following news media organizations are being misused and should be notified:
-- CNN, 
-- Wall Street Journal, 
-- BBC, 
-- the Guardian, 
+### 3. Brand Notification (In Progress)
+The following organizations are being notified of trademark/brand misuse:
+
+**News Media Organizations:**
+- CNN
+- Wall Street Journal
+- BBC
+- the Guardian
 - Daily Telegraph
 - CBS
+
+**Technology/Service Providers:**
+- TradingView (https://www.tradingview.com/) - Notified of unauthorized use of their charting technology/styling
 
 ---
 ## Lessons & Takeaways  
@@ -123,7 +131,7 @@ The following news media organizations are being misused and should be notified:
 - **Unresponsive phone numbers**: Legitimate businesses answer their published phone numbers
 - **"Capital recovery" claims**: Often used by scammers to target previous scam victims (recovery scam)
 - **"Inactive" account status**: Scammers use this to justify activation fees
-- **"Pending" KYC status**: Know Your Customer, Used to request identity documents and verification
+- **"Pending" KYC status**: Know Your Customer, used to request identity documents and verification
 - **Fee requests**: Real services deduct fees from your balance, never request upfront payments
 - **Free SSL certificate**: Major financial platforms use Extended Validation (EV) certificates showing company name in browser
 - **Fabricated balances**: If you don't recognize the platform or remember creating an account, the balance is fake
@@ -183,7 +191,7 @@ For investigators and security professionals:
 - Account status indicators (Inactive/Active)
 - KYC status system (Pending/Verified)
 - Navigation sections: Dashboard, Profile, KYC, Deposit, Withdrawal, Transactions, Notifications, Logout
-- Trading chart integration (stock data)
+- Trading chart integration (stock data - appears to use TradingView styling)
 - CSRF token implementation
 - 24/7 support claims
 - Logout functionality
@@ -211,8 +219,12 @@ For investigators and security professionals:
 - CNN: https://www.cnn.com/feedback
 - Wall Street Journal: wsjcontact@dowjones.com
 - BBC: https://www.bbc.co.uk/contact
-- The New York Times: legal@nytimes.com
-- CNBC: https://www.cnbc.com/contact/
+- the Guardian: https://www.theguardian.com/info/contact-us
+- Daily Telegraph: https://www.telegraph.co.uk/contact-us/
+- CBS: https://www.cbs.com/feedback/
+
+**Technology/Service Provider Contacts:**
+- TradingView: https://www.tradingview.com/support/solutions/43000529348-report-abuse/
 
 **Phone Number Investigation:**
 - Check provider at: https://www.acm.nl/nl/telefoonnummers-zoeken
@@ -245,105 +257,13 @@ If you've encountered this scam or similar operations, please report them:
 - CNN: https://www.cnn.com/feedback
 - Wall Street Journal: wsjcontact@dowjones.com
 - BBC: https://www.bbc.co.uk/contact
-- The New York Times: legal@nytimes.com
-- CNBC: https://www.cnbc.com/contact/
+- the Guardian: https://www.theguardian.com/info/contact-us
+- Daily Telegraph: https://www.telegraph.co.uk/contact-us/
+- CBS: https://www.cbs.com/feedback/
+
+**Report Technology/Service Misuse:**
+- TradingView: https://www.tradingview.com/support/solutions/43000529348-report-abuse/
 
 See: [**How to Report Scams**](../General/GetInvolved.md)
 
 **Stay alert. Stay informed. Stay safe.**
-=======
-# Scam Report: belasting.mijn-schulden.com
-
-**Scam Date**: January, 2025  
-**Status**: Resolved  
-
----
-
-## Scam Summary  
-Victims receive a message claiming to be from the Dutch Tax Office (**Belastingdienst**), urging them to pay a non-existent debt immediately to avoid legal consequences. The fraudulent message directs victims to a fake website where they are tricked into entering personal details and making a payment via a fake iDEAL link.
-
----
-
-## Scam Message (Example from Victim)  
-> "Belastingdienst: Betaal €486,00 voor 09-01-2025 om beslag te voorkomen. Betaal via belasting.mijn-schulden.com"  
-
-**Translation:**  
-> "Belastingdienst: Pay €486,00 before 09-01-2025 to avoid seizure. Pay via https://belasting.mijn-schulden.com"
-
----
-
-## Source Analysis  
-- **Impersonated Entity**: Dutch Tax Office (**Belastingdienst**)
-- **Scammer's Contact Method**: SMS message
-- **Website Used**: [belasting.mijn-schulden.com](https://belasting.mijn-schulden.com)
-- **Hosting Provider/Registrar**: [Nicenic.net](https://nicenic.net) (Reported)
-
----
-
-## Scam Tactics  
-
-### 1. Impersonation & Fear Tactics  
-- The message mimics the **Belastingdienst** to appear legitimate.
-- Urgent threats of legal action (e.g., asset seizure) pressure victims into acting immediately.
-
-### 2. Fraudulent Website & Payment Link  
-- The fake website displays a fraudulent invoice claiming immediate payment is required.
-- Visitors are prompted to enter personal details, such as their **bank name** and **phone number**.
-- A chatbot is used to provide an **iDEAL payment link**, which leads to a fraudulent transaction.
-
-![Chat Interface](./Website/Chat.png)  
-
-### 3. Fake Customer Support or Chatbot  
-- A chatbot engages with victims, making the scam appear more credible.
-- The chatbot requests sensitive information before providing a fraudulent payment link.
-
----
-
-## Actions Taken  
-
-### 1. Domain & Hosting Reports  
-- Reported the domain **belasting.mijn-schulden.com** to **Nicenic.net**.
-- Informed **Google Safe Search** of the fraudulent website.
-- Reported the fraudulent use of **Cloudflare protection**.
-- Notified **Tidio.net** regarding their chatbot being used on the scam site.
-- Alerted **Nicepage.io** that their service was exploited to create the fraudulent site.
-
----
-
-## Follow-Up & Status Updates  
-- **January 2025**: Scam reported to relevant authorities.
-- **January 2025**: Cloudflare and Google Safe Search flagged the site as a scam.
-- **January 2025**: The fraudulent domain was taken down, stopping further scams.
-
----
-
-## Lessons & Takeaways  
-
-### 1. Red Flags & Prevention  
-- **Urgent threats demanding immediate payment** → Verify directly with the organization.
-- **Suspicious domains** → Dutch government services primarily use **.nl** domains.
-- **Fake chatbots & unverified payment links** → Never provide personal details to unsolicited contacts.
-
-### 2. How to Stay Safe  
-- **Do not trust SMS/email messages with urgent legal threats.**
-- **Always verify domain legitimacy before entering sensitive data.**
-- **Report scams to authorities to prevent further victims.**
-
-### 3. Ongoing Scam Awareness  
-For more scam awareness and reporting guides:
-- [**Social Media Scams**](../General/SocialMediaScam.md)  
-- [**Telephone Fraud**](../General/Telefonische_fraude.md)  
-- [**Deep Dive into Scamming**](../General/Dive_into_scamming.md)  
-
----
-
-## Get Involved  
-If you've encountered similar scams, report them to the appropriate authorities.  
-For a full list of fraud reporting platforms, visit:  
-
-- [**How to Report Scams**](../General/GetInvolved.md)  
-
-By reporting scams, you help authorities track down criminals, prevent further victims, and contribute to shutting down fraudulent networks.
-
-**Stay alert. Stay informed. Stay safe.**
->>>>>>> 24f711a42cb5bd98403e6d58884efed7a094685b
