@@ -106,7 +106,7 @@ The phone numbers listed on the site (+31 852 085 408 and +31 852 430 761) do no
 - Documented misuse of TradingView charting technology/styling
 - Investigated phone numbers (not answering calls)
 
-### 3. Brand Notification (In Progress)
+### 3. Brand Notification
 The following organizations are being notified of trademark/brand misuse:
 
 **News Media Organizations:**
@@ -221,17 +221,6 @@ For investigators and security professionals:
 **Phone Number Investigation:**
 - Check provider at: https://www.acm.nl/nl/telefoonnummers-zoeken
 - Report to provider if identified
-
----
-## Actions taken ##
-
-**Informed newsoutlets of the use of their logo's**
-- CNN
-- Wall Street Journal
-- BBC
-- the Guardian
-- Daily Telegraph
-- CBS
 
 ---
 ## Ongoing Scam Awareness  
