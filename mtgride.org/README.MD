@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Scam Report: MTGride Crypto Investment Scam
 
 **Scam Date**: November 2025  
