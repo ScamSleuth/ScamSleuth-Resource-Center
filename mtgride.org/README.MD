@@ -118,7 +118,13 @@ The following organizations are being notified of trademark/brand misuse:
 - CBS
 
 **Technology/Service Providers:**
-- TradingView (https://www.tradingview.com/) - Notified of unauthorized use of their charting technology/styling
+- TradingView (https://www.tradingview.com/) - Notified of unauthorized use of their charting technology
+
+**Reported the site to:**
+- Registrar: https://abuse.registrar.eu/
+- Hosting: abuse@v-sys.org
+- Cloudflare: https://abuse.cloudflare.com/
+- .org Registry: https://pir.org/report-abuse/
 
 ---
 ## Lessons & Takeaways  
@@ -181,12 +187,12 @@ For investigators and security professionals:
 
 **Contact Information (Scam):**
 - Phone: +31 852 085 408 (not answering calls)
-- Phone: +31 852 430 761
+- Phone: +31 852 430 761 (not answering calls)
 - Email: support@mtgride.org
 - Email: support@gride.org
 
 **Dashboard Features:**
-- Fake balance display system (€32,845.00 shown)
+- Fake balance display system
 - Fake cryptocurrency holdings (BTC, ETH, USDT, TRX)
 - Account status indicators (Inactive/Active)
 - KYC status system (Pending/Verified)
@@ -208,15 +214,6 @@ For investigators and security professionals:
 - Basic SPF record only
 - DMARC policy: none
 - XML-RPC enabled (vulnerability)
-
-**Abuse Contacts:**
-- Registrar: abuse@registrar.eu
-- Hosting: abuse@v-sys.org
-- Cloudflare: abuse@cloudflare.com
-- .org Registry: abuse@pir.org
-
-**Technology/Service Provider Contacts:**
-- TradingView: https://www.tradingview.com/support/solutions/43000529348-report-abuse/
 
 **Phone Number Investigation:**
 - Check provider at: https://www.acm.nl/nl/telefoonnummers-zoeken
@@ -240,21 +237,6 @@ If you've encountered this scam or similar operations, please report them:
 - Fraudehelpdesk: https://www.fraudehelpdesk.nl
 - ACM (Autoriteit Consument & Markt): https://www.acm.nl
 - Phone number provider lookup: https://www.acm.nl/nl/telefoonnummers-zoeken
-
-**International:**
-- EUROPOL: ec3.contact@europol.europa.eu
-- Your local police department
-
-**Report Media Brand Misuse:**
-- CNN: https://www.cnn.com/feedback
-- Wall Street Journal: wsjcontact@dowjones.com
-- BBC: https://www.bbc.co.uk/contact
-- the Guardian: https://www.theguardian.com/info/contact-us
-- Daily Telegraph: https://www.telegraph.co.uk/contact-us/
-- CBS: https://www.cbs.com/feedback/
-
-**Report Technology/Service Misuse:**
-- TradingView: https://www.tradingview.com/support/solutions/43000529348-report-abuse/
 
 See: [**How to Report Scams**](../General/GetInvolved.md)
 
