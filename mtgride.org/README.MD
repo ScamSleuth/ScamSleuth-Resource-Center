@@ -215,20 +215,23 @@ For investigators and security professionals:
 - Cloudflare: abuse@cloudflare.com
 - .org Registry: abuse@pir.org
 
-**Media Brand Abuse Contacts:**
-- CNN: https://www.cnn.com/feedback
-- Wall Street Journal: wsjcontact@dowjones.com
-- BBC: https://www.bbc.co.uk/contact
-- the Guardian: https://www.theguardian.com/info/contact-us
-- Daily Telegraph: https://www.telegraph.co.uk/contact-us/
-- CBS: https://www.cbs.com/feedback/
-
 **Technology/Service Provider Contacts:**
 - TradingView: https://www.tradingview.com/support/solutions/43000529348-report-abuse/
 
 **Phone Number Investigation:**
 - Check provider at: https://www.acm.nl/nl/telefoonnummers-zoeken
 - Report to provider if identified
+
+---
+## Actions taken ##
+
+**Informed newsoutlets of the use of their logo's**
+- CNN
+- Wall Street Journal
+- BBC
+- the Guardian
+- Daily Telegraph
+- CBS
 
 ---
 ## Ongoing Scam Awareness  
