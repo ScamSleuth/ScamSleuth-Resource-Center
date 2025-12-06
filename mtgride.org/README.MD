@@ -117,7 +117,7 @@ The following organizations are being notified of trademark/brand misuse:
 - Daily Telegraph
 - CBS
 
-**Technology/Service Providers:**
+**Reported to Technology/Service Providers:**
 - TradingView (https://www.tradingview.com/) - Notified of unauthorized use of their charting technology
 
 **Reported the site to:**
@@ -125,6 +125,10 @@ The following organizations are being notified of trademark/brand misuse:
 - Hosting: abuse@v-sys.org
 - Cloudflare: https://abuse.cloudflare.com/
 - .org Registry: https://pir.org/report-abuse/
+- Microsoft Security Intelligence: https://www.microsoft.com/en-us/wdsi/support/report-unsafe-site-guest
+- Google Safebrowsing: https://safebrowsing.google.com/safebrowsing/report_phish/
+- ESET: https://phishing.eset.com/en-us/report
+- Netcraft: https://report.netcraft.com/report
 
 ---
 ## Lessons & Takeaways  
